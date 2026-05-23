@@ -1,0 +1,358 @@
+{% extends "dashboard.html" %}
+
+{% block css %}
+	<style>
+		.scan-panel {
+			margin-top: 20px;
+		}
+		.result-panel {
+			margin-top: 20px;
+		}
+		.summary-box {
+			padding: 15px;
+			border-radius: 8px;
+			margin-bottom: 15px;
+		}
+		.summary-box.critical {
+			background: #f8d7da;
+			border: 1px solid #f5c6cb;
+		}
+		.summary-box.warning {
+			background: #fff3cd;
+			border: 1px solid #ffc107;
+		}
+		.summary-box.info {
+			background: #d1ecf1;
+			border: 1px solid #bee5eb;
+		}
+		.summary-box.success {
+			background: #d4edda;
+			border: 1px solid #c3e6cb;
+		}
+		.summary-number {
+			font-size: 36px;
+			font-weight: bold;
+		}
+		.summary-label {
+			font-size: 14px;
+			color: #666;
+		}
+		.anomaly-card {
+			border: 1px solid #ddd;
+			border-radius: 8px;
+			margin-bottom: 15px;
+			background: #fff;
+		}
+		.anomaly-header {
+			padding: 12px 15px;
+			background: #f8f9fa;
+			border-bottom: 1px solid #ddd;
+			border-radius: 8px 8px 0 0;
+		}
+		.anomaly-header.has-critical {
+			background: #f8d7da;
+			border-left: 4px solid #dc3545;
+		}
+		.anomaly-header.has-warning {
+			background: #fff3cd;
+			border-left: 4px solid #ffc107;
+		}
+		.anomaly-body {
+			padding: 15px;
+		}
+		.anomaly-item {
+			padding: 8px 12px;
+			margin: 5px 0;
+			border-radius: 4px;
+			font-size: 13px;
+		}
+		.anomaly-item.critical {
+			background: #f8d7da;
+			border-left: 3px solid #dc3545;
+		}
+		.anomaly-item.warning {
+			background: #fff3cd;
+			border-left: 3px solid #ffc107;
+		}
+		.anomaly-item.info {
+			background: #d1ecf1;
+			border-left: 3px solid #17a2b8;
+		}
+		.player-info {
+			font-weight: bold;
+			margin-right: 15px;
+		}
+		.badge-critical {
+			background: #dc3545;
+			color: #fff;
+		}
+		.badge-warning {
+			background: #ffc107;
+			color: #000;
+		}
+		.badge-info {
+			background: #17a2b8;
+			color: #fff;
+		}
+		.scan-progress {
+			display: none;
+			margin-top: 15px;
+		}
+		.btn-scan {
+			min-width: 120px;
+		}
+		.alert-info-custom {
+			background: #d1ecf1;
+			border: 1px solid #bee5eb;
+			color: #0c5460;
+			padding: 10px;
+			border-radius: 4px;
+			margin-bottom: 15px;
+		}
+		.no-anomaly {
+			text-align: center;
+			padding: 40px;
+			color: #28a745;
+			font-size: 18px;
+		}
+		.no-anomaly .glyphicon {
+			font-size: 48px;
+			margin-bottom: 15px;
+		}
+	</style>
+{% end %}
+
+{% block main %}
+	<div class="container-fluid main">
+		<div class="row">
+			<div class="title"><h4>{{ _(u"数据异常检测") }}</h4></div>
+		</div>
+
+		<div class="alert-info-custom">
+			<strong>{{ _(u"功能说明") }}：</strong>
+			{{ _(u"扫描在线玩家数据，自动发现货币负数、数值异常、内存与数据库不一致等问题。") }}
+		</div>
+
+		<!-- 扫描控制面板 -->
+		<div class="panel panel-default scan-panel">
+			<div class="panel-heading">
+				<h5 class="panel-title">{{ _(u"扫描设置") }}</h5>
+			</div>
+			<div class="panel-body">
+				<div class="row">
+					<div class="col-md-3">
+						<label>{{ _(u"选择服务器") }}</label>
+						<select id="servName" class="form-control">
+							{% for serv in servs %}
+								<option value="{{ serv }}">{{ serv }}</option>
+							{% end %}
+						</select>
+					</div>
+					<div class="col-md-3">
+						<label>{{ _(u"扫描类型") }}</label>
+						<select id="scanType" class="form-control">
+							<option value="all">{{ _(u"全部检测") }}</option>
+							<option value="value_abnormal">{{ _(u"数值异常") }}</option>
+							<option value="memory_db_diff">{{ _(u"内存数据库差异") }}</option>
+						</select>
+					</div>
+					<div class="col-md-2">
+						<label>{{ _(u"扫描数量") }}</label>
+						<select id="scanLimit" class="form-control">
+							<option value="50">50</option>
+							<option value="100" selected>100</option>
+							<option value="200">200</option>
+							<option value="500">500</option>
+						</select>
+					</div>
+					<div class="col-md-4">
+						<label>&nbsp;</label>
+						<div>
+							<button type="button" class="btn btn-primary btn-scan" onclick="startScan()">
+								<span class="glyphicon glyphicon-search"></span> {{ _(u"开始扫描") }}
+							</button>
+							<button type="button" class="btn btn-default" onclick="clearResults()">
+								<span class="glyphicon glyphicon-trash"></span> {{ _(u"清除结果") }}
+							</button>
+						</div>
+					</div>
+				</div>
+				<div class="scan-progress" id="scanProgress">
+					<div class="progress">
+						<div class="progress-bar progress-bar-striped active" style="width: 100%">
+							{{ _(u"正在扫描...") }}
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- 统计摘要 -->
+		<div class="row" id="summaryPanel" style="display: none;">
+			<div class="col-md-3">
+				<div class="summary-box success text-center">
+					<div class="summary-number" id="onlineCount">0</div>
+					<div class="summary-label">{{ _(u"在线玩家") }}</div>
+				</div>
+			</div>
+			<div class="col-md-3">
+				<div class="summary-box critical text-center">
+					<div class="summary-number" id="criticalCount">0</div>
+					<div class="summary-label">{{ _(u"严重异常") }}</div>
+				</div>
+			</div>
+			<div class="col-md-3">
+				<div class="summary-box warning text-center">
+					<div class="summary-number" id="warningCount">0</div>
+					<div class="summary-label">{{ _(u"警告") }}</div>
+				</div>
+			</div>
+			<div class="col-md-3">
+				<div class="summary-box info text-center">
+					<div class="summary-number" id="infoCount">0</div>
+					<div class="summary-label">{{ _(u"提示") }}</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- 异常列表 -->
+		<div class="panel panel-default result-panel" id="resultPanel" style="display: none;">
+			<div class="panel-heading">
+				<h5 class="panel-title">
+					{{ _(u"异常列表") }}
+					<span class="badge" id="anomalyPlayerCount">0</span>
+				</h5>
+			</div>
+			<div class="panel-body" id="anomalyList">
+				<!-- 异常数据将动态填充 -->
+			</div>
+		</div>
+	</div>
+{% end %}
+
+{% block js %}
+<script>
+var isScanning = false;
+
+function startScan() {
+	if (isScanning) return;
+	
+	var servName = $('#servName').val();
+	var scanType = $('#scanType').val();
+	var limit = $('#scanLimit').val();
+	
+	if (!servName) {
+		alert('请选择服务器');
+		return;
+	}
+	
+	isScanning = true;
+	$('#scanProgress').show();
+	$('.btn-scan').prop('disabled', true);
+	
+	$.ajax({
+		url: '/scan_anomalies',
+		type: 'GET',
+		data: {
+			servName: servName,
+			scanType: scanType,
+			limit: limit,
+			_t: new Date().getTime()
+		},
+		dataType: 'json',
+		success: function(data) {
+			isScanning = false;
+			$('#scanProgress').hide();
+			$('.btn-scan').prop('disabled', false);
+			
+			if (data.ret) {
+				displayResults(data);
+			} else {
+				alert('扫描失败: ' + (data.err || '未知错误'));
+			}
+		},
+		error: function(xhr, status, error) {
+			isScanning = false;
+			$('#scanProgress').hide();
+			$('.btn-scan').prop('disabled', false);
+			alert('请求失败: ' + error);
+		}
+	});
+}
+
+function displayResults(data) {
+	// 显示统计摘要
+	$('#summaryPanel').show();
+	$('#onlineCount').text(data.online_count);
+	$('#criticalCount').text(data.critical_count);
+	$('#warningCount').text(data.warning_count);
+	$('#infoCount').text(data.info_count);
+	
+	// 显示异常列表
+	$('#resultPanel').show();
+	$('#anomalyPlayerCount').text(data.anomaly_player_count);
+	
+	var html = '';
+	
+	if (data.anomalies.length === 0) {
+		html = '<div class="no-anomaly">';
+		html += '<div class="glyphicon glyphicon-ok-circle"></div>';
+		html += '<div>恭喜！未发现数据异常</div>';
+		html += '<div class="text-muted">已扫描 ' + data.scanned_count + ' 名玩家</div>';
+		html += '</div>';
+	} else {
+		for (var i = 0; i < data.anomalies.length; i++) {
+			var player = data.anomalies[i];
+			var hasCritical = false;
+			var hasWarning = false;
+			
+			for (var j = 0; j < player.anomalies.length; j++) {
+				if (player.anomalies[j].severity === 'critical') hasCritical = true;
+				if (player.anomalies[j].severity === 'warning') hasWarning = true;
+			}
+			
+			var headerClass = hasCritical ? 'has-critical' : (hasWarning ? 'has-warning' : '');
+			
+			html += '<div class="anomaly-card">';
+			html += '<div class="anomaly-header ' + headerClass + '">';
+			html += '<span class="player-info">' + player.name + '</span>';
+			html += '<span class="text-muted">UID: ' + player.uid + ' | Lv.' + player.level + '</span>';
+			html += '<span class="pull-right">';
+			html += '<span class="badge badge-critical">' + countBySeverity(player.anomalies, 'critical') + '</span> ';
+			html += '<span class="badge badge-warning">' + countBySeverity(player.anomalies, 'warning') + '</span> ';
+			html += '<span class="badge badge-info">' + countBySeverity(player.anomalies, 'info') + '</span>';
+			html += '</span>';
+			html += '</div>';
+			html += '<div class="anomaly-body">';
+			
+			for (var j = 0; j < player.anomalies.length; j++) {
+				var a = player.anomalies[j];
+				html += '<div class="anomaly-item ' + a.severity + '">';
+				html += '<strong>[' + a.type + ']</strong> ' + a.desc;
+				html += '</div>';
+			}
+			
+			html += '</div>';
+			html += '</div>';
+		}
+	}
+	
+	$('#anomalyList').html(html);
+}
+
+function countBySeverity(anomalies, severity) {
+	var count = 0;
+	for (var i = 0; i < anomalies.length; i++) {
+		if (anomalies[i].severity === severity) count++;
+	}
+	return count;
+}
+
+function clearResults() {
+	$('#summaryPanel').hide();
+	$('#resultPanel').hide();
+	$('#anomalyList').html('');
+}
+</script>
+{% end %}
+

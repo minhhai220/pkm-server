@@ -1,0 +1,169 @@
+265;Skin Alakazam
+266;Skin Mega Alakazam
+395;Skin Gengar
+396;Skin Mega Gengar
+573;Skin Scizor
+575;Skin Mega Scizor
+732;Skin Zapdos
+758;Skin Mega Mewtwo X (Bóng Mờ)
+759;Skin Mega Mewtwo X
+767;Skin Mega Mewtwo Y
+768;Skin Mega Mewtwo Y (Hình Chiếu Tinh Thần)
+1282;Skin Celebi
+1390;Skin Mega Gallade
+1395;Skin Gardevoir
+1397;Skin Mega Gardevoir
+1399;Skin Gallade
+1814;Skin Dusknoir
+1819;Vầng Sáng (Skin)
+1963;Skin Primal Kyogre
+1973;Skin Primal Groudon
+1984;Skin Mega Rayquaza
+1992;Skin Jirachi
+2243;Skin Lucario
+2245;Skin Mega Lucario
+2402;Skin Cresselia
+2413;Skin Finneon
+2424;Skin Manaphy
+2428;Skin Seadra
+2429;Skin Cloyster
+2430;Skin Wishiwashi
+2432;Skin Darkrai
+2433;Skin Wailord 2
+2434;Skin Wishiwashi 2
+2435;Skin Cloyster 2
+2436;Skin Seadra 2
+2439;Skin Wailord
+2463;Skin Victini
+3022;Skin Cryogonal
+3192;Skin Bishamon Thiên · Tornadus
+3247;Skin Black Kyurem
+3248;Skin White Kyurem
+3265;Skin Meloetta · Dạng Ca Hát
+3266;Skin Meloetta · Dạng Khiêu Vũ
+3267;Skin Meloetta · Dạng Ca Hát
+3268;Skin Meloetta · Dạng Khiêu Vũ
+3354;Skin Florges
+3603;Skin Xerneas
+3624;Skin Zygarde · Dạng 10%
+3625;Skin Zygarde · Dạng 50%
+3626;Skin Zygarde · Dạng Hoàn Chỉnh
+3632;Skin Diancie
+3634;Skin Mega Diancie
+3637;Tường Kim Cương (Skin)
+3638;Tường Sao (Skin)
+3640;Tường Sao (Skin)
+3643;Skin Hoopa Giải Phóng · Dạng Nhỏ
+3644;Skin Hoopa Trừng Phạt · Dạng Ma Linh
+3645;Skin Hoopa Giải Phóng · Dạng Ma Thần
+3648;Skin Bình Trừng Phạt
+4062;Skin Xurkitree
+4072;Skin Celesteela
+4082;Skin Kartana
+4102;Skin Necrozma
+4105;Skin Dusk Mane Necrozma
+4106;Skin Dawn Wings Necrozma
+4112;Skin Magearna
+4116;Skin Robot Mồi Nhử
+4122;Skin Marshadow
+4123;Skin Solgaleo
+4124;Skin Lunala
+4142;Skin Stakataka
+4144;Pháo Đài Đá (Skin)
+4162;Skin Zeraora
+4163;Skin Zeraora 2
+4168;Skin Bóng Sấm 1 (Bị Động)
+4169;Skin Bóng Sấm 2
+4173;Skin Melmetal
+4174;Skin Melmetal Bảo Vệ Ngọt Ngào
+4177;Skin Melmetal Gỉ Sét - Ốc Lớn
+4187;Skin Melmetal Gỉ Sét - Ốc Nhỏ
+4433;Skin Sirfetch'd
+4602;Skin Zamazenta
+4612;Skin Eternatus
+4685;Skin Calyrex · Kỵ Sĩ Hắc Mã
+4994;Skin Kleavor
+5392;Skin Cang Kim Long · Miraidon
+7002;Skin Pikachu Phiên Bản Satoshi
+7022;Skin Mega Gengar Shiny
+7023;Skin Búp Bê Clefable
+7034;Skin Mega Tyranitar Shiny
+7049;Skin Origin Mew (Truy Kích Liên Hành Tinh)
+7053;Skin Nữ Hoàng Ác Quỷ Mega Gardevoir Shiny
+7055;Skin Mega Gardevoir Shiny Trang Phục Bơi
+7073;Skin Keldeo · Dạng Giác Ngộ
+7074;Skin Kiếm Sĩ Sóng Nước
+7142;Skin Mega Sceptile Shiny
+7146;Skin Ngụy Trang Rừng Rậm
+7203;Skin Heracross Vua Côn Trùng
+22002;Skin Mega Gengar
+287063;Skin Cryogonal
+287066;Skin Alakazam
+290265;Skin Alakazam
+290266;Skin Mega Alakazam
+290395;Skin Gengar
+290396;Skin Mega Gengar
+290573;Skin Scizor
+290575;Skin Mega Scizor
+290732;Skin Zapdos
+290759;Skin Mega Mewtwo X
+290767;Skin Mega Mewtwo Y
+291282;Skin Celebi
+291390;Skin Mega Gallade
+291395;Skin Gardevoir
+291397;Skin Mega Gardevoir
+291399;Skin Gallade
+291814;Skin Dusknoir
+291963;Skin Primal Kyogre
+291973;Skin Primal Groudon
+291984;Skin Mega Rayquaza
+291992;Skin Jirachi
+292243;Skin Lucario
+292245;Skin Mega Lucario
+292402;Skin Cresselia
+292413;Skin Finneon
+292424;Skin Manaphy
+292432;Skin Darkrai
+292463;Skin Victini
+293022;Skin Cryogonal
+293265;Skin Meloetta · Dạng Ca Hát
+293266;Skin Meloetta · Dạng Khiêu Vũ
+293267;Skin Meloetta · Dạng Ca Hát
+293268;Skin Meloetta · Dạng Khiêu Vũ
+293603;Skin Xerneas
+293624;Skin Zygarde · Dạng 10%
+293625;Skin Zygarde · Dạng 50%
+293626;Skin Zygarde · Dạng Hoàn Chỉnh
+293632;Skin Diancie
+293634;Skin Mega Diancie
+293643;Skin Hoopa Giải Phóng · Dạng Nhỏ
+293644;Skin Hoopa Trừng Phạt · Dạng Ma Linh
+293645;Skin Hoopa Giải Phóng · Dạng Ma Thần
+294062;Skin Xurkitree
+294072;Skin Celesteela
+294082;Skin Kartana
+294102;Skin Necrozma
+294112;Skin Magearna
+294122;Skin Marshadow
+294123;Skin Solgaleo
+294124;Skin Lunala
+294142;Skin Stakataka
+294162;Skin Zeraora
+294173;Skin Melmetal
+294174;Skin Melmetal Bảo Vệ Ngọt Ngào
+294177;Skin Melmetal Gỉ Sét - Ốc Lớn
+294187;Skin Melmetal Gỉ Sét - Ốc Nhỏ
+294602;Skin Zamazenta
+297002;Skin Pikachu Phiên Bản Satoshi
+297022;Skin Mega Gengar Shiny
+297034;Skin Mega Tyranitar Shiny
+297049;Skin Origin Mew (Truy Kích Liên Hành Tinh)
+297053;Skin Nữ Hoàng Ác Quỷ Mega Gardevoir Shiny
+297055;Skin Mega Gardevoir Shiny Trang Phục Bơi
+297073;Skin Keldeo · Dạng Giác Ngộ
+307341;Skin Hoopa Trừng Phạt
+307342;Skin Jirachi
+307343;Skin Celebi
+307344;Skin Diancie
+307345;Skin Xerneas
+307346;Skin Mega Gardevoir

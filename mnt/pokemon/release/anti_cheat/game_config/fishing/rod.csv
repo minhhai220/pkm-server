@@ -1,0 +1,12 @@
+变量名,name,name_tw,name_en,name_vn,name_kr,name_pt,name_th,_desc,_desc_tw,_desc_en,_desc_vn,_desc_kr,extraProbability,itemId,cost,res,extraSpeed,lowerSpeed,extraZone,needLv,lowerWait
+默认值,"""""","""""","""""","""""","""""","""""","""""","""""","""""","""""","""""","""""",0,0,{},"""""",0,0,0,0,0
+ID,名字,名字,名字,名字,名字,名字,名字,描述,描述,描述,描述,描述,自动钓鱼额外成功率（同类增益互相相加）,关联物品表id,解锁消耗,鱼竿外观,使用时提升进度上升速度,使用时降低进度下降速度,扩大鱼钩判定范围,需要钓鱼等级,降低等待时间
+1,入门鱼竿,入門魚竿,Starter fishing rod,Cần Câu Sơ Cấp,입문용 낚싯대,Vara de Pesca de Iniciante,คันเบ็ดเริ่มต้น,,,,,,0,7000,{gold=100000},rod_0,0,0,0,1,0
+2,初级鱼竿,初級魚竿,Junior fishing rod,Cần Câu Trung Cấp,초급 낚싯대,Vara de Pesca Júnior,คันเบ็ดจูเนียร์,,,,,,0.02,7001,{gold=500000},rod_1,0.05,0.05,1.1,3,0
+3,中级鱼竿,中級魚竿,Veteran fishing rod,Cần Câu Lão Luyện,중급 낚싯대,Vara de Pesca de Veterano,คันเบ็ดชำนาญ,,,,,,0.04,7002,{gold=1000000},rod_2,0.1,0.1,1.2,6,0.1
+4,高级鱼竿,高級魚竿,Advanced fishing rod,Cần Câu Cao Cấp,고급 낚싯대,Vara de Pesca Avançada,คันเบ็ดขั้นสูง,,,,,,0.06,7003,{gold=3000000},rod_3,0.15,0.15,1.3,10,0.15
+5,特级鱼竿,特級魚竿,Premium fishing rod,Cần Câu Thượng Hạng,특급 낚싯대,Vara de Pesca Premium,คันเบ็ดพรีเมียม,,,,,,0.08,7004,{gold=5000000},rod_4,0.2,0.2,1.4,15,0.2
+6,迅捷鱼竿,迅捷魚竿,Swift Fishing Rod,Cần Câu Tốc Hành,스피드스타 낚싯대,Vara de Pesca Rápida,คันเบ็ดว่องไว,,,,,,0,7005,{},rod_5,0,0,0,20,0
+7,精炼鱼竿,精煉魚竿,Refined fishing rod,Cần Câu Tinh Luyện,정교한 낚싯대,Vara de Pesca Refinada,คันเบ็ดประณีต,,,,,,0,7006,{},rod_6,0,0,0,20,0
+8,魅力鱼竿,魅力魚竿,Charm fishing rod,Cần Câu May Mắn,매력의 낚싯대,Vara de Pesca da Sorte,คันเบ็ดนำโชค,,,,,,0,7007,{},rod_7,0,0,0,20,0
+9,轻松鱼竿,輕松魚竿,Easy fishing rod,Cần Câu Dễ Dàng,릴렉스한 낚싯대,Vara de Pesca Fácil,คันเบ็ดใช้ง่าย,,,,,,0.15,7008,{rmb=880},rod_8,0,0,0,3,0

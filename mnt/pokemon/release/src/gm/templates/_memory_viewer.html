@@ -1,0 +1,429 @@
+{% extends "dashboard.html" %}
+
+{% block css %}
+	<style>
+		.viewer-panel {
+			margin-top: 20px;
+		}
+		.data-panel {
+			margin-top: 20px;
+		}
+		.diff-panel {
+			margin-top: 20px;
+		}
+		.module-tree {
+			max-height: 500px;
+			overflow-y: auto;
+			border: 1px solid #ddd;
+			padding: 10px;
+			border-radius: 4px;
+			background: #f9f9f9;
+		}
+		.module-item {
+			padding: 5px 10px;
+			margin: 2px 0;
+			border-radius: 3px;
+			cursor: pointer;
+		}
+		.module-item:hover {
+			background: #e9e9e9;
+		}
+		.module-item.has-diff {
+			background: #fcf8e3;
+			border-left: 3px solid #f0ad4e;
+		}
+		.data-content {
+			max-height: 600px;
+			overflow-y: auto;
+			border: 1px solid #ddd;
+			padding: 15px;
+			border-radius: 4px;
+			background: #fff;
+			font-family: 'Consolas', 'Monaco', monospace;
+			font-size: 12px;
+		}
+		.diff-item {
+			padding: 10px;
+			margin: 5px 0;
+			border-radius: 4px;
+			background: #fff3cd;
+			border: 1px solid #ffc107;
+		}
+		.diff-item .field {
+			font-weight: bold;
+			color: #856404;
+		}
+		.diff-item .memory {
+			color: #28a745;
+		}
+		.diff-item .database {
+			color: #dc3545;
+		}
+		.status-online {
+			color: #28a745;
+			font-weight: bold;
+		}
+		.status-offline {
+			color: #dc3545;
+			font-weight: bold;
+		}
+		.tab-content {
+			padding-top: 15px;
+		}
+		pre {
+			white-space: pre-wrap;
+			word-wrap: break-word;
+		}
+		.btn-refresh {
+			margin-left: 10px;
+		}
+		.alert-info-custom {
+			background: #d1ecf1;
+			border: 1px solid #bee5eb;
+			color: #0c5460;
+			padding: 10px;
+			border-radius: 4px;
+			margin-bottom: 15px;
+		}
+	</style>
+{% end %}
+
+{% block main %}
+	<div class="container-fluid main">
+		<div class="row">
+			<div class="title"><h4>{{ _(u"内存数据查看器") }}</h4></div>
+		</div>
+
+		<div class="alert-info-custom">
+			<strong>{{ _(u"功能说明") }}：</strong>
+			{{ _(u"查看在线玩家的内存数据，与数据库数据对比，发现并修复回档问题。") }}
+		</div>
+
+		<div class="well viewer-panel">
+			<!-- 服务器和玩家选择 -->
+			<div class="row">
+				<div class="col-lg-12">
+					<div class="form-inline">
+						<div class="form-group">
+							<label>{{ _(u"选择服务器") }}：</label>
+							<select id="servName" class="form-control">
+								<option value="">{{ _(u"请选择") }}</option>
+								{% for serv in servs %}
+									<option value="{{ serv }}">{{ serv }}</option>
+								{% end %}
+							</select>
+						</div>
+						<div class="form-group" style="margin-left: 20px;">
+							<label>{{ _(u"玩家ID/UID") }}：</label>
+							<input id="roleID" type="text" class="form-control" placeholder="{{ _(u"角色ID或UID") }}" style="width: 280px;">
+						</div>
+						<button class="btn btn-primary" onclick="queryPlayer()">
+							<span class="glyphicon glyphicon-search"></span> {{ _(u"查询") }}
+						</button>
+					</div>
+				</div>
+			</div>
+
+			<!-- 玩家状态 -->
+			<div class="row" style="margin-top: 15px;">
+				<div class="col-lg-12">
+					<div id="playerStatus" style="display: none;">
+						<span>{{ _(u"玩家") }}：<strong id="playerName">-</strong></span>
+						<span style="margin-left: 20px;">{{ _(u"状态") }}：<span id="onlineStatus">-</span></span>
+						<button class="btn btn-success btn-sm btn-refresh" onclick="compareData()">
+							<span class="glyphicon glyphicon-transfer"></span> {{ _(u"对比数据") }}
+						</button>
+						<button class="btn btn-warning btn-sm btn-refresh" onclick="forceSave()">
+							<span class="glyphicon glyphicon-floppy-save"></span> {{ _(u"强制保存") }}
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- 差异提示 -->
+		<div id="diffAlert" class="alert alert-warning" style="display: none;">
+			<strong><span class="glyphicon glyphicon-warning-sign"></span> {{ _(u"发现数据差异！") }}</strong>
+			<span id="diffCount">0</span> {{ _(u"个字段内存与数据库不一致") }}
+			<button class="btn btn-danger btn-sm" style="margin-left: 15px;" onclick="forceSave()">
+				{{ _(u"立即保存修复") }}
+			</button>
+		</div>
+
+		<!-- 数据展示区 -->
+		<div class="data-panel" id="dataPanel" style="display: none;">
+			<ul class="nav nav-tabs" role="tablist">
+				<li role="presentation" class="active">
+					<a href="#memoryTab" aria-controls="memoryTab" role="tab" data-toggle="tab">
+						<span class="glyphicon glyphicon-flash"></span> {{ _(u"内存数据") }}
+					</a>
+				</li>
+				<li role="presentation">
+					<a href="#databaseTab" aria-controls="databaseTab" role="tab" data-toggle="tab">
+						<span class="glyphicon glyphicon-hdd"></span> {{ _(u"数据库数据") }}
+					</a>
+				</li>
+				<li role="presentation">
+					<a href="#compareTab" aria-controls="compareTab" role="tab" data-toggle="tab">
+						<span class="glyphicon glyphicon-transfer"></span> {{ _(u"差异对比") }}
+					</a>
+				</li>
+			</ul>
+
+			<div class="tab-content">
+				<!-- 内存数据 -->
+				<div role="tabpanel" class="tab-pane active" id="memoryTab">
+					<div class="row">
+						<div class="col-md-3">
+							<h5>{{ _(u"数据模块") }}</h5>
+							<div class="module-tree" id="memoryModules">
+								<div class="text-muted">{{ _(u"请先查询玩家") }}</div>
+							</div>
+						</div>
+						<div class="col-md-9">
+							<h5>{{ _(u"模块详情") }} <small id="memoryModuleName"></small></h5>
+							<div class="data-content" id="memoryContent">
+								<div class="text-muted">{{ _(u"点击左侧模块查看详情") }}</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- 数据库数据 -->
+				<div role="tabpanel" class="tab-pane" id="databaseTab">
+					<div class="row">
+						<div class="col-md-3">
+							<h5>{{ _(u"数据模块") }}</h5>
+							<div class="module-tree" id="dbModules">
+								<div class="text-muted">{{ _(u"请先查询玩家") }}</div>
+							</div>
+						</div>
+						<div class="col-md-9">
+							<h5>{{ _(u"模块详情") }} <small id="dbModuleName"></small></h5>
+							<div class="data-content" id="dbContent">
+								<div class="text-muted">{{ _(u"点击左侧模块查看详情") }}</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- 差异对比 -->
+				<div role="tabpanel" class="tab-pane" id="compareTab">
+					<div id="compareContent">
+						<div class="text-muted">{{ _(u"点击「对比数据」按钮查看差异") }}</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+{% end %}
+
+{% block js %}
+	<script>
+		var currentServName = '';
+		var currentRoleID = '';
+		var memoryData = null;
+		var dbData = null;
+
+		function queryPlayer() {
+			currentServName = $('#servName').val();
+			currentRoleID = $('#roleID').val().trim();
+
+			if (!currentServName) {
+				alert('{{ _(u"请选择服务器") }}');
+				return;
+			}
+			if (!currentRoleID) {
+				alert('{{ _(u"请输入玩家ID") }}');
+				return;
+			}
+
+			$.ajax({
+				url: '/memory_data',
+				type: 'GET',
+				cache: false,
+				data: {servName: currentServName, roleID: currentRoleID, _t: new Date().getTime()},
+				success: function(res) {
+					console.log('[DEBUG] memory_data response:', res);
+					if (res.ret) {
+						memoryData = res;
+						$('#playerName').text(res.role_name || res.role_id);
+						$('#onlineStatus').html('<span class="status-online">● {{ _(u"在线") }}</span>');
+						$('#playerStatus').show();
+						$('#dataPanel').show();
+						console.log('[DEBUG] modules:', res.modules);
+						renderMemoryModules(res.modules);
+						loadDBData();
+					} else {
+						if (res.err === 'player_not_online' || res.err === 'Player not online or not found') {
+							$('#playerName').text(currentRoleID);
+							$('#onlineStatus').html('<span class="status-offline">● {{ _(u"离线") }}</span>');
+							$('#playerStatus').show();
+							$('#dataPanel').hide();
+							$('#diffAlert').hide();
+							alert('{{ _(u"玩家不在线，无法查看内存数据") }}');
+						} else {
+							alert('{{ _(u"查询失败") }}: ' + (res.err || 'unknown'));
+						}
+					}
+				},
+				error: function(xhr, status, error) {
+					alert('{{ _(u"请求失败") }}: ' + (xhr.responseText || error));
+				}
+			});
+		}
+
+		function loadDBData() {
+			$.ajax({
+				url: '/db_data',
+				type: 'GET',
+				cache: false,
+				data: {servName: currentServName, roleID: currentRoleID, _t: new Date().getTime()},
+				success: function(res) {
+					console.log('[DEBUG] db_data response:', res);
+					if (res.ret) {
+						dbData = res;
+						renderDBModules(res.modules);
+					}
+				}
+			});
+		}
+
+		function renderMemoryModules(modules) {
+			var html = '';
+			for (var mod in modules) {
+				var info = modules[mod];
+				var count = info.count !== undefined ? info.count : '-';
+				html += '<div class="module-item" onclick="loadMemoryModule(\'' + mod + '\')">';
+				html += '<span class="glyphicon glyphicon-folder-open"></span> ';
+				html += mod + ' <span class="badge">' + count + '</span>';
+				html += '</div>';
+			}
+			$('#memoryModules').html(html || '<div class="text-muted">{{ _(u"无数据") }}</div>');
+		}
+
+		function renderDBModules(modules) {
+			var html = '';
+			for (var mod in modules) {
+				var info = modules[mod];
+				var count = info.count !== undefined ? info.count : '-';
+				html += '<div class="module-item" onclick="loadDBModule(\'' + mod + '\')">';
+				html += '<span class="glyphicon glyphicon-folder-open"></span> ';
+				html += mod + ' <span class="badge">' + count + '</span>';
+				html += '</div>';
+			}
+			$('#dbModules').html(html || '<div class="text-muted">{{ _(u"无数据") }}</div>');
+		}
+
+		function loadMemoryModule(moduleName) {
+			$('#memoryModuleName').text('- ' + moduleName);
+			$.ajax({
+				url: '/memory_data',
+				type: 'GET',
+				cache: false,
+				data: {servName: currentServName, roleID: currentRoleID, modules: moduleName, _t: new Date().getTime()},
+				success: function(res) {
+					if (res.ret && res.modules[moduleName]) {
+						$('#memoryContent').html('<pre>' + JSON.stringify(res.modules[moduleName], null, 2) + '</pre>');
+					} else {
+						$('#memoryContent').html('<div class="text-muted">{{ _(u"无数据") }}</div>');
+					}
+				}
+			});
+		}
+
+		function loadDBModule(moduleName) {
+			$('#dbModuleName').text('- ' + moduleName);
+			$.ajax({
+				url: '/db_data',
+				type: 'GET',
+				cache: false,
+				data: {servName: currentServName, roleID: currentRoleID, modules: moduleName, _t: new Date().getTime()},
+				success: function(res) {
+					if (res.ret && res.modules[moduleName]) {
+						$('#dbContent').html('<pre>' + JSON.stringify(res.modules[moduleName], null, 2) + '</pre>');
+					} else {
+						$('#dbContent').html('<div class="text-muted">{{ _(u"无数据") }}</div>');
+					}
+				}
+			});
+		}
+
+		function compareData() {
+			if (!currentServName || !currentRoleID) {
+				alert('{{ _(u"请先查询玩家") }}');
+				return;
+			}
+
+			$.ajax({
+				url: '/compare_data',
+				type: 'GET',
+				cache: false,
+				data: {servName: currentServName, roleID: currentRoleID, _t: new Date().getTime()},
+				success: function(res) {
+					if (res.ret) {
+						var html = '';
+						if (res.differences && res.differences.length > 0) {
+							$('#diffAlert').show();
+							$('#diffCount').text(res.differences.length);
+							html += '<div class="alert alert-danger"><strong>{{ _(u"发现") }} ' + res.differences.length + ' {{ _(u"个差异") }}</strong></div>';
+							for (var i = 0; i < res.differences.length; i++) {
+								var diff = res.differences[i];
+								html += '<div class="diff-item">';
+								html += '<div><span class="field">[' + diff.module + '] ' + diff.field + '</span>';
+								if (diff.id) html += ' (ID: ' + diff.id + ')';
+								html += '</div>';
+								html += '<div><span class="memory">{{ _(u"内存") }}: ' + JSON.stringify(diff.memory) + '</span></div>';
+								html += '<div><span class="database">{{ _(u"数据库") }}: ' + JSON.stringify(diff.database) + '</span></div>';
+								html += '</div>';
+							}
+						} else {
+							$('#diffAlert').hide();
+							html = '<div class="alert alert-success"><span class="glyphicon glyphicon-ok"></span> {{ _(u"内存数据与数据库一致，无差异") }}</div>';
+						}
+						$('#compareContent').html(html);
+						$('a[href="#compareTab"]').tab('show');
+					} else {
+						alert('{{ _(u"对比失败") }}: ' + (res.err || 'unknown'));
+					}
+				},
+				error: function(xhr) {
+					alert('{{ _(u"请求失败") }}: ' + xhr.responseText);
+				}
+			});
+		}
+
+		function forceSave() {
+			if (!currentServName || !currentRoleID) {
+				alert('{{ _(u"请先查询玩家") }}');
+				return;
+			}
+
+			if (!confirm('{{ _(u"确定要强制保存玩家数据到数据库吗？") }}')) {
+				return;
+			}
+
+			$.ajax({
+				url: '/force_save',
+				type: 'POST',
+				contentType: 'application/json',
+				data: JSON.stringify({
+					servName: currentServName,
+					roleID: currentRoleID
+				}),
+				success: function(res) {
+					if (res.ret) {
+						alert('{{ _(u"保存成功！已保存模块") }}: ' + res.saved_modules.join(', '));
+						compareData();
+					} else {
+						alert('{{ _(u"保存失败") }}: ' + (res.err || 'unknown'));
+					}
+				},
+				error: function(xhr) {
+					alert('{{ _(u"请求失败") }}: ' + xhr.responseText);
+				}
+			});
+		}
+	</script>
+{% end %}
+

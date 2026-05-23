@@ -1,0 +1,1434 @@
+{% extends "dashboard.html" %}
+
+{% block css %}
+	<style>
+		.merge-panel {
+			margin-top: 20px;
+		}
+		.merge-config {
+			background: #f9f9f9;
+			padding: 15px;
+			border-radius: 5px;
+			margin-bottom: 20px;
+		}
+		.merge-step {
+			padding: 10px 15px;
+			margin: 10px 0;
+			border-left: 4px solid #337ab7;
+			background: #f5f5f5;
+		}
+		.merge-step.active {
+			border-left-color: #f0ad4e;
+			background: #fcf8e3;
+		}
+		.merge-step.done {
+			border-left-color: #5cb85c;
+			background: #dff0d8;
+		}
+		.merge-step.error {
+			border-left-color: #d9534f;
+			background: #f2dede;
+		}
+		.merge-log {
+			background: #1e1e1e;
+			color: #d4d4d4;
+			padding: 15px;
+			border-radius: 5px;
+			max-height: 400px;
+			overflow-y: auto;
+			font-family: 'Consolas', 'Monaco', monospace;
+			font-size: 12px;
+			white-space: pre-wrap;
+		}
+		.merge-log .log-info { color: #569cd6; }
+		.merge-log .log-warn { color: #dcdcaa; }
+		.merge-log .log-error { color: #f14c4c; }
+		.merge-log .log-success { color: #4ec9b0; }
+		.server-tag {
+			display: inline-block;
+			padding: 3px 8px;
+			margin: 2px;
+			background: #337ab7;
+			color: white;
+			border-radius: 3px;
+			font-size: 12px;
+		}
+		.server-tag.dest {
+			background: #5cb85c;
+		}
+		.merge-table th {
+			background: #f5f5f5;
+		}
+		.config-preview {
+			background: #272822;
+			color: #f8f8f2;
+			padding: 15px;
+			border-radius: 5px;
+			font-family: 'Consolas', monospace;
+			font-size: 12px;
+			max-height: 300px;
+			overflow-y: auto;
+		}
+		.btn-merge {
+			font-size: 16px;
+			padding: 10px 30px;
+		}
+		.warning-box {
+			background: #fcf8e3;
+			border: 1px solid #faebcc;
+			color: #8a6d3b;
+			padding: 15px;
+			border-radius: 5px;
+			margin: 15px 0;
+		}
+		.danger-box {
+			background: #f2dede;
+			border: 1px solid #ebccd1;
+			color: #a94442;
+			padding: 15px;
+			border-radius: 5px;
+			margin: 15px 0;
+		}
+	</style>
+{% end %}
+
+{% block main %}
+	<div class="container-fluid main">
+		<div class="row">
+			<div class="title"><h4>{{ _(u"合服管理") }}</h4></div>
+		</div>
+
+		<!-- 标签页导航 -->
+		<ul class="nav nav-tabs" role="tablist">
+			<li role="presentation" class="active">
+				<a href="#tab-config" data-toggle="tab">{{ _(u"合服配置") }}</a>
+			</li>
+			<li role="presentation">
+				<a href="#tab-execute" data-toggle="tab">{{ _(u"执行合服") }}</a>
+			</li>
+			<li role="presentation">
+				<a href="#tab-generate" data-toggle="tab">{{ _(u"配置生成") }}</a>
+			</li>
+			<li role="presentation">
+				<a href="#tab-history" data-toggle="tab">{{ _(u"合服记录") }}</a>
+			</li>
+			<li role="presentation">
+				<a href="#tab-check" data-toggle="tab">{{ _(u"合服前检查") }}</a>
+			</li>
+		</ul>
+
+		<div class="tab-content" style="margin-top: 20px;">
+			<!-- 合服配置标签页 -->
+			<div role="tabpanel" class="tab-pane active" id="tab-config">
+				<div class="well merge-panel">
+					<h5>{{ _(u"当前合服配置 (merge.csv)") }}</h5>
+					<button class="btn btn-info btn-sm" onclick="loadMergeConfig()">
+						<span class="glyphicon glyphicon-refresh"></span> {{ _(u"刷新配置") }}
+					</button>
+					<button class="btn btn-primary btn-sm" onclick="showAddMergeDialog()">
+						<span class="glyphicon glyphicon-plus"></span> {{ _(u"添加合服配置") }}
+					</button>
+					
+					<div style="margin-top: 15px;">
+						<table id="mergeConfigTable" class="table table-striped table-bordered merge-table">
+							<thead>
+								<tr>
+									<th>ID</th>
+									<th>{{ _(u"目标服务器") }}</th>
+									<th>{{ _(u"源服务器列表") }}</th>
+									<th>{{ _(u"显示ID") }}</th>
+									<th>{{ _(u"已合服") }}</th>
+									<th>{{ _(u"来源") }}</th>
+									<th>{{ _(u"数据库配置") }}</th>
+									<th>{{ _(u"操作") }}</th>
+								</tr>
+							</thead>
+							<tbody id="mergeConfigBody">
+								<tr><td colspan="8" style="text-align: center;">{{ _(u"加载中...") }}</td></tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+
+			<!-- 执行合服标签页 -->
+			<div role="tabpanel" class="tab-pane" id="tab-execute">
+				<div class="well merge-panel">
+					<div class="danger-box">
+						<strong><span class="glyphicon glyphicon-warning-sign"></span> {{ _(u"警告") }}</strong><br>
+						{{ _(u"合服是不可逆操作，执行前请确保：") }}<br>
+						1. {{ _(u"已停止所有相关服务器") }}<br>
+						2. {{ _(u"已备份所有数据库") }}<br>
+						3. {{ _(u"选择的合服配置正确") }}<br>
+						4. {{ _(u"MongoDB连接配置正确") }}
+					</div>
+
+					<div class="merge-config">
+						<h5>{{ _(u"选择合服配置") }}</h5>
+						<div class="form-inline">
+							<div class="form-group">
+								<label>{{ _(u"合服目标") }}：</label>
+								<select id="mergeTarget" class="form-control" onchange="onMergeTargetChange()">
+									<option value="">{{ _(u"请选择") }}</option>
+								</select>
+							</div>
+						</div>
+						
+						<div id="mergeDetailPanel" style="display: none; margin-top: 15px;">
+							<div class="row">
+								<div class="col-md-6">
+									<h6>{{ _(u"源服务器") }}</h6>
+									<div id="sourceServersDiv"></div>
+								</div>
+								<div class="col-md-6">
+									<h6>{{ _(u"目标服务器") }}</h6>
+									<div id="destServerDiv"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="merge-config">
+						<h5>{{ _(u"MongoDB 配置") }}</h5>
+						<div class="form-group">
+							<label>{{ _(u"MongoDB 连接配置") }} (JSON)：</label>
+							<textarea id="mongoConfig" class="form-control" rows="6" placeholder='{{ _(u"示例") }}:
+{
+  "gamemerge.dev.1": "mongodb://127.0.0.1:27018/gamemerge_dev1",
+  "game.dev.2": "mongodb://127.0.0.1:27018/game_dev2",
+  "game.dev.6": "mongodb://127.0.0.1:27018/game_dev6"
+}'></textarea>
+							<p id="mongoConfigStatus" class="help-block text-muted">{{ _(u"选择合服目标后将自动加载保存的配置") }}</p>
+						</div>
+						<button class="btn btn-info btn-sm" onclick="testMongoConnection()">
+							<span class="glyphicon glyphicon-ok"></span> {{ _(u"测试连接") }}
+						</button>
+					</div>
+
+					<div style="text-align: center; margin: 20px 0;">
+						<button id="startMergeBtn" class="btn btn-danger btn-merge" onclick="startMerge()" disabled>
+							<span class="glyphicon glyphicon-play"></span> {{ _(u"开始合服") }}
+						</button>
+						<button id="stopMergeBtn" class="btn btn-warning btn-merge" onclick="stopMerge()" style="display: none; margin-left: 15px;">
+							<span class="glyphicon glyphicon-stop"></span> {{ _(u"停止合服") }}
+						</button>
+					</div>
+
+					<!-- 合服进度 -->
+					<div id="mergeProgressPanel" style="display: none;">
+						<h5>{{ _(u"合服进度") }}</h5>
+						<div class="progress">
+							<div id="mergeProgressBar" class="progress-bar progress-bar-striped active" role="progressbar" style="width: 0%;">
+								0%
+							</div>
+						</div>
+						<div id="mergeSteps">
+							<div class="merge-step" data-step="1">
+								<strong>{{ _(u"步骤1") }}:</strong> {{ _(u"备份源数据库") }}
+							</div>
+							<div class="merge-step" data-step="2">
+								<strong>{{ _(u"步骤2") }}:</strong> {{ _(u"清空目标数据库") }}
+							</div>
+							<div class="merge-step" data-step="3">
+								<strong>{{ _(u"步骤3") }}:</strong> {{ _(u"恢复数据到目标库") }}
+							</div>
+							<div class="merge-step" data-step="4">
+								<strong>{{ _(u"步骤4") }}:</strong> {{ _(u"修改角色数据") }}
+							</div>
+							<div class="merge-step" data-step="5">
+								<strong>{{ _(u"步骤5") }}:</strong> {{ _(u"修改公会数据") }}
+							</div>
+							<div class="merge-step" data-step="6">
+								<strong>{{ _(u"步骤6") }}:</strong> {{ _(u"重建全局数据") }}
+							</div>
+							<div class="merge-step" data-step="7">
+								<strong>{{ _(u"步骤7") }}:</strong> {{ _(u"处理竞技场数据") }}
+							</div>
+						</div>
+						<h5 style="margin-top: 20px;">{{ _(u"执行日志") }}</h5>
+						<div id="mergeLog" class="merge-log"></div>
+					</div>
+				</div>
+			</div>
+
+			<!-- 合服历史标签页 -->
+			<div role="tabpanel" class="tab-pane" id="tab-history">
+				<div class="well merge-panel">
+					<h5>{{ _(u"合服历史记录") }}</h5>
+					<button class="btn btn-info btn-sm" onclick="loadMergeHistory()">
+						<span class="glyphicon glyphicon-refresh"></span> {{ _(u"刷新") }}
+					</button>
+					
+					<table id="mergeHistoryTable" class="table table-striped table-bordered" style="margin-top: 15px;">
+						<thead>
+							<tr>
+								<th>{{ _(u"任务ID") }}</th>
+								<th>{{ _(u"目标服务器") }}</th>
+								<th>{{ _(u"源服务器") }}</th>
+								<th>{{ _(u"开始时间") }}</th>
+								<th>{{ _(u"状态") }}</th>
+								<th>{{ _(u"耗时") }}</th>
+							</tr>
+						</thead>
+						<tbody id="mergeHistoryBody">
+							<tr><td colspan="6" style="text-align: center;">{{ _(u"点击刷新加载历史记录") }}</td></tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+
+			<!-- 配置生成标签页 -->
+			<div role="tabpanel" class="tab-pane" id="tab-generate">
+				<div class="well merge-panel">
+					<h5>{{ _(u"合服配置文件生成") }}</h5>
+					<p class="text-muted">{{ _(u"根据合服配置自动生成服务器启动所需的配置文件") }}</p>
+					
+					<div class="row">
+						<div class="col-md-6">
+							<div class="form-group">
+								<label>{{ _(u"选择合服目标") }}：</label>
+								<select id="genMergeTarget" class="form-control" onchange="onGenTargetChange()">
+									<option value="">{{ _(u"请选择") }}</option>
+								</select>
+							</div>
+							
+							<div id="genParamsPanel" style="display: none;">
+								<h5>{{ _(u"基础参数") }}</h5>
+								<div class="form-group">
+									<label>{{ _(u"服务器IP") }}：</label>
+									<input type="text" id="genServerIP" class="form-control" value="127.0.0.1" placeholder="127.0.0.1">
+								</div>
+								<div class="form-group">
+									<label>{{ _(u"Game服务端口") }}：</label>
+									<input type="number" id="genGamePort" class="form-control" value="28875" placeholder="28875">
+								</div>
+								<div class="form-group">
+									<label>{{ _(u"MongoDB连接") }}：</label>
+									<input type="text" id="genMongoUri" class="form-control" value="mongodb://root:oQTkIlUI5wrOUQEl@127.0.0.1:27017/{dbname}?authMechanism=SCRAM-SHA-1&authSource=admin" placeholder="mongodb://user:pass@host:port/{dbname}?authMechanism=SCRAM-SHA-1&authSource=admin">
+									<p class="help-block text-muted small">{{ _(u"使用 {dbname} 作为数据库名占位符，会自动替换") }}</p>
+								</div>
+								<div class="form-group">
+									<label>{{ _(u"NSQ地址") }}：</label>
+									<input type="text" id="genNSQAddr" class="form-control" value="127.0.0.1:4150" placeholder="127.0.0.1:4150">
+								</div>
+								<div class="form-group">
+									<label>{{ _(u"NSQ Lookup地址") }}：</label>
+									<input type="text" id="genNSQLookup" class="form-control" value="http://127.0.0.1:4161/" placeholder="http://127.0.0.1:4161/">
+								</div>
+								<div class="form-group">
+									<label>{{ _(u"开服时间") }}：</label>
+									<input type="text" id="genOpenDate" class="form-control" value="2020-01-01 10:00:00" placeholder="2020-01-01 10:00:00">
+								</div>
+								
+								<button class="btn btn-primary" onclick="generateMergeConfigs()">
+									<span class="glyphicon glyphicon-cog"></span> {{ _(u"生成配置") }}
+								</button>
+							</div>
+						</div>
+						
+						<div class="col-md-6">
+							<div id="genResultPanel" style="display: none;">
+								<h5>{{ _(u"生成的配置文件") }}</h5>
+								<ul class="nav nav-tabs" id="configTabs">
+									<li class="active"><a href="#cfg-game-defines" data-toggle="tab">game_defines.py</a></li>
+									<li><a href="#cfg-game-json" data-toggle="tab">game.json</a></li>
+									<li><a href="#cfg-pvp-json" data-toggle="tab">pvp/defines_merge.json</a></li>
+									<li><a href="#cfg-storage-json" data-toggle="tab">storage/defines_merge.json</a></li>
+									<li><a href="#cfg-supervisor-ini" data-toggle="tab">supervisor.ini</a></li>
+								</ul>
+								<div class="tab-content" style="margin-top: 10px;">
+									<div class="tab-pane active" id="cfg-game-defines">
+										<textarea id="cfgGameDefines" class="form-control" rows="15" readonly style="font-family: monospace; font-size: 12px;"></textarea>
+									</div>
+									<div class="tab-pane" id="cfg-game-json">
+										<textarea id="cfgGameJson" class="form-control" rows="15" readonly style="font-family: monospace; font-size: 12px;"></textarea>
+									</div>
+									<div class="tab-pane" id="cfg-pvp-json">
+										<textarea id="cfgPvpJson" class="form-control" rows="15" readonly style="font-family: monospace; font-size: 12px;"></textarea>
+									</div>
+									<div class="tab-pane" id="cfg-storage-json">
+										<textarea id="cfgStorageJson" class="form-control" rows="15" readonly style="font-family: monospace; font-size: 12px;"></textarea>
+									</div>
+									<div class="tab-pane" id="cfg-supervisor-ini">
+										<p class="text-muted small">{{ _(u"包含 3 个 ini 文件：gamemerge、pvpmerge、storagemerge") }}</p>
+										<textarea id="cfgSupervisorIni" class="form-control" rows="15" readonly style="font-family: monospace; font-size: 12px;"></textarea>
+									</div>
+								</div>
+								<div class="row" style="margin-top: 10px;">
+									<div class="col-md-6">
+										<div class="form-group">
+											<label>{{ _(u"配置部署路径") }}：</label>
+											<input type="text" id="deployPath" class="form-control" value="/mnt/pokemon/release" placeholder="/mnt/pokemon/release">
+											<p class="help-block text-muted small">{{ _(u"game_defines.py, json 配置部署目录") }}</p>
+										</div>
+									</div>
+									<div class="col-md-6">
+										<div class="form-group">
+											<label>{{ _(u"Supervisor INI 部署路径") }}：</label>
+											<input type="text" id="supervisorPath" class="form-control" value="/mnt/pokemon/deploy_dev/supervisord.dir" placeholder="/mnt/pokemon/deploy_dev/supervisord.dir">
+											<p class="help-block text-muted small">{{ _(u"supervisor ini 文件部署目录") }}</p>
+										</div>
+									</div>
+								</div>
+								<div style="margin-top: 10px;">
+									<button class="btn btn-danger" onclick="deployToServer()">
+										<span class="glyphicon glyphicon-upload"></span> {{ _(u"部署到服务器") }}
+									</button>
+									<button class="btn btn-success btn-sm" onclick="downloadAllConfigs()">
+										<span class="glyphicon glyphicon-download"></span> {{ _(u"下载全部配置") }}
+									</button>
+									<button class="btn btn-info btn-sm" onclick="copyCurrentConfig()">
+										<span class="glyphicon glyphicon-copy"></span> {{ _(u"复制当前配置") }}
+									</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- 合服前检查标签页 -->
+			<div role="tabpanel" class="tab-pane" id="tab-check">
+				<div class="well merge-panel">
+					<h5>{{ _(u"合服前检查") }}</h5>
+					
+					<div class="form-inline">
+						<div class="form-group">
+							<label>{{ _(u"选择要检查的合服") }}：</label>
+							<select id="checkMergeTarget" class="form-control">
+								<option value="">{{ _(u"请选择") }}</option>
+							</select>
+						</div>
+						<button class="btn btn-primary" onclick="runPreMergeCheck()">
+							<span class="glyphicon glyphicon-search"></span> {{ _(u"开始检查") }}
+						</button>
+					</div>
+
+					<div id="checkResultPanel" style="display: none; margin-top: 20px;">
+						<h5>{{ _(u"检查结果") }}</h5>
+						<div id="checkResultContent"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- 添加合服配置对话框 -->
+	<div class="modal fade" id="addMergeModal" tabindex="-1">
+		<div class="modal-dialog modal-lg">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+					<h4 class="modal-title">{{ _(u"添加合服配置") }}</h4>
+				</div>
+				<div class="modal-body">
+					<div class="row">
+						<div class="col-md-6">
+							<h5>{{ _(u"基本信息") }}</h5>
+							<div class="form-group">
+								<label>ID：</label>
+								<input type="number" id="newMergeId" class="form-control" placeholder="{{ _(u'配置ID，如 101') }}">
+							</div>
+							<div class="form-group">
+								<label>{{ _(u"目标服务器") }}：</label>
+								<input type="text" id="newDestServer" class="form-control" placeholder="{{ _(u'如 gamemerge.cn.1') }}">
+							</div>
+							<div class="form-group">
+								<label>{{ _(u"源服务器列表") }} ({{ _(u"分号分隔") }})：</label>
+								<input type="text" id="newSrcServers" class="form-control" placeholder="{{ _(u'如 game.cn.1;game.cn.2;game.cn.3') }}">
+							</div>
+							<div class="form-group">
+								<label>{{ _(u"服务器显示ID") }}：</label>
+								<input type="number" id="newServerID" class="form-control" placeholder="{{ _(u'合服后显示的区服ID') }}">
+							</div>
+							<div class="form-group">
+								<label>{{ _(u"是否已实际合服") }}：</label>
+								<select id="newRealityMerge" class="form-control">
+									<option value="0">{{ _(u"否 - 仅配置") }}</option>
+									<option value="1">{{ _(u"是 - 已合服") }}</option>
+								</select>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<h5>{{ _(u"MongoDB 连接配置") }} <small class="text-muted">({{ _(u"可选，合服执行时也可配置") }})</small></h5>
+							<p class="text-muted small">{{ _(u"格式：mongodb://用户名:密码@地址:端口/数据库名") }}</p>
+							<div class="form-group">
+								<label>{{ _(u"目标库连接") }}：</label>
+								<input type="text" id="newMongoTarget" class="form-control" placeholder="mongodb://...">
+							</div>
+							<div id="newMongoSrcContainer">
+								<label>{{ _(u"源库连接") }}：</label>
+								<p class="text-muted small">{{ _(u"每行一个源服务器的MongoDB连接，顺序对应源服务器列表") }}</p>
+								<textarea id="newMongoSrcList" class="form-control" rows="4" placeholder="mongodb://...&#10;mongodb://..."></textarea>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">{{ _(u"取消") }}</button>
+					<button type="button" class="btn btn-primary" onclick="saveMergeConfig()">{{ _(u"保存") }}</button>
+				</div>
+			</div>
+		</div>
+	</div>
+{% end %}
+
+{% block js %}
+	<script>
+		var mergeConfigs = [];
+		var currentMergeTask = null;
+		var mergeLogInterval = null;
+
+		$(document).ready(function() {
+			loadMergeConfig();
+		});
+
+		// 加载合服配置
+		function loadMergeConfig() {
+			$.ajax({
+				url: '/server_merge/config',
+				type: 'GET',
+				success: function(data) {
+					if (data.ret) {
+						mergeConfigs = data.configs || [];
+						renderMergeConfigTable();
+						updateMergeTargetSelect();
+					} else {
+						alert('{{ _(u"加载配置失败") }}: ' + data.err);
+					}
+				},
+				error: function(xhr) {
+					alert('{{ _(u"请求失败") }}: ' + xhr.statusText);
+				}
+			});
+		}
+
+		// 渲染配置表格
+		function renderMergeConfigTable() {
+			var tbody = $('#mergeConfigBody');
+			tbody.empty();
+
+			if (mergeConfigs.length === 0) {
+				tbody.append('<tr><td colspan="8" style="text-align: center;">{{ _(u"暂无配置") }}</td></tr>');
+				return;
+			}
+
+			mergeConfigs.forEach(function(cfg) {
+				var tr = $('<tr>');
+				tr.append($('<td>').text(cfg.id));
+				tr.append($('<td>').html('<span class="server-tag dest">' + cfg.destServer + '</span>'));
+				
+				var serversHtml = '';
+				cfg.servers.forEach(function(s) {
+					serversHtml += '<span class="server-tag">' + s + '</span> ';
+				});
+				tr.append($('<td>').html(serversHtml));
+				tr.append($('<td>').text(cfg.serverID));
+				tr.append($('<td>').html(cfg.realityMerge == 1 ? 
+					'<span class="label label-success">{{ _(u"是") }}</span>' : 
+					'<span class="label label-default">{{ _(u"否") }}</span>'));
+				
+				// 来源标签
+				var sourceLabel = cfg.source === 'mongodb' ? 
+					'<span class="label label-info">MongoDB</span>' : 
+					'<span class="label label-warning">CSV</span>';
+				tr.append($('<td>').html(sourceLabel));
+				
+				// 数据库配置状态
+				var hasMongoConfig = cfg.mongoConfig && Object.keys(cfg.mongoConfig).length > 0;
+				var mongoLabel = hasMongoConfig ? 
+					'<span class="label label-success">{{ _(u"已配置") }}</span>' : 
+					'<span class="label label-default">{{ _(u"未配置") }}</span>';
+				tr.append($('<td>').html(mongoLabel));
+				
+				// 操作按钮
+				var csvDeleteTitle = '{{ _(u"CSV配置无法删除") }}';
+				var deleteBtn = cfg.source === 'mongodb' ? 
+					'<button class="btn btn-xs btn-danger" onclick="deleteMergeConfig(' + cfg.id + ')"><span class="glyphicon glyphicon-trash"></span></button>' : 
+					'<button class="btn btn-xs btn-default" disabled title="' + csvDeleteTitle + '"><span class="glyphicon glyphicon-trash"></span></button>';
+				tr.append($('<td>').html(
+					'<button class="btn btn-xs btn-info" onclick="viewMergeDetail(' + cfg.id + ')"><span class="glyphicon glyphicon-eye-open"></span></button> ' +
+					deleteBtn
+				));
+				tbody.append(tr);
+			});
+		}
+
+		// 更新合服目标下拉框
+		function updateMergeTargetSelect() {
+			var select = $('#mergeTarget');
+			var checkSelect = $('#checkMergeTarget');
+			var genSelect = $('#genMergeTarget');
+			select.find('option:not(:first)').remove();
+			checkSelect.find('option:not(:first)').remove();
+			genSelect.find('option:not(:first)').remove();
+
+			mergeConfigs.forEach(function(cfg) {
+				if (cfg.realityMerge != 1) {  // 只显示未合服的配置
+					var option = $('<option>').val(cfg.destServer).text(cfg.destServer + ' ← ' + cfg.servers.join(', '));
+					select.append(option);
+					checkSelect.append(option.clone());
+					genSelect.append(option.clone());
+				}
+			});
+		}
+
+		// 合服目标变更
+		function onMergeTargetChange() {
+			var target = $('#mergeTarget').val();
+			if (!target) {
+				$('#mergeDetailPanel').hide();
+				$('#startMergeBtn').prop('disabled', true);
+				return;
+			}
+
+			var cfg = mergeConfigs.find(function(c) { return c.destServer === target; });
+			if (!cfg) return;
+
+			// 显示源服务器
+			var srcDiv = $('#sourceServersDiv');
+			srcDiv.empty();
+			cfg.servers.forEach(function(s) {
+				srcDiv.append('<span class="server-tag">' + s + '</span> ');
+			});
+
+			// 显示目标服务器
+			$('#destServerDiv').html('<span class="server-tag dest">' + cfg.destServer + '</span>');
+
+			// 自动填充已保存的 MongoDB 配置
+			if (cfg.mongoConfig && Object.keys(cfg.mongoConfig).length > 0) {
+				$('#mongoConfig').val(JSON.stringify(cfg.mongoConfig, null, 2));
+				$('#mongoConfigStatus').html('<span class="text-success"><span class="glyphicon glyphicon-ok"></span> {{ _(u"已加载保存的配置") }}</span>');
+			} else {
+				$('#mongoConfig').val('');
+				$('#mongoConfigStatus').html('<span class="text-muted">{{ _(u"未保存配置，请手动输入") }}</span>');
+			}
+
+			$('#mergeDetailPanel').show();
+			$('#startMergeBtn').prop('disabled', false);
+		}
+
+		// 显示添加配置对话框
+		function showAddMergeDialog() {
+			$('#newMergeId').val('');
+			$('#newDestServer').val('');
+			$('#newSrcServers').val('');
+			$('#newServerID').val('');
+			$('#newRealityMerge').val('0');
+			$('#addMergeModal').modal('show');
+		}
+
+		// 保存合服配置
+		function saveMergeConfig() {
+			var destServer = $('#newDestServer').val().trim();
+			var srcServers = $('#newSrcServers').val().trim().split(';').filter(function(s) { return s.trim(); });
+
+			var data = {
+				id: parseInt($('#newMergeId').val()),
+				destServer: destServer,
+				servers: srcServers,
+				serverID: parseInt($('#newServerID').val()) || 0,
+				realityMerge: parseInt($('#newRealityMerge').val())
+			};
+
+			if (!data.id || !destServer || srcServers.length === 0) {
+				alert('{{ _(u"请填写完整配置（ID、目标服务器、源服务器列表必填）") }}');
+				return;
+			}
+
+			// 构建 MongoDB 配置
+			var mongoConfig = {};
+			var mongoTarget = $('#newMongoTarget').val().trim();
+			var mongoSrcList = $('#newMongoSrcList').val().trim().split('\n').filter(function(s) { return s.trim(); });
+
+			if (mongoTarget) {
+				mongoConfig[destServer] = mongoTarget;
+			}
+			if (mongoSrcList.length > 0) {
+				for (var i = 0; i < srcServers.length && i < mongoSrcList.length; i++) {
+					var srcConn = mongoSrcList[i].trim();
+					if (srcConn) {
+						mongoConfig[srcServers[i]] = srcConn;
+					}
+				}
+			}
+
+			if (Object.keys(mongoConfig).length > 0) {
+				data.mongoConfig = mongoConfig;
+			}
+
+			$.ajax({
+				url: '/server_merge/config',
+				type: 'POST',
+				contentType: 'application/json',
+				data: JSON.stringify(data),
+				success: function(resp) {
+					if (resp.ret) {
+						alert('{{ _(u"保存成功") }}');
+						$('#addMergeModal').modal('hide');
+						// 清空表单
+						$('#newMergeId').val('');
+						$('#newDestServer').val('');
+						$('#newSrcServers').val('');
+						$('#newServerID').val('');
+						$('#newRealityMerge').val('0');
+						$('#newMongoTarget').val('');
+						$('#newMongoSrcList').val('');
+						loadMergeConfig();
+					} else {
+						alert('{{ _(u"保存失败") }}: ' + resp.err);
+					}
+				},
+				error: function(xhr) {
+					alert('{{ _(u"请求失败") }}: ' + xhr.statusText);
+				}
+			});
+		}
+
+		// 删除配置
+		function deleteMergeConfig(id) {
+			if (!confirm('{{ _(u"确定要删除此配置吗？") }}')) return;
+
+			$.ajax({
+				url: '/server_merge/config?id=' + id,
+				type: 'DELETE',
+				success: function(resp) {
+					if (resp.ret) {
+						alert('{{ _(u"删除成功") }}');
+						loadMergeConfig();
+					} else {
+						alert('{{ _(u"删除失败") }}: ' + resp.err);
+					}
+				}
+			});
+		}
+
+		// 测试MongoDB连接
+		function testMongoConnection() {
+			var configText = $('#mongoConfig').val().trim();
+			if (!configText) {
+				alert('{{ _(u"请输入MongoDB配置") }}');
+				return;
+			}
+
+			try {
+				JSON.parse(configText);
+			} catch (e) {
+				alert('{{ _(u"JSON格式错误") }}: ' + e.message);
+				return;
+			}
+
+			$.ajax({
+				url: '/server_merge/test_mongo',
+				type: 'POST',
+				contentType: 'application/json',
+				data: configText,
+				success: function(resp) {
+					if (resp.ret) {
+						alert('{{ _(u"连接测试成功！所有数据库连接正常。") }}');
+					} else {
+						alert('{{ _(u"连接测试失败") }}: ' + resp.err);
+					}
+				},
+				error: function(xhr) {
+					alert('{{ _(u"请求失败") }}: ' + xhr.statusText);
+				}
+			});
+		}
+
+		// 开始合服
+		function startMerge() {
+			var target = $('#mergeTarget').val();
+			if (!target) {
+				alert('{{ _(u"请选择合服目标") }}');
+				return;
+			}
+
+			var mongoConfig = $('#mongoConfig').val().trim();
+			var mongoObj = null;
+			if (mongoConfig) {
+				try {
+					mongoObj = JSON.parse(mongoConfig);
+				} catch (e) {
+					alert('{{ _(u"MongoDB配置JSON格式错误") }}: ' + e.message);
+					return;
+				}
+			}
+
+			if (!confirm('{{ _(u"警告：合服是不可逆操作！确定要开始合服吗？") }}')) return;
+			if (!confirm('{{ _(u"再次确认：已停止所有相关服务器并备份数据？") }}')) return;
+
+			$('#startMergeBtn').prop('disabled', true);
+			$('#stopMergeBtn').show();
+			$('#mergeProgressPanel').show();
+			$('#mergeLog').empty();
+
+			$.ajax({
+				url: '/server_merge/execute',
+				type: 'POST',
+				contentType: 'application/json',
+				data: JSON.stringify({
+					target: target,
+					mongoConfig: mongoObj
+				}),
+				success: function(resp) {
+					if (resp.ret) {
+						currentMergeTask = resp.taskId;
+						startPollingMergeStatus();
+						addLog('info', '{{ _(u"合服任务已启动，任务ID: ") }}' + resp.taskId);
+						if (resp.logFile) {
+							addLog('info', '{{ _(u"日志文件: ") }}' + resp.logFile);
+						}
+					} else {
+						addLog('error', '{{ _(u"启动合服失败") }}: ' + resp.err);
+						$('#startMergeBtn').prop('disabled', false);
+						$('#stopMergeBtn').hide();
+					}
+				},
+				error: function(xhr) {
+					addLog('error', '{{ _(u"请求失败") }}: ' + xhr.statusText);
+					$('#startMergeBtn').prop('disabled', false);
+					$('#stopMergeBtn').hide();
+				}
+			});
+		}
+
+		// 轮询合服状态
+		function startPollingMergeStatus() {
+			if (mergeLogInterval) clearInterval(mergeLogInterval);
+			
+			mergeLogInterval = setInterval(function() {
+				$.ajax({
+					url: '/server_merge/status?taskId=' + currentMergeTask,
+					type: 'GET',
+					success: function(resp) {
+						if (resp.ret) {
+							updateMergeProgress(resp);
+							
+							// 添加新日志
+							if (resp.newLogs) {
+								resp.newLogs.forEach(function(log) {
+									addLog(log.level, log.message);
+								});
+							}
+
+							// 检查是否完成
+							if (resp.status === 'done' || resp.status === 'error' || resp.status === 'stopped') {
+								clearInterval(mergeLogInterval);
+								mergeLogInterval = null;
+								$('#startMergeBtn').prop('disabled', false);
+								$('#stopMergeBtn').hide();
+								
+								if (resp.status === 'done') {
+									addLog('success', '{{ _(u"合服完成！耗时: ") }}' + resp.duration + 's');
+									alert('{{ _(u"合服完成！") }}');
+								} else if (resp.status === 'stopped') {
+									addLog('warn', '{{ _(u"任务已被停止") }}');
+								} else {
+									addLog('error', '{{ _(u"合服失败: ") }}' + resp.error);
+								}
+							}
+						}
+					}
+				});
+			}, 2000);
+		}
+
+		// 更新进度
+		function updateMergeProgress(data) {
+			var progress = data.progress || 0;
+			$('#mergeProgressBar').css('width', progress + '%').text(progress + '%');
+
+			// 更新步骤状态
+			$('.merge-step').each(function() {
+				var step = parseInt($(this).data('step'));
+				$(this).removeClass('active done error');
+				if (step < data.currentStep) {
+					$(this).addClass('done');
+				} else if (step === data.currentStep) {
+					$(this).addClass('active');
+				}
+			});
+		}
+
+		// 添加日志
+		function addLog(level, message) {
+			var logDiv = $('#mergeLog');
+			var time = new Date().toLocaleTimeString();
+			var logClass = 'log-' + level;
+			logDiv.append('<div class="' + logClass + '">[' + time + '] ' + message + '</div>');
+			logDiv.scrollTop(logDiv[0].scrollHeight);
+		}
+
+		// 合服前检查
+		function runPreMergeCheck() {
+			var target = $('#checkMergeTarget').val();
+			if (!target) {
+				alert('{{ _(u"请选择要检查的合服配置") }}');
+				return;
+			}
+
+			// 找到对应配置的 MongoDB 配置
+			var cfg = mergeConfigs.find(function(c) { return c.destServer === target; });
+			var mongoConfig = (cfg && cfg.mongoConfig) ? cfg.mongoConfig : null;
+
+			$('#checkResultPanel').show();
+			$('#checkResultContent').html('<p>{{ _(u"正在检查中...") }}</p>');
+
+			$.ajax({
+				url: '/server_merge/pre_check',
+				type: 'POST',
+				contentType: 'application/json',
+				data: JSON.stringify({
+					target: target,
+					mongoConfig: mongoConfig
+				}),
+				success: function(resp) {
+					if (resp.ret) {
+						renderCheckResult(resp.result);
+					} else {
+						$('#checkResultContent').html('<div class="alert alert-danger">{{ _(u"检查失败") }}: ' + resp.err + '</div>');
+					}
+				},
+				error: function(xhr) {
+					$('#checkResultContent').html('<div class="alert alert-danger">{{ _(u"请求失败") }}: ' + xhr.statusText + '</div>');
+				}
+			});
+		}
+
+		// 渲染检查结果
+		function renderCheckResult(result) {
+			var html = '';
+
+			// 警告提示
+			if (result.warning) {
+				html += '<div class="alert alert-warning"><span class="glyphicon glyphicon-warning-sign"></span> ' + result.warning + '</div>';
+			}
+			
+			// 玩家统计
+			html += '<div class="panel panel-info"><div class="panel-heading">{{ _(u"玩家统计") }}</div>';
+			html += '<div class="panel-body">';
+			html += '<table class="table table-condensed">';
+			html += '<tr><th>{{ _(u"服务器") }}</th><th>{{ _(u"玩家数") }}</th><th>{{ _(u"活跃玩家(30天)") }}</th></tr>';
+			if (result.playerStats) {
+				result.playerStats.forEach(function(s) {
+					html += '<tr><td>' + s.server + '</td><td>' + s.total + '</td><td>' + s.active + '</td></tr>';
+				});
+			}
+			html += '</table></div></div>';
+
+			// 重名检查
+			html += '<div class="panel panel-warning"><div class="panel-heading">{{ _(u"重名检查") }}</div>';
+			html += '<div class="panel-body">';
+			if (result.duplicateNames && result.duplicateNames.length > 0) {
+				html += '<p class="text-warning">{{ _(u"发现") }} ' + result.duplicateNames.length + ' {{ _(u"个重名玩家，合服后会自动加后缀") }}</p>';
+				html += '<ul>';
+				result.duplicateNames.slice(0, 10).forEach(function(name) {
+					html += '<li>' + name + '</li>';
+				});
+				if (result.duplicateNames.length > 10) {
+					html += '<li>... {{ _(u"等") }} ' + (result.duplicateNames.length - 10) + ' {{ _(u"个") }}</li>';
+				}
+				html += '</ul>';
+			} else {
+				html += '<p class="text-success">{{ _(u"未发现重名玩家") }}</p>';
+			}
+			html += '</div></div>';
+
+			// 公会统计
+			html += '<div class="panel panel-info"><div class="panel-heading">{{ _(u"公会统计") }}</div>';
+			html += '<div class="panel-body">';
+			html += '<p>{{ _(u"总公会数") }}: ' + (result.unionCount || 0) + '</p>';
+			if (result.duplicateUnions && result.duplicateUnions.length > 0) {
+				html += '<p class="text-warning">{{ _(u"重名公会") }}: ' + result.duplicateUnions.length + '</p>';
+			}
+			html += '</div></div>';
+
+			$('#checkResultContent').html(html);
+		}
+
+		// 查看合服详情
+		function viewMergeDetail(id) {
+			var cfg = mergeConfigs.find(function(c) { return c.id === id; });
+			if (cfg) {
+				alert('{{ _(u"合服配置详情") }}:\n\n' + JSON.stringify(cfg, null, 2));
+			}
+		}
+
+		// 停止合服
+		function stopMerge() {
+			if (!currentMergeTask) {
+				alert('{{ _(u"没有正在运行的任务") }}');
+				return;
+			}
+
+			if (!confirm('{{ _(u"确定要停止当前合服任务吗？这可能导致数据不一致！") }}')) return;
+
+			$.ajax({
+				url: '/server_merge/stop',
+				type: 'POST',
+				contentType: 'application/json',
+				data: JSON.stringify({taskId: currentMergeTask}),
+				success: function(resp) {
+					if (resp.ret) {
+						addLog('warn', '{{ _(u"已发送停止信号，请等待任务结束") }}');
+					} else {
+						alert('{{ _(u"停止失败") }}: ' + resp.err);
+					}
+				}
+			});
+		}
+
+		// 加载合服历史记录
+		function loadMergeHistory() {
+			$.ajax({
+				url: '/server_merge/history',
+				type: 'GET',
+				success: function(resp) {
+					var tbody = $('#mergeHistoryBody');
+					tbody.empty();
+
+					if (!resp.ret || !resp.history || resp.history.length === 0) {
+						tbody.append('<tr><td colspan="6" style="text-align: center;">{{ _(u"暂无记录") }}</td></tr>');
+						return;
+					}
+
+					resp.history.forEach(function(h) {
+						var tr = $('<tr>');
+						tr.append($('<td>').text(h.taskId));
+						tr.append($('<td>').html('<span class="server-tag dest">' + h.target + '</span>'));
+						tr.append($('<td>').text((h.srcServers || []).join(', ')));
+						tr.append($('<td>').text(h.startTime));
+						
+						var statusHtml = '';
+						if (h.status === 'done') {
+							statusHtml = '<span class="label label-success">{{ _(u"完成") }}</span>';
+						} else if (h.status === 'running') {
+							statusHtml = '<span class="label label-info">{{ _(u"进行中") }}</span>';
+						} else if (h.status === 'error') {
+							statusHtml = '<span class="label label-danger">{{ _(u"失败") }}</span>';
+						} else if (h.status === 'stopped') {
+							statusHtml = '<span class="label label-warning">{{ _(u"已停止") }}</span>';
+						}
+						tr.append($('<td>').html(statusHtml));
+						tr.append($('<td>').text(h.duration ? h.duration + 's' : '-'));
+						tbody.append(tr);
+					});
+				},
+				error: function(xhr) {
+					alert('{{ _(u"加载历史记录失败") }}: ' + xhr.statusText);
+				}
+			});
+		}
+
+		// ============ 配置生成功能 ============
+		
+		// 配置生成目标变更
+		function onGenTargetChange() {
+			var target = $('#genMergeTarget').val();
+			if (!target) {
+				$('#genParamsPanel').hide();
+				$('#genResultPanel').hide();
+				return;
+			}
+
+			$('#genParamsPanel').show();
+		}
+
+		// 生成配置文件
+		function generateMergeConfigs() {
+			var target = $('#genMergeTarget').val();
+			if (!target) {
+				alert('{{ _(u"请选择合服目标") }}');
+				return;
+			}
+
+			var cfg = mergeConfigs.find(function(c) { return c.destServer === target; });
+			if (!cfg) {
+				alert('{{ _(u"未找到配置") }}');
+				return;
+			}
+
+			var params = {
+				target: target,
+				srcServers: cfg.servers,
+				serverID: cfg.serverID,
+				ip: $('#genServerIP').val().trim() || '127.0.0.1',
+				gamePort: parseInt($('#genGamePort').val()) || 28875,
+				mongoUri: $('#genMongoUri').val().trim() || 'mongodb://root:oQTkIlUI5wrOUQEl@127.0.0.1:27017/{dbname}?authMechanism=SCRAM-SHA-1&authSource=admin',
+				nsqAddr: $('#genNSQAddr').val().trim() || '127.0.0.1:4150',
+				nsqLookup: $('#genNSQLookup').val().trim() || 'http://127.0.0.1:4161/',
+				openDate: $('#genOpenDate').val().trim() || '2020-01-01 10:00:00'
+			};
+
+			// 生成 game_defines.py
+			var gameDefines = generateGameDefines(params);
+			$('#cfgGameDefines').val(gameDefines);
+
+			// 生成 login/conf/game.json
+			var gameJson = generateGameJson(params);
+			$('#cfgGameJson').val(gameJson);
+
+			// 生成 pvp/defines_merge.json
+			var pvpJson = generatePvpJson(params);
+			$('#cfgPvpJson').val(pvpJson);
+
+			// 生成 storage/defines_merge.json
+			var storageJson = generateStorageJson(params);
+			$('#cfgStorageJson').val(storageJson);
+
+			// 生成 supervisor ini
+			var supervisorIni = generateSupervisorIni(params);
+			$('#cfgSupervisorIni').val(supervisorIni);
+
+			$('#genResultPanel').show();
+		}
+
+		// 生成 game_defines.py
+		function generateGameDefines(params) {
+			var target = params.target;
+			var targetKey = target.replace(/\./g, '_');
+			var dbName = target.replace(/\./g, '_');
+			
+			// 提取区域 (cn, dev 等)
+			var parts = target.split('.');
+			var mergePrefix = parts[0];  // gamemerge
+			var area = parts.length > 2 ? parts[1] : 'cn';
+			var servNum = parts[parts.length - 1];
+
+			var lines = [];
+			lines.push('#!/usr/bin/python');
+			lines.push('# -*- coding: utf-8 -*-');
+			lines.push("'''");
+			lines.push('Copyright (c) 2014 YouMi Information Technology Inc.');
+			lines.push('');
+			lines.push('game server config defines - 合服配置');
+			lines.push("'''");
+			lines.push('');
+			lines.push('from datetime import datetime');
+			lines.push('');
+			lines.push('from nsq_defines import *');
+			lines.push('');
+			lines.push('ServerDefs = {');
+			
+			// 添加合服后的服务器定义
+			lines.push("\t'" + target + "': {");
+			lines.push("\t\t'ip': '" + params.ip + "',");
+			lines.push("\t\t'port': " + params.gamePort + ",");
+			lines.push("\t\t'debug': True,");
+			lines.push("\t\t'shushu': True,");
+			lines.push("\t\t'nsq': CNNSQDefs,");
+			lines.push("\t\t'open_date': datetime(" + formatDateForPython(params.openDate) + "),");
+			lines.push("\t\t'merged': True,");
+			var aliasStr = (params.srcServers && params.srcServers.length > 0) ? params.srcServers.join("', '") : '';
+			lines.push("\t\t'alias': ['" + aliasStr + "'],");
+			lines.push("\t\t'dependent': [");
+			lines.push("\t\t\t'anticheat',");
+			lines.push("\t\t\t'chat_monitor',");
+			lines.push("\t\t\t'giftdb." + area + ".1',");
+			lines.push("\t\t\t'commentdb." + area + ".1',");
+			lines.push("\t\t\t'crossdb." + area + ".1',");
+			lines.push("\t\t],");
+			lines.push("\t},");
+			lines.push('}');
+			lines.push('');
+
+			return lines.join('\n');
+		}
+
+		// 生成 game.json
+		function generateGameJson(params) {
+			var servers = [];
+			
+			// 添加合服后的服务器
+			servers.push({
+				key: params.target,
+				addr: params.ip + ':' + params.gamePort,
+				open_date: params.openDate
+			});
+
+			// 添加源服务器（端口更新为合服端口）
+			// 这样前端玩家选择原服务器时会连接到合服
+			if (params.srcServers && params.srcServers.length > 0) {
+				params.srcServers.forEach(function(srcServer) {
+					servers.push({
+						key: srcServer,
+						addr: params.ip + ':' + params.gamePort,
+						open_date: params.openDate,
+						merged_to: params.target  // 标记已合服到哪个目标
+					});
+				});
+			}
+
+			return JSON.stringify(servers, null, 2);
+		}
+
+		// 生成 pvp/defines_merge.json
+		function generatePvpJson(params) {
+			var target = params.target;
+			var parts = target.split('.');
+			var area = parts.length > 2 ? parts[1] : 'cn';
+			var servNum = parts[parts.length - 1];
+			
+			// 从 gamemerge.cn.1 提取 pvpmerge.cn.1
+			var pvpTarget = target.replace('gamemerge', 'pvpmerge');
+			var storageTarget = target.replace('gamemerge', 'storagemerge');
+
+			// 生成各服务的别名
+			function makeAliases(prefix) {
+				if (!params.srcServers || params.srcServers.length === 0) {
+					return [];
+				}
+				return params.srcServers.map(function(s) {
+					return s.replace('game.', prefix + '.');
+				});
+			}
+
+			var services = [
+				{ name: pvpTarget.replace('pvpmerge', 'pvpmerge'), alias: makeAliases('pvp'), dependent: [storageTarget] },
+				{ name: pvpTarget.replace('pvpmerge', 'clonemerge'), alias: makeAliases('clone'), dependent: [storageTarget] },
+				{ name: pvpTarget.replace('pvpmerge', 'arenamerge'), alias: makeAliases('arena'), dependent: [storageTarget] },
+				{ name: pvpTarget.replace('pvpmerge', 'unionmerge'), alias: makeAliases('union'), dependent: [storageTarget] },
+				{ name: pvpTarget.replace('pvpmerge', 'union_fightmerge'), alias: makeAliases('union_fight'), dependent: [storageTarget, target, 'anticheat'] },
+				{ name: pvpTarget.replace('pvpmerge', 'craftmerge'), alias: makeAliases('craft'), dependent: [storageTarget, target, 'anticheat'] },
+				{ name: pvpTarget.replace('pvpmerge', 'yyhuodongmerge'), alias: makeAliases('yyhuodong'), dependent: [storageTarget] },
+				{ name: pvpTarget.replace('pvpmerge', 'card_fightmerge'), alias: makeAliases('card_fight'), dependent: [storageTarget] },
+				{ name: pvpTarget.replace('pvpmerge', 'gymmerge'), alias: makeAliases('gym'), dependent: [storageTarget, target] },
+				{ name: pvpTarget.replace('pvpmerge', 'huntingmerge'), alias: makeAliases('hunting'), dependent: [storageTarget] }
+			];
+
+			var config = {};
+			config[pvpTarget] = {
+				debug: true,
+				nsqd_tcp_addresses: [params.nsqAddr],
+				nsqlookupd: params.nsqLookup,
+				services: services
+			};
+
+			return JSON.stringify(config, null, 2);
+		}
+
+		// 生成 storage/defines_merge.json
+		function generateStorageJson(params) {
+			var target = params.target;
+			var storageTarget = target.replace('gamemerge', 'storagemerge');
+			var dbName = target.replace(/\./g, '_');
+			
+			// 替换 {dbname} 占位符
+			var mongoUri = params.mongoUri.replace('{dbname}', dbName);
+
+			var config = {};
+			config[storageTarget] = {
+				debug: true,
+				nsqd_tcp_addresses: [params.nsqAddr],
+				nsqlookupd: params.nsqLookup,
+				services: [
+					{
+						name: storageTarget,
+						mongodb: mongoUri
+					}
+				]
+			};
+
+			return JSON.stringify(config, null, 2);
+		}
+
+		// 生成 supervisor ini 配置
+		function generateSupervisorIni(params) {
+			var target = params.target;
+			var parts = target.split('.');
+			var area = parts.length > 2 ? parts[1] : 'cn';
+			var servNum = parts[parts.length - 1];
+
+			var pvpTarget = target.replace('gamemerge', 'pvpmerge');
+			var storageTarget = target.replace('gamemerge', 'storagemerge');
+
+			var lines = [];
+
+			// 1. gamemerge_server.ini
+			lines.push('=== ' + servNum + '_gamemerge_server.ini ===');
+			lines.push('[program:' + servNum + '_gamemerge_server]');
+			lines.push('directory=../release/');
+			lines.push('command=/usr/bin/python game_server.py ' + target);
+			lines.push('autostart=false');
+			lines.push('autorestart=false');
+			lines.push('priority=103');
+			lines.push('redirect_stderr=true');
+			lines.push('stdout_logfile_maxbytes=100MB');
+			lines.push('stdout_logfile_backups=999999');
+			lines.push('');
+
+			// 2. pvpmerge_server.ini
+			lines.push('=== ' + servNum + '_pvpmerge_server.ini ===');
+			lines.push('[program:' + servNum + '_pvpmerge_server]');
+			lines.push('directory=../release/pvp');
+			lines.push('command=%(here)s/../release/bin/host_server -config=' + pvpTarget);
+			lines.push('autostart=false');
+			lines.push('autorestart=false');
+			lines.push('priority=102');
+			lines.push('redirect_stderr=true');
+			lines.push('');
+
+			// 3. storagemerge_server.ini
+			lines.push('=== ' + servNum + '_storagemerge_server.ini ===');
+			lines.push('[program:' + servNum + '_storagemerge_server]');
+			lines.push('directory=../release/storage');
+			lines.push('command=%(here)s/../release/bin/host_server -config=' + storageTarget);
+			lines.push('autostart=false');
+			lines.push('autorestart=false');
+			lines.push('priority=101');
+			lines.push('redirect_stderr=true');
+
+			return lines.join('\n');
+		}
+
+		// 格式化日期为Python datetime参数
+		function formatDateForPython(dateStr) {
+			// 输入: "2020-01-01 10:00:00"
+			// 输出: "2020, 1, 1, 10"
+			var parts = dateStr.split(' ');
+			var dateParts = parts[0].split('-');
+			var timeParts = (parts[1] || '10:00:00').split(':');
+			return dateParts[0] + ', ' + parseInt(dateParts[1]) + ', ' + parseInt(dateParts[2]) + ', ' + parseInt(timeParts[0]);
+		}
+
+		// 下载所有配置
+		function downloadAllConfigs() {
+			var target = $('#genMergeTarget').val();
+			if (!target) return;
+
+			// 创建 zip 文件需要额外库，这里简单处理，分别下载
+			downloadFile('game_defines.py', $('#cfgGameDefines').val());
+		}
+
+		// 下载单个文件
+		function downloadFile(filename, content) {
+			var blob = new Blob([content], { type: 'text/plain;charset=utf-8' });
+			var url = URL.createObjectURL(blob);
+			var a = document.createElement('a');
+			a.href = url;
+			a.download = filename;
+			document.body.appendChild(a);
+			a.click();
+			document.body.removeChild(a);
+			URL.revokeObjectURL(url);
+		}
+
+		// 部署配置到服务器
+		function deployToServer() {
+			var target = $('#genMergeTarget').val();
+			if (!target) {
+				alert('{{ _(u"请先选择合服目标") }}');
+				return;
+			}
+
+			var gameDefines = $('#cfgGameDefines').val();
+			if (!gameDefines) {
+				alert('{{ _(u"请先点击「生成配置」") }}');
+				return;
+			}
+
+			var deployPath = $('#deployPath').val().trim() || '/mnt/pokemon/release';
+			var supervisorPath = $('#supervisorPath').val().trim() || '/mnt/pokemon/deploy_dev/supervisord.dir';
+
+			// 提取服务器编号
+			var parts = target.split('.');
+			var servNum = parts[parts.length - 1];
+
+			if (!confirm('{{ _(u"确定要将配置部署到服务器吗？") }}\n\n' +
+				'{{ _(u"配置部署路径") }}: ' + deployPath + '\n' +
+				'- game_defines.py\n' +
+				'- login/conf/game.json\n' +
+				'- pvp/defines_merge.json\n' +
+				'- storage/defines_merge.json\n\n' +
+				'{{ _(u"Supervisor INI 路径") }}: ' + supervisorPath + '\n' +
+				'- ' + servNum + '_gamemerge_server.ini\n' +
+				'- ' + servNum + '_pvpmerge_server.ini\n' +
+				'- ' + servNum + '_storagemerge_server.ini')) {
+				return;
+			}
+
+			var serverConfigs = {
+				gameDefines: $('#cfgGameDefines').val(),
+				gameJson: $('#cfgGameJson').val(),
+				pvpJson: $('#cfgPvpJson').val(),
+				storageJson: $('#cfgStorageJson').val(),
+				supervisorIni: $('#cfgSupervisorIni').val()
+			};
+
+			$.ajax({
+				url: '/server_merge/deploy_config',
+				type: 'POST',
+				contentType: 'application/json',
+				data: JSON.stringify({
+					target: target,
+					deployPath: deployPath,
+					supervisorPath: supervisorPath,
+					serverConfigs: serverConfigs
+				}),
+				success: function(resp) {
+					if (resp.ret) {
+						var msg = '{{ _(u"配置部署成功！") }}\n\n{{ _(u"已部署文件") }}:\n';
+						resp.deployed.forEach(function(f) {
+							msg += '- ' + f + '\n';
+						});
+						msg += '\n{{ _(u"部署路径") }}: ' + resp.deployPath;
+						alert(msg);
+					} else {
+						var errMsg = '{{ _(u"部署失败") }}: ' + resp.err;
+						if (resp.deployed && resp.deployed.length > 0) {
+							errMsg += '\n\n{{ _(u"已成功部署") }}:\n';
+							resp.deployed.forEach(function(f) {
+								errMsg += '- ' + f + '\n';
+							});
+						}
+						if (resp.errors && resp.errors.length > 0) {
+							errMsg += '\n{{ _(u"失败详情") }}:\n';
+							resp.errors.forEach(function(e) {
+								errMsg += '- ' + e + '\n';
+							});
+						}
+						alert(errMsg);
+					}
+				},
+				error: function(xhr) {
+					alert('{{ _(u"请求失败") }}: ' + xhr.statusText);
+				}
+			});
+		}
+
+		// 保存生成的配置到合服配置
+		// 复制当前配置
+		function copyCurrentConfig() {
+			var activeTab = $('#configTabs li.active a').attr('href');
+			var content = '';
+			if (activeTab === '#cfg-game-defines') {
+				content = $('#cfgGameDefines').val();
+			} else if (activeTab === '#cfg-game-json') {
+				content = $('#cfgGameJson').val();
+			} else if (activeTab === '#cfg-pvp-json') {
+				content = $('#cfgPvpJson').val();
+			} else if (activeTab === '#cfg-storage-json') {
+				content = $('#cfgStorageJson').val();
+			} else if (activeTab === '#cfg-supervisor-ini') {
+				content = $('#cfgSupervisorIni').val();
+			}
+
+			if (content) {
+				navigator.clipboard.writeText(content).then(function() {
+					alert('{{ _(u"已复制到剪贴板") }}');
+				}).catch(function() {
+					// 降级处理
+					var textarea = document.createElement('textarea');
+					textarea.value = content;
+					document.body.appendChild(textarea);
+					textarea.select();
+					document.execCommand('copy');
+					document.body.removeChild(textarea);
+					alert('{{ _(u"已复制到剪贴板") }}');
+				});
+			}
+		}
+	</script>
+{% end %}
+

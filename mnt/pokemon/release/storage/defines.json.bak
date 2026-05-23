@@ -1,0 +1,97 @@
+{
+  "account.cn.1": {
+    "nsqd_tcp_addresses": [
+      "127.0.0.1:4150"
+    ], 
+    "nsqlookupd": "http://127.0.0.1:4161/", 
+    "services": [
+      {
+        "alias": [
+          "giftdb.cn.1", 
+          "paymentdb.cn.1"
+        ], 
+        "dbname": "account", 
+        "mongodb": "mongodb://root:oQTkIlUI5wrOUQEl@127.0.0.1:27017/account?authMechanism=SCRAM-SHA-1&authSource=admin", 
+        "name": "accountdb.cn.1"
+      }
+    ]
+  }, 
+  "commentdb.cn.1": {
+    "nsqd_tcp_addresses": [
+      "127.0.0.1:4150"
+    ], 
+    "nsqlookupd": "http://127.0.0.1:4161/", 
+    "services": [
+      {
+        "dbname": "commentdb_cn_1", 
+        "mongodb": "mongodb://root:oQTkIlUI5wrOUQEl@127.0.0.1:27017/commentdb_cn_1?authMechanism=SCRAM-SHA-1&authSource=admin", 
+        "name": "commentdb.cn.1"
+      }
+    ]
+  }, 
+  "crossdb.cn.1": {
+    "nsqd_tcp_addresses": [
+      "127.0.0.1:4150"
+    ], 
+    "nsqlookupd": "http://127.0.0.1:4161/", 
+    "services": [
+      {
+        "dbname": "cross_cn_1", 
+        "mongodb": "mongodb://root:oQTkIlUI5wrOUQEl@127.0.0.1:27017/cross_cn_1?authMechanism=SCRAM-SHA-1&authSource=admin", 
+        "name": "crossdb.cn.1"
+      }
+    ]
+  }, 
+  "storage.cn.1": {
+    "nsqd_tcp_addresses": [
+      "127.0.0.1:4150"
+    ], 
+    "nsqlookupd": "http://127.0.0.1:4161/", 
+    "services": [
+      {
+        "dbname": "game_cn_1", 
+        "mongodb": "mongodb://root:oQTkIlUI5wrOUQEl@127.0.0.1:27017/game_cn_1?authMechanism=SCRAM-SHA-1&authSource=admin", 
+        "name": "storage.cn.1"
+      }
+    ]
+  }, 
+  "storage.cn.2": {
+    "nsqd_tcp_addresses": [
+      "127.0.0.1:4150"
+    ], 
+    "nsqlookupd": "http://127.0.0.1:4161/", 
+    "services": [
+      {
+        "dbname": "game_cn_2", 
+        "mongodb": "mongodb://root:oQTkIlUI5wrOUQEl@127.0.0.1:27017/game_cn_2?authMechanism=SCRAM-SHA-1&authSource=admin", 
+        "name": "storage.cn.2"
+      }
+    ]
+  }, 
+  "storage.cn.3": {
+    "nsqd_tcp_addresses": [
+      "127.0.0.1:4150"
+    ], 
+    "nsqlookupd": "http://127.0.0.1:4161/", 
+    "services": [
+      {
+        "dbname": "game_cn_3", 
+        "mongodb": "mongodb://root:oQTkIlUI5wrOUQEl@127.0.0.1:27017/game_cn_3?authMechanism=SCRAM-SHA-1&authSource=admin", 
+        "name": "storage.cn.3"
+      }
+    ]
+  }, 
+  "storage.cn.4": {
+    "nsqd_tcp_addresses": [
+      "127.0.0.1:4150"
+    ], 
+    "nsqlookupd": "http://127.0.0.1:4161/", 
+    "services": [
+      {
+        "dbname": "game_cn_4", 
+        "mongodb": "mongodb://root:oQTkIlUI5wrOUQEl@127.0.0.1:27017/game_cn_4?authMechanism=SCRAM-SHA-1&authSource=admin", 
+        "name": "storage.cn.4"
+      }
+    ]
+  }
+}

@@ -1,0 +1,118 @@
+#!/bin/bash
+
+echo -e "\033[0;32m正在进行文件校准，请耐心等待...\033[0m"
+sleep 1
+
+# 定义 JSON 文件路径
+json_file="/mnt/pokemon/release/login/patch/cn/3.json"
+
+# 定义需要处理的文件路径和名称映射关系，以及对应的JSON文件中的行号
+declare -A file_updates=(
+    ["res/version.plist"]="4,5,/www/wwwroot/game/patch/3/res/version.plist"
+)
+
+# 遍历文件并更新 JSON
+for key in "${!file_updates[@]}"; do
+    # 解析行号和文件路径
+    IFS=',' read -r -a lines_and_path <<< "${file_updates[$key]}"
+    line_size=${lines_and_path[0]}
+    line_md5=${lines_and_path[1]}
+    path=${lines_and_path[2]}
+
+    # 检查文件是否存在
+    if [ ! -f "$path" ]; then
+        echo "文件不存在: $path"
+        continue
+    fi
+    
+    # 获取 MD5 和大小
+    md5=$(md5sum "$path" | awk '{print $1}')
+    size=$(stat -c%s "$path")
+    
+    # 打印校准信息
+    echo "Processing file: $key, Path: $path"
+    echo "MD5: $md5, Size: $size"
+    
+    # 更新 JSON 文件中对应的值
+    sed -i "${line_size}s/[0-9]\+/$size/" "$json_file"
+    sed -i "${line_md5}s/\b\w\{32\}\b/$md5/" "$json_file"
+done
+
+sleep 1
+echo -e "\033[0;32m文件校准成功...\033[0m"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#阿 泽 源 码 网 w w w . l y z w l k j . v i p

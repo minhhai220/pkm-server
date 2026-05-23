@@ -1,0 +1,20 @@
+{
+	"files": [{
+		"name": "res/version.plist",
+		"size": 1003,
+		"md5": "db4b8f5406e779fa6e7521901f71cf48",
+		"patch": 8
+	}, {
+		"name": "src/config.skill",
+		"size": 8404459,
+		"md5": "7a34312bb4b0c6083a83636142e295ca",
+		"patch": 8
+	}, {
+		"name": "src/config.skill_process",
+		"size": 3906274,
+		"md5": "e244a7fb146083c26648da7043ed1500",
+		"patch": 8
+	}],
+	"svn_version": "54539",
+	"git_version": "175bed51520de09c6020d19bcaecc21834fcd51b"
+}

@@ -1,0 +1,308 @@
+{% extends "dashboard.html" %}
+
+{% block css %}
+	<style>
+		.kick-panel {
+			margin-top: 20px;
+		}
+		.kick-result {
+			margin-top: 15px;
+			max-height: 400px;
+			overflow-y: auto;
+		}
+		.kick-result .success {
+			color: #5cb85c;
+		}
+		.kick-result .error {
+			color: #d9534f;
+		}
+		.online-list {
+			margin-top: 20px;
+		}
+		.btn-kick {
+			margin-left: 5px;
+		}
+	</style>
+{% end %}
+
+{% block main %}
+	<div class="container-fluid main">
+		<div class="row">
+			<div class="title"><h4>{{ _(u"踢玩家下线") }}</h4></div>
+		</div>
+
+		<div class="well kick-panel">
+			<!-- 服务器选择 -->
+			<div class="row">
+				<div class="col-lg-12">
+					<div class="form-inline">
+						<div class="form-group">
+							<label>{{ _(u"选择服务器") }}：</label>
+							<select id="servName" class="form-control">
+								<option value="">{{ _(u"请选择") }}</option>
+								{% for serv in servs %}
+									<option value="{{ serv }}">{{ serv }}</option>
+								{% end %}
+							</select>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- 踢单个玩家 -->
+			<div class="row" style="margin-top: 15px;">
+				<div class="col-lg-12">
+					<div class="form-inline">
+						<div class="form-group">
+							<label>{{ _(u"玩家ID/UID") }}：</label>
+							<input id="roleID" type="text" class="form-control" placeholder="{{ _(u"角色ID或UID") }}" style="width: 300px;">
+							<button id="kickOneBtn" class="btn btn-warning btn-kick" onclick="kickOnePlayer()">
+								<span class="glyphicon glyphicon-log-out"></span> {{ _(u"踢下线") }}
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- 批量踢玩家 -->
+			<div class="row" style="margin-top: 15px;">
+				<div class="col-lg-12">
+					<div class="form-group">
+						<label>{{ _(u"批量踢人（每行一个ID）") }}：</label>
+						<textarea id="roleIDs" class="form-control" rows="5" placeholder="{{ _(u'每行一个角色ID或UID') }}" style="width: 400px;"></textarea>
+					</div>
+					<button id="kickBatchBtn" class="btn btn-warning" onclick="kickBatchPlayers()">
+						<span class="glyphicon glyphicon-log-out"></span> {{ _(u"批量踢下线") }}
+					</button>
+				</div>
+			</div>
+
+			<!-- 踢所有人 -->
+			<div class="row" style="margin-top: 20px; padding-top: 15px; border-top: 1px solid #ddd;">
+				<div class="col-lg-12">
+					<button id="kickAllBtn" class="btn btn-danger" onclick="kickAllPlayers()">
+						<span class="glyphicon glyphicon-warning-sign"></span> {{ _(u"踢所有在线玩家") }}
+					</button>
+					<span style="color: #999; margin-left: 10px;">{{ _(u"危险操作，会断开所有玩家连接") }}</span>
+				</div>
+			</div>
+
+			<!-- 结果显示 -->
+			<div class="row kick-result">
+				<div class="col-lg-12">
+					<div id="resultPanel" class="panel panel-default" style="display: none;">
+						<div class="panel-heading">{{ _(u"执行结果") }}</div>
+						<div class="panel-body">
+							<pre id="resultContent"></pre>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- 在线玩家列表 -->
+		<div class="well online-list">
+			<div class="row">
+				<div class="col-lg-12">
+					<h5>{{ _(u"在线玩家列表") }}</h5>
+					<button class="btn btn-info btn-sm" onclick="refreshOnlineList()">
+						<span class="glyphicon glyphicon-refresh"></span> {{ _(u"刷新列表") }}
+					</button>
+				</div>
+			</div>
+			<div class="row" style="margin-top: 10px;">
+				<div class="col-lg-12">
+					<table id="onlineTable" class="table table-striped table-bordered table-hover">
+						<thead>
+							<tr>
+								<th>{{ _(u"角色ID") }}</th>
+								<th>{{ _(u"角色名") }}</th>
+								<th>{{ _(u"等级") }}</th>
+								<th>VIP</th>
+								<th>{{ _(u"操作") }}</th>
+							</tr>
+						</thead>
+						<tbody id="onlineTableBody">
+							<tr><td colspan="5" style="text-align: center;">{{ _(u"请先选择服务器并刷新列表") }}</td></tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+	</div>
+{% end %}
+
+{% block js %}
+	<script>
+		function getServName() {
+			var servName = $('#servName').val();
+			if (!servName) {
+				alert('{{ _(u"请先选择服务器") }}');
+				return null;
+			}
+			return servName;
+		}
+
+		function showResult(data) {
+			$('#resultPanel').show();
+			$('#resultContent').text(JSON.stringify(data, null, 2));
+		}
+
+		function kickOnePlayer() {
+			var servName = getServName();
+			if (!servName) return;
+
+			var roleID = $('#roleID').val().trim();
+			if (!roleID) {
+				alert('{{ _(u"请输入玩家ID") }}');
+				return;
+			}
+
+			if (!confirm('{{ _(u"确定要踢玩家") }} ' + roleID + ' {{ _(u"下线吗？") }}')) {
+				return;
+			}
+
+			$.ajax({
+				url: '/kick_player',
+				type: 'GET',
+				data: {servName: servName, roleID: roleID},
+				success: function(data) {
+					showResult(data);
+					if (data.result) {
+						alert('{{ _(u"踢人成功") }}: ' + data.message);
+					} else {
+						alert('{{ _(u"踢人失败") }}: ' + data.message);
+					}
+				},
+				error: function(xhr) {
+					alert('{{ _(u"请求失败") }}: ' + xhr.statusText);
+				}
+			});
+		}
+
+		function kickBatchPlayers() {
+			var servName = getServName();
+			if (!servName) return;
+
+			var roleIDsText = $('#roleIDs').val().trim();
+			if (!roleIDsText) {
+				alert('{{ _(u"请输入玩家ID列表") }}');
+				return;
+			}
+
+			var roleIDs = roleIDsText.split('\n').map(function(s) { return s.trim(); }).filter(function(s) { return s; });
+			if (roleIDs.length === 0) {
+				alert('{{ _(u"请输入有效的玩家ID") }}');
+				return;
+			}
+
+			if (!confirm('{{ _(u"确定要踢") }} ' + roleIDs.length + ' {{ _(u"个玩家下线吗？") }}')) {
+				return;
+			}
+
+			$.ajax({
+				url: '/kick_player',
+				type: 'POST',
+				contentType: 'application/json',
+				data: JSON.stringify({servName: servName, roleIDs: roleIDs}),
+				success: function(data) {
+					showResult(data);
+					alert('{{ _(u"批量踢人完成，请查看结果") }}');
+				},
+				error: function(xhr) {
+					alert('{{ _(u"请求失败") }}: ' + xhr.statusText);
+				}
+			});
+		}
+
+		function kickAllPlayers() {
+			var servName = getServName();
+			if (!servName) return;
+
+			if (!confirm('{{ _(u"警告：确定要踢所有在线玩家下线吗？这是危险操作！") }}')) {
+				return;
+			}
+
+			if (!confirm('{{ _(u"再次确认：真的要踢所有玩家吗？") }}')) {
+				return;
+			}
+
+			$.ajax({
+				url: '/kick_player',
+				type: 'POST',
+				contentType: 'application/json',
+				data: JSON.stringify({servName: servName, kickAll: true}),
+				success: function(data) {
+					showResult(data);
+					if (data.results && data.results.length > 0) {
+						alert('{{ _(u"踢人完成，共踢出") }} ' + data.results[0].count + ' {{ _(u"个玩家") }}');
+					}
+				},
+				error: function(xhr) {
+					alert('{{ _(u"请求失败") }}: ' + xhr.statusText);
+				}
+			});
+		}
+
+		function refreshOnlineList() {
+			var servName = getServName();
+			if (!servName) return;
+
+			$.ajax({
+				url: '/online_role',
+				type: 'GET',
+				data: {servName: servName, offset: 0, limit: 50},
+				success: function(data) {
+					var tbody = $('#onlineTableBody');
+					tbody.empty();
+					
+					if (data.rows && data.rows.length > 0) {
+						data.rows.forEach(function(row) {
+							var tr = $('<tr>');
+							tr.append($('<td>').text(row.id));
+							tr.append($('<td>').text(row.name));
+							tr.append($('<td>').text(row.level));
+							tr.append($('<td>').text(row.vip_level));
+							tr.append($('<td>').html('<button class="btn btn-warning btn-xs" onclick="kickFromList(\'' + row.id + '\')"><span class="glyphicon glyphicon-log-out"></span> {{ _(u"踢下线") }}</button>'));
+							tbody.append(tr);
+						});
+						$('#onlineTable').parent().prepend('<p>{{ _(u"共") }} ' + data.total + ' {{ _(u"人在线") }}</p>');
+					} else {
+						tbody.append('<tr><td colspan="5" style="text-align: center;">{{ _(u"暂无在线玩家") }}</td></tr>');
+					}
+				},
+				error: function(xhr) {
+					alert('{{ _(u"获取在线列表失败") }}: ' + xhr.statusText);
+				}
+			});
+		}
+
+		function kickFromList(roleID) {
+			var servName = getServName();
+			if (!servName) return;
+
+			if (!confirm('{{ _(u"确定要踢玩家") }} ' + roleID + ' {{ _(u"下线吗？") }}')) {
+				return;
+			}
+
+			$.ajax({
+				url: '/kick_player',
+				type: 'GET',
+				data: {servName: servName, roleID: roleID},
+				success: function(data) {
+					showResult(data);
+					if (data.result) {
+						alert('{{ _(u"踢人成功") }}');
+						refreshOnlineList();
+					} else {
+						alert('{{ _(u"踢人失败") }}: ' + data.message);
+					}
+				},
+				error: function(xhr) {
+					alert('{{ _(u"请求失败") }}: ' + xhr.statusText);
+				}
+			});
+		}
+	</script>
+{% end %}
+

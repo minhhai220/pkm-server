@@ -1,0 +1,53 @@
+{% extends "dashboard.html" %}
+
+{% block main %}
+	<div class="row m-head">
+		<div class="col-lg-12">
+			{% if hide_style == '-1' %}
+				<h4>崩溃 {{ hide_time }} -- {{ end_time }}<h4>
+			{% else %}
+				<h4>异常 {{ hide_time }} -- {{ end_time }}<h4>
+			{% end %}
+		</div>
+	</div>
+
+	<div class="well">
+		<div class="row search-group">
+			<div>
+				<strong><span>过滤条件：</span></strong>
+			</div>
+			<div>
+				<form role="form">
+				  <div class="form-group">
+				    <select params=2 class="form-control input-sm">
+				    	<option option_value=0>所有状态</option>
+				        <option option_value=-1>未处理状态</option>
+				        <option option_value=1>已处理状态</option>
+				    </select>
+				  </div>
+				</form>
+			</div>
+			<div>
+				<form role="form">
+				  <div class="form-group">
+				  	<input id="show-version-ss" type="text" placeholder="选择错误上报版本号" class="form-control input-sm" readonly="readonly">
+				    <select id="version-ss" class="form-control" params=4 size=6>
+				        <option>所有版本</option>
+				        {% for version in versionL%}
+					    	<option>{{ version }}</option>
+					    {% end %}
+				    </select>
+				  </div>
+				</form>
+			</div>
+		</div>
+		<div class="row">
+			<table id="dashboard-table"></table>
+		</div>
+	</div>
+	<div style="display: None;">
+		<span id="my-hide-time">{{ hide_time }}</span>
+		<span id="my-end-time">{{ end_time }}</span>
+		<span id="my-hide-style">{{ hide_style }}</span>
+	</div>
+{% end %}

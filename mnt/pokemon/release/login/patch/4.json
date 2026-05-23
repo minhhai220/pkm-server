@@ -1,0 +1,18 @@
+{
+    "files": [
+        {
+            "patch": 4, 
+            "md5": "2d611e7af8a7bcb6305609069d29aec4", 
+            "name": "res/version.plist", 
+            "size": 994
+        }, 
+        {
+            "patch": 4, 
+            "md5": "accb1302dc0a206365de073497cf4d18", 
+            "name": "src/config.time_speeder", 
+            "size": 247
+        }
+    ], 
+    "svn_version": "54539", 
+    "git_version": "175bed51520de09c6020d19bcaecc21834fcd51b"
+}

@@ -1,0 +1,1039 @@
+变量名,_beizhu,huodongID,periodType,weekParam,taskAttribute,taskType,taskParam,taskSpecialParam,title,title_tw,title_en,title_vn,title_kr,title_pt,title_th,desc,desc_tw,desc_en,desc_vn,desc_kr,exp,goToPanel
+默认值,,0,1,1,3,0,9999,{},"""""","""""","""""","""""","""""","""""","""""",完成任务可获得经验值,完成任務可獲得經驗值,Completing task to get EXP.,404404,퀘스트 완료 시 경험치 획득 가능,0,
+ID,备注,活动版本ID,周期类型（1=每日;2=每周）,周参数（第几周）,任务属性(3=普通;4=大师专属),任务类型;普通关卡战斗次数0;困难关卡战斗次数1;活动副本战斗次数2;竞技场战斗次数3;钻石十连抽4;钻石单抽5;装备十连抽6;装备单抽7;开金宝箱8;购买体力9;充值钻石10;装备强化11;装备铸炼12;装备升星13;点金14;VIP等级15;考古16;,任务参数,任务特殊参数,标题,描述,描述,描述,描述,描述,描述,描述,描述,描述,描述,描述,奖励,前往类型枚举:5位数关卡ID-关卡10000为主线不限关10100为主线第一章20000为困难不限关  gainWay获得途径   shop商店activity活动接口roleLogo头像接口figure个人形象接口gainGold点金接口recharge充值接口gainStamina购买体力friend好友接口cardBag背包接口strengthen还有培养接口handbook图鉴接口任意英文-数字表示其页签
+,,,,,,,,,,,,,,,,,,,,,,
+1,通行证日任务,1001,1,,,18,1,,进行1次聚宝,進行1次聚寶,Get Treasure Pot once,Get Treasure Pot once,보물단지 1회 진행,Obtenha o pote do tesouro uma vez,รับ Treasure Pot ครั้งเดียว,,,,,,10,gainGold
+2,通行证日任务,1001,1,,,20,100000,,消耗100000金币,消耗100000金幣,Spend 100000 coins,Spend 100000 coins,100000코인 소모,Gaste 100000 moedas,ใช้เงิน 100，000 เหรียญ,,,,,,10,
+3,通行证日任务,1001,1,,,21,300,,消耗300钻石,消耗300鑽石,Spend 300 diamonds,Spend 300 diamonds,300다이아 소모,Gaste 300 diamantes,ใช้เงิน 300 เพชร,,,,,,20,
+4,通行证日任务,1001,1,,,26,1,,购买1次体力,購買1次體力,Purchase 1 energy,Mua 1 sức chịu đựng,체력 1회 구매,Compre 1 energia,ซื้อพลังงาน 1 หน่วย,,,,,,20,gainStamina
+5,通行证日任务,1001,1,,,29,10,,挑战普通关卡10次,挑戰普通關卡10次,Clear Normal levels 10 times,Thử thách cấp độ thông thường 10 lần,일반 스테이지 10회 도전,Limpe os níveis normais 10 vezes,เคลียร์ระดับปกติ 10 ครั้ง,,,,,,10,10000
+6,通行证日任务,1001,1,,,30,3,,挑战困难关卡3次,挑戰困難關卡3次,Challenge Elite levels 3 times,Challenge Elite levels 3 times,하드 스테이지 도전 3회,Desafie os níveis Elite 3 vezes,ท้าทายระดับ Elite 3 ครั้ง,,,,,,20,20000
+7,通行证日任务,1001,1,,,36,3,,精灵升级3次,精靈升級3次,Upgrade Pokémons 3 times,Upgrade Pokémons 3 times,포켓몬 3회 레벨업,Melhore os Pokémons 3 vezes,อัพเกรดโปเกมอน 3 ครั้ง,,,,,,20,strengthen-1
+8,通行证日任务,1001,1,,,41,5,,竞技场战斗5次,競技場戰鬥5次,Engage in arena battle for 5 times,Engage in arena battle for 5 times,아레나 전투 5회 진행,Participe de uma batalha de arena 5 vezes,เข้าร่วมการต่อสู้ในสนามประลอง 5 ครั้ง,,,,,,20,
+,,,,,,,,,,,,,,,,,,,,,,
+9,通行证第一周任务,1001,2,1,4,18,10,,进行10次聚宝,進行10次聚寶,Get Treasure Pot 10 times,Get Treasure Pot 10 times,보물단지 10회 진행,Obtenha o pote do tesouro 10 vezes,รับหม้อสมบัติ 10 ครั้ง,,,,,,20,gainGold
+10,通行证第一周任务,1001,2,1,,20,1000000,,消耗1000000金币,消耗1000000金幣,Spend 1000000 coins,Spend 1000000 coins,1000000코인 소모,Gaste 1.000.000 de moedas,ใช้เงิน 1000000 เหรียญ,,,,,,20,
+11,通行证第一周任务,1001,2,1,,21,1000,,消耗1000钻石,消耗1000鑽石,Spend 1000 diamonds,Spend 1000 diamonds,1000다이아 소모,Gaste 1000 diamantes,ใช้เงิน 1，000 เพชร,,,,,,30,
+12,通行证第一周任务,1001,2,1,,26,10,,购买10次体力,購買10次體力,Purchase 10 energy,Purchase 10 energy,체력 10회 구매,Compre 10 energias,ซื้อพลังงาน 10 หน่วย,,,,,,30,gainStamina
+13,通行证第一周任务,1001,2,1,,29,80,,挑战普通关卡80次,挑戰普通關卡80次,Clear Normal levels 80 times,Clear Normal levels 80 times,일반 스테이지 80회 도전,Limpe os níveis normais 80 vezes,เคลียร์ระดับปกติ 80 ครั้ง,,,,,,30,10000
+14,通行证第一周任务,1001,2,1,,30,30,,挑战困难关卡30次,挑戰困難關卡30次,Challenge Elite levels 30 times,Challenge Elite levels 30 times,하드 스테이지 도전 30회,Desafie os níveis Elite 30 vezes,ท้าทายระดับ Elite 30 ครั้ง,,,,,,30,20000
+15,通行证第一周任务,1001,2,1,,36,30,,精灵升级30次,精靈升級30次,Upgrade Pokémons 30 times,Upgrade Pokémons 30 times,포켓몬 30회 레벨업,Melhore os Pokémons 30 vezes,อัพเกรดโปเกมอน 30 ครั้ง,,,,,,30,strengthen-1
+16,通行证第一周任务,1001,2,1,,41,20,,竞技场战斗20次,競技場戰鬥20次,Engage in arena battle for 20 times,Engage in arena battle for 20 times,아레나 전투 20회 진행,Participe de uma batalha de arena 20 vezes,เข้าร่วมการต่อสู้ในสนามประลอง 20 ครั้ง,,,,,,30,
+,,,,,,,,,,,,,,,,,,,,,,
+17,通行证第二周任务,1001,2,2,4,18,10,,进行10次聚宝,進行10次聚寶,Get Treasure Pot 10 times,Get Treasure Pot 10 times,보물단지 10회 진행,Obtenha o pote do tesouro 10 vezes,รับหม้อสมบัติ 10 ครั้ง,,,,,,20,gainGold
+18,通行证第二周任务,1001,2,2,,20,1000000,,消耗1000000金币,消耗1000000金幣,Spend 1000000 coins,Spend 1000000 coins,1000000코인 소모,Gaste 1.000.000 de moedas,ใช้เงิน 1000000 เหรียญ,,,,,,20,
+19,通行证第二周任务,1001,2,2,,21,1000,,消耗1000钻石,消耗1000鑽石,Spend 1000 diamonds,Spend 1000 diamonds,1000다이아 소모,Gaste 1000 diamantes,ใช้เงิน 1，000 เพชร,,,,,,30,
+20,通行证第二周任务,1001,2,2,,26,10,,购买10次体力,購買10次體力,Purchase 10 energy,Purchase 10 energy,체력 10회 구매,Compre 10 energias,ซื้อพลังงาน 10 หน่วย,,,,,,30,gainStamina
+21,通行证第二周任务,1001,2,2,,29,80,,挑战普通关卡80次,挑戰普通關卡80次,Clear Normal levels 80 times,Clear Normal levels 80 times,일반 스테이지 80회 도전,Limpe os níveis normais 80 vezes,เคลียร์ระดับปกติ 80 ครั้ง,,,,,,30,10000
+22,通行证第二周任务,1001,2,2,,30,30,,挑战困难关卡30次,挑戰困難關卡30次,Challenge Elite levels 30 times,Challenge Elite levels 30 times,하드 스테이지 도전 30회,Desafie os níveis Elite 30 vezes,ท้าทายระดับ Elite 30 ครั้ง,,,,,,30,20000
+23,通行证第二周任务,1001,2,2,,36,30,,精灵升级30次,精靈升級30次,Upgrade Pokémons 30 times,Upgrade Pokémons 30 times,포켓몬 30회 레벨업,Melhore os Pokémons 30 vezes,อัพเกรดโปเกมอน 30 ครั้ง,,,,,,30,strengthen-1
+24,通行证第二周任务,1001,2,2,,41,20,,竞技场战斗20次,競技場戰鬥20次,Engage in arena battle for 20 times,Engage in arena battle for 20 times,아레나 전투 20회 진행,Participe de uma batalha de arena 20 vezes,เข้าร่วมการต่อสู้ในสนามประลอง 20 ครั้ง,,,,,,30,
+,,,,,,,,,,,,,,,,,,,,,,
+25,通行证第三周任务,1001,2,3,4,18,10,,进行10次聚宝,進行10次聚寶,Get Treasure Pot 10 times,Get Treasure Pot 10 times,보물단지 10회 진행,Obtenha o pote do tesouro 10 vezes,รับหม้อสมบัติ 10 ครั้ง,,,,,,20,gainGold
+26,通行证第三周任务,1001,2,3,,20,1000000,,消耗1000000金币,消耗1000000金幣,Spend 1000000 coins,Spend 1000000 coins,1000000코인 소모,Gaste 1.000.000 de moedas,ใช้เงิน 1000000 เหรียญ,,,,,,20,
+27,通行证第三周任务,1001,2,3,,21,1000,,消耗1000钻石,消耗1000鑽石,Spend 1000 diamonds,Spend 1000 diamonds,1000다이아 소모,Gaste 1000 diamantes,ใช้เงิน 1，000 เพชร,,,,,,30,
+28,通行证第三周任务,1001,2,3,,26,10,,购买10次体力,購買10次體力,Purchase 10 energy,Purchase 10 energy,체력 10회 구매,Compre 10 energias,ซื้อพลังงาน 10 หน่วย,,,,,,30,gainStamina
+29,通行证第三周任务,1001,2,3,,29,80,,挑战普通关卡80次,挑戰普通關卡80次,Clear Normal levels 80 times,Clear Normal levels 80 times,일반 스테이지 80회 도전,Limpe os níveis normais 80 vezes,เคลียร์ระดับปกติ 80 ครั้ง,,,,,,30,10000
+30,通行证第三周任务,1001,2,3,,30,30,,挑战困难关卡30次,挑戰困難關卡30次,Challenge Elite levels 30 times,Challenge Elite levels 30 times,하드 스테이지 도전 30회,Desafie os níveis Elite 30 vezes,ท้าทายระดับ Elite 30 ครั้ง,,,,,,30,20000
+31,通行证第三周任务,1001,2,3,,36,30,,精灵升级30次,精靈升級30次,Upgrade Pokémons 30 times,Upgrade Pokémons 30 times,포켓몬 30회 레벨업,Melhore os Pokémons 30 vezes,อัพเกรดโปเกมอน 30 ครั้ง,,,,,,30,strengthen-1
+32,通行证第三周任务,1001,2,3,,41,20,,竞技场战斗20次,競技場戰鬥20次,Engage in arena battle for 20 times,Engage in arena battle for 20 times,아레나 전투 20회 진행,Participe de uma batalha de arena 20 vezes,เข้าร่วมการต่อสู้ในสนามประลอง 20 ครั้ง,,,,,,30,
+,,,,,,,,,,,,,,,,,,,,,,
+33,通行证第四周任务,1001,2,4,4,18,10,,进行10次聚宝,進行10次聚寶,Get Treasure Pot 10 times,Get Treasure Pot 10 times,보물단지 10회 진행,Obtenha o pote do tesouro 10 vezes,รับหม้อสมบัติ 10 ครั้ง,,,,,,20,gainGold
+34,通行证第四周任务,1001,2,4,,20,1000000,,消耗1000000金币,消耗1000000金幣,Spend 1000000 coins,Spend 1000000 coins,1000000코인 소모,Gaste 1.000.000 de moedas,ใช้เงิน 1000000 เหรียญ,,,,,,20,
+35,通行证第四周任务,1001,2,4,,21,1000,,消耗1000钻石,消耗1000鑽石,Spend 1000 diamonds,Spend 1000 diamonds,1000다이아 소모,Gaste 1000 diamantes,ใช้เงิน 1，000 เพชร,,,,,,30,
+36,通行证第四周任务,1001,2,4,,26,10,,购买10次体力,購買10次體力,Purchase 10 energy,Purchase 10 energy,체력 10회 구매,Compre 10 energias,ซื้อพลังงาน 10 หน่วย,,,,,,30,gainStamina
+37,通行证第四周任务,1001,2,4,,29,80,,挑战普通关卡80次,挑戰普通關卡80次,Clear Normal levels 80 times,Clear Normal levels 80 times,일반 스테이지 80회 도전,Limpe os níveis normais 80 vezes,เคลียร์ระดับปกติ 80 ครั้ง,,,,,,30,10000
+38,通行证第四周任务,1001,2,4,,30,30,,挑战困难关卡30次,挑戰困難關卡30次,Challenge Elite levels 30 times,Challenge Elite levels 30 times,하드 스테이지 도전 30회,Desafie os níveis Elite 30 vezes,ท้าทายระดับ Elite 30 ครั้ง,,,,,,30,20000
+39,通行证第四周任务,1001,2,4,,36,30,,精灵升级30次,精靈升級30次,Upgrade Pokémons 30 times,Upgrade Pokémons 30 times,포켓몬 30회 레벨업,Melhore os Pokémons 30 vezes,อัพเกรดโปเกมอน 30 ครั้ง,,,,,,30,strengthen-1
+40,通行证第四周任务,1001,2,4,,41,20,,竞技场战斗20次,競技場戰鬥20次,Engage in arena battle for 20 times,Engage in arena battle for 20 times,아레나 전투 20회 진행,Participe de uma batalha de arena 20 vezes,เข้าร่วมการต่อสู้ในสนามประลอง 20 ครั้ง,,,,,,30,
+,,,,,,,,,,,,,,,,,,,,,,
+1001,通行证日任务,1002,1,,4,15,1,,每日登陆,每日登陸,Daily login,Daily login,일일 로그인,Login diário,เข้าสู่ระบบรายวัน,,,,,,15,
+1002,通行证日任务,1002,1,,4,29,30,,挑战普通关卡30次,挑戰普通關卡30次,Fight in Normal level 30 times,Fight in Normal level 30 times,일반 스테이지 30회 도전,Lute no nível Normal 30 vezes,ต่อสู้ในระดับปกติ 30 ครั้ง,,,,,,15,10000
+1003,通行证日任务,1002,1,,4,39,1,,饰品突破1次,飾品突破1次,Breakthrough trinket 1 time,Breakthrough trinket 1 time,액세서리 1회 돌파,Bugiganga inovadora 1 vez,เครื่องประดับล้ำยุค 1 ครั้ง,,,,,,15,
+1004,通行证日任务,1002,1,,3,41,5,,竞技场战斗5次,競技場戰鬥5次,Engage in arena battle for 5 times,Engage in arena battle for 5 times,아레나 전투 5회 진행,Participe de uma batalha de arena 5 vezes,เข้าร่วมการต่อสู้ในสนามประลอง 5 ครั้ง,,,,,,15,
+1005,通行证日任务,1002,1,,3,66,2,,元素挑战战斗2次,元素挑戰戰鬥2次,Enter Element Challenge 2 times,Enter Element Challenge 2 times,엘리멘탈 챌린지 2회 전투,Entre no Element Challenge 2 vezes,เข้าร่วม Element Challenge 2 ครั้ง,,,,,,15,
+1006,通行证日任务,1002,1,,3,20,1000000,,消耗1000000金币,消耗1000000金幣,Spend 1000000 coins,Spend 1000000 coins,1000000코인 소모,Gaste 1.000.000 de moedas,ใช้เงิน 1000000 เหรียญ,,,,,,15,
+1007,通行证日任务,1002,1,,3,21,300,,消耗300钻石,消耗300鑽石,Spend 300 diamonds,Spend 300 diamonds,300다이아 소모,Gaste 300 diamantes,ใช้เงิน 300 เพชร,,,,,,15,
+,,,,,,,,,,,,,,,,,,,,,,
+1101,通行证第一周任务,1002,2,1,4,17,2,,累计登录2天,累計登錄2天,Login 2 days in total,Tích luỹ đăng nhập 2 ngày,누적 2일 로그인,Login 2 dias no total,เข้าสู่ระบบรวม 2 วัน,,,,,,50,
+1102,通行证第一周任务,1002,2,1,4,36,30,,精灵升级30次,精靈升級30次,Upgrade Pokémons 30 times,Upgrade Pokémons 30 times,포켓몬 30회 레벨업,Melhore os Pokémons 30 vezes,อัพเกรดโปเกมอน 30 ครั้ง,,,,,,50,strengthen-1
+1103,通行证第一周任务,1002,2,1,4,21,1000,,消耗1000钻石,消耗1000鑽石,Spend 1000 diamonds,Spend 1000 diamonds,1000다이아 소모,Gaste 1000 diamantes,ใช้เงิน 1，000 เพชร,,,,,,50,
+1104,通行证第一周任务,1002,2,1,,43,25,,竞技场积分25分,競技場積分25分,Arena Points:25pts,Arena Points:25pts,아레나 포인트 25점,Pontos de Arena:25pts,คะแนนอารีน่า: 25 คะแนน,,,,,,50,
+1105,通行证第一周任务,1002,2,1,3,63,25000,,以太积分累计25000分,乙太積分累計25000分,Accumulate a total of 25000 Aether Points,Accumulate a total of 25000 Aether Points,에테르 포인트 누적 25000점,Acumule um total de 25.000 pontos de éter,สะสมแต้ม Aether ทั้งหมด 25，000 แต้ม,,,,,,50,
+1106,通行证第一周任务,1002,2,1,3,55,10,,公会捐献10次,公會捐獻10次,Donate 10 times,Donate 10 times,길드 기부 10회,Doe 10 vezes,บริจาค 10 ครั้ง,,,,,,50,
+1107,通行证第一周任务,1002,2,1,3,50,10,,在钻石抽卡中抽卡10次,在鑽石抽卡中抽卡10次,Draw 10 times in Diamond Draw,Draw 10 times in Diamond Draw,다이아 뽑기 10회 진행,Desenhe 10 vezes no Diamond Draw,จับฉลาก 10 ครั้ง ใน Diamond Draw,,,,,,50,
+1108,通行证第一周任务,1002,2,1,4,29,150,,挑战普通关卡150次,挑戰普通關卡150次,Fight in Normal level 150 times,Fight in Normal level 150 times,일반 스테이지 150회 도전,Lute no nível Normal 150 vezes,ต่อสู้ในระดับปกติ 150 ครั้ง,,,,,,50,10000
+1109,通行证第一周任务,1002,2,1,,30,30,,挑战困难关卡30次,挑戰困難關卡30次,Challenge Elite levels 30 times,Challenge Elite levels 30 times,하드 스테이지 도전 30회,Desafie os níveis Elite 30 vezes,ท้าทายระดับ Elite 30 ครั้ง,,,,,,50,20000
+1110,通行证第一周任务,1002,2,1,3,85,15,,派遣任务完成15次,派遣任務完成15次,Complete Dispatch Quest 15 times,Complete Dispatch Quest 15 times,파견 퀘스트 15회 완료,Complete a missão Dispatch 15 vezes,เสร็จสิ้นภารกิจจัดส่ง 15 ครั้ง,,,,,,50,
+1111,通行证第一周任务,1002,2,1,,21,3000,,消耗3000钻石,消耗3000鑽石,Spend 3000 diamonds,Spend 3000 diamonds,3000다이아 소모,Gaste 3000 diamantes,ใช้เงิน 3，000 เพชร,,,,,,50,
+1112,通行证第一周任务,1002,2,1,4,67,7,,以太乐园通过7层,乙太樂園通過7層,Clear Aether Paradise level 7,Clear Aether Paradise level 7,에테르파라다이스 7층 클리어,Limpe o nível 7 do Aether Paradise,เคลียร์อีเธอร์พาราไดซ์ ระดับ 7,,,,,,50,
+1113,通行证第一周任务,1002,2,1,3,86,3,{3=4},完成S以上派遣3次,完成S以上派遣3次,Complete S and above Dispatch Quest 3 times,Complete S and above Dispatch Quest 3 times,S급 이상 파견 3회 완료,Complete a missão S e acima Dispatch 3 vezes,ทำภารกิจส่งของ S ขึ้นไปให้สำเร็จ 3 ครั้ง,,,,,,50,
+,,,,,,,,,,,,,,,,,,,,,,
+1201,通行证第一周任务,1002,2,2,4,17,3,,累计登录3天,累計登錄3天,Login 3 days in total,Tích luỹ đăng nhập 3 ngày,누적 3일 로그인,Login 3 dias no total,เข้าสู่ระบบรวม 3 วัน,,,,,,50,
+1202,通行证第一周任务,1002,2,2,,36,50,,精灵升级50次,精靈升級50次,Upgrade Pokémon 50 times.,Upgrade Pokémon 50 times.,포켓몬 50회 레벨업,Melhore os Pokémon 50 vezes.,อัพเกรดโปเกมอน 50 ครั้ง,,,,,,50,strengthen-1
+1203,通行证第一周任务,1002,2,2,3,21,1000,,消耗1000钻石,消耗1000鑽石,Spend 1000 diamonds,Spend 1000 diamonds,1000다이아 소모,Gaste 1000 diamantes,ใช้เงิน 1，000 เพชร,,,,,,50,
+1204,通行证第一周任务,1002,2,2,,43,50,,竞技场积分50分,競技場積分50分,Arena Points:50pts,Arena Points:50pts,아레나 포인트 50점,Pontos de Arena:50pts,คะแนนอารีน่า: 50 คะแนน,,,,,,50,
+1205,通行证第一周任务,1002,2,2,,63,50000,,以太积分累计50000分,乙太積分累計50000分,Accumulate a total of 50000 Aether Points,Accumulate a total of 50000 Aether Points,에테르 포인트 누적 50000점,Acumule um total de 50000 pontos de éter,สะสมแต้ม Aether ทั้งหมด 50，000 แต้ม,,,,,,50,
+1206,通行证第一周任务,1002,2,2,4,55,20,,公会捐献20次,公會捐獻20次,Donate 20 times,Donate 20 times,길드 기부 20회,Doe 20 vezes,บริจาค 20 ครั้ง,,,,,,50,
+1207,通行证第一周任务,1002,2,2,,50,20,,在钻石抽卡中抽卡20次,在鑽石抽卡中抽卡20次,Draw 20 times in Diamond Draw,Draw 20 times in Diamond Draw,다이아 뽑기 20회 진행,Desenhe 20 vezes no Diamond Draw,จับฉลาก 20 ครั้ง ใน Diamond Draw,,,,,,50,
+1208,通行证第一周任务,1002,2,2,4,29,300,,挑战普通关卡300次,挑戰普通關卡300次,Fight in Normal level 300 times,Fight in Normal level 300 times,일반 스테이지 300회 도전,Lute no nível Normal 300 vezes,ต่อสู้ในระดับปกติ 300 ครั้ง,,,,,,50,10000
+1209,通行证第一周任务,1002,2,2,,30,60,,挑战困难关卡60次,挑戰困難關卡60次,Challenge Elite level 60 times,Challenge Elite level 60 times,하드 스테이지 도전 60회,Desafie o nível Elite 60 vezes,ท้าทายระดับ Elite 60 ครั้ง,,,,,,50,20000
+1210,通行证第一周任务,1002,2,2,4,85,30,,派遣任务完成30次,派遣任務完成30次,Complete Dispatch Quest 30 times,Complete Dispatch Quest 30 times,파견 퀘스트 30회 완료,Complete a missão Dispatch 30 vezes,ทำภารกิจจัดส่งให้สำเร็จ 30 ครั้ง,,,,,,50,
+1211,通行证第一周任务,1002,2,2,,21,3000,,消耗3000钻石,消耗3000鑽石,Spend 3000 diamonds,Spend 3000 diamonds,3000다이아 소모,Gaste 3000 diamantes,ใช้เงิน 3，000 เพชร,,,,,,50,
+1212,通行证第一周任务,1002,2,2,,67,7,,以太乐园通过7层,乙太樂園通過7層,Clear Aether Paradise level 7,Clear Aether Paradise level 7,에테르파라다이스 7층 클리어,Limpe o nível 7 do Aether Paradise,เคลียร์อีเธอร์พาราไดซ์ ระดับ 7,,,,,,50,
+1213,通行证第一周任务,1002,2,2,,86,6,{6=4},完成S以上派遣6次,完成S以上派遣6次,Complete S and above Dispatch Quest 6 times,Complete S and above Dispatch Quest 6 times,S급 이상 파견 6회 완료,Complete a missão S e acima Dispatch 6 vezes,ทำภารกิจส่งของ S ขึ้นไปให้สำเร็จ 6 ครั้ง,,,,,,50,
+,,,,,,,,,,,,,,,,,,,,,,
+1301,通行证第一周任务,1002,2,3,4,17,3,,累计登录3天,累計登錄3天,Login 3 days in total,Tích luỹ đăng nhập 3 ngày,누적 3일 로그인,Login 3 dias no total,เข้าสู่ระบบรวม 3 วัน,,,,,,50,
+1302,通行证第一周任务,1002,2,3,,36,50,,精灵升级50次,精靈升級50次,Upgrade Pokémon 50 times.,Upgrade Pokémon 50 times.,포켓몬 50회 레벨업,Melhore os Pokémon 50 vezes.,อัพเกรดโปเกมอน 50 ครั้ง,,,,,,50,strengthen-1
+1303,通行证第一周任务,1002,2,3,,21,1000,,消耗1000钻石,消耗1000鑽石,Spend 1000 diamonds,Spend 1000 diamonds,1000다이아 소모,Gaste 1000 diamantes,ใช้เงิน 1，000 เพชร,,,,,,100,
+1304,通行证第一周任务,1002,2,3,,43,50,,竞技场积分50分,競技場積分50分,Arena Points:50pts,Arena Points:50pts,아레나 포인트 50점,Pontos de Arena:50pts,คะแนนอารีน่า: 50 คะแนน,,,,,,50,
+1305,通行证第一周任务,1002,2,3,4,63,50000,,以太积分累计50000分,乙太積分累計50000分,Accumulate a total of 50000 Aether Points,Accumulate a total of 50000 Aether Points,에테르 포인트 누적 50000점,Acumule um total de 50000 pontos de éter,สะสมแต้ม Aether ทั้งหมด 50，000 แต้ม,,,,,,50,
+1306,通行证第一周任务,1002,2,3,,55,20,,公会捐献20次,公會捐獻20次,Donate 20 times,Donate 20 times,길드 기부 20회,Doe 20 vezes,บริจาค 20 ครั้ง,,,,,,50,
+1307,通行证第一周任务,1002,2,3,4,50,20,,在钻石抽卡中抽卡20次,在鑽石抽卡中抽卡20次,Draw 20 times in Diamond Draw,Draw 20 times in Diamond Draw,다이아 뽑기 20회 진행,Desenhe 20 vezes no Diamond Draw,จับฉลาก 20 ครั้ง ใน Diamond Draw,,,,,,100,
+1308,通行证第一周任务,1002,2,3,,29,300,,挑战普通关卡300次,挑戰普通關卡300次,Fight in Normal level 300 times,Fight in Normal level 300 times,일반 스테이지 300회 도전,Lute no nível Normal 300 vezes,ต่อสู้ในระดับปกติ 300 ครั้ง,,,,,,100,10000
+1309,通行证第一周任务,1002,2,3,4,30,60,,挑战困难关卡60次,挑戰困難關卡60次,Challenge Elite level 60 times,Challenge Elite level 60 times,하드 스테이지 도전 60회,Desafie o nível Elite 60 vezes,ท้าทายระดับ Elite 60 ครั้ง,,,,,,100,20000
+1310,通行证第一周任务,1002,2,3,4,85,30,,派遣任务完成30次,派遣任務完成30次,Complete Dispatch Quest 30 times,Complete Dispatch Quest 30 times,파견 퀘스트 30회 완료,Complete a missão Dispatch 30 vezes,ทำภารกิจจัดส่งให้สำเร็จ 30 ครั้ง,,,,,,50,
+1311,通行证第一周任务,1002,2,3,,21,3000,,消耗3000钻石,消耗3000鑽石,Spend 3000 diamonds,Spend 3000 diamonds,3000다이아 소모,Gaste 3000 diamantes,ใช้เงิน 3，000 เพชร,,,,,,100,
+1312,通行证第一周任务,1002,2,3,4,67,7,,以太乐园通过7层,乙太樂園通過7層,Clear Aether Paradise level 7,Clear Aether Paradise level 7,에테르파라다이스 7층 클리어,Limpe o nível 7 do Aether Paradise,เคลียร์อีเธอร์พาราไดซ์ ระดับ 7,,,,,,100,
+1313,通行证第一周任务,1002,2,3,,86,6,{6=4},完成S以上派遣6次,完成S以上派遣6次,Complete S and above Dispatch Quest 6 times,Complete S and above Dispatch Quest 6 times,S급 이상 파견 6회 완료,Complete a missão S e acima Dispatch 6 vezes,ทำภารกิจส่งของ S ขึ้นไปให้สำเร็จ 6 ครั้ง,,,,,,100,
+,,,,,,,,,,,,,,,,,,,,,,
+1401,通行证第一周任务,1002,2,4,3,17,3,,累计登录3天,累計登錄3天,Login 3 days in total,Tích luỹ đăng nhập 3 ngày,누적 3일 로그인,Login 3 dias no total,เข้าสู่ระบบรวม 3 วัน,,,,,,50,
+1402,通行证第一周任务,1002,2,4,3,36,50,,精灵升级50次,精靈升級50次,Upgrade Pokémon 50 times.,Upgrade Pokémon 50 times.,포켓몬 50회 레벨업,Melhore os Pokémon 50 vezes.,อัพเกรดโปเกมอน 50 ครั้ง,,,,,,50,strengthen-1
+1403,通行证第一周任务,1002,2,4,4,21,1000,,消耗1000钻石,消耗1000鑽石,Spend 1000 diamonds,Spend 1000 diamonds,1000다이아 소모,Gaste 1000 diamantes,ใช้เงิน 1，000 เพชร,,,,,,100,
+1404,通行证第一周任务,1002,2,4,4,43,50,,竞技场积分50分,競技場積分50分,Arena Points:50pts,Arena Points:50pts,아레나 포인트 50점,Pontos de Arena:50pts,คะแนนอารีน่า: 50 คะแนน,,,,,,50,
+1405,通行证第一周任务,1002,2,4,,63,50000,,以太积分累计50000分,乙太積分累計50000分,Accumulate a total of 50000 Aether Points,Accumulate a total of 50000 Aether Points,에테르 포인트 누적 50000점,Acumule um total de 50000 pontos de éter,สะสมแต้ม Aether ทั้งหมด 50，000 แต้ม,,,,,,50,
+1406,通行证第一周任务,1002,2,4,4,55,20,,公会捐献20次,公會捐獻20次,Donate 20 times,Donate 20 times,길드 기부 20회,Doe 20 vezes,บริจาค 20 ครั้ง,,,,,,50,
+1407,通行证第一周任务,1002,2,4,,50,20,,在钻石抽卡中抽卡20次,在鑽石抽卡中抽卡20次,Draw 20 times in Diamond Draw,Draw 20 times in Diamond Draw,다이아 뽑기 20회 진행,Desenhe 20 vezes no Diamond Draw,จับฉลาก 20 ครั้ง ใน Diamond Draw,,,,,,100,
+1408,通行证第一周任务,1002,2,4,4,29,300,,挑战普通关卡300次,挑戰普通關卡300次,Fight in Normal level 300 times,Fight in Normal level 300 times,일반 스테이지 300회 도전,Lute no nível Normal 300 vezes,ต่อสู้ในระดับปกติ 300 ครั้ง,,,,,,100,10000
+1409,通行证第一周任务,1002,2,4,,30,60,,挑战困难关卡60次,挑戰困難關卡60次,Challenge Elite level 60 times,Challenge Elite level 60 times,하드 스테이지 도전 60회,Desafie o nível Elite 60 vezes,ท้าทายระดับ Elite 60 ครั้ง,,,,,,100,20000
+1410,通行证第一周任务,1002,2,4,3,85,30,,派遣任务完成30次,派遣任務完成30次,Complete Dispatch Quest 30 times,Complete Dispatch Quest 30 times,파견 퀘스트 30회 완료,Complete a missão Dispatch 30 vezes,ทำภารกิจจัดส่งให้สำเร็จ 30 ครั้ง,,,,,,50,
+1411,通行证第一周任务,1002,2,4,3,21,3000,,消耗3000钻石,消耗3000鑽石,Spend 3000 diamonds,Spend 3000 diamonds,3000다이아 소모,Gaste 3000 diamantes,ใช้เงิน 3，000 เพชร,,,,,,100,
+1412,通行证第一周任务,1002,2,4,3,67,7,,以太乐园通过7层,乙太樂園通過7層,Clear Aether Paradise level 7,Clear Aether Paradise level 7,에테르파라다이스 7층 클리어,Limpe o nível 7 do Aether Paradise,เคลียร์อีเธอร์พาราไดซ์ ระดับ 7,,,,,,100,
+1413,通行证第一周任务,1002,2,4,,86,6,{6=4},完成S以上派遣6次,完成S以上派遣6次,Complete S and above Dispatch Quest 6 times,Complete S and above Dispatch Quest 6 times,S급 이상 파견 6회 완료,Complete a missão S e acima Dispatch 6 vezes,ทำภารกิจส่งของ S ขึ้นไปให้สำเร็จ 6 ครั้ง,,,,,,100,
+,,,,,,,,,,,,,,,,,,,,,,
+1501,通行证第一周任务,1002,2,5,4,17,3,,累计登录3天,累計登錄3天,Login 3 days in total,Tích luỹ đăng nhập 3 ngày,누적 3일 로그인,Login 3 dias no total,เข้าสู่ระบบรวม 3 วัน,,,,,,50,
+1502,通行证第一周任务,1002,2,5,,36,50,,精灵升级50次,精靈升級50次,Upgrade Pokémon 50 times.,Upgrade Pokémon 50 times.,포켓몬 50회 레벨업,Melhore os Pokémon 50 vezes.,อัพเกรดโปเกมอน 50 ครั้ง,,,,,,50,strengthen-1
+1503,通行证第一周任务,1002,2,5,,21,1000,,消耗1000钻石,消耗1000鑽石,Spend 1000 diamonds,Spend 1000 diamonds,1000다이아 소모,Gaste 1000 diamantes,ใช้เงิน 1，000 เพชร,,,,,,100,
+1504,通行证第一周任务,1002,2,5,3,43,50,,竞技场积分50分,競技場積分50分,Arena Points:50pts,Arena Points:50pts,아레나 포인트 50점,Pontos de Arena:50pts,คะแนนอารีน่า: 50 คะแนน,,,,,,50,
+1505,通行证第一周任务,1002,2,5,,63,50000,,以太积分累计50000分,乙太積分累計50000分,Accumulate a total of 50000 Aether Points,Accumulate a total of 50000 Aether Points,에테르 포인트 누적 50000점,Acumule um total de 50000 pontos de éter,สะสมแต้ม Aether ทั้งหมด 50，000 แต้ม,,,,,,50,
+1506,通行证第一周任务,1002,2,5,3,55,20,,公会捐献20次,公會捐獻20次,Donate 20 times,Donate 20 times,길드 기부 20회,Doe 20 vezes,บริจาค 20 ครั้ง,,,,,,50,
+1507,通行证第一周任务,1002,2,5,,50,20,,在钻石抽卡中抽卡20次,在鑽石抽卡中抽卡20次,Draw 20 times in Diamond Draw,Draw 20 times in Diamond Draw,다이아 뽑기 20회 진행,Desenhe 20 vezes no Diamond Draw,จับฉลาก 20 ครั้ง ใน Diamond Draw,,,,,,100,
+1508,通行证第一周任务,1002,2,5,3,29,300,,挑战普通关卡300次,挑戰普通關卡300次,Fight in Normal level 300 times,Fight in Normal level 300 times,일반 스테이지 300회 도전,Lute no nível Normal 300 vezes,ต่อสู้ในระดับปกติ 300 ครั้ง,,,,,,100,10000
+1509,通行证第一周任务,1002,2,5,3,30,60,,挑战困难关卡60次,挑戰困難關卡60次,Challenge Elite level 60 times,Challenge Elite level 60 times,하드 스테이지 도전 60회,Desafie o nível Elite 60 vezes,ท้าทายระดับ Elite 60 ครั้ง,,,,,,100,20000
+1510,通行证第一周任务,1002,2,5,,85,30,,派遣任务完成30次,派遣任務完成30次,Complete Dispatch Quest 30 times,Complete Dispatch Quest 30 times,파견 퀘스트 30회 완료,Complete a missão Dispatch 30 vezes,ทำภารกิจจัดส่งให้สำเร็จ 30 ครั้ง,,,,,,50,
+1511,通行证第一周任务,1002,2,5,,21,3000,,消耗3000钻石,消耗3000鑽石,Spend 3000 diamonds,Spend 3000 diamonds,3000다이아 소모,Gaste 3000 diamantes,ใช้เงิน 3，000 เพชร,,,,,,100,
+1512,通行证第一周任务,1002,2,5,,67,7,,以太乐园通过7层,乙太樂園通過7層,Clear Aether Paradise level 7,Clear Aether Paradise level 7,에테르파라다이스 7층 클리어,Limpe o nível 7 do Aether Paradise,เคลียร์อีเธอร์พาราไดซ์ ระดับ 7,,,,,,100,
+1513,通行证第一周任务,1002,2,5,,86,6,{6=4},完成S以上派遣6次,完成S以上派遣6次,Complete S and above Dispatch Quest 6 times,Complete S and above Dispatch Quest 6 times,S급 이상 파견 6회 완료,Complete a missão S e acima Dispatch 6 vezes,ทำภารกิจส่งของ S ขึ้นไปให้สำเร็จ 6 ครั้ง,,,,,,100,
+,,,,,,,,,,,,,,,,,,,,,,
+1601,通行证第一周任务,1002,2,6,4,17,3,,累计登录3天,累計登錄3天,Login 3 days in total,Tích luỹ đăng nhập 3 ngày,누적 3일 로그인,Login 3 dias no total,เข้าสู่ระบบรวม 3 วัน,,,,,,50,
+1602,通行证第一周任务,1002,2,6,,36,50,,精灵升级50次,精靈升級50次,Upgrade Pokémon 50 times.,Upgrade Pokémon 50 times.,포켓몬 50회 레벨업,Melhore os Pokémon 50 vezes.,อัพเกรดโปเกมอน 50 ครั้ง,,,,,,50,strengthen-1
+1603,通行证第一周任务,1002,2,6,3,21,1000,,消耗1000钻石,消耗1000鑽石,Spend 1000 diamonds,Spend 1000 diamonds,1000다이아 소모,Gaste 1000 diamantes,ใช้เงิน 1，000 เพชร,,,,,,100,
+1604,通行证第一周任务,1002,2,6,3,43,50,,竞技场积分50分,競技場積分50分,Arena Points:50pts,Arena Points:50pts,아레나 포인트 50점,Pontos de Arena:50pts,คะแนนอารีน่า: 50 คะแนน,,,,,,50,
+1605,通行证第一周任务,1002,2,6,3,63,50000,,以太积分累计50000分,乙太積分累計50000分,Accumulate a total of 50000 Aether Points,Accumulate a total of 50000 Aether Points,에테르 포인트 누적 50000점,Acumule um total de 50000 pontos de éter,สะสมแต้ม Aether ทั้งหมด 50，000 แต้ม,,,,,,50,
+1606,通行证第一周任务,1002,2,6,4,55,20,,公会捐献20次,公會捐獻20次,Donate 20 times,Donate 20 times,길드 기부 20회,Doe 20 vezes,บริจาค 20 ครั้ง,,,,,,50,
+1607,通行证第一周任务,1002,2,6,4,50,20,,在钻石抽卡中抽卡20次,在鑽石抽卡中抽卡20次,Draw 20 times in Diamond Draw,Draw 20 times in Diamond Draw,다이아 뽑기 20회 진행,Desenhe 20 vezes no Diamond Draw,จับฉลาก 20 ครั้ง ใน Diamond Draw,,,,,,100,
+1608,通行证第一周任务,1002,2,6,4,29,300,,挑战普通关卡300次,挑戰普通關卡300次,Fight in Normal level 300 times,Fight in Normal level 300 times,일반 스테이지 300회 도전,Lute no nível Normal 300 vezes,ต่อสู้ในระดับปกติ 300 ครั้ง,,,,,,100,10000
+1609,通行证第一周任务,1002,2,6,3,30,60,,挑战困难关卡60次,挑戰困難關卡60次,Challenge Elite level 60 times,Challenge Elite level 60 times,하드 스테이지 도전 60회,Desafie o nível Elite 60 vezes,ท้าทายระดับ Elite 60 ครั้ง,,,,,,100,20000
+1610,通行证第一周任务,1002,2,6,,85,30,,派遣任务完成30次,派遣任務完成30次,Complete Dispatch Quest 30 times,Complete Dispatch Quest 30 times,파견 퀘스트 30회 완료,Complete a missão Dispatch 30 vezes,ทำภารกิจจัดส่งให้สำเร็จ 30 ครั้ง,,,,,,50,
+1611,通行证第一周任务,1002,2,6,3,21,3000,,消耗3000钻石,消耗3000鑽石,Spend 3000 diamonds,Spend 3000 diamonds,3000다이아 소모,Gaste 3000 diamantes,ใช้เงิน 3，000 เพชร,,,,,,100,
+1612,通行证第一周任务,1002,2,6,,67,7,,以太乐园通过7层,乙太樂園通過7層,Clear Aether Paradise level 7,Clear Aether Paradise level 7,에테르파라다이스 7층 클리어,Limpe o nível 7 do Aether Paradise,เคลียร์อีเธอร์พาราไดซ์ ระดับ 7,,,,,,100,
+1613,通行证第一周任务,1002,2,6,,86,6,{6=4},完成S以上派遣6次,完成S以上派遣6次,Complete S and above Dispatch Quest 6 times,Complete S and above Dispatch Quest 6 times,S급 이상 파견 6회 완료,Complete a missão S e acima Dispatch 6 vezes,ทำภารกิจส่งของ S ขึ้นไปให้สำเร็จ 6 ครั้ง,,,,,,100,
+,,,,,,,,,,,,,,,,,,,,,,
+1701,通行证第一周任务,1002,2,7,4,17,3,,累计登录3天,累計登錄3天,Login 3 days in total,Tích luỹ đăng nhập 3 ngày,누적 3일 로그인,Login 3 dias no total,เข้าสู่ระบบรวม 3 วัน,,,,,,50,
+1702,通行证第一周任务,1002,2,7,,36,50,,精灵升级50次,精靈升級50次,Upgrade Pokémon 50 times.,Upgrade Pokémon 50 times.,포켓몬 50회 레벨업,Melhore os Pokémon 50 vezes.,อัพเกรดโปเกมอน 50 ครั้ง,,,,,,50,strengthen-1
+1703,通行证第一周任务,1002,2,7,,21,1000,,消耗1000钻石,消耗1000鑽石,Spend 1000 diamonds,Spend 1000 diamonds,1000다이아 소모,Gaste 1000 diamantes,ใช้เงิน 1，000 เพชร,,,,,,100,
+1704,通行证第一周任务,1002,2,7,,43,50,,竞技场积分50分,競技場積分50分,Arena Points:50pts,Arena Points:50pts,아레나 포인트 50점,Pontos de Arena:50pts,คะแนนอารีน่า: 50 คะแนน,,,,,,50,
+1705,通行证第一周任务,1002,2,7,,63,50000,,以太积分累计50000分,乙太積分累計50000分,Accumulate a total of 50000 Aether Points,Accumulate a total of 50000 Aether Points,에테르 포인트 누적 50000점,Acumule um total de 50000 pontos de éter,สะสมแต้ม Aether ทั้งหมด 50，000 แต้ม,,,,,,50,
+1706,通行证第一周任务,1002,2,7,,55,20,,公会捐献20次,公會捐獻20次,Donate 20 times,Donate 20 times,길드 기부 20회,Doe 20 vezes,บริจาค 20 ครั้ง,,,,,,50,
+1707,通行证第一周任务,1002,2,7,,50,20,,在钻石抽卡中抽卡20次,在鑽石抽卡中抽卡20次,Draw 20 times in Diamond Draw,Draw 20 times in Diamond Draw,다이아 뽑기 20회 진행,Desenhe 20 vezes no Diamond Draw,จับฉลาก 20 ครั้ง ใน Diamond Draw,,,,,,100,
+1708,通行证第一周任务,1002,2,7,,29,300,,挑战普通关卡300次,挑戰普通關卡300次,Fight in Normal level 300 times,Fight in Normal level 300 times,일반 스테이지 300회 도전,Lute no nível Normal 300 vezes,ต่อสู้ในระดับปกติ 300 ครั้ง,,,,,,100,10000
+1709,通行证第一周任务,1002,2,7,,30,60,,挑战困难关卡60次,挑戰困難關卡60次,Challenge Elite level 60 times,Challenge Elite level 60 times,하드 스테이지 도전 60회,Desafie o nível Elite 60 vezes,ท้าทายระดับ Elite 60 ครั้ง,,,,,,100,20000
+1710,通行证第一周任务,1002,2,7,4,85,30,,派遣任务完成30次,派遣任務完成30次,Complete Dispatch Quest 30 times,Complete Dispatch Quest 30 times,파견 퀘스트 30회 완료,Complete a missão Dispatch 30 vezes,ทำภารกิจจัดส่งให้สำเร็จ 30 ครั้ง,,,,,,50,
+1711,通行证第一周任务,1002,2,7,4,21,3000,,消耗3000钻石,消耗3000鑽石,Spend 3000 diamonds,Spend 3000 diamonds,3000다이아 소모,Gaste 3000 diamantes,ใช้เงิน 3，000 เพชร,,,,,,100,
+1712,通行证第一周任务,1002,2,7,4,67,7,,以太乐园通过7层,乙太樂園通過7層,Clear Aether Paradise level 7,Clear Aether Paradise level 7,에테르파라다이스 7층 클리어,Limpe o nível 7 do Aether Paradise,เคลียร์อีเธอร์พาราไดซ์ ระดับ 7,,,,,,100,
+1713,通行证第一周任务,1002,2,7,,86,6,{6=4},完成S以上派遣6次,完成S以上派遣6次,Complete S and above Dispatch Quest 6 times,Complete S and above Dispatch Quest 6 times,S급 이상 파견 6회 완료,Complete a missão S e acima Dispatch 6 vezes,ทำภารกิจส่งของ S ขึ้นไปให้สำเร็จ 6 ครั้ง,,,,,,100,
+,,,,,,,,,,,,,,,,,,,,,,
+1801,通行证第一周任务,1002,2,8,4,17,3,,累计登录3天,累計登錄3天,Login 3 days in total,Tích luỹ đăng nhập 3 ngày,누적 3일 로그인,Login 3 dias no total,เข้าสู่ระบบรวม 3 วัน,,,,,,50,
+1802,通行证第一周任务,1002,2,8,,36,50,,精灵升级50次,精靈升級50次,Upgrade Pokémon 50 times.,Upgrade Pokémon 50 times.,포켓몬 50회 레벨업,Melhore os Pokémon 50 vezes.,อัพเกรดโปเกมอน 50 ครั้ง,,,,,,50,strengthen-1
+1803,通行证第一周任务,1002,2,8,,21,1000,,消耗1000钻石,消耗1000鑽石,Spend 1000 diamonds,Spend 1000 diamonds,1000다이아 소모,Gaste 1000 diamantes,ใช้เงิน 1，000 เพชร,,,,,,100,
+1804,通行证第一周任务,1002,2,8,,43,50,,竞技场积分50分,競技場積分50分,Arena Points:50pts,Arena Points:50pts,아레나 포인트 50점,Pontos de Arena:50pts,คะแนนอารีน่า: 50 คะแนน,,,,,,50,
+1805,通行证第一周任务,1002,2,8,,63,50000,,以太积分累计50000分,乙太積分累計50000分,Accumulate a total of 50000 Aether Points,Accumulate a total of 50000 Aether Points,에테르 포인트 누적 50000점,Acumule um total de 50000 pontos de éter,สะสมแต้ม Aether ทั้งหมด 50，000 แต้ม,,,,,,50,
+1806,通行证第一周任务,1002,2,8,,55,20,,公会捐献20次,公會捐獻20次,Donate 20 times,Donate 20 times,길드 기부 20회,Doe 20 vezes,บริจาค 20 ครั้ง,,,,,,50,
+1807,通行证第一周任务,1002,2,8,4,50,20,,在钻石抽卡中抽卡20次,在鑽石抽卡中抽卡20次,Draw 20 times in Diamond Draw,Draw 20 times in Diamond Draw,다이아 뽑기 20회 진행,Desenhe 20 vezes no Diamond Draw,จับฉลาก 20 ครั้ง ใน Diamond Draw,,,,,,100,
+1808,通行证第一周任务,1002,2,8,,29,300,,挑战普通关卡300次,挑戰普通關卡300次,Fight in Normal level 300 times,Fight in Normal level 300 times,일반 스테이지 300회 도전,Lute no nível Normal 300 vezes,ต่อสู้ในระดับปกติ 300 ครั้ง,,,,,,100,10000
+1809,通行证第一周任务,1002,2,8,,30,60,,挑战困难关卡60次,挑戰困難關卡60次,Challenge Elite level 60 times,Challenge Elite level 60 times,하드 스테이지 도전 60회,Desafie o nível Elite 60 vezes,ท้าทายระดับ Elite 60 ครั้ง,,,,,,100,20000
+1810,通行证第一周任务,1002,2,8,4,85,30,,派遣任务完成30次,派遣任務完成30次,Complete Dispatch Quest 30 times,Complete Dispatch Quest 30 times,파견 퀘스트 30회 완료,Complete a missão Dispatch 30 vezes,ทำภารกิจจัดส่งให้สำเร็จ 30 ครั้ง,,,,,,50,
+1811,通行证第一周任务,1002,2,8,,21,3000,,消耗3000钻石,消耗3000鑽石,Spend 3000 diamonds,Spend 3000 diamonds,3000다이아 소모,Gaste 3000 diamantes,ใช้เงิน 3，000 เพชร,,,,,,100,
+1812,通行证第一周任务,1002,2,8,4,67,7,,以太乐园通过7层,乙太樂園通過7層,Clear Aether Paradise level 7,Clear Aether Paradise level 7,에테르파라다이스 7층 클리어,Limpe o nível 7 do Aether Paradise,เคลียร์อีเธอร์พาราไดซ์ ระดับ 7,,,,,,100,
+1813,通行证第一周任务,1002,2,8,,86,6,{6=4},完成S以上派遣6次,完成S以上派遣6次,Complete S and above Dispatch Quest 6 times,Complete S and above Dispatch Quest 6 times,S급 이상 파견 6회 완료,Complete a missão S e acima Dispatch 6 vezes,ทำภารกิจส่งของ S ขึ้นไปให้สำเร็จ 6 ครั้ง,,,,,,100,
+,,,,,,,,,,,,,,,,,,,,,,
+1901,通行证第一周任务,1002,2,9,4,17,3,,累计登录3天,累計登錄3天,Login 3 days in total,Tích luỹ đăng nhập 3 ngày,누적 3일 로그인,Login 3 dias no total,เข้าสู่ระบบรวม 3 วัน,,,,,,50,
+1902,通行证第一周任务,1002,2,9,,36,50,,精灵升级50次,精靈升級50次,Upgrade Pokémon 50 times.,Upgrade Pokémon 50 times.,포켓몬 50회 레벨업,Melhore os Pokémon 50 vezes.,อัพเกรดโปเกมอน 50 ครั้ง,,,,,,50,strengthen-1
+1903,通行证第一周任务,1002,2,9,,21,1000,,消耗1000钻石,消耗1000鑽石,Spend 1000 diamonds,Spend 1000 diamonds,1000다이아 소모,Gaste 1000 diamantes,ใช้เงิน 1，000 เพชร,,,,,,100,
+1904,通行证第一周任务,1002,2,9,,43,50,,竞技场积分50分,競技場積分50分,Arena Points:50pts,Arena Points:50pts,아레나 포인트 50점,Pontos de Arena:50pts,คะแนนอารีน่า: 50 คะแนน,,,,,,50,
+1905,通行证第一周任务,1002,2,9,4,63,50000,,以太积分累计50000分,乙太積分累計50000分,Accumulate a total of 50000 Aether Points,Accumulate a total of 50000 Aether Points,에테르 포인트 누적 50000점,Acumule um total de 50000 pontos de éter,สะสมแต้ม Aether ทั้งหมด 50，000 แต้ม,,,,,,50,
+1906,通行证第一周任务,1002,2,9,,55,20,,公会捐献20次,公會捐獻20次,Donate 20 times,Donate 20 times,길드 기부 20회,Doe 20 vezes,บริจาค 20 ครั้ง,,,,,,50,
+1907,通行证第一周任务,1002,2,9,,50,20,,在钻石抽卡中抽卡20次,在鑽石抽卡中抽卡20次,Draw 20 times in Diamond Draw,Draw 20 times in Diamond Draw,다이아 뽑기 20회 진행,Desenhe 20 vezes no Diamond Draw,จับฉลาก 20 ครั้ง ใน Diamond Draw,,,,,,100,
+1908,通行证第一周任务,1002,2,9,,29,300,,挑战普通关卡300次,挑戰普通關卡300次,Fight in Normal level 300 times,Fight in Normal level 300 times,일반 스테이지 300회 도전,Lute no nível Normal 300 vezes,ต่อสู้ในระดับปกติ 300 ครั้ง,,,,,,100,10000
+1909,通行证第一周任务,1002,2,9,4,30,60,,挑战困难关卡60次,挑戰困難關卡60次,Challenge Elite level 60 times,Challenge Elite level 60 times,하드 스테이지 도전 60회,Desafie o nível Elite 60 vezes,ท้าทายระดับ Elite 60 ครั้ง,,,,,,100,20000
+1910,通行证第一周任务,1002,2,9,,85,30,,派遣任务完成30次,派遣任務完成30次,Complete Dispatch Quest 30 times,Complete Dispatch Quest 30 times,파견 퀘스트 30회 완료,Complete a missão Dispatch 30 vezes,ทำภารกิจจัดส่งให้สำเร็จ 30 ครั้ง,,,,,,50,
+1911,通行证第一周任务,1002,2,9,,21,3000,,消耗3000钻石,消耗3000鑽石,Spend 3000 diamonds,Spend 3000 diamonds,3000다이아 소모,Gaste 3000 diamantes,ใช้เงิน 3，000 เพชร,,,,,,100,
+1912,通行证第一周任务,1002,2,9,4,67,7,,以太乐园通过7层,乙太樂園通過7層,Clear Aether Paradise level 7,Clear Aether Paradise level 7,에테르파라다이스 7층 클리어,Limpe o nível 7 do Aether Paradise,เคลียร์อีเธอร์พาราไดซ์ ระดับ 7,,,,,,100,
+1913,通行证第一周任务,1002,2,9,,86,6,{6=4},完成S以上派遣6次,完成S以上派遣6次,Complete S and above Dispatch Quest 6 times,Complete S and above Dispatch Quest 6 times,S급 이상 파견 6회 완료,Complete a missão S e acima Dispatch 6 vezes,ทำภารกิจส่งของ S ขึ้นไปให้สำเร็จ 6 ครั้ง,,,,,,100,
+,,,,,,,,,,,,,,,,,,,,,,
+2001,通行证第一周任务,1002,2,10,4,17,3,,累计登录3天,累計登錄3天,Login 3 days in total,Tích luỹ đăng nhập 3 ngày,누적 3일 로그인,Login 3 dias no total,เข้าสู่ระบบรวม 3 วัน,,,,,,50,
+2002,通行证第一周任务,1002,2,10,,36,50,,精灵升级50次,精靈升級50次,Upgrade Pokémon 50 times.,Upgrade Pokémon 50 times.,포켓몬 50회 레벨업,Melhore os Pokémon 50 vezes.,อัพเกรดโปเกมอน 50 ครั้ง,,,,,,50,strengthen-1
+2003,通行证第一周任务,1002,2,10,,21,1000,,消耗1000钻石,消耗1000鑽石,Spend 1000 diamonds,Spend 1000 diamonds,1000다이아 소모,Gaste 1000 diamantes,ใช้เงิน 1，000 เพชร,,,,,,100,
+2004,通行证第一周任务,1002,2,10,,43,50,,竞技场积分50分,競技場積分50分,Arena Points:50pts,Arena Points:50pts,아레나 포인트 50점,Pontos de Arena:50pts,คะแนนอารีน่า: 50 คะแนน,,,,,,50,
+2005,通行证第一周任务,1002,2,10,4,63,50000,,以太积分累计50000分,乙太積分累計50000分,Accumulate a total of 50000 Aether Points,Accumulate a total of 50000 Aether Points,에테르 포인트 누적 50000점,Acumule um total de 50000 pontos de éter,สะสมแต้ม Aether ทั้งหมด 50，000 แต้ม,,,,,,50,
+2006,通行证第一周任务,1002,2,10,,55,20,,公会捐献20次,公會捐獻20次,Donate 20 times,Donate 20 times,길드 기부 20회,Doe 20 vezes,บริจาค 20 ครั้ง,,,,,,50,
+2007,通行证第一周任务,1002,2,10,,50,20,,在钻石抽卡中抽卡20次,在鑽石抽卡中抽卡20次,Draw 20 times in Diamond Draw,Draw 20 times in Diamond Draw,다이아 뽑기 20회 진행,Desenhe 20 vezes no Diamond Draw,จับฉลาก 20 ครั้ง ใน Diamond Draw,,,,,,100,
+2008,通行证第一周任务,1002,2,10,4,29,300,,挑战普通关卡300次,挑戰普通關卡300次,Fight in Normal level 300 times,Fight in Normal level 300 times,일반 스테이지 300회 도전,Lute no nível Normal 300 vezes,ต่อสู้ในระดับปกติ 300 ครั้ง,,,,,,100,10000
+2009,通行证第一周任务,1002,2,10,,30,60,,挑战困难关卡60次,挑戰困難關卡60次,Challenge Elite level 60 times,Challenge Elite level 60 times,하드 스테이지 도전 60회,Desafie o nível Elite 60 vezes,ท้าทายระดับ Elite 60 ครั้ง,,,,,,100,20000
+2010,通行证第一周任务,1002,2,10,,85,30,,派遣任务完成30次,派遣任務完成30次,Complete Dispatch Quest 30 times,Complete Dispatch Quest 30 times,파견 퀘스트 30회 완료,Complete a missão Dispatch 30 vezes,ทำภารกิจจัดส่งให้สำเร็จ 30 ครั้ง,,,,,,50,
+2011,通行证第一周任务,1002,2,10,,21,3000,,消耗3000钻石,消耗3000鑽石,Spend 3000 diamonds,Spend 3000 diamonds,3000다이아 소모,Gaste 3000 diamantes,ใช้เงิน 3，000 เพชร,,,,,,100,
+2012,通行证第一周任务,1002,2,10,4,67,7,,以太乐园通过7层,乙太樂園通過7層,Clear Aether Paradise level 7,Clear Aether Paradise level 7,에테르파라다이스 7층 클리어,Limpe o nível 7 do Aether Paradise,เคลียร์อีเธอร์พาราไดซ์ ระดับ 7,,,,,,100,
+2013,通行证第一周任务,1002,2,10,,86,6,{6=4},完成S以上派遣6次,完成S以上派遣6次,Complete S and above Dispatch Quest 6 times,Complete S and above Dispatch Quest 6 times,S급 이상 파견 6회 완료,Complete a missão S e acima Dispatch 6 vezes,ทำภารกิจส่งของ S ขึ้นไปให้สำเร็จ 6 ครั้ง,,,,,,100,
+,,,,,,,,,,,,,,,,,,,,,,
+2101,通行证第一周任务,1002,2,11,4,17,3,,累计登录3天,累計登錄3天,Login 3 days in total,Tích luỹ đăng nhập 3 ngày,누적 3일 로그인,Login 3 dias no total,เข้าสู่ระบบรวม 3 วัน,,,,,,50,
+2102,通行证第一周任务,1002,2,11,,36,50,,精灵升级50次,精靈升級50次,Upgrade Pokémon 50 times.,Upgrade Pokémon 50 times.,포켓몬 50회 레벨업,Melhore os Pokémon 50 vezes.,อัพเกรดโปเกมอน 50 ครั้ง,,,,,,50,strengthen-1
+2103,通行证第一周任务,1002,2,11,,21,1000,,消耗1000钻石,消耗1000鑽石,Spend 1000 diamonds,Spend 1000 diamonds,1000다이아 소모,Gaste 1000 diamantes,ใช้เงิน 1，000 เพชร,,,,,,100,
+2104,通行证第一周任务,1002,2,11,,43,50,,竞技场积分50分,競技場積分50分,Arena Points:50pts,Arena Points:50pts,아레나 포인트 50점,Pontos de Arena:50pts,คะแนนอารีน่า: 50 คะแนน,,,,,,50,
+2105,通行证第一周任务,1002,2,11,4,63,50000,,以太积分累计50000分,乙太積分累計50000分,Accumulate a total of 50000 Aether Points,Accumulate a total of 50000 Aether Points,에테르 포인트 누적 50000점,Acumule um total de 50000 pontos de éter,สะสมแต้ม Aether ทั้งหมด 50，000 แต้ม,,,,,,50,
+2106,通行证第一周任务,1002,2,11,,55,20,,公会捐献20次,公會捐獻20次,Donate 20 times,Donate 20 times,길드 기부 20회,Doe 20 vezes,บริจาค 20 ครั้ง,,,,,,50,
+2107,通行证第一周任务,1002,2,11,,50,20,,在钻石抽卡中抽卡20次,在鑽石抽卡中抽卡20次,Draw 20 times in Diamond Draw,Draw 20 times in Diamond Draw,다이아 뽑기 20회 진행,Desenhe 20 vezes no Diamond Draw,จับฉลาก 20 ครั้ง ใน Diamond Draw,,,,,,100,
+2108,通行证第一周任务,1002,2,11,,29,300,,挑战普通关卡300次,挑戰普通關卡300次,Fight in Normal level 300 times,Fight in Normal level 300 times,일반 스테이지 300회 도전,Lute no nível Normal 300 vezes,ต่อสู้ในระดับปกติ 300 ครั้ง,,,,,,100,10000
+2109,通行证第一周任务,1002,2,11,4,30,60,,挑战困难关卡60次,挑戰困難關卡60次,Challenge Elite level 60 times,Challenge Elite level 60 times,하드 스테이지 도전 60회,Desafie o nível Elite 60 vezes,ท้าทายระดับ Elite 60 ครั้ง,,,,,,100,20000
+2110,通行证第一周任务,1002,2,11,,85,30,,派遣任务完成30次,派遣任務完成30次,Complete Dispatch Quest 30 times,Complete Dispatch Quest 30 times,파견 퀘스트 30회 완료,Complete a missão Dispatch 30 vezes,ทำภารกิจจัดส่งให้สำเร็จ 30 ครั้ง,,,,,,50,
+2111,通行证第一周任务,1002,2,11,,21,3000,,消耗3000钻石,消耗3000鑽石,Spend 3000 diamonds,Spend 3000 diamonds,3000다이아 소모,Gaste 3000 diamantes,ใช้เงิน 3，000 เพชร,,,,,,100,
+2112,通行证第一周任务,1002,2,11,,67,7,,以太乐园通过7层,乙太樂園通過7層,Clear Aether Paradise level 7,Clear Aether Paradise level 7,에테르파라다이스 7층 클리어,Limpe o nível 7 do Aether Paradise,เคลียร์อีเธอร์พาราไดซ์ ระดับ 7,,,,,,100,
+2113,通行证第一周任务,1002,2,11,4,86,6,{6=4},完成S以上派遣6次,完成S以上派遣6次,Complete S and above Dispatch Quest 6 times,Complete S and above Dispatch Quest 6 times,S급 이상 파견 6회 완료,Complete a missão S e acima Dispatch 6 vezes,ทำภารกิจส่งของ S ขึ้นไปให้สำเร็จ 6 ครั้ง,,,,,,100,
+,,,,,,,,,,,,,,,,,,,,,,
+2201,通行证第一周任务,1002,2,12,4,17,3,,累计登录3天,累計登錄3天,Login 3 days in total,Tích luỹ đăng nhập 3 ngày,누적 3일 로그인,Login 3 dias no total,เข้าสู่ระบบรวม 3 วัน,,,,,,50,
+2202,通行证第一周任务,1002,2,12,,36,50,,精灵升级50次,精靈升級50次,Upgrade Pokémon 50 times.,Upgrade Pokémon 50 times.,포켓몬 50회 레벨업,Melhore os Pokémon 50 vezes.,อัพเกรดโปเกมอน 50 ครั้ง,,,,,,50,strengthen-1
+2203,通行证第一周任务,1002,2,12,,21,1000,,消耗1000钻石,消耗1000鑽石,Spend 1000 diamonds,Spend 1000 diamonds,1000다이아 소모,Gaste 1000 diamantes,ใช้เงิน 1，000 เพชร,,,,,,100,
+2204,通行证第一周任务,1002,2,12,4,43,50,,竞技场积分50分,競技場積分50分,Arena Points:50pts,Arena Points:50pts,아레나 포인트 50점,Pontos de Arena:50pts,คะแนนอารีน่า: 50 คะแนน,,,,,,50,
+2205,通行证第一周任务,1002,2,12,,63,50000,,以太积分累计50000分,乙太積分累計50000分,Accumulate a total of 50000 Aether Points,Accumulate a total of 50000 Aether Points,에테르 포인트 누적 50000점,Acumule um total de 50000 pontos de éter,สะสมแต้ม Aether ทั้งหมด 50，000 แต้ม,,,,,,50,
+2206,通行证第一周任务,1002,2,12,,55,20,,公会捐献20次,公會捐獻20次,Donate 20 times,Donate 20 times,길드 기부 20회,Doe 20 vezes,บริจาค 20 ครั้ง,,,,,,50,
+2207,通行证第一周任务,1002,2,12,,50,20,,在钻石抽卡中抽卡20次,在鑽石抽卡中抽卡20次,Draw 20 times in Diamond Draw,Draw 20 times in Diamond Draw,다이아 뽑기 20회 진행,Desenhe 20 vezes no Diamond Draw,จับฉลาก 20 ครั้ง ใน Diamond Draw,,,,,,100,
+2208,通行证第一周任务,1002,2,12,4,29,300,,挑战普通关卡300次,挑戰普通關卡300次,Fight in Normal level 300 times,Fight in Normal level 300 times,일반 스테이지 300회 도전,Lute no nível Normal 300 vezes,ต่อสู้ในระดับปกติ 300 ครั้ง,,,,,,100,10000
+2209,通行证第一周任务,1002,2,12,,30,60,,挑战困难关卡60次,挑戰困難關卡60次,Challenge Elite level 60 times,Challenge Elite level 60 times,하드 스테이지 도전 60회,Desafie o nível Elite 60 vezes,ท้าทายระดับ Elite 60 ครั้ง,,,,,,100,20000
+2210,通行证第一周任务,1002,2,12,,85,30,,派遣任务完成30次,派遣任務完成30次,Complete Dispatch Quest 30 times,Complete Dispatch Quest 30 times,파견 퀘스트 30회 완료,Complete a missão Dispatch 30 vezes,ทำภารกิจจัดส่งให้สำเร็จ 30 ครั้ง,,,,,,50,
+2211,通行证第一周任务,1002,2,12,,21,3000,,消耗3000钻石,消耗3000鑽石,Spend 3000 diamonds,Spend 3000 diamonds,3000다이아 소모,Gaste 3000 diamantes,ใช้เงิน 3，000 เพชร,,,,,,100,
+2212,通行证第一周任务,1002,2,12,4,67,7,,以太乐园通过7层,乙太樂園通過7層,Clear Aether Paradise level 7,Clear Aether Paradise level 7,에테르파라다이스 7층 클리어,Limpe o nível 7 do Aether Paradise,เคลียร์อีเธอร์พาราไดซ์ ระดับ 7,,,,,,100,
+2213,通行证第一周任务,1002,2,12,,86,6,{6=4},完成S以上派遣6次,完成S以上派遣6次,Complete S and above Dispatch Quest 6 times,Complete S and above Dispatch Quest 6 times,S급 이상 파견 6회 완료,Complete a missão S e acima Dispatch 6 vezes,ทำภารกิจส่งของ S ขึ้นไปให้สำเร็จ 6 ครั้ง,,,,,,100,
+,,,,,,,,,,,,,,,,,,,,,,
+3001,通行证日任务,1003,1,,,15,1,,每日登陆,每日登陸,Daily login,Daily login,일일 로그인,Login diário,เข้าสู่ระบบรายวัน,,,,,,30,
+3002,通行证日任务,1003,1,,,29,30,,挑战普通关卡30次,挑戰普通關卡30次,Fight in Normal level 30 times,Fight in Normal level 30 times,일반 스테이지 30회 도전,Lute no nível Normal 30 vezes,ต่อสู้ในระดับปกติ 30 ครั้ง,,,,,,30,10000
+3003,通行证日任务,1003,1,,,39,1,,饰品突破1次,飾品進階1次,Breakthrough trinket 1 time,Breakthrough trinket 1 time,액세서리 1회 돌파,Bugiganga inovadora 1 vez,เครื่องประดับล้ำยุค 1 ครั้ง,,,,,,30,
+3004,通行证日任务,1003,1,,,41,5,,竞技场战斗5次,競技場戰鬥5次,Engage in arena battle for 5 times,Engage in arena battle for 5 times,아레나 전투 5회 진행,Participe de uma batalha de arena 5 vezes,เข้าร่วมการต่อสู้ในสนามประลอง 5 ครั้ง,,,,,,30,
+3005,通行证日任务,1003,1,,,66,2,,元素挑战战斗2次,元素挑戰戰鬥2次,Enter Element Challenge 2 times,Enter Element Challenge 2 times,엘리멘탈 챌린지 2회 전투,Entre no Element Challenge 2 vezes,เข้าร่วม Element Challenge 2 ครั้ง,,,,,,30,
+3006,通行证日任务,1003,1,,,20,1000000,,消耗1000000金币,消耗1000000金幣,Spend 1000000 coins,Spend 1000000 coins,1000000코인 소모,Gaste 1.000.000 de moedas,ใช้เงิน 1000000 เหรียญ,,,,,,30,
+3007,通行证日任务,1003,1,,,21,300,,消耗300钻石,消耗300鑽石,Spend 300 diamonds,Spend 300 diamonds,300다이아 소모,Gaste 300 diamantes,ใช้เงิน 300 เพชร,,,,,,30,
+3008,通行证日任务,1003,1,,4,15,1,,大师每日登陆,大師每日登陸,Marster daily login.,Marster daily login.,마스터 일일 로그인,Login diário do Marster.,การเข้าสู่ระบบ Marster รายวัน,,,,,,30,
+,,,,,,,,,,,,,,,,,,,,,,
+3101,通行证第一周任务,1003,2,1,,17,3,,累计登录3天,累計登錄3天,Login 3 days in total,Tích luỹ đăng nhập 3 ngày,누적 3일 로그인,Login 3 dias no total,เข้าสู่ระบบรวม 3 วัน,,,,,,100,
+3102,通行证第一周任务,1003,2,1,,36,50,,精灵升级50次,精靈升級50次,Upgrade Pokémon 50 times.,Upgrade Pokémon 50 times.,포켓몬 50회 레벨업,Melhore os Pokémon 50 vezes.,อัพเกรดโปเกมอน 50 ครั้ง,,,,,,100,strengthen-1
+3103,通行证第一周任务,1003,2,1,,21,1000,,消耗1000钻石,消耗1000鑽石,Spend 1000 diamonds,Spend 1000 diamonds,1000다이아 소모,Gaste 1000 diamantes,ใช้เงิน 1，000 เพชร,,,,,,100,
+3104,通行证第一周任务,1003,2,1,,43,50,,竞技场积分50分,競技場積分50分,Arena Points:50pts,Arena Points:50pts,아레나 포인트 50점,Pontos de Arena:50pts,คะแนนอารีน่า: 50 คะแนน,,,,,,100,
+3105,通行证第一周任务,1003,2,1,,63,50000,,以太积分累计50000分,乙太積分累計50000分,Accumulate a total of 50000 Aether Points,Accumulate a total of 50000 Aether Points,에테르 포인트 누적 50000점,Acumule um total de 50000 pontos de éter,สะสมแต้ม Aether ทั้งหมด 50，000 แต้ม,,,,,,100,
+3106,通行证第一周任务,1003,2,1,,55,20,,公会捐献20次,公會捐獻20次,Donate 20 times,Donate 20 times,길드 기부 20회,Doe 20 vezes,บริจาค 20 ครั้ง,,,,,,100,
+3107,通行证第一周任务,1003,2,1,,50,20,,在钻石抽卡中抽卡20次,在鑽石抽卡中抽卡20次,Draw 20 times in Diamond Draw,Draw 20 times in Diamond Draw,다이아 뽑기 20회 진행,Desenhe 20 vezes no Diamond Draw,จับฉลาก 20 ครั้ง ใน Diamond Draw,,,,,,100,
+3108,通行证第一周任务,1003,2,1,,29,300,,挑战普通关卡300次,挑戰普通關卡300次,Fight in Normal level 300 times,Fight in Normal level 300 times,일반 스테이지 300회 도전,Lute no nível Normal 300 vezes,ต่อสู้ในระดับปกติ 300 ครั้ง,,,,,,100,10000
+3109,通行证第一周任务,1003,2,1,,30,60,,挑战困难关卡60次,挑戰困難關卡60次,Challenge Elite level 60 times,Challenge Elite level 60 times,하드 스테이지 도전 60회,Desafie o nível Elite 60 vezes,ท้าทายระดับ Elite 60 ครั้ง,,,,,,100,20000
+3110,通行证第一周任务,1003,2,1,,85,30,,派遣任务完成30次,派遣任務完成30次,Complete Dispatch Quest 30 times,Complete Dispatch Quest 30 times,파견 퀘스트 30회 완료,Complete a missão Dispatch 30 vezes,ทำภารกิจจัดส่งให้สำเร็จ 30 ครั้ง,,,,,,100,
+3111,通行证第一周任务,1003,2,1,,21,3000,,消耗3000钻石,消耗3000鑽石,Spend 3000 diamonds,Spend 3000 diamonds,3000다이아 소모,Gaste 3000 diamantes,ใช้เงิน 3，000 เพชร,,,,,,100,
+3112,通行证第一周任务,1003,2,1,,67,7,,以太乐园通过7层,乙太樂園通過7層,Clear Aether Paradise level 7,Clear Aether Paradise level 7,에테르파라다이스 7층 클리어,Limpe o nível 7 do Aether Paradise,เคลียร์อีเธอร์พาราไดซ์ ระดับ 7,,,,,,100,
+3113,通行证第一周任务,1003,2,1,,86,6,{6=4},完成S以上派遣6次,完成S以上派遣6次,Complete S and above Dispatch Quest 6 times,Complete S and above Dispatch Quest 6 times,S급 이상 파견 6회 완료,Complete a missão S e acima Dispatch 6 vezes,ทำภารกิจส่งของ S ขึ้นไปให้สำเร็จ 6 ครั้ง,,,,,,100,
+,,,,,,,,,,,,,,,,,,,,,,
+3201,通行证第一周任务,1003,2,2,,17,3,,累计登录3天,累計登錄3天,Login 3 days in total,Tích luỹ đăng nhập 3 ngày,누적 3일 로그인,Login 3 dias no total,เข้าสู่ระบบรวม 3 วัน,,,,,,100,
+3202,通行证第一周任务,1003,2,2,,36,50,,精灵升级50次,精靈升級50次,Upgrade Pokémon 50 times.,Upgrade Pokémon 50 times.,포켓몬 50회 레벨업,Melhore os Pokémon 50 vezes.,อัพเกรดโปเกมอน 50 ครั้ง,,,,,,100,strengthen-1
+3203,通行证第一周任务,1003,2,2,,21,1000,,消耗1000钻石,消耗1000鑽石,Spend 1000 diamonds,Spend 1000 diamonds,1000다이아 소모,Gaste 1000 diamantes,ใช้เงิน 1，000 เพชร,,,,,,200,
+3204,通行证第一周任务,1003,2,2,,43,50,,竞技场积分50分,競技場積分50分,Arena Points:50pts,Arena Points:50pts,아레나 포인트 50점,Pontos de Arena:50pts,คะแนนอารีน่า: 50 คะแนน,,,,,,100,
+3205,通行证第一周任务,1003,2,2,,63,50000,,以太积分累计50000分,乙太積分累計50000分,Accumulate a total of 50000 Aether Points,Accumulate a total of 50000 Aether Points,에테르 포인트 누적 50000점,Acumule um total de 50000 pontos de éter,สะสมแต้ม Aether ทั้งหมด 50，000 แต้ม,,,,,,100,
+3206,通行证第一周任务,1003,2,2,,55,20,,公会捐献20次,公會捐獻20次,Donate 20 times,Donate 20 times,길드 기부 20회,Doe 20 vezes,บริจาค 20 ครั้ง,,,,,,100,
+3207,通行证第一周任务,1003,2,2,,50,20,,在钻石抽卡中抽卡20次,在鑽石抽卡中抽卡20次,Draw 20 times in Diamond Draw,Draw 20 times in Diamond Draw,다이아 뽑기 20회 진행,Desenhe 20 vezes no Diamond Draw,จับฉลาก 20 ครั้ง ใน Diamond Draw,,,,,,200,
+3208,通行证第一周任务,1003,2,2,,29,300,,挑战普通关卡300次,挑戰普通關卡300次,Fight in Normal level 300 times,Fight in Normal level 300 times,일반 스테이지 300회 도전,Lute no nível Normal 300 vezes,ต่อสู้ในระดับปกติ 300 ครั้ง,,,,,,200,10000
+3209,通行证第一周任务,1003,2,2,,30,60,,挑战困难关卡60次,挑戰困難關卡60次,Challenge Elite level 60 times,Challenge Elite level 60 times,하드 스테이지 도전 60회,Desafie o nível Elite 60 vezes,ท้าทายระดับ Elite 60 ครั้ง,,,,,,200,20000
+3210,通行证第一周任务,1003,2,2,,85,30,,派遣任务完成30次,派遣任務完成30次,Complete Dispatch Quest 30 times,Complete Dispatch Quest 30 times,파견 퀘스트 30회 완료,Complete a missão Dispatch 30 vezes,ทำภารกิจจัดส่งให้สำเร็จ 30 ครั้ง,,,,,,100,
+3211,通行证第一周任务,1003,2,2,,21,3000,,消耗3000钻石,消耗3000鑽石,Spend 3000 diamonds,Spend 3000 diamonds,3000다이아 소모,Gaste 3000 diamantes,ใช้เงิน 3，000 เพชร,,,,,,200,
+3212,通行证第一周任务,1003,2,2,,67,7,,以太乐园通过7层,乙太樂園通過7層,Clear Aether Paradise level 7,Clear Aether Paradise level 7,에테르파라다이스 7층 클리어,Limpe o nível 7 do Aether Paradise,เคลียร์อีเธอร์พาราไดซ์ ระดับ 7,,,,,,200,
+3213,通行证第一周任务,1003,2,2,,86,6,{6=4},完成S以上派遣6次,完成S以上派遣6次,Complete S and above Dispatch Quest 6 times,Complete S and above Dispatch Quest 6 times,S급 이상 파견 6회 완료,Complete a missão S e acima Dispatch 6 vezes,ทำภารกิจส่งของ S ขึ้นไปให้สำเร็จ 6 ครั้ง,,,,,,200,
+,,,,,,,,,,,,,,,,,,,,,,
+3301,通行证第一周任务,1003,2,3,,17,3,,累计登录3天,累計登錄3天,Login 3 days in total,Tích luỹ đăng nhập 3 ngày,누적 3일 로그인,Login 3 dias no total,เข้าสู่ระบบรวม 3 วัน,,,,,,100,
+3302,通行证第一周任务,1003,2,3,,36,50,,精灵升级50次,精靈升級50次,Upgrade Pokémon 50 times.,Upgrade Pokémon 50 times.,포켓몬 50회 레벨업,Melhore os Pokémon 50 vezes.,อัพเกรดโปเกมอน 50 ครั้ง,,,,,,100,strengthen-1
+3303,通行证第一周任务,1003,2,3,,21,1000,,消耗1000钻石,消耗1000鑽石,Spend 1000 diamonds,Spend 1000 diamonds,1000다이아 소모,Gaste 1000 diamantes,ใช้เงิน 1，000 เพชร,,,,,,200,
+3304,通行证第一周任务,1003,2,3,,43,50,,竞技场积分50分,競技場積分50分,Arena Points:50pts,Arena Points:50pts,아레나 포인트 50점,Pontos de Arena:50pts,คะแนนอารีน่า: 50 คะแนน,,,,,,100,
+3305,通行证第一周任务,1003,2,3,,63,50000,,以太积分累计50000分,乙太積分累計50000分,Accumulate a total of 50000 Aether Points,Accumulate a total of 50000 Aether Points,에테르 포인트 누적 50000점,Acumule um total de 50000 pontos de éter,สะสมแต้ม Aether ทั้งหมด 50，000 แต้ม,,,,,,100,
+3306,通行证第一周任务,1003,2,3,,55,20,,公会捐献20次,公會捐獻20次,Donate 20 times,Donate 20 times,길드 기부 20회,Doe 20 vezes,บริจาค 20 ครั้ง,,,,,,100,
+3307,通行证第一周任务,1003,2,3,,50,20,,在钻石抽卡中抽卡20次,在鑽石抽卡中抽卡20次,Draw 20 times in Diamond Draw,Draw 20 times in Diamond Draw,다이아 뽑기 20회 진행,Desenhe 20 vezes no Diamond Draw,จับฉลาก 20 ครั้ง ใน Diamond Draw,,,,,,200,
+3308,通行证第一周任务,1003,2,3,,29,300,,挑战普通关卡300次,挑戰普通關卡300次,Fight in Normal level 300 times,Fight in Normal level 300 times,일반 스테이지 300회 도전,Lute no nível Normal 300 vezes,ต่อสู้ในระดับปกติ 300 ครั้ง,,,,,,200,10000
+3309,通行证第一周任务,1003,2,3,,30,60,,挑战困难关卡60次,挑戰困難關卡60次,Challenge Elite level 60 times,Challenge Elite level 60 times,하드 스테이지 도전 60회,Desafie o nível Elite 60 vezes,ท้าทายระดับ Elite 60 ครั้ง,,,,,,200,20000
+3310,通行证第一周任务,1003,2,3,,85,30,,派遣任务完成30次,派遣任務完成30次,Complete Dispatch Quest 30 times,Complete Dispatch Quest 30 times,파견 퀘스트 30회 완료,Complete a missão Dispatch 30 vezes,ทำภารกิจจัดส่งให้สำเร็จ 30 ครั้ง,,,,,,100,
+3311,通行证第一周任务,1003,2,3,,21,3000,,消耗3000钻石,消耗3000鑽石,Spend 3000 diamonds,Spend 3000 diamonds,3000다이아 소모,Gaste 3000 diamantes,ใช้เงิน 3，000 เพชร,,,,,,200,
+3312,通行证第一周任务,1003,2,3,,67,7,,以太乐园通过7层,乙太樂園通過7層,Clear Aether Paradise level 7,Clear Aether Paradise level 7,에테르파라다이스 7층 클리어,Limpe o nível 7 do Aether Paradise,เคลียร์อีเธอร์พาราไดซ์ ระดับ 7,,,,,,200,
+3313,通行证第一周任务,1003,2,3,,86,6,{6=4},完成S以上派遣6次,完成S以上派遣6次,Complete S and above Dispatch Quest 6 times,Complete S and above Dispatch Quest 6 times,S급 이상 파견 6회 완료,Complete a missão S e acima Dispatch 6 vezes,ทำภารกิจส่งของ S ขึ้นไปให้สำเร็จ 6 ครั้ง,,,,,,200,
+,,,,,,,,,,,,,,,,,,,,,,
+3401,通行证第一周任务,1003,2,4,,17,3,,累计登录3天,累計登錄3天,Login 3 days in total,Tích luỹ đăng nhập 3 ngày,누적 3일 로그인,Login 3 dias no total,เข้าสู่ระบบรวม 3 วัน,,,,,,100,
+3402,通行证第一周任务,1003,2,4,,36,50,,精灵升级50次,精靈升級50次,Upgrade Pokémon 50 times.,Upgrade Pokémon 50 times.,포켓몬 50회 레벨업,Melhore os Pokémon 50 vezes.,อัพเกรดโปเกมอน 50 ครั้ง,,,,,,100,strengthen-1
+3403,通行证第一周任务,1003,2,4,,21,1000,,消耗1000钻石,消耗1000鑽石,Spend 1000 diamonds,Spend 1000 diamonds,1000다이아 소모,Gaste 1000 diamantes,ใช้เงิน 1，000 เพชร,,,,,,200,
+3404,通行证第一周任务,1003,2,4,,43,50,,竞技场积分50分,競技場積分50分,Arena Points:50pts,Arena Points:50pts,아레나 포인트 50점,Pontos de Arena:50pts,คะแนนอารีน่า: 50 คะแนน,,,,,,100,
+3405,通行证第一周任务,1003,2,4,,63,50000,,以太积分累计50000分,乙太積分累計50000分,Accumulate a total of 50000 Aether Points,Accumulate a total of 50000 Aether Points,에테르 포인트 누적 50000점,Acumule um total de 50000 pontos de éter,สะสมแต้ม Aether ทั้งหมด 50，000 แต้ม,,,,,,100,
+3406,通行证第一周任务,1003,2,4,,55,20,,公会捐献20次,公會捐獻20次,Donate 20 times,Donate 20 times,길드 기부 20회,Doe 20 vezes,บริจาค 20 ครั้ง,,,,,,100,
+3407,通行证第一周任务,1003,2,4,,50,20,,在钻石抽卡中抽卡20次,在鑽石抽卡中抽卡20次,Draw 20 times in Diamond Draw,Draw 20 times in Diamond Draw,다이아 뽑기 20회 진행,Desenhe 20 vezes no Diamond Draw,จับฉลาก 20 ครั้ง ใน Diamond Draw,,,,,,200,
+3408,通行证第一周任务,1003,2,4,,29,300,,挑战普通关卡300次,挑戰普通關卡300次,Fight in Normal level 300 times,Fight in Normal level 300 times,일반 스테이지 300회 도전,Lute no nível Normal 300 vezes,ต่อสู้ในระดับปกติ 300 ครั้ง,,,,,,200,10000
+3409,通行证第一周任务,1003,2,4,,30,60,,挑战困难关卡60次,挑戰困難關卡60次,Challenge Elite level 60 times,Challenge Elite level 60 times,하드 스테이지 도전 60회,Desafie o nível Elite 60 vezes,ท้าทายระดับ Elite 60 ครั้ง,,,,,,200,20000
+3410,通行证第一周任务,1003,2,4,,85,30,,派遣任务完成30次,派遣任務完成30次,Complete Dispatch Quest 30 times,Complete Dispatch Quest 30 times,파견 퀘스트 30회 완료,Complete a missão Dispatch 30 vezes,ทำภารกิจจัดส่งให้สำเร็จ 30 ครั้ง,,,,,,100,
+3411,通行证第一周任务,1003,2,4,,21,3000,,消耗3000钻石,消耗3000鑽石,Spend 3000 diamonds,Spend 3000 diamonds,3000다이아 소모,Gaste 3000 diamantes,ใช้เงิน 3，000 เพชร,,,,,,200,
+3412,通行证第一周任务,1003,2,4,,67,7,,以太乐园通过7层,乙太樂園通過7層,Clear Aether Paradise level 7,Clear Aether Paradise level 7,에테르파라다이스 7층 클리어,Limpe o nível 7 do Aether Paradise,เคลียร์อีเธอร์พาราไดซ์ ระดับ 7,,,,,,200,
+3413,通行证第一周任务,1003,2,4,,86,6,{6=4},完成S以上派遣6次,完成S以上派遣6次,Complete S and above Dispatch Quest 6 times,Complete S and above Dispatch Quest 6 times,S급 이상 파견 6회 완료,Complete a missão S e acima Dispatch 6 vezes,ทำภารกิจส่งของ S ขึ้นไปให้สำเร็จ 6 ครั้ง,,,,,,200,
+,,,,,,,,,,,,,,,,,,,,,,
+3501,通行证第一周任务,1003,2,5,,17,3,,累计登录3天,累計登錄3天,Login 3 days in total,Tích luỹ đăng nhập 3 ngày,누적 3일 로그인,Login 3 dias no total,เข้าสู่ระบบรวม 3 วัน,,,,,,100,
+3502,通行证第一周任务,1003,2,5,,36,50,,精灵升级50次,精靈升級50次,Upgrade Pokémon 50 times.,Upgrade Pokémon 50 times.,포켓몬 50회 레벨업,Melhore os Pokémon 50 vezes.,อัพเกรดโปเกมอน 50 ครั้ง,,,,,,100,strengthen-1
+3503,通行证第一周任务,1003,2,5,,21,1000,,消耗1000钻石,消耗1000鑽石,Spend 1000 diamonds,Spend 1000 diamonds,1000다이아 소모,Gaste 1000 diamantes,ใช้เงิน 1，000 เพชร,,,,,,200,
+3504,通行证第一周任务,1003,2,5,,43,50,,竞技场积分50分,競技場積分50分,Arena Points:50pts,Arena Points:50pts,아레나 포인트 50점,Pontos de Arena:50pts,คะแนนอารีน่า: 50 คะแนน,,,,,,100,
+3505,通行证第一周任务,1003,2,5,,63,50000,,以太积分累计50000分,乙太積分累計50000分,Accumulate a total of 50000 Aether Points,Accumulate a total of 50000 Aether Points,에테르 포인트 누적 50000점,Acumule um total de 50000 pontos de éter,สะสมแต้ม Aether ทั้งหมด 50，000 แต้ม,,,,,,100,
+3506,通行证第一周任务,1003,2,5,,55,20,,公会捐献20次,公會捐獻20次,Donate 20 times,Donate 20 times,길드 기부 20회,Doe 20 vezes,บริจาค 20 ครั้ง,,,,,,100,
+3507,通行证第一周任务,1003,2,5,,50,20,,在钻石抽卡中抽卡20次,在鑽石抽卡中抽卡20次,Draw 20 times in Diamond Draw,Draw 20 times in Diamond Draw,다이아 뽑기 20회 진행,Desenhe 20 vezes no Diamond Draw,จับฉลาก 20 ครั้ง ใน Diamond Draw,,,,,,200,
+3508,通行证第一周任务,1003,2,5,,29,300,,挑战普通关卡300次,挑戰普通關卡300次,Fight in Normal level 300 times,Fight in Normal level 300 times,일반 스테이지 300회 도전,Lute no nível Normal 300 vezes,ต่อสู้ในระดับปกติ 300 ครั้ง,,,,,,200,10000
+3509,通行证第一周任务,1003,2,5,,30,60,,挑战困难关卡60次,挑戰困難關卡60次,Challenge Elite level 60 times,Challenge Elite level 60 times,하드 스테이지 도전 60회,Desafie o nível Elite 60 vezes,ท้าทายระดับ Elite 60 ครั้ง,,,,,,200,20000
+3510,通行证第一周任务,1003,2,5,,85,30,,派遣任务完成30次,派遣任務完成30次,Complete Dispatch Quest 30 times,Complete Dispatch Quest 30 times,파견 퀘스트 30회 완료,Complete a missão Dispatch 30 vezes,ทำภารกิจจัดส่งให้สำเร็จ 30 ครั้ง,,,,,,100,
+3511,通行证第一周任务,1003,2,5,,21,3000,,消耗3000钻石,消耗3000鑽石,Spend 3000 diamonds,Spend 3000 diamonds,3000다이아 소모,Gaste 3000 diamantes,ใช้เงิน 3，000 เพชร,,,,,,200,
+3512,通行证第一周任务,1003,2,5,,67,7,,以太乐园通过7层,乙太樂園通過7層,Clear Aether Paradise level 7,Clear Aether Paradise level 7,에테르파라다이스 7층 클리어,Limpe o nível 7 do Aether Paradise,เคลียร์อีเธอร์พาราไดซ์ ระดับ 7,,,,,,200,
+3513,通行证第一周任务,1003,2,5,,86,6,{6=4},完成S以上派遣6次,完成S以上派遣6次,Complete S and above Dispatch Quest 6 times,Complete S and above Dispatch Quest 6 times,S급 이상 파견 6회 완료,Complete a missão S e acima Dispatch 6 vezes,ทำภารกิจส่งของ S ขึ้นไปให้สำเร็จ 6 ครั้ง,,,,,,200,
+,,,,,,,,,,,,,,,,,,,,,,
+3601,通行证第一周任务,1003,2,6,,17,3,,累计登录3天,累計登錄3天,Login 3 days in total,Tích luỹ đăng nhập 3 ngày,누적 3일 로그인,Login 3 dias no total,เข้าสู่ระบบรวม 3 วัน,,,,,,100,
+3602,通行证第一周任务,1003,2,6,,36,50,,精灵升级50次,精靈升級50次,Upgrade Pokémon 50 times.,Upgrade Pokémon 50 times.,포켓몬 50회 레벨업,Melhore os Pokémon 50 vezes.,อัพเกรดโปเกมอน 50 ครั้ง,,,,,,100,strengthen-1
+3603,通行证第一周任务,1003,2,6,,21,1000,,消耗1000钻石,消耗1000鑽石,Spend 1000 diamonds,Spend 1000 diamonds,1000다이아 소모,Gaste 1000 diamantes,ใช้เงิน 1，000 เพชร,,,,,,200,
+3604,通行证第一周任务,1003,2,6,,43,50,,竞技场积分50分,競技場積分50分,Arena Points:50pts,Arena Points:50pts,아레나 포인트 50점,Pontos de Arena:50pts,คะแนนอารีน่า: 50 คะแนน,,,,,,100,
+3605,通行证第一周任务,1003,2,6,,63,50000,,以太积分累计50000分,乙太積分累計50000分,Accumulate a total of 50000 Aether Points,Accumulate a total of 50000 Aether Points,에테르 포인트 누적 50000점,Acumule um total de 50000 pontos de éter,สะสมแต้ม Aether ทั้งหมด 50，000 แต้ม,,,,,,100,
+3606,通行证第一周任务,1003,2,6,,55,20,,公会捐献20次,公會捐獻20次,Donate 20 times,Donate 20 times,길드 기부 20회,Doe 20 vezes,บริจาค 20 ครั้ง,,,,,,100,
+3607,通行证第一周任务,1003,2,6,,50,20,,在钻石抽卡中抽卡20次,在鑽石抽卡中抽卡20次,Draw 20 times in Diamond Draw,Draw 20 times in Diamond Draw,다이아 뽑기 20회 진행,Desenhe 20 vezes no Diamond Draw,จับฉลาก 20 ครั้ง ใน Diamond Draw,,,,,,200,
+3608,通行证第一周任务,1003,2,6,,29,300,,挑战普通关卡300次,挑戰普通關卡300次,Fight in Normal level 300 times,Fight in Normal level 300 times,일반 스테이지 300회 도전,Lute no nível Normal 300 vezes,ต่อสู้ในระดับปกติ 300 ครั้ง,,,,,,200,10000
+3609,通行证第一周任务,1003,2,6,,30,60,,挑战困难关卡60次,挑戰困難關卡60次,Challenge Elite level 60 times,Challenge Elite level 60 times,하드 스테이지 도전 60회,Desafie o nível Elite 60 vezes,ท้าทายระดับ Elite 60 ครั้ง,,,,,,200,20000
+3610,通行证第一周任务,1003,2,6,,85,30,,派遣任务完成30次,派遣任務完成30次,Complete Dispatch Quest 30 times,Complete Dispatch Quest 30 times,파견 퀘스트 30회 완료,Complete a missão Dispatch 30 vezes,ทำภารกิจจัดส่งให้สำเร็จ 30 ครั้ง,,,,,,100,
+3611,通行证第一周任务,1003,2,6,,21,3000,,消耗3000钻石,消耗3000鑽石,Spend 3000 diamonds,Spend 3000 diamonds,3000다이아 소모,Gaste 3000 diamantes,ใช้เงิน 3，000 เพชร,,,,,,200,
+3612,通行证第一周任务,1003,2,6,,67,7,,以太乐园通过7层,乙太樂園通過7層,Clear Aether Paradise level 7,Clear Aether Paradise level 7,에테르파라다이스 7층 클리어,Limpe o nível 7 do Aether Paradise,เคลียร์อีเธอร์พาราไดซ์ ระดับ 7,,,,,,200,
+3613,通行证第一周任务,1003,2,6,,86,6,{6=4},完成S以上派遣6次,完成S以上派遣6次,Complete S and above Dispatch Quest 6 times,Complete S and above Dispatch Quest 6 times,S급 이상 파견 6회 완료,Complete a missão S e acima Dispatch 6 vezes,ทำภารกิจส่งของ S ขึ้นไปให้สำเร็จ 6 ครั้ง,,,,,,200,
+,,,,,,,,,,,,,,,,,,,,,,
+3701,通行证第一周任务,1003,2,7,,17,3,,累计登录3天,累計登錄3天,Login 3 days in total,Tích luỹ đăng nhập 3 ngày,누적 3일 로그인,Login 3 dias no total,เข้าสู่ระบบรวม 3 วัน,,,,,,100,
+3702,通行证第一周任务,1003,2,7,,36,50,,精灵升级50次,精靈升級50次,Upgrade Pokémon 50 times.,Upgrade Pokémon 50 times.,포켓몬 50회 레벨업,Melhore os Pokémon 50 vezes.,อัพเกรดโปเกมอน 50 ครั้ง,,,,,,100,strengthen-1
+3703,通行证第一周任务,1003,2,7,,21,1000,,消耗1000钻石,消耗1000鑽石,Spend 1000 diamonds,Spend 1000 diamonds,1000다이아 소모,Gaste 1000 diamantes,ใช้เงิน 1，000 เพชร,,,,,,200,
+3704,通行证第一周任务,1003,2,7,,43,50,,竞技场积分50分,競技場積分50分,Arena Points:50pts,Arena Points:50pts,아레나 포인트 50점,Pontos de Arena:50pts,คะแนนอารีน่า: 50 คะแนน,,,,,,100,
+3705,通行证第一周任务,1003,2,7,,63,50000,,以太积分累计50000分,乙太積分累計50000分,Accumulate a total of 50000 Aether Points,Accumulate a total of 50000 Aether Points,에테르 포인트 누적 50000점,Acumule um total de 50000 pontos de éter,สะสมแต้ม Aether ทั้งหมด 50，000 แต้ม,,,,,,100,
+3706,通行证第一周任务,1003,2,7,,55,20,,公会捐献20次,公會捐獻20次,Donate 20 times,Donate 20 times,길드 기부 20회,Doe 20 vezes,บริจาค 20 ครั้ง,,,,,,100,
+3707,通行证第一周任务,1003,2,7,,50,20,,在钻石抽卡中抽卡20次,在鑽石抽卡中抽卡20次,Draw 20 times in Diamond Draw,Draw 20 times in Diamond Draw,다이아 뽑기 20회 진행,Desenhe 20 vezes no Diamond Draw,จับฉลาก 20 ครั้ง ใน Diamond Draw,,,,,,200,
+3708,通行证第一周任务,1003,2,7,,29,300,,挑战普通关卡300次,挑戰普通關卡300次,Fight in Normal level 300 times,Fight in Normal level 300 times,일반 스테이지 300회 도전,Lute no nível Normal 300 vezes,ต่อสู้ในระดับปกติ 300 ครั้ง,,,,,,200,10000
+3709,通行证第一周任务,1003,2,7,,30,60,,挑战困难关卡60次,挑戰困難關卡60次,Challenge Elite level 60 times,Challenge Elite level 60 times,하드 스테이지 도전 60회,Desafie o nível Elite 60 vezes,ท้าทายระดับ Elite 60 ครั้ง,,,,,,200,20000
+3710,通行证第一周任务,1003,2,7,,85,30,,派遣任务完成30次,派遣任務完成30次,Complete Dispatch Quest 30 times,Complete Dispatch Quest 30 times,파견 퀘스트 30회 완료,Complete a missão Dispatch 30 vezes,ทำภารกิจจัดส่งให้สำเร็จ 30 ครั้ง,,,,,,100,
+3711,通行证第一周任务,1003,2,7,,21,3000,,消耗3000钻石,消耗3000鑽石,Spend 3000 diamonds,Spend 3000 diamonds,3000다이아 소모,Gaste 3000 diamantes,ใช้เงิน 3，000 เพชร,,,,,,200,
+3712,通行证第一周任务,1003,2,7,,67,7,,以太乐园通过7层,乙太樂園通過7層,Clear Aether Paradise level 7,Clear Aether Paradise level 7,에테르파라다이스 7층 클리어,Limpe o nível 7 do Aether Paradise,เคลียร์อีเธอร์พาราไดซ์ ระดับ 7,,,,,,200,
+3713,通行证第一周任务,1003,2,7,,86,6,{6=4},完成S以上派遣6次,完成S以上派遣6次,Complete S and above Dispatch Quest 6 times,Complete S and above Dispatch Quest 6 times,S급 이상 파견 6회 완료,Complete a missão S e acima Dispatch 6 vezes,ทำภารกิจส่งของ S ขึ้นไปให้สำเร็จ 6 ครั้ง,,,,,,200,
+,,,,,,,,,,,,,,,,,,,,,,
+3801,通行证第一周任务,1003,2,8,,17,3,,累计登录3天,累計登錄3天,Login 3 days in total,Tích luỹ đăng nhập 3 ngày,누적 3일 로그인,Login 3 dias no total,เข้าสู่ระบบรวม 3 วัน,,,,,,100,
+3802,通行证第一周任务,1003,2,8,,36,50,,精灵升级50次,精靈升級50次,Upgrade Pokémon 50 times.,Upgrade Pokémon 50 times.,포켓몬 50회 레벨업,Melhore os Pokémon 50 vezes.,อัพเกรดโปเกมอน 50 ครั้ง,,,,,,100,strengthen-1
+3803,通行证第一周任务,1003,2,8,,21,1000,,消耗1000钻石,消耗1000鑽石,Spend 1000 diamonds,Spend 1000 diamonds,1000다이아 소모,Gaste 1000 diamantes,ใช้เงิน 1，000 เพชร,,,,,,200,
+3804,通行证第一周任务,1003,2,8,,43,50,,竞技场积分50分,競技場積分50分,Arena Points:50pts,Arena Points:50pts,아레나 포인트 50점,Pontos de Arena:50pts,คะแนนอารีน่า: 50 คะแนน,,,,,,100,
+3805,通行证第一周任务,1003,2,8,,63,50000,,以太积分累计50000分,乙太積分累計50000分,Accumulate a total of 50000 Aether Points,Accumulate a total of 50000 Aether Points,에테르 포인트 누적 50000점,Acumule um total de 50000 pontos de éter,สะสมแต้ม Aether ทั้งหมด 50，000 แต้ม,,,,,,100,
+3806,通行证第一周任务,1003,2,8,,55,20,,公会捐献20次,公會捐獻20次,Donate 20 times,Donate 20 times,길드 기부 20회,Doe 20 vezes,บริจาค 20 ครั้ง,,,,,,100,
+3807,通行证第一周任务,1003,2,8,,50,20,,在钻石抽卡中抽卡20次,在鑽石抽卡中抽卡20次,Draw 20 times in Diamond Draw,Draw 20 times in Diamond Draw,다이아 뽑기 20회 진행,Desenhe 20 vezes no Diamond Draw,จับฉลาก 20 ครั้ง ใน Diamond Draw,,,,,,200,
+3808,通行证第一周任务,1003,2,8,,29,300,,挑战普通关卡300次,挑戰普通關卡300次,Fight in Normal level 300 times,Fight in Normal level 300 times,일반 스테이지 300회 도전,Lute no nível Normal 300 vezes,ต่อสู้ในระดับปกติ 300 ครั้ง,,,,,,200,10000
+3809,通行证第一周任务,1003,2,8,,30,60,,挑战困难关卡60次,挑戰困難關卡60次,Challenge Elite level 60 times,Challenge Elite level 60 times,하드 스테이지 도전 60회,Desafie o nível Elite 60 vezes,ท้าทายระดับ Elite 60 ครั้ง,,,,,,200,20000
+3810,通行证第一周任务,1003,2,8,,85,30,,派遣任务完成30次,派遣任務完成30次,Complete Dispatch Quest 30 times,Complete Dispatch Quest 30 times,파견 퀘스트 30회 완료,Complete a missão Dispatch 30 vezes,ทำภารกิจจัดส่งให้สำเร็จ 30 ครั้ง,,,,,,100,
+3811,通行证第一周任务,1003,2,8,,21,3000,,消耗3000钻石,消耗3000鑽石,Spend 3000 diamonds,Spend 3000 diamonds,3000다이아 소모,Gaste 3000 diamantes,ใช้เงิน 3，000 เพชร,,,,,,200,
+3812,通行证第一周任务,1003,2,8,,67,7,,以太乐园通过7层,乙太樂園通過7層,Clear Aether Paradise level 7,Clear Aether Paradise level 7,에테르파라다이스 7층 클리어,Limpe o nível 7 do Aether Paradise,เคลียร์อีเธอร์พาราไดซ์ ระดับ 7,,,,,,200,
+3813,通行证第一周任务,1003,2,8,,86,6,{6=4},完成S以上派遣6次,完成S以上派遣6次,Complete S and above Dispatch Quest 6 times,Complete S and above Dispatch Quest 6 times,S급 이상 파견 6회 완료,Complete a missão S e acima Dispatch 6 vezes,ทำภารกิจส่งของ S ขึ้นไปให้สำเร็จ 6 ครั้ง,,,,,,200,
+,,,,,,,,,,,,,,,,,,,,,,
+3901,通行证第一周任务,1003,2,9,,17,3,,累计登录3天,累計登錄3天,Login 3 days in total,Tích luỹ đăng nhập 3 ngày,누적 3일 로그인,Login 3 dias no total,เข้าสู่ระบบรวม 3 วัน,,,,,,100,
+3902,通行证第一周任务,1003,2,9,,36,50,,精灵升级50次,精靈升級50次,Upgrade Pokémon 50 times.,Upgrade Pokémon 50 times.,포켓몬 50회 레벨업,Melhore os Pokémon 50 vezes.,อัพเกรดโปเกมอน 50 ครั้ง,,,,,,100,strengthen-1
+3903,通行证第一周任务,1003,2,9,,21,1000,,消耗1000钻石,消耗1000鑽石,Spend 1000 diamonds,Spend 1000 diamonds,1000다이아 소모,Gaste 1000 diamantes,ใช้เงิน 1，000 เพชร,,,,,,200,
+3904,通行证第一周任务,1003,2,9,,43,50,,竞技场积分50分,競技場積分50分,Arena Points:50pts,Arena Points:50pts,아레나 포인트 50점,Pontos de Arena:50pts,คะแนนอารีน่า: 50 คะแนน,,,,,,100,
+3905,通行证第一周任务,1003,2,9,,63,50000,,以太积分累计50000分,乙太積分累計50000分,Accumulate a total of 50000 Aether Points,Accumulate a total of 50000 Aether Points,에테르 포인트 누적 50000점,Acumule um total de 50000 pontos de éter,สะสมแต้ม Aether ทั้งหมด 50，000 แต้ม,,,,,,100,
+3906,通行证第一周任务,1003,2,9,,55,20,,公会捐献20次,公會捐獻20次,Donate 20 times,Donate 20 times,길드 기부 20회,Doe 20 vezes,บริจาค 20 ครั้ง,,,,,,100,
+3907,通行证第一周任务,1003,2,9,,50,20,,在钻石抽卡中抽卡20次,在鑽石抽卡中抽卡20次,Draw 20 times in Diamond Draw,Draw 20 times in Diamond Draw,다이아 뽑기 20회 진행,Desenhe 20 vezes no Diamond Draw,จับฉลาก 20 ครั้ง ใน Diamond Draw,,,,,,200,
+3908,通行证第一周任务,1003,2,9,,29,300,,挑战普通关卡300次,挑戰普通關卡300次,Fight in Normal level 300 times,Fight in Normal level 300 times,일반 스테이지 300회 도전,Lute no nível Normal 300 vezes,ต่อสู้ในระดับปกติ 300 ครั้ง,,,,,,200,10000
+3909,通行证第一周任务,1003,2,9,,30,60,,挑战困难关卡60次,挑戰困難關卡60次,Challenge Elite level 60 times,Challenge Elite level 60 times,하드 스테이지 도전 60회,Desafie o nível Elite 60 vezes,ท้าทายระดับ Elite 60 ครั้ง,,,,,,200,20000
+3910,通行证第一周任务,1003,2,9,,85,30,,派遣任务完成30次,派遣任務完成30次,Complete Dispatch Quest 30 times,Complete Dispatch Quest 30 times,파견 퀘스트 30회 완료,Complete a missão Dispatch 30 vezes,ทำภารกิจจัดส่งให้สำเร็จ 30 ครั้ง,,,,,,100,
+3911,通行证第一周任务,1003,2,9,,21,3000,,消耗3000钻石,消耗3000鑽石,Spend 3000 diamonds,Spend 3000 diamonds,3000다이아 소모,Gaste 3000 diamantes,ใช้เงิน 3，000 เพชร,,,,,,200,
+3912,通行证第一周任务,1003,2,9,,67,7,,以太乐园通过7层,乙太樂園通過7層,Clear Aether Paradise level 7,Clear Aether Paradise level 7,에테르파라다이스 7층 클리어,Limpe o nível 7 do Aether Paradise,เคลียร์อีเธอร์พาราไดซ์ ระดับ 7,,,,,,200,
+3913,通行证第一周任务,1003,2,9,,86,6,{6=4},完成S以上派遣6次,完成S以上派遣6次,Complete S and above Dispatch Quest 6 times,Complete S and above Dispatch Quest 6 times,S급 이상 파견 6회 완료,Complete a missão S e acima Dispatch 6 vezes,ทำภารกิจส่งของ S ขึ้นไปให้สำเร็จ 6 ครั้ง,,,,,,200,
+,,,,,,,,,,,,,,,,,,,,,,
+4001,通行证第一周任务,1003,2,10,,17,3,,累计登录3天,累計登錄3天,Login 3 days in total,Tích luỹ đăng nhập 3 ngày,누적 3일 로그인,Login 3 dias no total,เข้าสู่ระบบรวม 3 วัน,,,,,,100,
+4002,通行证第一周任务,1003,2,10,,36,50,,精灵升级50次,精靈升級50次,Upgrade Pokémon 50 times.,Upgrade Pokémon 50 times.,포켓몬 50회 레벨업,Melhore os Pokémon 50 vezes.,อัพเกรดโปเกมอน 50 ครั้ง,,,,,,100,strengthen-1
+4003,通行证第一周任务,1003,2,10,,21,1000,,消耗1000钻石,消耗1000鑽石,Spend 1000 diamonds,Spend 1000 diamonds,1000다이아 소모,Gaste 1000 diamantes,ใช้เงิน 1，000 เพชร,,,,,,200,
+4004,通行证第一周任务,1003,2,10,,43,50,,竞技场积分50分,競技場積分50分,Arena Points:50pts,Arena Points:50pts,아레나 포인트 50점,Pontos de Arena:50pts,คะแนนอารีน่า: 50 คะแนน,,,,,,100,
+4005,通行证第一周任务,1003,2,10,,63,50000,,以太积分累计50000分,乙太積分累計50000分,Accumulate a total of 50000 Aether Points,Accumulate a total of 50000 Aether Points,에테르 포인트 누적 50000점,Acumule um total de 50000 pontos de éter,สะสมแต้ม Aether ทั้งหมด 50，000 แต้ม,,,,,,100,
+4006,通行证第一周任务,1003,2,10,,55,20,,公会捐献20次,公會捐獻20次,Donate 20 times,Donate 20 times,길드 기부 20회,Doe 20 vezes,บริจาค 20 ครั้ง,,,,,,100,
+4007,通行证第一周任务,1003,2,10,,50,20,,在钻石抽卡中抽卡20次,在鑽石抽卡中抽卡20次,Draw 20 times in Diamond Draw,Draw 20 times in Diamond Draw,다이아 뽑기 20회 진행,Desenhe 20 vezes no Diamond Draw,จับฉลาก 20 ครั้ง ใน Diamond Draw,,,,,,200,
+4008,通行证第一周任务,1003,2,10,,29,300,,挑战普通关卡300次,挑戰普通關卡300次,Fight in Normal level 300 times,Fight in Normal level 300 times,일반 스테이지 300회 도전,Lute no nível Normal 300 vezes,ต่อสู้ในระดับปกติ 300 ครั้ง,,,,,,200,10000
+4009,通行证第一周任务,1003,2,10,,30,60,,挑战困难关卡60次,挑戰困難關卡60次,Challenge Elite level 60 times,Challenge Elite level 60 times,하드 스테이지 도전 60회,Desafie o nível Elite 60 vezes,ท้าทายระดับ Elite 60 ครั้ง,,,,,,200,20000
+4010,通行证第一周任务,1003,2,10,,85,30,,派遣任务完成30次,派遣任務完成30次,Complete Dispatch Quest 30 times,Complete Dispatch Quest 30 times,파견 퀘스트 30회 완료,Complete a missão Dispatch 30 vezes,ทำภารกิจจัดส่งให้สำเร็จ 30 ครั้ง,,,,,,100,
+4011,通行证第一周任务,1003,2,10,,21,3000,,消耗3000钻石,消耗3000鑽石,Spend 3000 diamonds,Spend 3000 diamonds,3000다이아 소모,Gaste 3000 diamantes,ใช้เงิน 3，000 เพชร,,,,,,200,
+4012,通行证第一周任务,1003,2,10,,67,7,,以太乐园通过7层,乙太樂園通過7層,Clear Aether Paradise level 7,Clear Aether Paradise level 7,에테르파라다이스 7층 클리어,Limpe o nível 7 do Aether Paradise,เคลียร์อีเธอร์พาราไดซ์ ระดับ 7,,,,,,200,
+4013,通行证第一周任务,1003,2,10,,86,6,{6=4},完成S以上派遣6次,完成S以上派遣6次,Complete S and above Dispatch Quest 6 times,Complete S and above Dispatch Quest 6 times,S급 이상 파견 6회 완료,Complete a missão S e acima Dispatch 6 vezes,ทำภารกิจส่งของ S ขึ้นไปให้สำเร็จ 6 ครั้ง,,,,,,200,
+,,,,,,,,,,,,,,,,,,,,,,
+4101,通行证第一周任务,1003,2,11,,17,3,,累计登录3天,累計登錄3天,Login 3 days in total,Tích luỹ đăng nhập 3 ngày,누적 3일 로그인,Login 3 dias no total,เข้าสู่ระบบรวม 3 วัน,,,,,,100,
+4102,通行证第一周任务,1003,2,11,,36,50,,精灵升级50次,精靈升級50次,Upgrade Pokémon 50 times.,Upgrade Pokémon 50 times.,포켓몬 50회 레벨업,Melhore os Pokémon 50 vezes.,อัพเกรดโปเกมอน 50 ครั้ง,,,,,,100,strengthen-1
+4103,通行证第一周任务,1003,2,11,,21,1000,,消耗1000钻石,消耗1000鑽石,Spend 1000 diamonds,Spend 1000 diamonds,1000다이아 소모,Gaste 1000 diamantes,ใช้เงิน 1，000 เพชร,,,,,,200,
+4104,通行证第一周任务,1003,2,11,,43,50,,竞技场积分50分,競技場積分50分,Arena Points:50pts,Arena Points:50pts,아레나 포인트 50점,Pontos de Arena:50pts,คะแนนอารีน่า: 50 คะแนน,,,,,,100,
+4105,通行证第一周任务,1003,2,11,,63,50000,,以太积分累计50000分,乙太積分累計50000分,Accumulate a total of 50000 Aether Points,Accumulate a total of 50000 Aether Points,에테르 포인트 누적 50000점,Acumule um total de 50000 pontos de éter,สะสมแต้ม Aether ทั้งหมด 50，000 แต้ม,,,,,,100,
+4106,通行证第一周任务,1003,2,11,,55,20,,公会捐献20次,公會捐獻20次,Donate 20 times,Donate 20 times,길드 기부 20회,Doe 20 vezes,บริจาค 20 ครั้ง,,,,,,100,
+4107,通行证第一周任务,1003,2,11,,50,20,,在钻石抽卡中抽卡20次,在鑽石抽卡中抽卡20次,Draw 20 times in Diamond Draw,Draw 20 times in Diamond Draw,다이아 뽑기 20회 진행,Desenhe 20 vezes no Diamond Draw,จับฉลาก 20 ครั้ง ใน Diamond Draw,,,,,,200,
+4108,通行证第一周任务,1003,2,11,,29,300,,挑战普通关卡300次,挑戰普通關卡300次,Fight in Normal level 300 times,Fight in Normal level 300 times,일반 스테이지 300회 도전,Lute no nível Normal 300 vezes,ต่อสู้ในระดับปกติ 300 ครั้ง,,,,,,200,10000
+4109,通行证第一周任务,1003,2,11,,30,60,,挑战困难关卡60次,挑戰困難關卡60次,Challenge Elite level 60 times,Challenge Elite level 60 times,하드 스테이지 도전 60회,Desafie o nível Elite 60 vezes,ท้าทายระดับ Elite 60 ครั้ง,,,,,,200,20000
+4110,通行证第一周任务,1003,2,11,,85,30,,派遣任务完成30次,派遣任務完成30次,Complete Dispatch Quest 30 times,Complete Dispatch Quest 30 times,파견 퀘스트 30회 완료,Complete a missão Dispatch 30 vezes,ทำภารกิจจัดส่งให้สำเร็จ 30 ครั้ง,,,,,,100,
+4111,通行证第一周任务,1003,2,11,,21,3000,,消耗3000钻石,消耗3000鑽石,Spend 3000 diamonds,Spend 3000 diamonds,3000다이아 소모,Gaste 3000 diamantes,ใช้เงิน 3，000 เพชร,,,,,,200,
+4112,通行证第一周任务,1003,2,11,,67,7,,以太乐园通过7层,乙太樂園通過7層,Clear Aether Paradise level 7,Clear Aether Paradise level 7,에테르파라다이스 7층 클리어,Limpe o nível 7 do Aether Paradise,เคลียร์อีเธอร์พาราไดซ์ ระดับ 7,,,,,,200,
+4113,通行证第一周任务,1003,2,11,,86,6,{6=4},完成S以上派遣6次,完成S以上派遣6次,Complete S and above Dispatch Quest 6 times,Complete S and above Dispatch Quest 6 times,S급 이상 파견 6회 완료,Complete a missão S e acima Dispatch 6 vezes,ทำภารกิจส่งของ S ขึ้นไปให้สำเร็จ 6 ครั้ง,,,,,,200,
+,,,,,,,,,,,,,,,,,,,,,,
+5001,通行证日任务,1004,1,,,15,1,,每日登陆,每日登陸,Daily login,Daily login,일일 로그인,Login diário,เข้าสู่ระบบรายวัน,,,,,,30,
+5002,通行证日任务,1004,1,,,29,30,,挑战普通关卡30次,挑戰普通關卡30次,Fight in Normal level 30 times,Fight in Normal level 30 times,일반 스테이지 30회 도전,Lute no nível Normal 30 vezes,ต่อสู้ในระดับปกติ 30 ครั้ง,,,,,,30,10000
+5003,通行证日任务,1004,1,,,39,1,,饰品突破1次,飾品進階1次,Breakthrough trinket 1 time,Breakthrough trinket 1 time,액세서리 1회 돌파,Bugiganga inovadora 1 vez,เครื่องประดับล้ำยุค 1 ครั้ง,,,,,,30,
+5004,通行证日任务,1004,1,,,41,5,,竞技场战斗5次,競技場戰鬥5次,Engage in arena battle for 5 times,Engage in arena battle for 5 times,아레나 전투 5회 진행,Participe de uma batalha de arena 5 vezes,เข้าร่วมการต่อสู้ในสนามประลอง 5 ครั้ง,,,,,,30,
+5005,通行证日任务,1004,1,,,66,2,,元素挑战战斗2次,元素挑戰戰鬥2次,Enter Element Challenge 2 times,Enter Element Challenge 2 times,엘리멘탈 챌린지 2회 전투,Entre no Element Challenge 2 vezes,เข้าร่วม Element Challenge 2 ครั้ง,,,,,,30,
+5006,通行证日任务,1004,1,,,20,1000000,,消耗1000000金币,消耗1000000金幣,Spend 1000000 coins,Spend 1000000 coins,1000000코인 소모,Gaste 1.000.000 de moedas,ใช้เงิน 1000000 เหรียญ,,,,,,30,
+5007,通行证日任务,1004,1,,,21,300,,消耗300钻石,消耗300鑽石,Spend 300 diamonds,Spend 300 diamonds,300다이아 소모,Gaste 300 diamantes,ใช้เงิน 300 เพชร,,,,,,30,
+5008,通行证日任务,1004,1,,4,15,1,,大师每日登陆,大師每日登陸,Marster daily login.,Marster daily login.,마스터 일일 로그인,Login diário do Marster.,การเข้าสู่ระบบ Marster รายวัน,,,,,,30,
+,,,,,,,,,,,,,,,,,,,,,,
+5101,通行证第一周任务,1004,2,1,,17,2,,累计登录2天,累計登錄2天,Login 2 days in total,Tích luỹ đăng nhập 2 ngày,누적 2일 로그인,Login 2 dias no total,เข้าสู่ระบบรวม 2 วัน,,,,,,100,
+5102,通行证第一周任务,1004,2,1,,36,30,,精灵升级30次,精靈升級30次,Upgrade Pokémons 30 times,Upgrade Pokémons 30 times,포켓몬 30회 레벨업,Melhore os Pokémons 30 vezes,อัพเกรดโปเกมอน 30 ครั้ง,,,,,,100,strengthen-1
+5103,通行证第一周任务,1004,2,1,,21,1000,,消耗1000钻石,消耗1000鑽石,Spend 1000 diamonds,Spend 1000 diamonds,1000다이아 소모,Gaste 1000 diamantes,ใช้เงิน 1，000 เพชร,,,,,,100,
+5104,通行证第一周任务,1004,2,1,,43,25,,竞技场积分25分,競技場積分25分,Arena Points:25pts,Arena Points:25pts,아레나 포인트 25점,Pontos de Arena:25pts,คะแนนอารีน่า: 25 คะแนน,,,,,,100,
+5105,通行证第一周任务,1004,2,1,,63,25000,,以太积分累计25000分,乙太積分累計50000分,Accumulate a total of 50000 Aether Points,Accumulate a total of 50000 Aether Points,에테르 포인트 누적 25000점,Acumule um total de 50000 pontos de éter,สะสมแต้ม Aether ทั้งหมด 50，000 แต้ม,,,,,,100,
+5106,通行证第一周任务,1004,2,1,,55,10,,公会捐献10次,公會捐獻10次,Donate 10 times,Donate 10 times,길드 기부 10회,Doe 10 vezes,บริจาค 10 ครั้ง,,,,,,100,
+5107,通行证第一周任务,1004,2,1,,50,10,,在钻石抽卡中抽卡10次,在鑽石抽卡中抽卡10次,Draw 10 times in Diamond Draw,Draw 10 times in Diamond Draw,다이아 뽑기 10회 진행,Desenhe 10 vezes no Diamond Draw,จับฉลาก 10 ครั้ง ใน Diamond Draw,,,,,,100,
+5108,通行证第一周任务,1004,2,1,,29,150,,挑战普通关卡150次,挑戰普通關卡150次,Fight in Normal level 150 times,Fight in Normal level 150 times,일반 스테이지 150회 도전,Lute no nível Normal 150 vezes,ต่อสู้ในระดับปกติ 150 ครั้ง,,,,,,100,10000
+5109,通行证第一周任务,1004,2,1,,30,30,,挑战困难关卡30次,挑戰困難關卡30次,Challenge Elite levels 30 times,Challenge Elite levels 30 times,하드 스테이지 도전 30회,Desafie os níveis Elite 30 vezes,ท้าทายระดับ Elite 30 ครั้ง,,,,,,100,20000
+5110,通行证第一周任务,1004,2,1,,85,15,,派遣任务完成15次,派遣任務完成15次,Complete Dispatch Quest 15 times,Complete Dispatch Quest 15 times,파견 퀘스트 15회 완료,Complete a missão Dispatch 15 vezes,เสร็จสิ้นภารกิจจัดส่ง 15 ครั้ง,,,,,,100,
+5111,通行证第一周任务,1004,2,1,,21,3000,,消耗3000钻石,消耗3000鑽石,Spend 3000 diamonds,Spend 3000 diamonds,3000다이아 소모,Gaste 3000 diamantes,ใช้เงิน 3，000 เพชร,,,,,,100,
+5112,通行证第一周任务,1004,2,1,,67,7,,以太乐园通过7层,乙太樂園通過7層,Clear Aether Paradise level 7,Clear Aether Paradise level 7,에테르파라다이스 7층 클리어,Limpe o nível 7 do Aether Paradise,เคลียร์อีเธอร์พาราไดซ์ ระดับ 7,,,,,,100,
+5113,通行证第一周任务,1004,2,1,,86,3,{3=4},完成S以上派遣3次,完成S以上派遣3次,Complete S and above Dispatch Quest 3 times,Complete S and above Dispatch Quest 3 times,S급 이상 파견 3회 완료,Complete a missão S e acima Dispatch 3 vezes,ทำภารกิจส่งของ S ขึ้นไปให้สำเร็จ 3 ครั้ง,,,,,,100,
+,,,,,,,,,,,,,,,,,,,,,,
+5201,通行证第一周任务,1004,2,2,,17,3,,累计登录3天,累計登錄3天,Login 3 days in total,Tích luỹ đăng nhập 3 ngày,누적 3일 로그인,Login 3 dias no total,เข้าสู่ระบบรวม 3 วัน,,,,,,100,
+5202,通行证第一周任务,1004,2,2,,36,50,,精灵升级50次,精靈升級50次,Upgrade Pokémon 50 times.,Upgrade Pokémon 50 times.,포켓몬 50회 레벨업,Melhore os Pokémon 50 vezes.,อัพเกรดโปเกมอน 50 ครั้ง,,,,,,100,strengthen-1
+5203,通行证第一周任务,1004,2,2,,21,1000,,消耗1000钻石,消耗1000鑽石,Spend 1000 diamonds,Spend 1000 diamonds,1000다이아 소모,Gaste 1000 diamantes,ใช้เงิน 1，000 เพชร,,,,,,200,
+5204,通行证第一周任务,1004,2,2,,43,50,,竞技场积分50分,競技場積分50分,Arena Points:50pts,Arena Points:50pts,아레나 포인트 50점,Pontos de Arena:50pts,คะแนนอารีน่า: 50 คะแนน,,,,,,100,
+5205,通行证第一周任务,1004,2,2,,63,50000,,以太积分累计50000分,乙太積分累計50000分,Accumulate a total of 50000 Aether Points,Accumulate a total of 50000 Aether Points,에테르 포인트 누적 50000점,Acumule um total de 50000 pontos de éter,สะสมแต้ม Aether ทั้งหมด 50，000 แต้ม,,,,,,100,
+5206,通行证第一周任务,1004,2,2,,55,20,,公会捐献20次,公會捐獻20次,Donate 20 times,Donate 20 times,길드 기부 20회,Doe 20 vezes,บริจาค 20 ครั้ง,,,,,,100,
+5207,通行证第一周任务,1004,2,2,,50,20,,在钻石抽卡中抽卡20次,在鑽石抽卡中抽卡20次,Draw 20 times in Diamond Draw,Draw 20 times in Diamond Draw,다이아 뽑기 20회 진행,Desenhe 20 vezes no Diamond Draw,จับฉลาก 20 ครั้ง ใน Diamond Draw,,,,,,200,
+5208,通行证第一周任务,1004,2,2,,29,300,,挑战普通关卡300次,挑戰普通關卡300次,Fight in Normal level 300 times,Fight in Normal level 300 times,일반 스테이지 300회 도전,Lute no nível Normal 300 vezes,ต่อสู้ในระดับปกติ 300 ครั้ง,,,,,,200,10000
+5209,通行证第一周任务,1004,2,2,,30,60,,挑战困难关卡60次,挑戰困難關卡60次,Challenge Elite level 60 times,Challenge Elite level 60 times,하드 스테이지 도전 60회,Desafie o nível Elite 60 vezes,ท้าทายระดับ Elite 60 ครั้ง,,,,,,200,20000
+5210,通行证第一周任务,1004,2,2,,85,30,,派遣任务完成30次,派遣任務完成30次,Complete Dispatch Quest 30 times,Complete Dispatch Quest 30 times,파견 퀘스트 30회 완료,Complete a missão Dispatch 30 vezes,ทำภารกิจจัดส่งให้สำเร็จ 30 ครั้ง,,,,,,100,
+5211,通行证第一周任务,1004,2,2,,21,3000,,消耗3000钻石,消耗3000鑽石,Spend 3000 diamonds,Spend 3000 diamonds,3000다이아 소모,Gaste 3000 diamantes,ใช้เงิน 3，000 เพชร,,,,,,200,
+5212,通行证第一周任务,1004,2,2,,67,7,,以太乐园通过7层,乙太樂園通過7層,Clear Aether Paradise level 7,Clear Aether Paradise level 7,에테르파라다이스 7층 클리어,Limpe o nível 7 do Aether Paradise,เคลียร์อีเธอร์พาราไดซ์ ระดับ 7,,,,,,200,
+5213,通行证第一周任务,1004,2,2,,86,6,{6=4},完成S以上派遣6次,完成S以上派遣6次,Complete S and above Dispatch Quest 6 times,Complete S and above Dispatch Quest 6 times,S급 이상 파견 6회 완료,Complete a missão S e acima Dispatch 6 vezes,ทำภารกิจส่งของ S ขึ้นไปให้สำเร็จ 6 ครั้ง,,,,,,200,
+,,,,,,,,,,,,,,,,,,,,,,
+5301,通行证第一周任务,1004,2,3,,17,3,,累计登录3天,累計登錄3天,Login 3 days in total,Tích luỹ đăng nhập 3 ngày,누적 3일 로그인,Login 3 dias no total,เข้าสู่ระบบรวม 3 วัน,,,,,,100,
+5302,通行证第一周任务,1004,2,3,,36,50,,精灵升级50次,精靈升級50次,Upgrade Pokémon 50 times.,Upgrade Pokémon 50 times.,포켓몬 50회 레벨업,Melhore os Pokémon 50 vezes.,อัพเกรดโปเกมอน 50 ครั้ง,,,,,,100,strengthen-1
+5303,通行证第一周任务,1004,2,3,,21,1000,,消耗1000钻石,消耗1000鑽石,Spend 1000 diamonds,Spend 1000 diamonds,1000다이아 소모,Gaste 1000 diamantes,ใช้เงิน 1，000 เพชร,,,,,,200,
+5304,通行证第一周任务,1004,2,3,,43,50,,竞技场积分50分,競技場積分50分,Arena Points:50pts,Arena Points:50pts,아레나 포인트 50점,Pontos de Arena:50pts,คะแนนอารีน่า: 50 คะแนน,,,,,,100,
+5305,通行证第一周任务,1004,2,3,,63,50000,,以太积分累计50000分,乙太積分累計50000分,Accumulate a total of 50000 Aether Points,Accumulate a total of 50000 Aether Points,에테르 포인트 누적 50000점,Acumule um total de 50000 pontos de éter,สะสมแต้ม Aether ทั้งหมด 50，000 แต้ม,,,,,,100,
+5306,通行证第一周任务,1004,2,3,,55,20,,公会捐献20次,公會捐獻20次,Donate 20 times,Donate 20 times,길드 기부 20회,Doe 20 vezes,บริจาค 20 ครั้ง,,,,,,100,
+5307,通行证第一周任务,1004,2,3,,50,20,,在钻石抽卡中抽卡20次,在鑽石抽卡中抽卡20次,Draw 20 times in Diamond Draw,Draw 20 times in Diamond Draw,다이아 뽑기 20회 진행,Desenhe 20 vezes no Diamond Draw,จับฉลาก 20 ครั้ง ใน Diamond Draw,,,,,,200,
+5308,通行证第一周任务,1004,2,3,,29,300,,挑战普通关卡300次,挑戰普通關卡300次,Fight in Normal level 300 times,Fight in Normal level 300 times,일반 스테이지 300회 도전,Lute no nível Normal 300 vezes,ต่อสู้ในระดับปกติ 300 ครั้ง,,,,,,200,10000
+5309,通行证第一周任务,1004,2,3,,30,60,,挑战困难关卡60次,挑戰困難關卡60次,Challenge Elite level 60 times,Challenge Elite level 60 times,하드 스테이지 도전 60회,Desafie o nível Elite 60 vezes,ท้าทายระดับ Elite 60 ครั้ง,,,,,,200,20000
+5310,通行证第一周任务,1004,2,3,,85,30,,派遣任务完成30次,派遣任務完成30次,Complete Dispatch Quest 30 times,Complete Dispatch Quest 30 times,파견 퀘스트 30회 완료,Complete a missão Dispatch 30 vezes,ทำภารกิจจัดส่งให้สำเร็จ 30 ครั้ง,,,,,,100,
+5311,通行证第一周任务,1004,2,3,,21,3000,,消耗3000钻石,消耗3000鑽石,Spend 3000 diamonds,Spend 3000 diamonds,3000다이아 소모,Gaste 3000 diamantes,ใช้เงิน 3，000 เพชร,,,,,,200,
+5312,通行证第一周任务,1004,2,3,,67,7,,以太乐园通过7层,乙太樂園通過7層,Clear Aether Paradise level 7,Clear Aether Paradise level 7,에테르파라다이스 7층 클리어,Limpe o nível 7 do Aether Paradise,เคลียร์อีเธอร์พาราไดซ์ ระดับ 7,,,,,,200,
+5313,通行证第一周任务,1004,2,3,,86,6,{6=4},完成S以上派遣6次,完成S以上派遣6次,Complete S and above Dispatch Quest 6 times,Complete S and above Dispatch Quest 6 times,S급 이상 파견 6회 완료,Complete a missão S e acima Dispatch 6 vezes,ทำภารกิจส่งของ S ขึ้นไปให้สำเร็จ 6 ครั้ง,,,,,,200,
+,,,,,,,,,,,,,,,,,,,,,,
+5401,通行证第一周任务,1004,2,4,,17,3,,累计登录3天,累計登錄3天,Login 3 days in total,Tích luỹ đăng nhập 3 ngày,누적 3일 로그인,Login 3 dias no total,เข้าสู่ระบบรวม 3 วัน,,,,,,100,
+5402,通行证第一周任务,1004,2,4,,36,50,,精灵升级50次,精靈升級50次,Upgrade Pokémon 50 times.,Upgrade Pokémon 50 times.,포켓몬 50회 레벨업,Melhore os Pokémon 50 vezes.,อัพเกรดโปเกมอน 50 ครั้ง,,,,,,100,strengthen-1
+5403,通行证第一周任务,1004,2,4,,21,1000,,消耗1000钻石,消耗1000鑽石,Spend 1000 diamonds,Spend 1000 diamonds,1000다이아 소모,Gaste 1000 diamantes,ใช้เงิน 1，000 เพชร,,,,,,200,
+5404,通行证第一周任务,1004,2,4,,43,50,,竞技场积分50分,競技場積分50分,Arena Points:50pts,Arena Points:50pts,아레나 포인트 50점,Pontos de Arena:50pts,คะแนนอารีน่า: 50 คะแนน,,,,,,100,
+5405,通行证第一周任务,1004,2,4,,63,50000,,以太积分累计50000分,乙太積分累計50000分,Accumulate a total of 50000 Aether Points,Accumulate a total of 50000 Aether Points,에테르 포인트 누적 50000점,Acumule um total de 50000 pontos de éter,สะสมแต้ม Aether ทั้งหมด 50，000 แต้ม,,,,,,100,
+5406,通行证第一周任务,1004,2,4,,55,20,,公会捐献20次,公會捐獻20次,Donate 20 times,Donate 20 times,길드 기부 20회,Doe 20 vezes,บริจาค 20 ครั้ง,,,,,,100,
+5407,通行证第一周任务,1004,2,4,,50,20,,在钻石抽卡中抽卡20次,在鑽石抽卡中抽卡20次,Draw 20 times in Diamond Draw,Draw 20 times in Diamond Draw,다이아 뽑기 20회 진행,Desenhe 20 vezes no Diamond Draw,จับฉลาก 20 ครั้ง ใน Diamond Draw,,,,,,200,
+5408,通行证第一周任务,1004,2,4,,29,300,,挑战普通关卡300次,挑戰普通關卡300次,Fight in Normal level 300 times,Fight in Normal level 300 times,일반 스테이지 300회 도전,Lute no nível Normal 300 vezes,ต่อสู้ในระดับปกติ 300 ครั้ง,,,,,,200,10000
+5409,通行证第一周任务,1004,2,4,,30,60,,挑战困难关卡60次,挑戰困難關卡60次,Challenge Elite level 60 times,Challenge Elite level 60 times,하드 스테이지 도전 60회,Desafie o nível Elite 60 vezes,ท้าทายระดับ Elite 60 ครั้ง,,,,,,200,20000
+5410,通行证第一周任务,1004,2,4,,85,30,,派遣任务完成30次,派遣任務完成30次,Complete Dispatch Quest 30 times,Complete Dispatch Quest 30 times,파견 퀘스트 30회 완료,Complete a missão Dispatch 30 vezes,ทำภารกิจจัดส่งให้สำเร็จ 30 ครั้ง,,,,,,100,
+5411,通行证第一周任务,1004,2,4,,21,3000,,消耗3000钻石,消耗3000鑽石,Spend 3000 diamonds,Spend 3000 diamonds,3000다이아 소모,Gaste 3000 diamantes,ใช้เงิน 3，000 เพชร,,,,,,200,
+5412,通行证第一周任务,1004,2,4,,67,7,,以太乐园通过7层,乙太樂園通過7層,Clear Aether Paradise level 7,Clear Aether Paradise level 7,에테르파라다이스 7층 클리어,Limpe o nível 7 do Aether Paradise,เคลียร์อีเธอร์พาราไดซ์ ระดับ 7,,,,,,200,
+5413,通行证第一周任务,1004,2,4,,86,6,{6=4},完成S以上派遣6次,完成S以上派遣6次,Complete S and above Dispatch Quest 6 times,Complete S and above Dispatch Quest 6 times,S급 이상 파견 6회 완료,Complete a missão S e acima Dispatch 6 vezes,ทำภารกิจส่งของ S ขึ้นไปให้สำเร็จ 6 ครั้ง,,,,,,200,
+,,,,,,,,,,,,,,,,,,,,,,
+5501,通行证第一周任务,1004,2,5,,17,3,,累计登录3天,累計登錄3天,Login 3 days in total,Tích luỹ đăng nhập 3 ngày,누적 3일 로그인,Login 3 dias no total,เข้าสู่ระบบรวม 3 วัน,,,,,,100,
+5502,通行证第一周任务,1004,2,5,,36,50,,精灵升级50次,精靈升級50次,Upgrade Pokémon 50 times.,Upgrade Pokémon 50 times.,포켓몬 50회 레벨업,Melhore os Pokémon 50 vezes.,อัพเกรดโปเกมอน 50 ครั้ง,,,,,,100,strengthen-1
+5503,通行证第一周任务,1004,2,5,,21,1000,,消耗1000钻石,消耗1000鑽石,Spend 1000 diamonds,Spend 1000 diamonds,1000다이아 소모,Gaste 1000 diamantes,ใช้เงิน 1，000 เพชร,,,,,,200,
+5504,通行证第一周任务,1004,2,5,,43,50,,竞技场积分50分,競技場積分50分,Arena Points:50pts,Arena Points:50pts,아레나 포인트 50점,Pontos de Arena:50pts,คะแนนอารีน่า: 50 คะแนน,,,,,,100,
+5505,通行证第一周任务,1004,2,5,,63,50000,,以太积分累计50000分,乙太積分累計50000分,Accumulate a total of 50000 Aether Points,Accumulate a total of 50000 Aether Points,에테르 포인트 누적 50000점,Acumule um total de 50000 pontos de éter,สะสมแต้ม Aether ทั้งหมด 50，000 แต้ม,,,,,,100,
+5506,通行证第一周任务,1004,2,5,,55,20,,公会捐献20次,公會捐獻20次,Donate 20 times,Donate 20 times,길드 기부 20회,Doe 20 vezes,บริจาค 20 ครั้ง,,,,,,100,
+5507,通行证第一周任务,1004,2,5,,50,20,,在钻石抽卡中抽卡20次,在鑽石抽卡中抽卡20次,Draw 20 times in Diamond Draw,Draw 20 times in Diamond Draw,다이아 뽑기 20회 진행,Desenhe 20 vezes no Diamond Draw,จับฉลาก 20 ครั้ง ใน Diamond Draw,,,,,,200,
+5508,通行证第一周任务,1004,2,5,,29,300,,挑战普通关卡300次,挑戰普通關卡300次,Fight in Normal level 300 times,Fight in Normal level 300 times,일반 스테이지 300회 도전,Lute no nível Normal 300 vezes,ต่อสู้ในระดับปกติ 300 ครั้ง,,,,,,200,10000
+5509,通行证第一周任务,1004,2,5,,30,60,,挑战困难关卡60次,挑戰困難關卡60次,Challenge Elite level 60 times,Challenge Elite level 60 times,하드 스테이지 도전 60회,Desafie o nível Elite 60 vezes,ท้าทายระดับ Elite 60 ครั้ง,,,,,,200,20000
+5510,通行证第一周任务,1004,2,5,,85,30,,派遣任务完成30次,派遣任務完成30次,Complete Dispatch Quest 30 times,Complete Dispatch Quest 30 times,파견 퀘스트 30회 완료,Complete a missão Dispatch 30 vezes,ทำภารกิจจัดส่งให้สำเร็จ 30 ครั้ง,,,,,,100,
+5511,通行证第一周任务,1004,2,5,,21,3000,,消耗3000钻石,消耗3000鑽石,Spend 3000 diamonds,Spend 3000 diamonds,3000다이아 소모,Gaste 3000 diamantes,ใช้เงิน 3，000 เพชร,,,,,,200,
+5512,通行证第一周任务,1004,2,5,,67,7,,以太乐园通过7层,乙太樂園通過7層,Clear Aether Paradise level 7,Clear Aether Paradise level 7,에테르파라다이스 7층 클리어,Limpe o nível 7 do Aether Paradise,เคลียร์อีเธอร์พาราไดซ์ ระดับ 7,,,,,,200,
+5513,通行证第一周任务,1004,2,5,,86,6,{6=4},完成S以上派遣6次,完成S以上派遣6次,Complete S and above Dispatch Quest 6 times,Complete S and above Dispatch Quest 6 times,S급 이상 파견 6회 완료,Complete a missão S e acima Dispatch 6 vezes,ทำภารกิจส่งของ S ขึ้นไปให้สำเร็จ 6 ครั้ง,,,,,,200,
+,,,,,,,,,,,,,,,,,,,,,,
+5601,通行证第一周任务,1004,2,6,,17,3,,累计登录3天,累計登錄3天,Login 3 days in total,Tích luỹ đăng nhập 3 ngày,누적 3일 로그인,Login 3 dias no total,เข้าสู่ระบบรวม 3 วัน,,,,,,100,
+5602,通行证第一周任务,1004,2,6,,36,50,,精灵升级50次,精靈升級50次,Upgrade Pokémon 50 times.,Upgrade Pokémon 50 times.,포켓몬 50회 레벨업,Melhore os Pokémon 50 vezes.,อัพเกรดโปเกมอน 50 ครั้ง,,,,,,100,strengthen-1
+5603,通行证第一周任务,1004,2,6,,21,1000,,消耗1000钻石,消耗1000鑽石,Spend 1000 diamonds,Spend 1000 diamonds,1000다이아 소모,Gaste 1000 diamantes,ใช้เงิน 1，000 เพชร,,,,,,200,
+5604,通行证第一周任务,1004,2,6,,43,50,,竞技场积分50分,競技場積分50分,Arena Points:50pts,Arena Points:50pts,아레나 포인트 50점,Pontos de Arena:50pts,คะแนนอารีน่า: 50 คะแนน,,,,,,100,
+5605,通行证第一周任务,1004,2,6,,63,50000,,以太积分累计50000分,乙太積分累計50000分,Accumulate a total of 50000 Aether Points,Accumulate a total of 50000 Aether Points,에테르 포인트 누적 50000점,Acumule um total de 50000 pontos de éter,สะสมแต้ม Aether ทั้งหมด 50，000 แต้ม,,,,,,100,
+5606,通行证第一周任务,1004,2,6,,55,20,,公会捐献20次,公會捐獻20次,Donate 20 times,Donate 20 times,길드 기부 20회,Doe 20 vezes,บริจาค 20 ครั้ง,,,,,,100,
+5607,通行证第一周任务,1004,2,6,,50,20,,在钻石抽卡中抽卡20次,在鑽石抽卡中抽卡20次,Draw 20 times in Diamond Draw,Draw 20 times in Diamond Draw,다이아 뽑기 20회 진행,Desenhe 20 vezes no Diamond Draw,จับฉลาก 20 ครั้ง ใน Diamond Draw,,,,,,200,
+5608,通行证第一周任务,1004,2,6,,29,300,,挑战普通关卡300次,挑戰普通關卡300次,Fight in Normal level 300 times,Fight in Normal level 300 times,일반 스테이지 300회 도전,Lute no nível Normal 300 vezes,ต่อสู้ในระดับปกติ 300 ครั้ง,,,,,,200,10000
+5609,通行证第一周任务,1004,2,6,,30,60,,挑战困难关卡60次,挑戰困難關卡60次,Challenge Elite level 60 times,Challenge Elite level 60 times,하드 스테이지 도전 60회,Desafie o nível Elite 60 vezes,ท้าทายระดับ Elite 60 ครั้ง,,,,,,200,20000
+5610,通行证第一周任务,1004,2,6,,85,30,,派遣任务完成30次,派遣任務完成30次,Complete Dispatch Quest 30 times,Complete Dispatch Quest 30 times,파견 퀘스트 30회 완료,Complete a missão Dispatch 30 vezes,ทำภารกิจจัดส่งให้สำเร็จ 30 ครั้ง,,,,,,100,
+5611,通行证第一周任务,1004,2,6,,21,3000,,消耗3000钻石,消耗3000鑽石,Spend 3000 diamonds,Spend 3000 diamonds,3000다이아 소모,Gaste 3000 diamantes,ใช้เงิน 3，000 เพชร,,,,,,200,
+5612,通行证第一周任务,1004,2,6,,67,7,,以太乐园通过7层,乙太樂園通過7層,Clear Aether Paradise level 7,Clear Aether Paradise level 7,에테르파라다이스 7층 클리어,Limpe o nível 7 do Aether Paradise,เคลียร์อีเธอร์พาราไดซ์ ระดับ 7,,,,,,200,
+5613,通行证第一周任务,1004,2,6,,86,6,{6=4},完成S以上派遣6次,完成S以上派遣6次,Complete S and above Dispatch Quest 6 times,Complete S and above Dispatch Quest 6 times,S급 이상 파견 6회 완료,Complete a missão S e acima Dispatch 6 vezes,ทำภารกิจส่งของ S ขึ้นไปให้สำเร็จ 6 ครั้ง,,,,,,200,
+,,,,,,,,,,,,,,,,,,,,,,
+5701,通行证第一周任务,1004,2,7,,17,3,,累计登录3天,累計登錄3天,Login 3 days in total,Tích luỹ đăng nhập 3 ngày,누적 3일 로그인,Login 3 dias no total,เข้าสู่ระบบรวม 3 วัน,,,,,,100,
+5702,通行证第一周任务,1004,2,7,,36,50,,精灵升级50次,精靈升級50次,Upgrade Pokémon 50 times.,Upgrade Pokémon 50 times.,포켓몬 50회 레벨업,Melhore os Pokémon 50 vezes.,อัพเกรดโปเกมอน 50 ครั้ง,,,,,,100,strengthen-1
+5703,通行证第一周任务,1004,2,7,,21,1000,,消耗1000钻石,消耗1000鑽石,Spend 1000 diamonds,Spend 1000 diamonds,1000다이아 소모,Gaste 1000 diamantes,ใช้เงิน 1，000 เพชร,,,,,,200,
+5704,通行证第一周任务,1004,2,7,,43,50,,竞技场积分50分,競技場積分50分,Arena Points:50pts,Arena Points:50pts,아레나 포인트 50점,Pontos de Arena:50pts,คะแนนอารีน่า: 50 คะแนน,,,,,,100,
+5705,通行证第一周任务,1004,2,7,,63,50000,,以太积分累计50000分,乙太積分累計50000分,Accumulate a total of 50000 Aether Points,Accumulate a total of 50000 Aether Points,에테르 포인트 누적 50000점,Acumule um total de 50000 pontos de éter,สะสมแต้ม Aether ทั้งหมด 50，000 แต้ม,,,,,,100,
+5706,通行证第一周任务,1004,2,7,,55,20,,公会捐献20次,公會捐獻20次,Donate 20 times,Donate 20 times,길드 기부 20회,Doe 20 vezes,บริจาค 20 ครั้ง,,,,,,100,
+5707,通行证第一周任务,1004,2,7,,50,20,,在钻石抽卡中抽卡20次,在鑽石抽卡中抽卡20次,Draw 20 times in Diamond Draw,Draw 20 times in Diamond Draw,다이아 뽑기 20회 진행,Desenhe 20 vezes no Diamond Draw,จับฉลาก 20 ครั้ง ใน Diamond Draw,,,,,,200,
+5708,通行证第一周任务,1004,2,7,,29,300,,挑战普通关卡300次,挑戰普通關卡300次,Fight in Normal level 300 times,Fight in Normal level 300 times,일반 스테이지 300회 도전,Lute no nível Normal 300 vezes,ต่อสู้ในระดับปกติ 300 ครั้ง,,,,,,200,10000
+5709,通行证第一周任务,1004,2,7,,30,60,,挑战困难关卡60次,挑戰困難關卡60次,Challenge Elite level 60 times,Challenge Elite level 60 times,하드 스테이지 도전 60회,Desafie o nível Elite 60 vezes,ท้าทายระดับ Elite 60 ครั้ง,,,,,,200,20000
+5710,通行证第一周任务,1004,2,7,,85,30,,派遣任务完成30次,派遣任務完成30次,Complete Dispatch Quest 30 times,Complete Dispatch Quest 30 times,파견 퀘스트 30회 완료,Complete a missão Dispatch 30 vezes,ทำภารกิจจัดส่งให้สำเร็จ 30 ครั้ง,,,,,,100,
+5711,通行证第一周任务,1004,2,7,,21,3000,,消耗3000钻石,消耗3000鑽石,Spend 3000 diamonds,Spend 3000 diamonds,3000다이아 소모,Gaste 3000 diamantes,ใช้เงิน 3，000 เพชร,,,,,,200,
+5712,通行证第一周任务,1004,2,7,,67,7,,以太乐园通过7层,乙太樂園通過7層,Clear Aether Paradise level 7,Clear Aether Paradise level 7,에테르파라다이스 7층 클리어,Limpe o nível 7 do Aether Paradise,เคลียร์อีเธอร์พาราไดซ์ ระดับ 7,,,,,,200,
+5713,通行证第一周任务,1004,2,7,,86,6,{6=4},完成S以上派遣6次,完成S以上派遣6次,Complete S and above Dispatch Quest 6 times,Complete S and above Dispatch Quest 6 times,S급 이상 파견 6회 완료,Complete a missão S e acima Dispatch 6 vezes,ทำภารกิจส่งของ S ขึ้นไปให้สำเร็จ 6 ครั้ง,,,,,,200,
+,,,,,,,,,,,,,,,,,,,,,,
+5801,通行证第一周任务,1004,2,8,,17,3,,累计登录3天,累計登錄3天,Login 3 days in total,Tích luỹ đăng nhập 3 ngày,누적 3일 로그인,Login 3 dias no total,เข้าสู่ระบบรวม 3 วัน,,,,,,100,
+5802,通行证第一周任务,1004,2,8,,36,50,,精灵升级50次,精靈升級50次,Upgrade Pokémon 50 times.,Upgrade Pokémon 50 times.,포켓몬 50회 레벨업,Melhore os Pokémon 50 vezes.,อัพเกรดโปเกมอน 50 ครั้ง,,,,,,100,strengthen-1
+5803,通行证第一周任务,1004,2,8,,21,1000,,消耗1000钻石,消耗1000鑽石,Spend 1000 diamonds,Spend 1000 diamonds,1000다이아 소모,Gaste 1000 diamantes,ใช้เงิน 1，000 เพชร,,,,,,200,
+5804,通行证第一周任务,1004,2,8,,43,50,,竞技场积分50分,競技場積分50分,Arena Points:50pts,Arena Points:50pts,아레나 포인트 50점,Pontos de Arena:50pts,คะแนนอารีน่า: 50 คะแนน,,,,,,100,
+5805,通行证第一周任务,1004,2,8,,63,50000,,以太积分累计50000分,乙太積分累計50000分,Accumulate a total of 50000 Aether Points,Accumulate a total of 50000 Aether Points,에테르 포인트 누적 50000점,Acumule um total de 50000 pontos de éter,สะสมแต้ม Aether ทั้งหมด 50，000 แต้ม,,,,,,100,
+5806,通行证第一周任务,1004,2,8,,55,20,,公会捐献20次,公會捐獻20次,Donate 20 times,Donate 20 times,길드 기부 20회,Doe 20 vezes,บริจาค 20 ครั้ง,,,,,,100,
+5807,通行证第一周任务,1004,2,8,,50,20,,在钻石抽卡中抽卡20次,在鑽石抽卡中抽卡20次,Draw 20 times in Diamond Draw,Draw 20 times in Diamond Draw,다이아 뽑기 20회 진행,Desenhe 20 vezes no Diamond Draw,จับฉลาก 20 ครั้ง ใน Diamond Draw,,,,,,200,
+5808,通行证第一周任务,1004,2,8,,29,300,,挑战普通关卡300次,挑戰普通關卡300次,Fight in Normal level 300 times,Fight in Normal level 300 times,일반 스테이지 300회 도전,Lute no nível Normal 300 vezes,ต่อสู้ในระดับปกติ 300 ครั้ง,,,,,,200,10000
+5809,通行证第一周任务,1004,2,8,,30,60,,挑战困难关卡60次,挑戰困難關卡60次,Challenge Elite level 60 times,Challenge Elite level 60 times,하드 스테이지 도전 60회,Desafie o nível Elite 60 vezes,ท้าทายระดับ Elite 60 ครั้ง,,,,,,200,20000
+5810,通行证第一周任务,1004,2,8,,85,30,,派遣任务完成30次,派遣任務完成30次,Complete Dispatch Quest 30 times,Complete Dispatch Quest 30 times,파견 퀘스트 30회 완료,Complete a missão Dispatch 30 vezes,ทำภารกิจจัดส่งให้สำเร็จ 30 ครั้ง,,,,,,100,
+5811,通行证第一周任务,1004,2,8,,21,3000,,消耗3000钻石,消耗3000鑽石,Spend 3000 diamonds,Spend 3000 diamonds,3000다이아 소모,Gaste 3000 diamantes,ใช้เงิน 3，000 เพชร,,,,,,200,
+5812,通行证第一周任务,1004,2,8,,67,7,,以太乐园通过7层,乙太樂園通過7層,Clear Aether Paradise level 7,Clear Aether Paradise level 7,에테르파라다이스 7층 클리어,Limpe o nível 7 do Aether Paradise,เคลียร์อีเธอร์พาราไดซ์ ระดับ 7,,,,,,200,
+5813,通行证第一周任务,1004,2,8,,86,6,{6=4},完成S以上派遣6次,完成S以上派遣6次,Complete S and above Dispatch Quest 6 times,Complete S and above Dispatch Quest 6 times,S급 이상 파견 6회 완료,Complete a missão S e acima Dispatch 6 vezes,ทำภารกิจส่งของ S ขึ้นไปให้สำเร็จ 6 ครั้ง,,,,,,200,
+,,,,,,,,,,,,,,,,,,,,,,
+5901,通行证第一周任务,1004,2,9,,17,3,,累计登录3天,累計登錄3天,Login 3 days in total,Tích luỹ đăng nhập 3 ngày,누적 3일 로그인,Login 3 dias no total,เข้าสู่ระบบรวม 3 วัน,,,,,,100,
+5902,通行证第一周任务,1004,2,9,,36,50,,精灵升级50次,精靈升級50次,Upgrade Pokémon 50 times.,Upgrade Pokémon 50 times.,포켓몬 50회 레벨업,Melhore os Pokémon 50 vezes.,อัพเกรดโปเกมอน 50 ครั้ง,,,,,,100,strengthen-1
+5903,通行证第一周任务,1004,2,9,,21,1000,,消耗1000钻石,消耗1000鑽石,Spend 1000 diamonds,Spend 1000 diamonds,1000다이아 소모,Gaste 1000 diamantes,ใช้เงิน 1，000 เพชร,,,,,,200,
+5904,通行证第一周任务,1004,2,9,,43,50,,竞技场积分50分,競技場積分50分,Arena Points:50pts,Arena Points:50pts,아레나 포인트 50점,Pontos de Arena:50pts,คะแนนอารีน่า: 50 คะแนน,,,,,,100,
+5905,通行证第一周任务,1004,2,9,,63,50000,,以太积分累计50000分,乙太積分累計50000分,Accumulate a total of 50000 Aether Points,Accumulate a total of 50000 Aether Points,에테르 포인트 누적 50000점,Acumule um total de 50000 pontos de éter,สะสมแต้ม Aether ทั้งหมด 50，000 แต้ม,,,,,,100,
+5906,通行证第一周任务,1004,2,9,,55,20,,公会捐献20次,公會捐獻20次,Donate 20 times,Donate 20 times,길드 기부 20회,Doe 20 vezes,บริจาค 20 ครั้ง,,,,,,100,
+5907,通行证第一周任务,1004,2,9,,50,20,,在钻石抽卡中抽卡20次,在鑽石抽卡中抽卡20次,Draw 20 times in Diamond Draw,Draw 20 times in Diamond Draw,다이아 뽑기 20회 진행,Desenhe 20 vezes no Diamond Draw,จับฉลาก 20 ครั้ง ใน Diamond Draw,,,,,,200,
+5908,通行证第一周任务,1004,2,9,,29,300,,挑战普通关卡300次,挑戰普通關卡300次,Fight in Normal level 300 times,Fight in Normal level 300 times,일반 스테이지 300회 도전,Lute no nível Normal 300 vezes,ต่อสู้ในระดับปกติ 300 ครั้ง,,,,,,200,10000
+5909,通行证第一周任务,1004,2,9,,30,60,,挑战困难关卡60次,挑戰困難關卡60次,Challenge Elite level 60 times,Challenge Elite level 60 times,하드 스테이지 도전 60회,Desafie o nível Elite 60 vezes,ท้าทายระดับ Elite 60 ครั้ง,,,,,,200,20000
+5910,通行证第一周任务,1004,2,9,,85,30,,派遣任务完成30次,派遣任務完成30次,Complete Dispatch Quest 30 times,Complete Dispatch Quest 30 times,파견 퀘스트 30회 완료,Complete a missão Dispatch 30 vezes,ทำภารกิจจัดส่งให้สำเร็จ 30 ครั้ง,,,,,,100,
+5911,通行证第一周任务,1004,2,9,,21,3000,,消耗3000钻石,消耗3000鑽石,Spend 3000 diamonds,Spend 3000 diamonds,3000다이아 소모,Gaste 3000 diamantes,ใช้เงิน 3，000 เพชร,,,,,,200,
+5912,通行证第一周任务,1004,2,9,,67,7,,以太乐园通过7层,乙太樂園通過7層,Clear Aether Paradise level 7,Clear Aether Paradise level 7,에테르파라다이스 7층 클리어,Limpe o nível 7 do Aether Paradise,เคลียร์อีเธอร์พาราไดซ์ ระดับ 7,,,,,,200,
+5913,通行证第一周任务,1004,2,9,,86,6,{6=4},完成S以上派遣6次,完成S以上派遣6次,Complete S and above Dispatch Quest 6 times,Complete S and above Dispatch Quest 6 times,S급 이상 파견 6회 완료,Complete a missão S e acima Dispatch 6 vezes,ทำภารกิจส่งของ S ขึ้นไปให้สำเร็จ 6 ครั้ง,,,,,,200,
+,,,,,,,,,,,,,,,,,,,,,,
+6001,通行证第一周任务,1004,2,10,,17,3,,累计登录3天,累計登錄3天,Login 3 days in total,Tích luỹ đăng nhập 3 ngày,누적 3일 로그인,Login 3 dias no total,เข้าสู่ระบบรวม 3 วัน,,,,,,100,
+6002,通行证第一周任务,1004,2,10,,36,50,,精灵升级50次,精靈升級50次,Upgrade Pokémon 50 times.,Upgrade Pokémon 50 times.,포켓몬 50회 레벨업,Melhore os Pokémon 50 vezes.,อัพเกรดโปเกมอน 50 ครั้ง,,,,,,100,strengthen-1
+6003,通行证第一周任务,1004,2,10,,21,1000,,消耗1000钻石,消耗1000鑽石,Spend 1000 diamonds,Spend 1000 diamonds,1000다이아 소모,Gaste 1000 diamantes,ใช้เงิน 1，000 เพชร,,,,,,200,
+6004,通行证第一周任务,1004,2,10,,43,50,,竞技场积分50分,競技場積分50分,Arena Points:50pts,Arena Points:50pts,아레나 포인트 50점,Pontos de Arena:50pts,คะแนนอารีน่า: 50 คะแนน,,,,,,100,
+6005,通行证第一周任务,1004,2,10,,63,50000,,以太积分累计50000分,乙太積分累計50000分,Accumulate a total of 50000 Aether Points,Accumulate a total of 50000 Aether Points,에테르 포인트 누적 50000점,Acumule um total de 50000 pontos de éter,สะสมแต้ม Aether ทั้งหมด 50，000 แต้ม,,,,,,100,
+6006,通行证第一周任务,1004,2,10,,55,20,,公会捐献20次,公會捐獻20次,Donate 20 times,Donate 20 times,길드 기부 20회,Doe 20 vezes,บริจาค 20 ครั้ง,,,,,,100,
+6007,通行证第一周任务,1004,2,10,,50,20,,在钻石抽卡中抽卡20次,在鑽石抽卡中抽卡20次,Draw 20 times in Diamond Draw,Draw 20 times in Diamond Draw,다이아 뽑기 20회 진행,Desenhe 20 vezes no Diamond Draw,จับฉลาก 20 ครั้ง ใน Diamond Draw,,,,,,200,
+6008,通行证第一周任务,1004,2,10,,29,300,,挑战普通关卡300次,挑戰普通關卡300次,Fight in Normal level 300 times,Fight in Normal level 300 times,일반 스테이지 300회 도전,Lute no nível Normal 300 vezes,ต่อสู้ในระดับปกติ 300 ครั้ง,,,,,,200,10000
+6009,通行证第一周任务,1004,2,10,,30,60,,挑战困难关卡60次,挑戰困難關卡60次,Challenge Elite level 60 times,Challenge Elite level 60 times,하드 스테이지 도전 60회,Desafie o nível Elite 60 vezes,ท้าทายระดับ Elite 60 ครั้ง,,,,,,200,20000
+6010,通行证第一周任务,1004,2,10,,85,30,,派遣任务完成30次,派遣任務完成30次,Complete Dispatch Quest 30 times,Complete Dispatch Quest 30 times,파견 퀘스트 30회 완료,Complete a missão Dispatch 30 vezes,ทำภารกิจจัดส่งให้สำเร็จ 30 ครั้ง,,,,,,100,
+6011,通行证第一周任务,1004,2,10,,21,3000,,消耗3000钻石,消耗3000鑽石,Spend 3000 diamonds,Spend 3000 diamonds,3000다이아 소모,Gaste 3000 diamantes,ใช้เงิน 3，000 เพชร,,,,,,200,
+6012,通行证第一周任务,1004,2,10,,67,7,,以太乐园通过7层,乙太樂園通過7層,Clear Aether Paradise level 7,Clear Aether Paradise level 7,에테르파라다이스 7층 클리어,Limpe o nível 7 do Aether Paradise,เคลียร์อีเธอร์พาราไดซ์ ระดับ 7,,,,,,200,
+6013,通行证第一周任务,1004,2,10,,86,6,{6=4},完成S以上派遣6次,完成S以上派遣6次,Complete S and above Dispatch Quest 6 times,Complete S and above Dispatch Quest 6 times,S급 이상 파견 6회 완료,Complete a missão S e acima Dispatch 6 vezes,ทำภารกิจส่งของ S ขึ้นไปให้สำเร็จ 6 ครั้ง,,,,,,200,
+,,,,,,,,,,,,,,,,,,,,,,
+6101,通行证第一周任务,1004,2,11,,17,3,,累计登录3天,累計登錄3天,Login 3 days in total,Tích luỹ đăng nhập 3 ngày,누적 3일 로그인,Login 3 dias no total,เข้าสู่ระบบรวม 3 วัน,,,,,,100,
+6102,通行证第一周任务,1004,2,11,,36,50,,精灵升级50次,精靈升級50次,Upgrade Pokémon 50 times.,Upgrade Pokémon 50 times.,포켓몬 50회 레벨업,Melhore os Pokémon 50 vezes.,อัพเกรดโปเกมอน 50 ครั้ง,,,,,,100,strengthen-1
+6103,通行证第一周任务,1004,2,11,,21,1000,,消耗1000钻石,消耗1000鑽石,Spend 1000 diamonds,Spend 1000 diamonds,1000다이아 소모,Gaste 1000 diamantes,ใช้เงิน 1，000 เพชร,,,,,,200,
+6104,通行证第一周任务,1004,2,11,,43,50,,竞技场积分50分,競技場積分50分,Arena Points:50pts,Arena Points:50pts,아레나 포인트 50점,Pontos de Arena:50pts,คะแนนอารีน่า: 50 คะแนน,,,,,,100,
+6105,通行证第一周任务,1004,2,11,,63,50000,,以太积分累计50000分,乙太積分累計50000分,Accumulate a total of 50000 Aether Points,Accumulate a total of 50000 Aether Points,에테르 포인트 누적 50000점,Acumule um total de 50000 pontos de éter,สะสมแต้ม Aether ทั้งหมด 50，000 แต้ม,,,,,,100,
+6106,通行证第一周任务,1004,2,11,,55,20,,公会捐献20次,公會捐獻20次,Donate 20 times,Donate 20 times,길드 기부 20회,Doe 20 vezes,บริจาค 20 ครั้ง,,,,,,100,
+6107,通行证第一周任务,1004,2,11,,50,20,,在钻石抽卡中抽卡20次,在鑽石抽卡中抽卡20次,Draw 20 times in Diamond Draw,Draw 20 times in Diamond Draw,다이아 뽑기 20회 진행,Desenhe 20 vezes no Diamond Draw,จับฉลาก 20 ครั้ง ใน Diamond Draw,,,,,,200,
+6108,通行证第一周任务,1004,2,11,,29,300,,挑战普通关卡300次,挑戰普通關卡300次,Fight in Normal level 300 times,Fight in Normal level 300 times,일반 스테이지 300회 도전,Lute no nível Normal 300 vezes,ต่อสู้ในระดับปกติ 300 ครั้ง,,,,,,200,10000
+6109,通行证第一周任务,1004,2,11,,30,60,,挑战困难关卡60次,挑戰困難關卡60次,Challenge Elite level 60 times,Challenge Elite level 60 times,하드 스테이지 도전 60회,Desafie o nível Elite 60 vezes,ท้าทายระดับ Elite 60 ครั้ง,,,,,,200,20000
+6110,通行证第一周任务,1004,2,11,,85,30,,派遣任务完成30次,派遣任務完成30次,Complete Dispatch Quest 30 times,Complete Dispatch Quest 30 times,파견 퀘스트 30회 완료,Complete a missão Dispatch 30 vezes,ทำภารกิจจัดส่งให้สำเร็จ 30 ครั้ง,,,,,,100,
+6111,通行证第一周任务,1004,2,11,,21,3000,,消耗3000钻石,消耗3000鑽石,Spend 3000 diamonds,Spend 3000 diamonds,3000다이아 소모,Gaste 3000 diamantes,ใช้เงิน 3，000 เพชร,,,,,,200,
+6112,通行证第一周任务,1004,2,11,,67,7,,以太乐园通过7层,乙太樂園通過7層,Clear Aether Paradise level 7,Clear Aether Paradise level 7,에테르파라다이스 7층 클리어,Limpe o nível 7 do Aether Paradise,เคลียร์อีเธอร์พาราไดซ์ ระดับ 7,,,,,,200,
+6113,通行证第一周任务,1004,2,11,,86,6,{6=4},完成S以上派遣6次,完成S以上派遣6次,Complete S and above Dispatch Quest 6 times,Complete S and above Dispatch Quest 6 times,S급 이상 파견 6회 완료,Complete a missão S e acima Dispatch 6 vezes,ทำภารกิจส่งของ S ขึ้นไปให้สำเร็จ 6 ครั้ง,,,,,,200,
+,,,,,,,,,,,,,,,,,,,,,,
+6501,通行证日任务,1005,1,,,15,1,,每日登陆,每日登陸,Daily login,Daily login,일일 로그인,Login diário,เข้าสู่ระบบรายวัน,,,,,,30,
+6502,通行证日任务,1005,1,,,29,30,,挑战普通关卡30次,挑戰普通關卡30次,Fight in Normal level 30 times,Fight in Normal level 30 times,일반 스테이지 30회 도전,Lute no nível Normal 30 vezes,ต่อสู้ในระดับปกติ 30 ครั้ง,,,,,,30,10000
+6503,通行证日任务,1005,1,,,39,1,,饰品突破1次,飾品進階1次,Breakthrough trinket 1 time,Breakthrough trinket 1 time,액세서리 1회 돌파,Bugiganga inovadora 1 vez,เครื่องประดับล้ำยุค 1 ครั้ง,,,,,,30,
+6504,通行证日任务,1005,1,,,41,5,,竞技场战斗5次,競技場戰鬥5次,Engage in arena battle for 5 times,Engage in arena battle for 5 times,아레나 전투 5회 진행,Participe de uma batalha de arena 5 vezes,เข้าร่วมการต่อสู้ในสนามประลอง 5 ครั้ง,,,,,,30,
+6505,通行证日任务,1005,1,,,66,2,,元素挑战战斗2次,元素挑戰戰鬥2次,Enter Element Challenge 2 times,Enter Element Challenge 2 times,엘리멘탈 챌린지 2회 전투,Entre no Element Challenge 2 vezes,เข้าร่วม Element Challenge 2 ครั้ง,,,,,,30,
+6506,通行证日任务,1005,1,,,20,1000000,,消耗1000000金币,消耗1000000金幣,Spend 1000000 coins,Spend 1000000 coins,1000000코인 소모,Gaste 1.000.000 de moedas,ใช้เงิน 1000000 เหรียญ,,,,,,30,
+6507,通行证日任务,1005,1,,,21,300,,消耗300钻石,消耗300鑽石,Spend 300 diamonds,Spend 300 diamonds,300다이아 소모,Gaste 300 diamantes,ใช้เงิน 300 เพชร,,,,,,30,
+6508,通行证日任务,1005,1,,4,15,1,,大师每日登陆,大師每日登陸,Marster daily login.,Marster daily login.,마스터 일일 로그인,Login diário do Marster.,การเข้าสู่ระบบ Marster รายวัน,,,,,,30,
+,,,,,,,,,,,,,,,,,,,,,,
+6521,通行证第一周任务,1005,2,1,,17,2,,累计登录2天,累計登錄2天,Login 2 days in total,Tích luỹ đăng nhập 2 ngày,누적 2일 로그인,Login 2 dias no total,เข้าสู่ระบบรวม 2 วัน,,,,,,100,
+6522,通行证第一周任务,1005,2,1,,36,30,,精灵升级30次,精靈升級30次,Upgrade Pokémons 30 times,Upgrade Pokémons 30 times,포켓몬 30회 레벨업,Melhore os Pokémons 30 vezes,อัพเกรดโปเกมอน 30 ครั้ง,,,,,,100,strengthen-1
+6523,通行证第一周任务,1005,2,1,,21,1000,,消耗1000钻石,消耗1000鑽石,Spend 1000 diamonds,Spend 1000 diamonds,1000다이아 소모,Gaste 1000 diamantes,ใช้เงิน 1，000 เพชร,,,,,,100,
+6524,通行证第一周任务,1005,2,1,,43,25,,竞技场积分25分,競技場積分25分,Arena Points:25pts,Arena Points:25pts,아레나 포인트 25점,Pontos de Arena:25pts,คะแนนอารีน่า: 25 คะแนน,,,,,,100,
+6525,通行证第一周任务,1005,2,1,,63,25000,,以太积分累计25000分,乙太積分累計25000分,Accumulate a total of 25000 Aether Points,Accumulate a total of 25000 Aether Points,에테르 포인트 누적 25000점,Acumule um total de 25.000 pontos de éter,สะสมแต้ม Aether ทั้งหมด 25，000 แต้ม,,,,,,100,
+6526,通行证第一周任务,1005,2,1,,55,10,,公会捐献10次,公會捐獻10次,Donate 10 times,Donate 10 times,길드 기부 10회,Doe 10 vezes,บริจาค 10 ครั้ง,,,,,,100,
+6527,通行证第一周任务,1005,2,1,,50,10,,在钻石抽卡中抽卡10次,在鑽石抽卡中抽卡10次,Draw 10 times in Diamond Draw,Draw 10 times in Diamond Draw,다이아 뽑기 10회 진행,Desenhe 10 vezes no Diamond Draw,จับฉลาก 10 ครั้ง ใน Diamond Draw,,,,,,100,
+6528,通行证第一周任务,1005,2,1,,29,150,,挑战普通关卡150次,挑戰普通關卡150次,Fight in Normal level 150 times,Fight in Normal level 150 times,일반 스테이지 150회 도전,Lute no nível Normal 150 vezes,ต่อสู้ในระดับปกติ 150 ครั้ง,,,,,,100,10000
+6529,通行证第一周任务,1005,2,1,,30,30,,挑战困难关卡30次,挑戰困難關卡30次,Challenge Elite levels 30 times,Challenge Elite levels 30 times,하드 스테이지 도전 30회,Desafie os níveis Elite 30 vezes,ท้าทายระดับ Elite 30 ครั้ง,,,,,,100,20000
+6530,通行证第一周任务,1005,2,1,,85,15,,派遣任务完成15次,派遣任務完成15次,Complete Dispatch Quest 15 times,Complete Dispatch Quest 15 times,파견 퀘스트 15회 완료,Complete a missão Dispatch 15 vezes,เสร็จสิ้นภารกิจจัดส่ง 15 ครั้ง,,,,,,100,
+6531,通行证第一周任务,1005,2,1,,21,3000,,消耗3000钻石,消耗3000鑽石,Spend 3000 diamonds,Spend 3000 diamonds,3000다이아 소모,Gaste 3000 diamantes,ใช้เงิน 3，000 เพชร,,,,,,100,
+6532,通行证第一周任务,1005,2,1,,67,7,,以太乐园通过7层,乙太樂園通過7層,Clear Aether Paradise level 7,Clear Aether Paradise level 7,에테르파라다이스 7층 클리어,Limpe o nível 7 do Aether Paradise,เคลียร์อีเธอร์พาราไดซ์ ระดับ 7,,,,,,100,
+6533,通行证第一周任务,1005,2,1,,86,3,{3=4},完成S以上派遣3次,完成S以上派遣3次,Complete S and above Dispatch Quest 3 times,Complete S and above Dispatch Quest 3 times,S급 이상 파견 3회 완료,Complete a missão S e acima Dispatch 3 vezes,ทำภารกิจส่งของ S ขึ้นไปให้สำเร็จ 3 ครั้ง,,,,,,100,
+,,,,,,,,,,,,,,,,,,,,,,
+6541,通行证第一周任务,1005,2,2,,17,3,,累计登录3天,累計登錄3天,Login 3 days in total,Tích luỹ đăng nhập 3 ngày,누적 3일 로그인,Login 3 dias no total,เข้าสู่ระบบรวม 3 วัน,,,,,,100,
+6542,通行证第一周任务,1005,2,2,,36,50,,精灵升级50次,精靈升級50次,Upgrade Pokémon 50 times.,Upgrade Pokémon 50 times.,포켓몬 50회 레벨업,Melhore os Pokémon 50 vezes.,อัพเกรดโปเกมอน 50 ครั้ง,,,,,,100,strengthen-1
+6543,通行证第一周任务,1005,2,2,,21,1000,,消耗1000钻石,消耗1000鑽石,Spend 1000 diamonds,Spend 1000 diamonds,1000다이아 소모,Gaste 1000 diamantes,ใช้เงิน 1，000 เพชร,,,,,,200,
+6544,通行证第一周任务,1005,2,2,,43,50,,竞技场积分50分,競技場積分50分,Arena Points:50pts,Arena Points:50pts,아레나 포인트 50점,Pontos de Arena:50pts,คะแนนอารีน่า: 50 คะแนน,,,,,,100,
+6545,通行证第一周任务,1005,2,2,,63,50000,,以太积分累计50000分,乙太積分累計50000分,Accumulate a total of 50000 Aether Points,Accumulate a total of 50000 Aether Points,에테르 포인트 누적 50000점,Acumule um total de 50000 pontos de éter,สะสมแต้ม Aether ทั้งหมด 50，000 แต้ม,,,,,,100,
+6546,通行证第一周任务,1005,2,2,,55,20,,公会捐献20次,公會捐獻20次,Donate 20 times,Donate 20 times,길드 기부 20회,Doe 20 vezes,บริจาค 20 ครั้ง,,,,,,100,
+6547,通行证第一周任务,1005,2,2,,50,20,,在钻石抽卡中抽卡20次,在鑽石抽卡中抽卡20次,Draw 20 times in Diamond Draw,Draw 20 times in Diamond Draw,다이아 뽑기 20회 진행,Desenhe 20 vezes no Diamond Draw,จับฉลาก 20 ครั้ง ใน Diamond Draw,,,,,,200,
+6548,通行证第一周任务,1005,2,2,,29,300,,挑战普通关卡300次,挑戰普通關卡300次,Fight in Normal level 300 times,Fight in Normal level 300 times,일반 스테이지 300회 도전,Lute no nível Normal 300 vezes,ต่อสู้ในระดับปกติ 300 ครั้ง,,,,,,200,10000
+6549,通行证第一周任务,1005,2,2,,30,60,,挑战困难关卡60次,挑戰困難關卡60次,Challenge Elite level 60 times,Challenge Elite level 60 times,하드 스테이지 도전 60회,Desafie o nível Elite 60 vezes,ท้าทายระดับ Elite 60 ครั้ง,,,,,,200,20000
+6550,通行证第一周任务,1005,2,2,,85,30,,派遣任务完成30次,派遣任務完成30次,Complete Dispatch Quest 30 times,Complete Dispatch Quest 30 times,파견 퀘스트 30회 완료,Complete a missão Dispatch 30 vezes,ทำภารกิจจัดส่งให้สำเร็จ 30 ครั้ง,,,,,,100,
+6551,通行证第一周任务,1005,2,2,,21,3000,,消耗3000钻石,消耗3000鑽石,Spend 3000 diamonds,Spend 3000 diamonds,3000다이아 소모,Gaste 3000 diamantes,ใช้เงิน 3，000 เพชร,,,,,,200,
+6552,通行证第一周任务,1005,2,2,,67,7,,以太乐园通过7层,乙太樂園通過7層,Clear Aether Paradise level 7,Clear Aether Paradise level 7,에테르파라다이스 7층 클리어,Limpe o nível 7 do Aether Paradise,เคลียร์อีเธอร์พาราไดซ์ ระดับ 7,,,,,,200,
+6553,通行证第一周任务,1005,2,2,,86,6,{6=4},完成S以上派遣6次,完成S以上派遣6次,Complete S and above Dispatch Quest 6 times,Complete S and above Dispatch Quest 6 times,S급 이상 파견 6회 완료,Complete a missão S e acima Dispatch 6 vezes,ทำภารกิจส่งของ S ขึ้นไปให้สำเร็จ 6 ครั้ง,,,,,,200,
+,,,,,,,,,,,,,,,,,,,,,,
+6561,通行证第一周任务,1005,2,3,,17,3,,累计登录3天,累計登錄3天,Login 3 days in total,Tích luỹ đăng nhập 3 ngày,누적 3일 로그인,Login 3 dias no total,เข้าสู่ระบบรวม 3 วัน,,,,,,100,
+6562,通行证第一周任务,1005,2,3,,36,50,,精灵升级50次,精靈升級50次,Upgrade Pokémon 50 times.,Upgrade Pokémon 50 times.,포켓몬 50회 레벨업,Melhore os Pokémon 50 vezes.,อัพเกรดโปเกมอน 50 ครั้ง,,,,,,100,strengthen-1
+6563,通行证第一周任务,1005,2,3,,21,1000,,消耗1000钻石,消耗1000鑽石,Spend 1000 diamonds,Spend 1000 diamonds,1000다이아 소모,Gaste 1000 diamantes,ใช้เงิน 1，000 เพชร,,,,,,200,
+6564,通行证第一周任务,1005,2,3,,43,50,,竞技场积分50分,競技場積分50分,Arena Points:50pts,Arena Points:50pts,아레나 포인트 50점,Pontos de Arena:50pts,คะแนนอารีน่า: 50 คะแนน,,,,,,100,
+6565,通行证第一周任务,1005,2,3,,63,50000,,以太积分累计50000分,乙太積分累計50000分,Accumulate a total of 50000 Aether Points,Accumulate a total of 50000 Aether Points,에테르 포인트 누적 50000점,Acumule um total de 50000 pontos de éter,สะสมแต้ม Aether ทั้งหมด 50，000 แต้ม,,,,,,100,
+6566,通行证第一周任务,1005,2,3,,55,20,,公会捐献20次,公會捐獻20次,Donate 20 times,Donate 20 times,길드 기부 20회,Doe 20 vezes,บริจาค 20 ครั้ง,,,,,,100,
+6567,通行证第一周任务,1005,2,3,,50,20,,在钻石抽卡中抽卡20次,在鑽石抽卡中抽卡20次,Draw 20 times in Diamond Draw,Draw 20 times in Diamond Draw,다이아 뽑기 20회 진행,Desenhe 20 vezes no Diamond Draw,จับฉลาก 20 ครั้ง ใน Diamond Draw,,,,,,200,
+6568,通行证第一周任务,1005,2,3,,29,300,,挑战普通关卡300次,挑戰普通關卡300次,Fight in Normal level 300 times,Fight in Normal level 300 times,일반 스테이지 300회 도전,Lute no nível Normal 300 vezes,ต่อสู้ในระดับปกติ 300 ครั้ง,,,,,,200,10000
+6569,通行证第一周任务,1005,2,3,,30,60,,挑战困难关卡60次,挑戰困難關卡60次,Challenge Elite level 60 times,Challenge Elite level 60 times,하드 스테이지 도전 60회,Desafie o nível Elite 60 vezes,ท้าทายระดับ Elite 60 ครั้ง,,,,,,200,20000
+6570,通行证第一周任务,1005,2,3,,85,30,,派遣任务完成30次,派遣任務完成30次,Complete Dispatch Quest 30 times,Complete Dispatch Quest 30 times,파견 퀘스트 30회 완료,Complete a missão Dispatch 30 vezes,ทำภารกิจจัดส่งให้สำเร็จ 30 ครั้ง,,,,,,100,
+6571,通行证第一周任务,1005,2,3,,21,3000,,消耗3000钻石,消耗3000鑽石,Spend 3000 diamonds,Spend 3000 diamonds,3000다이아 소모,Gaste 3000 diamantes,ใช้เงิน 3，000 เพชร,,,,,,200,
+6572,通行证第一周任务,1005,2,3,,67,7,,以太乐园通过7层,乙太樂園通過7層,Clear Aether Paradise level 7,Clear Aether Paradise level 7,에테르파라다이스 7층 클리어,Limpe o nível 7 do Aether Paradise,เคลียร์อีเธอร์พาราไดซ์ ระดับ 7,,,,,,200,
+6573,通行证第一周任务,1005,2,3,,86,6,{6=4},完成S以上派遣6次,完成S以上派遣6次,Complete S and above Dispatch Quest 6 times,Complete S and above Dispatch Quest 6 times,S급 이상 파견 6회 완료,Complete a missão S e acima Dispatch 6 vezes,ทำภารกิจส่งของ S ขึ้นไปให้สำเร็จ 6 ครั้ง,,,,,,200,
+,,,,,,,,,,,,,,,,,,,,,,
+6581,通行证第一周任务,1005,2,4,,17,3,,累计登录3天,累計登錄3天,Login 3 days in total,Tích luỹ đăng nhập 3 ngày,누적 3일 로그인,Login 3 dias no total,เข้าสู่ระบบรวม 3 วัน,,,,,,100,
+6582,通行证第一周任务,1005,2,4,,36,50,,精灵升级50次,精靈升級50次,Upgrade Pokémon 50 times.,Upgrade Pokémon 50 times.,포켓몬 50회 레벨업,Melhore os Pokémon 50 vezes.,อัพเกรดโปเกมอน 50 ครั้ง,,,,,,100,strengthen-1
+6583,通行证第一周任务,1005,2,4,,21,1000,,消耗1000钻石,消耗1000鑽石,Spend 1000 diamonds,Spend 1000 diamonds,1000다이아 소모,Gaste 1000 diamantes,ใช้เงิน 1，000 เพชร,,,,,,200,
+6584,通行证第一周任务,1005,2,4,,43,50,,竞技场积分50分,競技場積分50分,Arena Points:50pts,Arena Points:50pts,아레나 포인트 50점,Pontos de Arena:50pts,คะแนนอารีน่า: 50 คะแนน,,,,,,100,
+6585,通行证第一周任务,1005,2,4,,63,50000,,以太积分累计50000分,乙太積分累計50000分,Accumulate a total of 50000 Aether Points,Accumulate a total of 50000 Aether Points,에테르 포인트 누적 50000점,Acumule um total de 50000 pontos de éter,สะสมแต้ม Aether ทั้งหมด 50，000 แต้ม,,,,,,100,
+6586,通行证第一周任务,1005,2,4,,55,20,,公会捐献20次,公會捐獻20次,Donate 20 times,Donate 20 times,길드 기부 20회,Doe 20 vezes,บริจาค 20 ครั้ง,,,,,,100,
+6587,通行证第一周任务,1005,2,4,,50,20,,在钻石抽卡中抽卡20次,在鑽石抽卡中抽卡20次,Draw 20 times in Diamond Draw,Draw 20 times in Diamond Draw,다이아 뽑기 20회 진행,Desenhe 20 vezes no Diamond Draw,จับฉลาก 20 ครั้ง ใน Diamond Draw,,,,,,200,
+6588,通行证第一周任务,1005,2,4,,29,300,,挑战普通关卡300次,挑戰普通關卡300次,Fight in Normal level 300 times,Fight in Normal level 300 times,일반 스테이지 300회 도전,Lute no nível Normal 300 vezes,ต่อสู้ในระดับปกติ 300 ครั้ง,,,,,,200,10000
+6589,通行证第一周任务,1005,2,4,,30,60,,挑战困难关卡60次,挑戰困難關卡60次,Challenge Elite level 60 times,Challenge Elite level 60 times,하드 스테이지 도전 60회,Desafie o nível Elite 60 vezes,ท้าทายระดับ Elite 60 ครั้ง,,,,,,200,20000
+6590,通行证第一周任务,1005,2,4,,85,30,,派遣任务完成30次,派遣任務完成30次,Complete Dispatch Quest 30 times,Complete Dispatch Quest 30 times,파견 퀘스트 30회 완료,Complete a missão Dispatch 30 vezes,ทำภารกิจจัดส่งให้สำเร็จ 30 ครั้ง,,,,,,100,
+6591,通行证第一周任务,1005,2,4,,21,3000,,消耗3000钻石,消耗3000鑽石,Spend 3000 diamonds,Spend 3000 diamonds,3000다이아 소모,Gaste 3000 diamantes,ใช้เงิน 3，000 เพชร,,,,,,200,
+6592,通行证第一周任务,1005,2,4,,67,7,,以太乐园通过7层,乙太樂園通過7層,Clear Aether Paradise level 7,Clear Aether Paradise level 7,에테르파라다이스 7층 클리어,Limpe o nível 7 do Aether Paradise,เคลียร์อีเธอร์พาราไดซ์ ระดับ 7,,,,,,200,
+6593,通行证第一周任务,1005,2,4,,86,6,{6=4},完成S以上派遣6次,完成S以上派遣6次,Complete S and above Dispatch Quest 6 times,Complete S and above Dispatch Quest 6 times,S급 이상 파견 6회 완료,Complete a missão S e acima Dispatch 6 vezes,ทำภารกิจส่งของ S ขึ้นไปให้สำเร็จ 6 ครั้ง,,,,,,200,
+,,,,,,,,,,,,,,,,,,,,,,
+6601,通行证第一周任务,1005,2,5,,17,3,,累计登录3天,累計登錄3天,Login 3 days in total,Tích luỹ đăng nhập 3 ngày,누적 3일 로그인,Login 3 dias no total,เข้าสู่ระบบรวม 3 วัน,,,,,,100,
+6602,通行证第一周任务,1005,2,5,,36,50,,精灵升级50次,精靈升級50次,Upgrade Pokémon 50 times.,Upgrade Pokémon 50 times.,포켓몬 50회 레벨업,Melhore os Pokémon 50 vezes.,อัพเกรดโปเกมอน 50 ครั้ง,,,,,,100,strengthen-1
+6603,通行证第一周任务,1005,2,5,,21,1000,,消耗1000钻石,消耗1000鑽石,Spend 1000 diamonds,Spend 1000 diamonds,1000다이아 소모,Gaste 1000 diamantes,ใช้เงิน 1，000 เพชร,,,,,,200,
+6604,通行证第一周任务,1005,2,5,,43,50,,竞技场积分50分,競技場積分50分,Arena Points:50pts,Arena Points:50pts,아레나 포인트 50점,Pontos de Arena:50pts,คะแนนอารีน่า: 50 คะแนน,,,,,,100,
+6605,通行证第一周任务,1005,2,5,,63,50000,,以太积分累计50000分,乙太積分累計50000分,Accumulate a total of 50000 Aether Points,Accumulate a total of 50000 Aether Points,에테르 포인트 누적 50000점,Acumule um total de 50000 pontos de éter,สะสมแต้ม Aether ทั้งหมด 50，000 แต้ม,,,,,,100,
+6606,通行证第一周任务,1005,2,5,,55,20,,公会捐献20次,公會捐獻20次,Donate 20 times,Donate 20 times,길드 기부 20회,Doe 20 vezes,บริจาค 20 ครั้ง,,,,,,100,
+6607,通行证第一周任务,1005,2,5,,50,20,,在钻石抽卡中抽卡20次,在鑽石抽卡中抽卡20次,Draw 20 times in Diamond Draw,Draw 20 times in Diamond Draw,다이아 뽑기 20회 진행,Desenhe 20 vezes no Diamond Draw,จับฉลาก 20 ครั้ง ใน Diamond Draw,,,,,,200,
+6608,通行证第一周任务,1005,2,5,,29,300,,挑战普通关卡300次,挑戰普通關卡300次,Fight in Normal level 300 times,Fight in Normal level 300 times,일반 스테이지 300회 도전,Lute no nível Normal 300 vezes,ต่อสู้ในระดับปกติ 300 ครั้ง,,,,,,200,10000
+6609,通行证第一周任务,1005,2,5,,30,60,,挑战困难关卡60次,挑戰困難關卡60次,Challenge Elite level 60 times,Challenge Elite level 60 times,하드 스테이지 도전 60회,Desafie o nível Elite 60 vezes,ท้าทายระดับ Elite 60 ครั้ง,,,,,,200,20000
+6610,通行证第一周任务,1005,2,5,,85,30,,派遣任务完成30次,派遣任務完成30次,Complete Dispatch Quest 30 times,Complete Dispatch Quest 30 times,파견 퀘스트 30회 완료,Complete a missão Dispatch 30 vezes,ทำภารกิจจัดส่งให้สำเร็จ 30 ครั้ง,,,,,,100,
+6611,通行证第一周任务,1005,2,5,,21,3000,,消耗3000钻石,消耗3000鑽石,Spend 3000 diamonds,Spend 3000 diamonds,3000다이아 소모,Gaste 3000 diamantes,ใช้เงิน 3，000 เพชร,,,,,,200,
+6612,通行证第一周任务,1005,2,5,,67,7,,以太乐园通过7层,乙太樂園通過7層,Clear Aether Paradise level 7,Clear Aether Paradise level 7,에테르파라다이스 7층 클리어,Limpe o nível 7 do Aether Paradise,เคลียร์อีเธอร์พาราไดซ์ ระดับ 7,,,,,,200,
+6613,通行证第一周任务,1005,2,5,,86,6,{6=4},完成S以上派遣6次,完成S以上派遣6次,Complete S and above Dispatch Quest 6 times,Complete S and above Dispatch Quest 6 times,S급 이상 파견 6회 완료,Complete a missão S e acima Dispatch 6 vezes,ทำภารกิจส่งของ S ขึ้นไปให้สำเร็จ 6 ครั้ง,,,,,,200,
+,,,,,,,,,,,,,,,,,,,,,,
+6621,通行证第一周任务,1005,2,6,,17,3,,累计登录3天,累計登錄3天,Login 3 days in total,Tích luỹ đăng nhập 3 ngày,누적 3일 로그인,Login 3 dias no total,เข้าสู่ระบบรวม 3 วัน,,,,,,100,
+6622,通行证第一周任务,1005,2,6,,36,50,,精灵升级50次,精靈升級50次,Upgrade Pokémon 50 times.,Upgrade Pokémon 50 times.,포켓몬 50회 레벨업,Melhore os Pokémon 50 vezes.,อัพเกรดโปเกมอน 50 ครั้ง,,,,,,100,strengthen-1
+6623,通行证第一周任务,1005,2,6,,21,1000,,消耗1000钻石,消耗1000鑽石,Spend 1000 diamonds,Spend 1000 diamonds,1000다이아 소모,Gaste 1000 diamantes,ใช้เงิน 1，000 เพชร,,,,,,200,
+6624,通行证第一周任务,1005,2,6,,43,50,,竞技场积分50分,競技場積分50分,Arena Points:50pts,Arena Points:50pts,아레나 포인트 50점,Pontos de Arena:50pts,คะแนนอารีน่า: 50 คะแนน,,,,,,100,
+6625,通行证第一周任务,1005,2,6,,63,50000,,以太积分累计50000分,乙太積分累計50000分,Accumulate a total of 50000 Aether Points,Accumulate a total of 50000 Aether Points,에테르 포인트 누적 50000점,Acumule um total de 50000 pontos de éter,สะสมแต้ม Aether ทั้งหมด 50，000 แต้ม,,,,,,100,
+6626,通行证第一周任务,1005,2,6,,55,20,,公会捐献20次,公會捐獻20次,Donate 20 times,Donate 20 times,길드 기부 20회,Doe 20 vezes,บริจาค 20 ครั้ง,,,,,,100,
+6627,通行证第一周任务,1005,2,6,,50,20,,在钻石抽卡中抽卡20次,在鑽石抽卡中抽卡20次,Draw 20 times in Diamond Draw,Draw 20 times in Diamond Draw,다이아 뽑기 20회 진행,Desenhe 20 vezes no Diamond Draw,จับฉลาก 20 ครั้ง ใน Diamond Draw,,,,,,200,
+6628,通行证第一周任务,1005,2,6,,29,300,,挑战普通关卡300次,挑戰普通關卡300次,Fight in Normal level 300 times,Fight in Normal level 300 times,일반 스테이지 300회 도전,Lute no nível Normal 300 vezes,ต่อสู้ในระดับปกติ 300 ครั้ง,,,,,,200,10000
+6629,通行证第一周任务,1005,2,6,,30,60,,挑战困难关卡60次,挑戰困難關卡60次,Challenge Elite level 60 times,Challenge Elite level 60 times,하드 스테이지 도전 60회,Desafie o nível Elite 60 vezes,ท้าทายระดับ Elite 60 ครั้ง,,,,,,200,20000
+6630,通行证第一周任务,1005,2,6,,85,30,,派遣任务完成30次,派遣任務完成30次,Complete Dispatch Quest 30 times,Complete Dispatch Quest 30 times,파견 퀘스트 30회 완료,Complete a missão Dispatch 30 vezes,ทำภารกิจจัดส่งให้สำเร็จ 30 ครั้ง,,,,,,100,
+6631,通行证第一周任务,1005,2,6,,21,3000,,消耗3000钻石,消耗3000鑽石,Spend 3000 diamonds,Spend 3000 diamonds,3000다이아 소모,Gaste 3000 diamantes,ใช้เงิน 3，000 เพชร,,,,,,200,
+6632,通行证第一周任务,1005,2,6,,67,7,,以太乐园通过7层,乙太樂園通過7層,Clear Aether Paradise level 7,Clear Aether Paradise level 7,에테르파라다이스 7층 클리어,Limpe o nível 7 do Aether Paradise,เคลียร์อีเธอร์พาราไดซ์ ระดับ 7,,,,,,200,
+6633,通行证第一周任务,1005,2,6,,86,6,{6=4},完成S以上派遣6次,完成S以上派遣6次,Complete S and above Dispatch Quest 6 times,Complete S and above Dispatch Quest 6 times,S급 이상 파견 6회 완료,Complete a missão S e acima Dispatch 6 vezes,ทำภารกิจส่งของ S ขึ้นไปให้สำเร็จ 6 ครั้ง,,,,,,200,
+,,,,,,,,,,,,,,,,,,,,,,
+6641,通行证第一周任务,1005,2,7,,17,3,,累计登录3天,累計登錄3天,Login 3 days in total,Tích luỹ đăng nhập 3 ngày,누적 3일 로그인,Login 3 dias no total,เข้าสู่ระบบรวม 3 วัน,,,,,,100,
+6642,通行证第一周任务,1005,2,7,,36,50,,精灵升级50次,精靈升級50次,Upgrade Pokémon 50 times.,Upgrade Pokémon 50 times.,포켓몬 50회 레벨업,Melhore os Pokémon 50 vezes.,อัพเกรดโปเกมอน 50 ครั้ง,,,,,,100,strengthen-1
+6643,通行证第一周任务,1005,2,7,,21,1000,,消耗1000钻石,消耗1000鑽石,Spend 1000 diamonds,Spend 1000 diamonds,1000다이아 소모,Gaste 1000 diamantes,ใช้เงิน 1，000 เพชร,,,,,,200,
+6644,通行证第一周任务,1005,2,7,,43,50,,竞技场积分50分,競技場積分50分,Arena Points:50pts,Arena Points:50pts,아레나 포인트 50점,Pontos de Arena:50pts,คะแนนอารีน่า: 50 คะแนน,,,,,,100,
+6645,通行证第一周任务,1005,2,7,,63,50000,,以太积分累计50000分,乙太積分累計50000分,Accumulate a total of 50000 Aether Points,Accumulate a total of 50000 Aether Points,에테르 포인트 누적 50000점,Acumule um total de 50000 pontos de éter,สะสมแต้ม Aether ทั้งหมด 50，000 แต้ม,,,,,,100,
+6646,通行证第一周任务,1005,2,7,,55,20,,公会捐献20次,公會捐獻20次,Donate 20 times,Donate 20 times,길드 기부 20회,Doe 20 vezes,บริจาค 20 ครั้ง,,,,,,100,
+6647,通行证第一周任务,1005,2,7,,50,20,,在钻石抽卡中抽卡20次,在鑽石抽卡中抽卡20次,Draw 20 times in Diamond Draw,Draw 20 times in Diamond Draw,다이아 뽑기 20회 진행,Desenhe 20 vezes no Diamond Draw,จับฉลาก 20 ครั้ง ใน Diamond Draw,,,,,,200,
+6648,通行证第一周任务,1005,2,7,,29,300,,挑战普通关卡300次,挑戰普通關卡300次,Fight in Normal level 300 times,Fight in Normal level 300 times,일반 스테이지 300회 도전,Lute no nível Normal 300 vezes,ต่อสู้ในระดับปกติ 300 ครั้ง,,,,,,200,10000
+6649,通行证第一周任务,1005,2,7,,30,60,,挑战困难关卡60次,挑戰困難關卡60次,Challenge Elite level 60 times,Challenge Elite level 60 times,하드 스테이지 도전 60회,Desafie o nível Elite 60 vezes,ท้าทายระดับ Elite 60 ครั้ง,,,,,,200,20000
+6650,通行证第一周任务,1005,2,7,,85,30,,派遣任务完成30次,派遣任務完成30次,Complete Dispatch Quest 30 times,Complete Dispatch Quest 30 times,파견 퀘스트 30회 완료,Complete a missão Dispatch 30 vezes,ทำภารกิจจัดส่งให้สำเร็จ 30 ครั้ง,,,,,,100,
+6651,通行证第一周任务,1005,2,7,,21,3000,,消耗3000钻石,消耗3000鑽石,Spend 3000 diamonds,Spend 3000 diamonds,3000다이아 소모,Gaste 3000 diamantes,ใช้เงิน 3，000 เพชร,,,,,,200,
+6652,通行证第一周任务,1005,2,7,,67,7,,以太乐园通过7层,乙太樂園通過7層,Clear Aether Paradise level 7,Clear Aether Paradise level 7,에테르파라다이스 7층 클리어,Limpe o nível 7 do Aether Paradise,เคลียร์อีเธอร์พาราไดซ์ ระดับ 7,,,,,,200,
+6653,通行证第一周任务,1005,2,7,,86,6,{6=4},完成S以上派遣6次,完成S以上派遣6次,Complete S and above Dispatch Quest 6 times,Complete S and above Dispatch Quest 6 times,S급 이상 파견 6회 완료,Complete a missão S e acima Dispatch 6 vezes,ทำภารกิจส่งของ S ขึ้นไปให้สำเร็จ 6 ครั้ง,,,,,,200,
+,,,,,,,,,,,,,,,,,,,,,,
+6661,通行证第一周任务,1005,2,8,,17,3,,累计登录3天,累計登錄3天,Login 3 days in total,Tích luỹ đăng nhập 3 ngày,누적 3일 로그인,Login 3 dias no total,เข้าสู่ระบบรวม 3 วัน,,,,,,100,
+6662,通行证第一周任务,1005,2,8,,36,50,,精灵升级50次,精靈升級50次,Upgrade Pokémon 50 times.,Upgrade Pokémon 50 times.,포켓몬 50회 레벨업,Melhore os Pokémon 50 vezes.,อัพเกรดโปเกมอน 50 ครั้ง,,,,,,100,strengthen-1
+6663,通行证第一周任务,1005,2,8,,21,1000,,消耗1000钻石,消耗1000鑽石,Spend 1000 diamonds,Spend 1000 diamonds,1000다이아 소모,Gaste 1000 diamantes,ใช้เงิน 1，000 เพชร,,,,,,200,
+6664,通行证第一周任务,1005,2,8,,43,50,,竞技场积分50分,競技場積分50分,Arena Points:50pts,Arena Points:50pts,아레나 포인트 50점,Pontos de Arena:50pts,คะแนนอารีน่า: 50 คะแนน,,,,,,100,
+6665,通行证第一周任务,1005,2,8,,63,50000,,以太积分累计50000分,乙太積分累計50000分,Accumulate a total of 50000 Aether Points,Accumulate a total of 50000 Aether Points,에테르 포인트 누적 50000점,Acumule um total de 50000 pontos de éter,สะสมแต้ม Aether ทั้งหมด 50，000 แต้ม,,,,,,100,
+6666,通行证第一周任务,1005,2,8,,55,20,,公会捐献20次,公會捐獻20次,Donate 20 times,Donate 20 times,길드 기부 20회,Doe 20 vezes,บริจาค 20 ครั้ง,,,,,,100,
+6667,通行证第一周任务,1005,2,8,,50,20,,在钻石抽卡中抽卡20次,在鑽石抽卡中抽卡20次,Draw 20 times in Diamond Draw,Draw 20 times in Diamond Draw,다이아 뽑기 20회 진행,Desenhe 20 vezes no Diamond Draw,จับฉลาก 20 ครั้ง ใน Diamond Draw,,,,,,200,
+6668,通行证第一周任务,1005,2,8,,29,300,,挑战普通关卡300次,挑戰普通關卡300次,Fight in Normal level 300 times,Fight in Normal level 300 times,일반 스테이지 300회 도전,Lute no nível Normal 300 vezes,ต่อสู้ในระดับปกติ 300 ครั้ง,,,,,,200,10000
+6669,通行证第一周任务,1005,2,8,,30,60,,挑战困难关卡60次,挑戰困難關卡60次,Challenge Elite level 60 times,Challenge Elite level 60 times,하드 스테이지 도전 60회,Desafie o nível Elite 60 vezes,ท้าทายระดับ Elite 60 ครั้ง,,,,,,200,20000
+6670,通行证第一周任务,1005,2,8,,85,30,,派遣任务完成30次,派遣任務完成30次,Complete Dispatch Quest 30 times,Complete Dispatch Quest 30 times,파견 퀘스트 30회 완료,Complete a missão Dispatch 30 vezes,ทำภารกิจจัดส่งให้สำเร็จ 30 ครั้ง,,,,,,100,
+6671,通行证第一周任务,1005,2,8,,21,3000,,消耗3000钻石,消耗3000鑽石,Spend 3000 diamonds,Spend 3000 diamonds,3000다이아 소모,Gaste 3000 diamantes,ใช้เงิน 3，000 เพชร,,,,,,200,
+6672,通行证第一周任务,1005,2,8,,67,7,,以太乐园通过7层,乙太樂園通過7層,Clear Aether Paradise level 7,Clear Aether Paradise level 7,에테르파라다이스 7층 클리어,Limpe o nível 7 do Aether Paradise,เคลียร์อีเธอร์พาราไดซ์ ระดับ 7,,,,,,200,
+6673,通行证第一周任务,1005,2,8,,86,6,{6=4},完成S以上派遣6次,完成S以上派遣6次,Complete S and above Dispatch Quest 6 times,Complete S and above Dispatch Quest 6 times,S급 이상 파견 6회 완료,Complete a missão S e acima Dispatch 6 vezes,ทำภารกิจส่งของ S ขึ้นไปให้สำเร็จ 6 ครั้ง,,,,,,200,
+,,,,,,,,,,,,,,,,,,,,,,
+6681,通行证第一周任务,1005,2,9,,17,3,,累计登录3天,累計登錄3天,Login 3 days in total,Tích luỹ đăng nhập 3 ngày,누적 3일 로그인,Login 3 dias no total,เข้าสู่ระบบรวม 3 วัน,,,,,,100,
+6682,通行证第一周任务,1005,2,9,,36,50,,精灵升级50次,精靈升級50次,Upgrade Pokémon 50 times.,Upgrade Pokémon 50 times.,포켓몬 50회 레벨업,Melhore os Pokémon 50 vezes.,อัพเกรดโปเกมอน 50 ครั้ง,,,,,,100,strengthen-1
+6683,通行证第一周任务,1005,2,9,,21,1000,,消耗1000钻石,消耗1000鑽石,Spend 1000 diamonds,Spend 1000 diamonds,1000다이아 소모,Gaste 1000 diamantes,ใช้เงิน 1，000 เพชร,,,,,,200,
+6684,通行证第一周任务,1005,2,9,,43,50,,竞技场积分50分,競技場積分50分,Arena Points:50pts,Arena Points:50pts,아레나 포인트 50점,Pontos de Arena:50pts,คะแนนอารีน่า: 50 คะแนน,,,,,,100,
+6685,通行证第一周任务,1005,2,9,,63,50000,,以太积分累计50000分,乙太積分累計50000分,Accumulate a total of 50000 Aether Points,Accumulate a total of 50000 Aether Points,에테르 포인트 누적 50000점,Acumule um total de 50000 pontos de éter,สะสมแต้ม Aether ทั้งหมด 50，000 แต้ม,,,,,,100,
+6686,通行证第一周任务,1005,2,9,,55,20,,公会捐献20次,公會捐獻20次,Donate 20 times,Donate 20 times,길드 기부 20회,Doe 20 vezes,บริจาค 20 ครั้ง,,,,,,100,
+6687,通行证第一周任务,1005,2,9,,50,20,,在钻石抽卡中抽卡20次,在鑽石抽卡中抽卡20次,Draw 20 times in Diamond Draw,Draw 20 times in Diamond Draw,다이아 뽑기 20회 진행,Desenhe 20 vezes no Diamond Draw,จับฉลาก 20 ครั้ง ใน Diamond Draw,,,,,,200,
+6688,通行证第一周任务,1005,2,9,,29,300,,挑战普通关卡300次,挑戰普通關卡300次,Fight in Normal level 300 times,Fight in Normal level 300 times,일반 스테이지 300회 도전,Lute no nível Normal 300 vezes,ต่อสู้ในระดับปกติ 300 ครั้ง,,,,,,200,10000
+6689,通行证第一周任务,1005,2,9,,30,60,,挑战困难关卡60次,挑戰困難關卡60次,Challenge Elite level 60 times,Challenge Elite level 60 times,하드 스테이지 도전 60회,Desafie o nível Elite 60 vezes,ท้าทายระดับ Elite 60 ครั้ง,,,,,,200,20000
+6690,通行证第一周任务,1005,2,9,,85,30,,派遣任务完成30次,派遣任務完成30次,Complete Dispatch Quest 30 times,Complete Dispatch Quest 30 times,파견 퀘스트 30회 완료,Complete a missão Dispatch 30 vezes,ทำภารกิจจัดส่งให้สำเร็จ 30 ครั้ง,,,,,,100,
+6691,通行证第一周任务,1005,2,9,,21,3000,,消耗3000钻石,消耗3000鑽石,Spend 3000 diamonds,Spend 3000 diamonds,3000다이아 소모,Gaste 3000 diamantes,ใช้เงิน 3，000 เพชร,,,,,,200,
+6692,通行证第一周任务,1005,2,9,,67,7,,以太乐园通过7层,乙太樂園通過7層,Clear Aether Paradise level 7,Clear Aether Paradise level 7,에테르파라다이스 7층 클리어,Limpe o nível 7 do Aether Paradise,เคลียร์อีเธอร์พาราไดซ์ ระดับ 7,,,,,,200,
+6693,通行证第一周任务,1005,2,9,,86,6,{6=4},完成S以上派遣6次,完成S以上派遣6次,Complete S and above Dispatch Quest 6 times,Complete S and above Dispatch Quest 6 times,S급 이상 파견 6회 완료,Complete a missão S e acima Dispatch 6 vezes,ทำภารกิจส่งของ S ขึ้นไปให้สำเร็จ 6 ครั้ง,,,,,,200,
+,,,,,,,,,,,,,,,,,,,,,,
+6701,通行证第一周任务,1005,2,10,,17,3,,累计登录3天,累計登錄3天,Login 3 days in total,Tích luỹ đăng nhập 3 ngày,누적 3일 로그인,Login 3 dias no total,เข้าสู่ระบบรวม 3 วัน,,,,,,100,
+6702,通行证第一周任务,1005,2,10,,36,50,,精灵升级50次,精靈升級50次,Upgrade Pokémon 50 times.,Upgrade Pokémon 50 times.,포켓몬 50회 레벨업,Melhore os Pokémon 50 vezes.,อัพเกรดโปเกมอน 50 ครั้ง,,,,,,100,strengthen-1
+6703,通行证第一周任务,1005,2,10,,21,1000,,消耗1000钻石,消耗1000鑽石,Spend 1000 diamonds,Spend 1000 diamonds,1000다이아 소모,Gaste 1000 diamantes,ใช้เงิน 1，000 เพชร,,,,,,200,
+6704,通行证第一周任务,1005,2,10,,43,50,,竞技场积分50分,競技場積分50分,Arena Points:50pts,Arena Points:50pts,아레나 포인트 50점,Pontos de Arena:50pts,คะแนนอารีน่า: 50 คะแนน,,,,,,100,
+6705,通行证第一周任务,1005,2,10,,63,50000,,以太积分累计50000分,乙太積分累計50000分,Accumulate a total of 50000 Aether Points,Accumulate a total of 50000 Aether Points,에테르 포인트 누적 50000점,Acumule um total de 50000 pontos de éter,สะสมแต้ม Aether ทั้งหมด 50，000 แต้ม,,,,,,100,
+6706,通行证第一周任务,1005,2,10,,55,20,,公会捐献20次,公會捐獻20次,Donate 20 times,Donate 20 times,길드 기부 20회,Doe 20 vezes,บริจาค 20 ครั้ง,,,,,,100,
+6707,通行证第一周任务,1005,2,10,,50,20,,在钻石抽卡中抽卡20次,在鑽石抽卡中抽卡20次,Draw 20 times in Diamond Draw,Draw 20 times in Diamond Draw,다이아 뽑기 20회 진행,Desenhe 20 vezes no Diamond Draw,จับฉลาก 20 ครั้ง ใน Diamond Draw,,,,,,200,
+6708,通行证第一周任务,1005,2,10,,29,300,,挑战普通关卡300次,挑戰普通關卡300次,Fight in Normal level 300 times,Fight in Normal level 300 times,일반 스테이지 300회 도전,Lute no nível Normal 300 vezes,ต่อสู้ในระดับปกติ 300 ครั้ง,,,,,,200,10000
+6709,通行证第一周任务,1005,2,10,,30,60,,挑战困难关卡60次,挑戰困難關卡60次,Challenge Elite level 60 times,Challenge Elite level 60 times,하드 스테이지 도전 60회,Desafie o nível Elite 60 vezes,ท้าทายระดับ Elite 60 ครั้ง,,,,,,200,20000
+6710,通行证第一周任务,1005,2,10,,85,30,,派遣任务完成30次,派遣任務完成30次,Complete Dispatch Quest 30 times,Complete Dispatch Quest 30 times,파견 퀘스트 30회 완료,Complete a missão Dispatch 30 vezes,ทำภารกิจจัดส่งให้สำเร็จ 30 ครั้ง,,,,,,100,
+6711,通行证第一周任务,1005,2,10,,21,3000,,消耗3000钻石,消耗3000鑽石,Spend 3000 diamonds,Spend 3000 diamonds,3000다이아 소모,Gaste 3000 diamantes,ใช้เงิน 3，000 เพชร,,,,,,200,
+6712,通行证第一周任务,1005,2,10,,67,7,,以太乐园通过7层,乙太樂園通過7層,Clear Aether Paradise level 7,Clear Aether Paradise level 7,에테르파라다이스 7층 클리어,Limpe o nível 7 do Aether Paradise,เคลียร์อีเธอร์พาราไดซ์ ระดับ 7,,,,,,200,
+6713,通行证第一周任务,1005,2,10,,86,6,{6=4},完成S以上派遣6次,完成S以上派遣6次,Complete S and above Dispatch Quest 6 times,Complete S and above Dispatch Quest 6 times,S급 이상 파견 6회 완료,Complete a missão S e acima Dispatch 6 vezes,ทำภารกิจส่งของ S ขึ้นไปให้สำเร็จ 6 ครั้ง,,,,,,200,
+,,,,,,,,,,,,,,,,,,,,,,
+6721,通行证第一周任务,1005,2,11,,17,3,,累计登录3天,累計登錄3天,Login 3 days in total,Tích luỹ đăng nhập 3 ngày,누적 3일 로그인,Login 3 dias no total,เข้าสู่ระบบรวม 3 วัน,,,,,,100,
+6722,通行证第一周任务,1005,2,11,,36,50,,精灵升级50次,精靈升級50次,Upgrade Pokémon 50 times.,Upgrade Pokémon 50 times.,포켓몬 50회 레벨업,Melhore os Pokémon 50 vezes.,อัพเกรดโปเกมอน 50 ครั้ง,,,,,,100,strengthen-1
+6723,通行证第一周任务,1005,2,11,,21,1000,,消耗1000钻石,消耗1000鑽石,Spend 1000 diamonds,Spend 1000 diamonds,1000다이아 소모,Gaste 1000 diamantes,ใช้เงิน 1，000 เพชร,,,,,,200,
+6724,通行证第一周任务,1005,2,11,,43,50,,竞技场积分50分,競技場積分50分,Arena Points:50pts,Arena Points:50pts,아레나 포인트 50점,Pontos de Arena:50pts,คะแนนอารีน่า: 50 คะแนน,,,,,,100,
+6725,通行证第一周任务,1005,2,11,,63,50000,,以太积分累计50000分,乙太積分累計50000分,Accumulate a total of 50000 Aether Points,Accumulate a total of 50000 Aether Points,에테르 포인트 누적 50000점,Acumule um total de 50000 pontos de éter,สะสมแต้ม Aether ทั้งหมด 50，000 แต้ม,,,,,,100,
+6726,通行证第一周任务,1005,2,11,,55,20,,公会捐献20次,公會捐獻20次,Donate 20 times,Donate 20 times,길드 기부 20회,Doe 20 vezes,บริจาค 20 ครั้ง,,,,,,100,
+6727,通行证第一周任务,1005,2,11,,50,20,,在钻石抽卡中抽卡20次,在鑽石抽卡中抽卡20次,Draw 20 times in Diamond Draw,Draw 20 times in Diamond Draw,다이아 뽑기 20회 진행,Desenhe 20 vezes no Diamond Draw,จับฉลาก 20 ครั้ง ใน Diamond Draw,,,,,,200,
+6728,通行证第一周任务,1005,2,11,,29,300,,挑战普通关卡300次,挑戰普通關卡300次,Fight in Normal level 300 times,Fight in Normal level 300 times,일반 스테이지 300회 도전,Lute no nível Normal 300 vezes,ต่อสู้ในระดับปกติ 300 ครั้ง,,,,,,200,10000
+6729,通行证第一周任务,1005,2,11,,30,60,,挑战困难关卡60次,挑戰困難關卡60次,Challenge Elite level 60 times,Challenge Elite level 60 times,하드 스테이지 도전 60회,Desafie o nível Elite 60 vezes,ท้าทายระดับ Elite 60 ครั้ง,,,,,,200,20000
+6730,通行证第一周任务,1005,2,11,,85,30,,派遣任务完成30次,派遣任務完成30次,Complete Dispatch Quest 30 times,Complete Dispatch Quest 30 times,파견 퀘스트 30회 완료,Complete a missão Dispatch 30 vezes,ทำภารกิจจัดส่งให้สำเร็จ 30 ครั้ง,,,,,,100,
+6731,通行证第一周任务,1005,2,11,,21,3000,,消耗3000钻石,消耗3000鑽石,Spend 3000 diamonds,Spend 3000 diamonds,3000다이아 소모,Gaste 3000 diamantes,ใช้เงิน 3，000 เพชร,,,,,,200,
+6732,通行证第一周任务,1005,2,11,,67,7,,以太乐园通过7层,乙太樂園通過7層,Clear Aether Paradise level 7,Clear Aether Paradise level 7,에테르파라다이스 7층 클리어,Limpe o nível 7 do Aether Paradise,เคลียร์อีเธอร์พาราไดซ์ ระดับ 7,,,,,,200,
+6733,通行证第一周任务,1005,2,11,,86,6,{6=4},完成S以上派遣6次,完成S以上派遣6次,Complete S and above Dispatch Quest 6 times,Complete S and above Dispatch Quest 6 times,S급 이상 파견 6회 완료,Complete a missão S e acima Dispatch 6 vezes,ทำภารกิจส่งของ S ขึ้นไปให้สำเร็จ 6 ครั้ง,,,,,,200,
+,,,,,,,,,,,,,,,,,,,,,,
+7001,通行证日任务,1006,1,,,15,1,,每日登陆,每日登陸,Daily login,Daily login,일일 로그인,Login diário,เข้าสู่ระบบรายวัน,,,,,,30,
+7002,通行证日任务,1006,1,,,29,30,,挑战普通关卡30次,挑戰普通關卡30次,Fight in Normal level 30 times,Fight in Normal level 30 times,일반 스테이지 30회 도전,Lute no nível Normal 30 vezes,ต่อสู้ในระดับปกติ 30 ครั้ง,,,,,,30,10000
+7003,通行证日任务,1006,1,,,39,1,,饰品突破1次,飾品進階1次,Breakthrough trinket 1 time,Breakthrough trinket 1 time,액세서리 1회 돌파,Bugiganga inovadora 1 vez,เครื่องประดับล้ำยุค 1 ครั้ง,,,,,,30,
+7004,通行证日任务,1006,1,,,41,5,,竞技场战斗5次,競技場戰鬥5次,Engage in arena battle for 5 times,Engage in arena battle for 5 times,아레나 전투 5회 진행,Participe de uma batalha de arena 5 vezes,เข้าร่วมการต่อสู้ในสนามประลอง 5 ครั้ง,,,,,,30,
+7005,通行证日任务,1006,1,,,66,2,,元素挑战战斗2次,元素挑戰戰鬥2次,Enter Element Challenge 2 times,Enter Element Challenge 2 times,엘리멘탈 챌린지 2회 전투,Entre no Element Challenge 2 vezes,เข้าร่วม Element Challenge 2 ครั้ง,,,,,,30,
+7006,通行证日任务,1006,1,,,20,1000000,,消耗1000000金币,消耗1000000金幣,Spend 1000000 coins,Spend 1000000 coins,1000000코인 소모,Gaste 1.000.000 de moedas,ใช้เงิน 1000000 เหรียญ,,,,,,30,
+7007,通行证日任务,1006,1,,,21,300,,消耗300钻石,消耗300鑽石,Spend 300 diamonds,Spend 300 diamonds,300다이아 소모,Gaste 300 diamantes,ใช้เงิน 300 เพชร,,,,,,30,
+7008,通行证日任务,1006,1,,4,15,1,,大师每日登陆,大師每日登陸,Marster daily login.,Marster daily login.,마스터 일일 로그인,Login diário do Marster.,การเข้าสู่ระบบ Marster รายวัน,,,,,,30,
+,,,,,,,,,,,,,,,,,,,,,,
+7021,通行证第一周任务,1006,2,1,,17,2,,累计登录2天,累計登錄2天,Login 2 days in total,Tích luỹ đăng nhập 2 ngày,누적 2일 로그인,Login 2 dias no total,เข้าสู่ระบบรวม 2 วัน,,,,,,100,
+7022,通行证第一周任务,1006,2,1,,36,30,,精灵升级30次,精靈升級30次,Upgrade Pokémons 30 times,Upgrade Pokémons 30 times,포켓몬 30회 레벨업,Melhore os Pokémons 30 vezes,อัพเกรดโปเกมอน 30 ครั้ง,,,,,,100,strengthen-1
+7023,通行证第一周任务,1006,2,1,,21,1000,,消耗1000钻石,消耗1000鑽石,Spend 1000 diamonds,Spend 1000 diamonds,1000다이아 소모,Gaste 1000 diamantes,ใช้เงิน 1，000 เพชร,,,,,,100,
+7024,通行证第一周任务,1006,2,1,,43,25,,竞技场积分25分,競技場積分25分,Arena Points:25pts,Arena Points:25pts,아레나 포인트 25점,Pontos de Arena:25pts,คะแนนอารีน่า: 25 คะแนน,,,,,,100,
+7025,通行证第一周任务,1006,2,1,,63,25000,,以太积分累计25000分,乙太積分累計25000分,Accumulate a total of 25000 Aether Points,Accumulate a total of 25000 Aether Points,에테르 포인트 누적 25000점,Acumule um total de 25.000 pontos de éter,สะสมแต้ม Aether ทั้งหมด 25，000 แต้ม,,,,,,100,
+7026,通行证第一周任务,1006,2,1,,55,10,,公会捐献10次,公會捐獻10次,Donate 10 times,Donate 10 times,길드 기부 10회,Doe 10 vezes,บริจาค 10 ครั้ง,,,,,,100,
+7027,通行证第一周任务,1006,2,1,,50,10,,在钻石抽卡中抽卡10次,在鑽石抽卡中抽卡10次,Draw 10 times in Diamond Draw,Draw 10 times in Diamond Draw,다이아 뽑기 10회 진행,Desenhe 10 vezes no Diamond Draw,จับฉลาก 10 ครั้ง ใน Diamond Draw,,,,,,100,
+7028,通行证第一周任务,1006,2,1,,29,150,,挑战普通关卡150次,挑戰普通關卡150次,Fight in Normal level 150 times,Fight in Normal level 150 times,일반 스테이지 150회 도전,Lute no nível Normal 150 vezes,ต่อสู้ในระดับปกติ 150 ครั้ง,,,,,,100,10000
+7029,通行证第一周任务,1006,2,1,,30,30,,挑战困难关卡30次,挑戰困難關卡30次,Challenge Elite levels 30 times,Challenge Elite levels 30 times,하드 스테이지 도전 30회,Desafie os níveis Elite 30 vezes,ท้าทายระดับ Elite 30 ครั้ง,,,,,,100,20000
+7030,通行证第一周任务,1006,2,1,,85,15,,派遣任务完成15次,派遣任務完成15次,Complete Dispatch Quest 15 times,Complete Dispatch Quest 15 times,파견 퀘스트 15회 완료,Complete a missão Dispatch 15 vezes,เสร็จสิ้นภารกิจจัดส่ง 15 ครั้ง,,,,,,100,
+7031,通行证第一周任务,1006,2,1,,21,3000,,消耗3000钻石,消耗3000鑽石,Spend 3000 diamonds,Spend 3000 diamonds,3000다이아 소모,Gaste 3000 diamantes,ใช้เงิน 3，000 เพชร,,,,,,100,
+7032,通行证第一周任务,1006,2,1,,67,7,,以太乐园通过7层,乙太樂園通過7層,Clear Aether Paradise level 7,Clear Aether Paradise level 7,에테르파라다이스 7층 클리어,Limpe o nível 7 do Aether Paradise,เคลียร์อีเธอร์พาราไดซ์ ระดับ 7,,,,,,100,
+7033,通行证第一周任务,1006,2,1,,86,3,{3=4},完成S以上派遣3次,完成S以上派遣3次,Complete S and above Dispatch Quest 3 times,Complete S and above Dispatch Quest 3 times,S급 이상 파견 3회 완료,Complete a missão S e acima Dispatch 3 vezes,ทำภารกิจส่งของ S ขึ้นไปให้สำเร็จ 3 ครั้ง,,,,,,100,
+,,,,,,,,,,,,,,,,,,,,,,
+7041,通行证第一周任务,1006,2,2,,17,3,,累计登录3天,累計登錄3天,Login 3 days in total,Tích luỹ đăng nhập 3 ngày,누적 3일 로그인,Login 3 dias no total,เข้าสู่ระบบรวม 3 วัน,,,,,,100,
+7042,通行证第一周任务,1006,2,2,,36,50,,精灵升级50次,精靈升級50次,Upgrade Pokémon 50 times.,Upgrade Pokémon 50 times.,포켓몬 50회 레벨업,Melhore os Pokémon 50 vezes.,อัพเกรดโปเกมอน 50 ครั้ง,,,,,,100,strengthen-1
+7043,通行证第一周任务,1006,2,2,,21,1000,,消耗1000钻石,消耗1000鑽石,Spend 1000 diamonds,Spend 1000 diamonds,1000다이아 소모,Gaste 1000 diamantes,ใช้เงิน 1，000 เพชร,,,,,,200,
+7044,通行证第一周任务,1006,2,2,,43,50,,竞技场积分50分,競技場積分50分,Arena Points:50pts,Arena Points:50pts,아레나 포인트 50점,Pontos de Arena:50pts,คะแนนอารีน่า: 50 คะแนน,,,,,,100,
+7045,通行证第一周任务,1006,2,2,,63,50000,,以太积分累计50000分,乙太積分累計50000分,Accumulate a total of 50000 Aether Points,Accumulate a total of 50000 Aether Points,에테르 포인트 누적 50000점,Acumule um total de 50000 pontos de éter,สะสมแต้ม Aether ทั้งหมด 50，000 แต้ม,,,,,,100,
+7046,通行证第一周任务,1006,2,2,,55,20,,公会捐献20次,公會捐獻20次,Donate 20 times,Donate 20 times,길드 기부 20회,Doe 20 vezes,บริจาค 20 ครั้ง,,,,,,100,
+7047,通行证第一周任务,1006,2,2,,50,20,,在钻石抽卡中抽卡20次,在鑽石抽卡中抽卡20次,Draw 20 times in Diamond Draw,Draw 20 times in Diamond Draw,다이아 뽑기 20회 진행,Desenhe 20 vezes no Diamond Draw,จับฉลาก 20 ครั้ง ใน Diamond Draw,,,,,,200,
+7048,通行证第一周任务,1006,2,2,,29,300,,挑战普通关卡300次,挑戰普通關卡300次,Fight in Normal level 300 times,Fight in Normal level 300 times,일반 스테이지 300회 도전,Lute no nível Normal 300 vezes,ต่อสู้ในระดับปกติ 300 ครั้ง,,,,,,200,10000
+7049,通行证第一周任务,1006,2,2,,30,60,,挑战困难关卡60次,挑戰困難關卡60次,Challenge Elite level 60 times,Challenge Elite level 60 times,하드 스테이지 도전 60회,Desafie o nível Elite 60 vezes,ท้าทายระดับ Elite 60 ครั้ง,,,,,,200,20000
+7050,通行证第一周任务,1006,2,2,,85,30,,派遣任务完成30次,派遣任務完成30次,Complete Dispatch Quest 30 times,Complete Dispatch Quest 30 times,파견 퀘스트 30회 완료,Complete a missão Dispatch 30 vezes,ทำภารกิจจัดส่งให้สำเร็จ 30 ครั้ง,,,,,,100,
+7051,通行证第一周任务,1006,2,2,,21,3000,,消耗3000钻石,消耗3000鑽石,Spend 3000 diamonds,Spend 3000 diamonds,3000다이아 소모,Gaste 3000 diamantes,ใช้เงิน 3，000 เพชร,,,,,,200,
+7052,通行证第一周任务,1006,2,2,,67,7,,以太乐园通过7层,乙太樂園通過7層,Clear Aether Paradise level 7,Clear Aether Paradise level 7,에테르파라다이스 7층 클리어,Limpe o nível 7 do Aether Paradise,เคลียร์อีเธอร์พาราไดซ์ ระดับ 7,,,,,,200,
+7053,通行证第一周任务,1006,2,2,,86,6,{6=4},完成S以上派遣6次,完成S以上派遣6次,Complete S and above Dispatch Quest 6 times,Complete S and above Dispatch Quest 6 times,S급 이상 파견 6회 완료,Complete a missão S e acima Dispatch 6 vezes,ทำภารกิจส่งของ S ขึ้นไปให้สำเร็จ 6 ครั้ง,,,,,,200,
+,,,,,,,,,,,,,,,,,,,,,,
+7061,通行证第一周任务,1006,2,3,,17,3,,累计登录3天,累計登錄3天,Login 3 days in total,Tích luỹ đăng nhập 3 ngày,누적 3일 로그인,Login 3 dias no total,เข้าสู่ระบบรวม 3 วัน,,,,,,100,
+7062,通行证第一周任务,1006,2,3,,36,50,,精灵升级50次,精靈升級50次,Upgrade Pokémon 50 times.,Upgrade Pokémon 50 times.,포켓몬 50회 레벨업,Melhore os Pokémon 50 vezes.,อัพเกรดโปเกมอน 50 ครั้ง,,,,,,100,strengthen-1
+7063,通行证第一周任务,1006,2,3,,21,1000,,消耗1000钻石,消耗1000鑽石,Spend 1000 diamonds,Spend 1000 diamonds,1000다이아 소모,Gaste 1000 diamantes,ใช้เงิน 1，000 เพชร,,,,,,200,
+7064,通行证第一周任务,1006,2,3,,43,50,,竞技场积分50分,競技場積分50分,Arena Points:50pts,Arena Points:50pts,아레나 포인트 50점,Pontos de Arena:50pts,คะแนนอารีน่า: 50 คะแนน,,,,,,100,
+7065,通行证第一周任务,1006,2,3,,63,50000,,以太积分累计50000分,乙太積分累計50000分,Accumulate a total of 50000 Aether Points,Accumulate a total of 50000 Aether Points,에테르 포인트 누적 50000점,Acumule um total de 50000 pontos de éter,สะสมแต้ม Aether ทั้งหมด 50，000 แต้ม,,,,,,100,
+7066,通行证第一周任务,1006,2,3,,55,20,,公会捐献20次,公會捐獻20次,Donate 20 times,Donate 20 times,길드 기부 20회,Doe 20 vezes,บริจาค 20 ครั้ง,,,,,,100,
+7067,通行证第一周任务,1006,2,3,,50,20,,在钻石抽卡中抽卡20次,在鑽石抽卡中抽卡20次,Draw 20 times in Diamond Draw,Draw 20 times in Diamond Draw,다이아 뽑기 20회 진행,Desenhe 20 vezes no Diamond Draw,จับฉลาก 20 ครั้ง ใน Diamond Draw,,,,,,200,
+7068,通行证第一周任务,1006,2,3,,29,300,,挑战普通关卡300次,挑戰普通關卡300次,Fight in Normal level 300 times,Fight in Normal level 300 times,일반 스테이지 300회 도전,Lute no nível Normal 300 vezes,ต่อสู้ในระดับปกติ 300 ครั้ง,,,,,,200,10000
+7069,通行证第一周任务,1006,2,3,,30,60,,挑战困难关卡60次,挑戰困難關卡60次,Challenge Elite level 60 times,Challenge Elite level 60 times,하드 스테이지 도전 60회,Desafie o nível Elite 60 vezes,ท้าทายระดับ Elite 60 ครั้ง,,,,,,200,20000
+7070,通行证第一周任务,1006,2,3,,85,30,,派遣任务完成30次,派遣任務完成30次,Complete Dispatch Quest 30 times,Complete Dispatch Quest 30 times,파견 퀘스트 30회 완료,Complete a missão Dispatch 30 vezes,ทำภารกิจจัดส่งให้สำเร็จ 30 ครั้ง,,,,,,100,
+7071,通行证第一周任务,1006,2,3,,21,3000,,消耗3000钻石,消耗3000鑽石,Spend 3000 diamonds,Spend 3000 diamonds,3000다이아 소모,Gaste 3000 diamantes,ใช้เงิน 3，000 เพชร,,,,,,200,
+7072,通行证第一周任务,1006,2,3,,67,7,,以太乐园通过7层,乙太樂園通過7層,Clear Aether Paradise level 7,Clear Aether Paradise level 7,에테르파라다이스 7층 클리어,Limpe o nível 7 do Aether Paradise,เคลียร์อีเธอร์พาราไดซ์ ระดับ 7,,,,,,200,
+7073,通行证第一周任务,1006,2,3,,86,6,{6=4},完成S以上派遣6次,完成S以上派遣6次,Complete S and above Dispatch Quest 6 times,Complete S and above Dispatch Quest 6 times,S급 이상 파견 6회 완료,Complete a missão S e acima Dispatch 6 vezes,ทำภารกิจส่งของ S ขึ้นไปให้สำเร็จ 6 ครั้ง,,,,,,200,
+,,,,,,,,,,,,,,,,,,,,,,
+7081,通行证第一周任务,1006,2,4,,17,3,,累计登录3天,累計登錄3天,Login 3 days in total,Tích luỹ đăng nhập 3 ngày,누적 3일 로그인,Login 3 dias no total,เข้าสู่ระบบรวม 3 วัน,,,,,,100,
+7082,通行证第一周任务,1006,2,4,,36,50,,精灵升级50次,精靈升級50次,Upgrade Pokémon 50 times.,Upgrade Pokémon 50 times.,포켓몬 50회 레벨업,Melhore os Pokémon 50 vezes.,อัพเกรดโปเกมอน 50 ครั้ง,,,,,,100,strengthen-1
+7083,通行证第一周任务,1006,2,4,,21,1000,,消耗1000钻石,消耗1000鑽石,Spend 1000 diamonds,Spend 1000 diamonds,1000다이아 소모,Gaste 1000 diamantes,ใช้เงิน 1，000 เพชร,,,,,,200,
+7084,通行证第一周任务,1006,2,4,,43,50,,竞技场积分50分,競技場積分50分,Arena Points:50pts,Arena Points:50pts,아레나 포인트 50점,Pontos de Arena:50pts,คะแนนอารีน่า: 50 คะแนน,,,,,,100,
+7085,通行证第一周任务,1006,2,4,,63,50000,,以太积分累计50000分,乙太積分累計50000分,Accumulate a total of 50000 Aether Points,Accumulate a total of 50000 Aether Points,에테르 포인트 누적 50000점,Acumule um total de 50000 pontos de éter,สะสมแต้ม Aether ทั้งหมด 50，000 แต้ม,,,,,,100,
+7086,通行证第一周任务,1006,2,4,,55,20,,公会捐献20次,公會捐獻20次,Donate 20 times,Donate 20 times,길드 기부 20회,Doe 20 vezes,บริจาค 20 ครั้ง,,,,,,100,
+7087,通行证第一周任务,1006,2,4,,50,20,,在钻石抽卡中抽卡20次,在鑽石抽卡中抽卡20次,Draw 20 times in Diamond Draw,Draw 20 times in Diamond Draw,다이아 뽑기 20회 진행,Desenhe 20 vezes no Diamond Draw,จับฉลาก 20 ครั้ง ใน Diamond Draw,,,,,,200,
+7088,通行证第一周任务,1006,2,4,,29,300,,挑战普通关卡300次,挑戰普通關卡300次,Fight in Normal level 300 times,Fight in Normal level 300 times,일반 스테이지 300회 도전,Lute no nível Normal 300 vezes,ต่อสู้ในระดับปกติ 300 ครั้ง,,,,,,200,10000
+7089,通行证第一周任务,1006,2,4,,30,60,,挑战困难关卡60次,挑戰困難關卡60次,Challenge Elite level 60 times,Challenge Elite level 60 times,하드 스테이지 도전 60회,Desafie o nível Elite 60 vezes,ท้าทายระดับ Elite 60 ครั้ง,,,,,,200,20000
+7090,通行证第一周任务,1006,2,4,,85,30,,派遣任务完成30次,派遣任務完成30次,Complete Dispatch Quest 30 times,Complete Dispatch Quest 30 times,파견 퀘스트 30회 완료,Complete a missão Dispatch 30 vezes,ทำภารกิจจัดส่งให้สำเร็จ 30 ครั้ง,,,,,,100,
+7091,通行证第一周任务,1006,2,4,,21,3000,,消耗3000钻石,消耗3000鑽石,Spend 3000 diamonds,Spend 3000 diamonds,3000다이아 소모,Gaste 3000 diamantes,ใช้เงิน 3，000 เพชร,,,,,,200,
+7092,通行证第一周任务,1006,2,4,,67,7,,以太乐园通过7层,乙太樂園通過7層,Clear Aether Paradise level 7,Clear Aether Paradise level 7,에테르파라다이스 7층 클리어,Limpe o nível 7 do Aether Paradise,เคลียร์อีเธอร์พาราไดซ์ ระดับ 7,,,,,,200,
+7093,通行证第一周任务,1006,2,4,,86,6,{6=4},完成S以上派遣6次,完成S以上派遣6次,Complete S and above Dispatch Quest 6 times,Complete S and above Dispatch Quest 6 times,S급 이상 파견 6회 완료,Complete a missão S e acima Dispatch 6 vezes,ทำภารกิจส่งของ S ขึ้นไปให้สำเร็จ 6 ครั้ง,,,,,,200,
+,,,,,,,,,,,,,,,,,,,,,,
+7101,通行证第一周任务,1006,2,5,,17,3,,累计登录3天,累計登錄3天,Login 3 days in total,Tích luỹ đăng nhập 3 ngày,누적 3일 로그인,Login 3 dias no total,เข้าสู่ระบบรวม 3 วัน,,,,,,100,
+7102,通行证第一周任务,1006,2,5,,36,50,,精灵升级50次,精靈升級50次,Upgrade Pokémon 50 times.,Upgrade Pokémon 50 times.,포켓몬 50회 레벨업,Melhore os Pokémon 50 vezes.,อัพเกรดโปเกมอน 50 ครั้ง,,,,,,100,strengthen-1
+7103,通行证第一周任务,1006,2,5,,21,1000,,消耗1000钻石,消耗1000鑽石,Spend 1000 diamonds,Spend 1000 diamonds,1000다이아 소모,Gaste 1000 diamantes,ใช้เงิน 1，000 เพชร,,,,,,200,
+7104,通行证第一周任务,1006,2,5,,43,50,,竞技场积分50分,競技場積分50分,Arena Points:50pts,Arena Points:50pts,아레나 포인트 50점,Pontos de Arena:50pts,คะแนนอารีน่า: 50 คะแนน,,,,,,100,
+7105,通行证第一周任务,1006,2,5,,63,50000,,以太积分累计50000分,乙太積分累計50000分,Accumulate a total of 50000 Aether Points,Accumulate a total of 50000 Aether Points,에테르 포인트 누적 50000점,Acumule um total de 50000 pontos de éter,สะสมแต้ม Aether ทั้งหมด 50，000 แต้ม,,,,,,100,
+7106,通行证第一周任务,1006,2,5,,55,20,,公会捐献20次,公會捐獻20次,Donate 20 times,Donate 20 times,길드 기부 20회,Doe 20 vezes,บริจาค 20 ครั้ง,,,,,,100,
+7107,通行证第一周任务,1006,2,5,,50,20,,在钻石抽卡中抽卡20次,在鑽石抽卡中抽卡20次,Draw 20 times in Diamond Draw,Draw 20 times in Diamond Draw,다이아 뽑기 20회 진행,Desenhe 20 vezes no Diamond Draw,จับฉลาก 20 ครั้ง ใน Diamond Draw,,,,,,200,
+7108,通行证第一周任务,1006,2,5,,29,300,,挑战普通关卡300次,挑戰普通關卡300次,Fight in Normal level 300 times,Fight in Normal level 300 times,일반 스테이지 300회 도전,Lute no nível Normal 300 vezes,ต่อสู้ในระดับปกติ 300 ครั้ง,,,,,,200,10000
+7109,通行证第一周任务,1006,2,5,,30,60,,挑战困难关卡60次,挑戰困難關卡60次,Challenge Elite level 60 times,Challenge Elite level 60 times,하드 스테이지 도전 60회,Desafie o nível Elite 60 vezes,ท้าทายระดับ Elite 60 ครั้ง,,,,,,200,20000
+7110,通行证第一周任务,1006,2,5,,85,30,,派遣任务完成30次,派遣任務完成30次,Complete Dispatch Quest 30 times,Complete Dispatch Quest 30 times,파견 퀘스트 30회 완료,Complete a missão Dispatch 30 vezes,ทำภารกิจจัดส่งให้สำเร็จ 30 ครั้ง,,,,,,100,
+7111,通行证第一周任务,1006,2,5,,21,3000,,消耗3000钻石,消耗3000鑽石,Spend 3000 diamonds,Spend 3000 diamonds,3000다이아 소모,Gaste 3000 diamantes,ใช้เงิน 3，000 เพชร,,,,,,200,
+7112,通行证第一周任务,1006,2,5,,67,7,,以太乐园通过7层,乙太樂園通過7層,Clear Aether Paradise level 7,Clear Aether Paradise level 7,에테르파라다이스 7층 클리어,Limpe o nível 7 do Aether Paradise,เคลียร์อีเธอร์พาราไดซ์ ระดับ 7,,,,,,200,
+7113,通行证第一周任务,1006,2,5,,86,6,{6=4},完成S以上派遣6次,完成S以上派遣6次,Complete S and above Dispatch Quest 6 times,Complete S and above Dispatch Quest 6 times,S급 이상 파견 6회 완료,Complete a missão S e acima Dispatch 6 vezes,ทำภารกิจส่งของ S ขึ้นไปให้สำเร็จ 6 ครั้ง,,,,,,200,
+,,,,,,,,,,,,,,,,,,,,,,
+7121,通行证第一周任务,1006,2,6,,17,3,,累计登录3天,累計登錄3天,Login 3 days in total,Tích luỹ đăng nhập 3 ngày,누적 3일 로그인,Login 3 dias no total,เข้าสู่ระบบรวม 3 วัน,,,,,,100,
+7122,通行证第一周任务,1006,2,6,,36,50,,精灵升级50次,精靈升級50次,Upgrade Pokémon 50 times.,Upgrade Pokémon 50 times.,포켓몬 50회 레벨업,Melhore os Pokémon 50 vezes.,อัพเกรดโปเกมอน 50 ครั้ง,,,,,,100,strengthen-1
+7123,通行证第一周任务,1006,2,6,,21,1000,,消耗1000钻石,消耗1000鑽石,Spend 1000 diamonds,Spend 1000 diamonds,1000다이아 소모,Gaste 1000 diamantes,ใช้เงิน 1，000 เพชร,,,,,,200,
+7124,通行证第一周任务,1006,2,6,,43,50,,竞技场积分50分,競技場積分50分,Arena Points:50pts,Arena Points:50pts,아레나 포인트 50점,Pontos de Arena:50pts,คะแนนอารีน่า: 50 คะแนน,,,,,,100,
+7125,通行证第一周任务,1006,2,6,,63,50000,,以太积分累计50000分,乙太積分累計50000分,Accumulate a total of 50000 Aether Points,Accumulate a total of 50000 Aether Points,에테르 포인트 누적 50000점,Acumule um total de 50000 pontos de éter,สะสมแต้ม Aether ทั้งหมด 50，000 แต้ม,,,,,,100,
+7126,通行证第一周任务,1006,2,6,,55,20,,公会捐献20次,公會捐獻20次,Donate 20 times,Donate 20 times,길드 기부 20회,Doe 20 vezes,บริจาค 20 ครั้ง,,,,,,100,
+7127,通行证第一周任务,1006,2,6,,50,20,,在钻石抽卡中抽卡20次,在鑽石抽卡中抽卡20次,Draw 20 times in Diamond Draw,Draw 20 times in Diamond Draw,다이아 뽑기 20회 진행,Desenhe 20 vezes no Diamond Draw,จับฉลาก 20 ครั้ง ใน Diamond Draw,,,,,,200,
+7128,通行证第一周任务,1006,2,6,,29,300,,挑战普通关卡300次,挑戰普通關卡300次,Fight in Normal level 300 times,Fight in Normal level 300 times,일반 스테이지 300회 도전,Lute no nível Normal 300 vezes,ต่อสู้ในระดับปกติ 300 ครั้ง,,,,,,200,10000
+7129,通行证第一周任务,1006,2,6,,30,60,,挑战困难关卡60次,挑戰困難關卡60次,Challenge Elite level 60 times,Challenge Elite level 60 times,하드 스테이지 도전 60회,Desafie o nível Elite 60 vezes,ท้าทายระดับ Elite 60 ครั้ง,,,,,,200,20000
+7130,通行证第一周任务,1006,2,6,,85,30,,派遣任务完成30次,派遣任務完成30次,Complete Dispatch Quest 30 times,Complete Dispatch Quest 30 times,파견 퀘스트 30회 완료,Complete a missão Dispatch 30 vezes,ทำภารกิจจัดส่งให้สำเร็จ 30 ครั้ง,,,,,,100,
+7131,通行证第一周任务,1006,2,6,,21,3000,,消耗3000钻石,消耗3000鑽石,Spend 3000 diamonds,Spend 3000 diamonds,3000다이아 소모,Gaste 3000 diamantes,ใช้เงิน 3，000 เพชร,,,,,,200,
+7132,通行证第一周任务,1006,2,6,,67,7,,以太乐园通过7层,乙太樂園通過7層,Clear Aether Paradise level 7,Clear Aether Paradise level 7,에테르파라다이스 7층 클리어,Limpe o nível 7 do Aether Paradise,เคลียร์อีเธอร์พาราไดซ์ ระดับ 7,,,,,,200,
+7133,通行证第一周任务,1006,2,6,,86,6,{6=4},完成S以上派遣6次,完成S以上派遣6次,Complete S and above Dispatch Quest 6 times,Complete S and above Dispatch Quest 6 times,S급 이상 파견 6회 완료,Complete a missão S e acima Dispatch 6 vezes,ทำภารกิจส่งของ S ขึ้นไปให้สำเร็จ 6 ครั้ง,,,,,,200,
+,,,,,,,,,,,,,,,,,,,,,,
+7141,通行证第一周任务,1006,2,7,,17,3,,累计登录3天,累計登錄3天,Login 3 days in total,Tích luỹ đăng nhập 3 ngày,누적 3일 로그인,Login 3 dias no total,เข้าสู่ระบบรวม 3 วัน,,,,,,100,
+7142,通行证第一周任务,1006,2,7,,36,50,,精灵升级50次,精靈升級50次,Upgrade Pokémon 50 times.,Upgrade Pokémon 50 times.,포켓몬 50회 레벨업,Melhore os Pokémon 50 vezes.,อัพเกรดโปเกมอน 50 ครั้ง,,,,,,100,strengthen-1
+7143,通行证第一周任务,1006,2,7,,21,1000,,消耗1000钻石,消耗1000鑽石,Spend 1000 diamonds,Spend 1000 diamonds,1000다이아 소모,Gaste 1000 diamantes,ใช้เงิน 1，000 เพชร,,,,,,200,
+7144,通行证第一周任务,1006,2,7,,43,50,,竞技场积分50分,競技場積分50分,Arena Points:50pts,Arena Points:50pts,아레나 포인트 50점,Pontos de Arena:50pts,คะแนนอารีน่า: 50 คะแนน,,,,,,100,
+7145,通行证第一周任务,1006,2,7,,63,50000,,以太积分累计50000分,乙太積分累計50000分,Accumulate a total of 50000 Aether Points,Accumulate a total of 50000 Aether Points,에테르 포인트 누적 50000점,Acumule um total de 50000 pontos de éter,สะสมแต้ม Aether ทั้งหมด 50，000 แต้ม,,,,,,100,
+7146,通行证第一周任务,1006,2,7,,55,20,,公会捐献20次,公會捐獻20次,Donate 20 times,Donate 20 times,길드 기부 20회,Doe 20 vezes,บริจาค 20 ครั้ง,,,,,,100,
+7147,通行证第一周任务,1006,2,7,,50,20,,在钻石抽卡中抽卡20次,在鑽石抽卡中抽卡20次,Draw 20 times in Diamond Draw,Draw 20 times in Diamond Draw,다이아 뽑기 20회 진행,Desenhe 20 vezes no Diamond Draw,จับฉลาก 20 ครั้ง ใน Diamond Draw,,,,,,200,
+7148,通行证第一周任务,1006,2,7,,29,300,,挑战普通关卡300次,挑戰普通關卡300次,Fight in Normal level 300 times,Fight in Normal level 300 times,일반 스테이지 300회 도전,Lute no nível Normal 300 vezes,ต่อสู้ในระดับปกติ 300 ครั้ง,,,,,,200,10000
+7149,通行证第一周任务,1006,2,7,,30,60,,挑战困难关卡60次,挑戰困難關卡60次,Challenge Elite level 60 times,Challenge Elite level 60 times,하드 스테이지 도전 60회,Desafie o nível Elite 60 vezes,ท้าทายระดับ Elite 60 ครั้ง,,,,,,200,20000
+7150,通行证第一周任务,1006,2,7,,85,30,,派遣任务完成30次,派遣任務完成30次,Complete Dispatch Quest 30 times,Complete Dispatch Quest 30 times,파견 퀘스트 30회 완료,Complete a missão Dispatch 30 vezes,ทำภารกิจจัดส่งให้สำเร็จ 30 ครั้ง,,,,,,100,
+7151,通行证第一周任务,1006,2,7,,21,3000,,消耗3000钻石,消耗3000鑽石,Spend 3000 diamonds,Spend 3000 diamonds,3000다이아 소모,Gaste 3000 diamantes,ใช้เงิน 3，000 เพชร,,,,,,200,
+7152,通行证第一周任务,1006,2,7,,67,7,,以太乐园通过7层,乙太樂園通過7層,Clear Aether Paradise level 7,Clear Aether Paradise level 7,에테르파라다이스 7층 클리어,Limpe o nível 7 do Aether Paradise,เคลียร์อีเธอร์พาราไดซ์ ระดับ 7,,,,,,200,
+7153,通行证第一周任务,1006,2,7,,86,6,{6=4},完成S以上派遣6次,完成S以上派遣6次,Complete S and above Dispatch Quest 6 times,Complete S and above Dispatch Quest 6 times,S급 이상 파견 6회 완료,Complete a missão S e acima Dispatch 6 vezes,ทำภารกิจส่งของ S ขึ้นไปให้สำเร็จ 6 ครั้ง,,,,,,200,
+,,,,,,,,,,,,,,,,,,,,,,
+7161,通行证第一周任务,1006,2,8,,17,3,,累计登录3天,累計登錄3天,Login 3 days in total,Tích luỹ đăng nhập 3 ngày,누적 3일 로그인,Login 3 dias no total,เข้าสู่ระบบรวม 3 วัน,,,,,,100,
+7162,通行证第一周任务,1006,2,8,,36,50,,精灵升级50次,精靈升級50次,Upgrade Pokémon 50 times.,Upgrade Pokémon 50 times.,포켓몬 50회 레벨업,Melhore os Pokémon 50 vezes.,อัพเกรดโปเกมอน 50 ครั้ง,,,,,,100,strengthen-1
+7163,通行证第一周任务,1006,2,8,,21,1000,,消耗1000钻石,消耗1000鑽石,Spend 1000 diamonds,Spend 1000 diamonds,1000다이아 소모,Gaste 1000 diamantes,ใช้เงิน 1，000 เพชร,,,,,,200,
+7164,通行证第一周任务,1006,2,8,,43,50,,竞技场积分50分,競技場積分50分,Arena Points:50pts,Arena Points:50pts,아레나 포인트 50점,Pontos de Arena:50pts,คะแนนอารีน่า: 50 คะแนน,,,,,,100,
+7165,通行证第一周任务,1006,2,8,,63,50000,,以太积分累计50000分,乙太積分累計50000分,Accumulate a total of 50000 Aether Points,Accumulate a total of 50000 Aether Points,에테르 포인트 누적 50000점,Acumule um total de 50000 pontos de éter,สะสมแต้ม Aether ทั้งหมด 50，000 แต้ม,,,,,,100,
+7166,通行证第一周任务,1006,2,8,,55,20,,公会捐献20次,公會捐獻20次,Donate 20 times,Donate 20 times,길드 기부 20회,Doe 20 vezes,บริจาค 20 ครั้ง,,,,,,100,
+7167,通行证第一周任务,1006,2,8,,50,20,,在钻石抽卡中抽卡20次,在鑽石抽卡中抽卡20次,Draw 20 times in Diamond Draw,Draw 20 times in Diamond Draw,다이아 뽑기 20회 진행,Desenhe 20 vezes no Diamond Draw,จับฉลาก 20 ครั้ง ใน Diamond Draw,,,,,,200,
+7168,通行证第一周任务,1006,2,8,,29,300,,挑战普通关卡300次,挑戰普通關卡300次,Fight in Normal level 300 times,Fight in Normal level 300 times,일반 스테이지 300회 도전,Lute no nível Normal 300 vezes,ต่อสู้ในระดับปกติ 300 ครั้ง,,,,,,200,10000
+7169,通行证第一周任务,1006,2,8,,30,60,,挑战困难关卡60次,挑戰困難關卡60次,Challenge Elite level 60 times,Challenge Elite level 60 times,하드 스테이지 도전 60회,Desafie o nível Elite 60 vezes,ท้าทายระดับ Elite 60 ครั้ง,,,,,,200,20000
+7170,通行证第一周任务,1006,2,8,,85,30,,派遣任务完成30次,派遣任務完成30次,Complete Dispatch Quest 30 times,Complete Dispatch Quest 30 times,파견 퀘스트 30회 완료,Complete a missão Dispatch 30 vezes,ทำภารกิจจัดส่งให้สำเร็จ 30 ครั้ง,,,,,,100,
+7171,通行证第一周任务,1006,2,8,,21,3000,,消耗3000钻石,消耗3000鑽石,Spend 3000 diamonds,Spend 3000 diamonds,3000다이아 소모,Gaste 3000 diamantes,ใช้เงิน 3，000 เพชร,,,,,,200,
+7172,通行证第一周任务,1006,2,8,,67,7,,以太乐园通过7层,乙太樂園通過7層,Clear Aether Paradise level 7,Clear Aether Paradise level 7,에테르파라다이스 7층 클리어,Limpe o nível 7 do Aether Paradise,เคลียร์อีเธอร์พาราไดซ์ ระดับ 7,,,,,,200,
+7173,通行证第一周任务,1006,2,8,,86,6,{6=4},完成S以上派遣6次,完成S以上派遣6次,Complete S and above Dispatch Quest 6 times,Complete S and above Dispatch Quest 6 times,S급 이상 파견 6회 완료,Complete a missão S e acima Dispatch 6 vezes,ทำภารกิจส่งของ S ขึ้นไปให้สำเร็จ 6 ครั้ง,,,,,,200,
+,,,,,,,,,,,,,,,,,,,,,,
+7181,通行证第一周任务,1006,2,9,,17,3,,累计登录3天,累計登錄3天,Login 3 days in total,Tích luỹ đăng nhập 3 ngày,누적 3일 로그인,Login 3 dias no total,เข้าสู่ระบบรวม 3 วัน,,,,,,100,
+7182,通行证第一周任务,1006,2,9,,36,50,,精灵升级50次,精靈升級50次,Upgrade Pokémon 50 times.,Upgrade Pokémon 50 times.,포켓몬 50회 레벨업,Melhore os Pokémon 50 vezes.,อัพเกรดโปเกมอน 50 ครั้ง,,,,,,100,strengthen-1
+7183,通行证第一周任务,1006,2,9,,21,1000,,消耗1000钻石,消耗1000鑽石,Spend 1000 diamonds,Spend 1000 diamonds,1000다이아 소모,Gaste 1000 diamantes,ใช้เงิน 1，000 เพชร,,,,,,200,
+7184,通行证第一周任务,1006,2,9,,43,50,,竞技场积分50分,競技場積分50分,Arena Points:50pts,Arena Points:50pts,아레나 포인트 50점,Pontos de Arena:50pts,คะแนนอารีน่า: 50 คะแนน,,,,,,100,
+7185,通行证第一周任务,1006,2,9,,63,50000,,以太积分累计50000分,乙太積分累計50000分,Accumulate a total of 50000 Aether Points,Accumulate a total of 50000 Aether Points,에테르 포인트 누적 50000점,Acumule um total de 50000 pontos de éter,สะสมแต้ม Aether ทั้งหมด 50，000 แต้ม,,,,,,100,
+7186,通行证第一周任务,1006,2,9,,55,20,,公会捐献20次,公會捐獻20次,Donate 20 times,Donate 20 times,길드 기부 20회,Doe 20 vezes,บริจาค 20 ครั้ง,,,,,,100,
+7187,通行证第一周任务,1006,2,9,,50,20,,在钻石抽卡中抽卡20次,在鑽石抽卡中抽卡20次,Draw 20 times in Diamond Draw,Draw 20 times in Diamond Draw,다이아 뽑기 20회 진행,Desenhe 20 vezes no Diamond Draw,จับฉลาก 20 ครั้ง ใน Diamond Draw,,,,,,200,
+7188,通行证第一周任务,1006,2,9,,29,300,,挑战普通关卡300次,挑戰普通關卡300次,Fight in Normal level 300 times,Fight in Normal level 300 times,일반 스테이지 300회 도전,Lute no nível Normal 300 vezes,ต่อสู้ในระดับปกติ 300 ครั้ง,,,,,,200,10000
+7189,通行证第一周任务,1006,2,9,,30,60,,挑战困难关卡60次,挑戰困難關卡60次,Challenge Elite level 60 times,Challenge Elite level 60 times,하드 스테이지 도전 60회,Desafie o nível Elite 60 vezes,ท้าทายระดับ Elite 60 ครั้ง,,,,,,200,20000
+7190,通行证第一周任务,1006,2,9,,85,30,,派遣任务完成30次,派遣任務完成30次,Complete Dispatch Quest 30 times,Complete Dispatch Quest 30 times,파견 퀘스트 30회 완료,Complete a missão Dispatch 30 vezes,ทำภารกิจจัดส่งให้สำเร็จ 30 ครั้ง,,,,,,100,
+7191,通行证第一周任务,1006,2,9,,21,3000,,消耗3000钻石,消耗3000鑽石,Spend 3000 diamonds,Spend 3000 diamonds,3000다이아 소모,Gaste 3000 diamantes,ใช้เงิน 3，000 เพชร,,,,,,200,
+7192,通行证第一周任务,1006,2,9,,67,7,,以太乐园通过7层,乙太樂園通過7層,Clear Aether Paradise level 7,Clear Aether Paradise level 7,에테르파라다이스 7층 클리어,Limpe o nível 7 do Aether Paradise,เคลียร์อีเธอร์พาราไดซ์ ระดับ 7,,,,,,200,
+7193,通行证第一周任务,1006,2,9,,86,6,{6=4},完成S以上派遣6次,完成S以上派遣6次,Complete S and above Dispatch Quest 6 times,Complete S and above Dispatch Quest 6 times,S급 이상 파견 6회 완료,Complete a missão S e acima Dispatch 6 vezes,ทำภารกิจส่งของ S ขึ้นไปให้สำเร็จ 6 ครั้ง,,,,,,200,
+,,,,,,,,,,,,,,,,,,,,,,
+7201,通行证第一周任务,1006,2,10,,17,3,,累计登录3天,累計登錄3天,Login 3 days in total,Tích luỹ đăng nhập 3 ngày,누적 3일 로그인,Login 3 dias no total,เข้าสู่ระบบรวม 3 วัน,,,,,,100,
+7202,通行证第一周任务,1006,2,10,,36,50,,精灵升级50次,精靈升級50次,Upgrade Pokémon 50 times.,Upgrade Pokémon 50 times.,포켓몬 50회 레벨업,Melhore os Pokémon 50 vezes.,อัพเกรดโปเกมอน 50 ครั้ง,,,,,,100,strengthen-1
+7203,通行证第一周任务,1006,2,10,,21,1000,,消耗1000钻石,消耗1000鑽石,Spend 1000 diamonds,Spend 1000 diamonds,1000다이아 소모,Gaste 1000 diamantes,ใช้เงิน 1，000 เพชร,,,,,,200,
+7204,通行证第一周任务,1006,2,10,,43,50,,竞技场积分50分,競技場積分50分,Arena Points:50pts,Arena Points:50pts,아레나 포인트 50점,Pontos de Arena:50pts,คะแนนอารีน่า: 50 คะแนน,,,,,,100,
+7205,通行证第一周任务,1006,2,10,,63,50000,,以太积分累计50000分,乙太積分累計50000分,Accumulate a total of 50000 Aether Points,Accumulate a total of 50000 Aether Points,에테르 포인트 누적 50000점,Acumule um total de 50000 pontos de éter,สะสมแต้ม Aether ทั้งหมด 50，000 แต้ม,,,,,,100,
+7206,通行证第一周任务,1006,2,10,,55,20,,公会捐献20次,公會捐獻20次,Donate 20 times,Donate 20 times,길드 기부 20회,Doe 20 vezes,บริจาค 20 ครั้ง,,,,,,100,
+7207,通行证第一周任务,1006,2,10,,50,20,,在钻石抽卡中抽卡20次,在鑽石抽卡中抽卡20次,Draw 20 times in Diamond Draw,Draw 20 times in Diamond Draw,다이아 뽑기 20회 진행,Desenhe 20 vezes no Diamond Draw,จับฉลาก 20 ครั้ง ใน Diamond Draw,,,,,,200,
+7208,通行证第一周任务,1006,2,10,,29,300,,挑战普通关卡300次,挑戰普通關卡300次,Fight in Normal level 300 times,Fight in Normal level 300 times,일반 스테이지 300회 도전,Lute no nível Normal 300 vezes,ต่อสู้ในระดับปกติ 300 ครั้ง,,,,,,200,10000
+7209,通行证第一周任务,1006,2,10,,30,60,,挑战困难关卡60次,挑戰困難關卡60次,Challenge Elite level 60 times,Challenge Elite level 60 times,하드 스테이지 도전 60회,Desafie o nível Elite 60 vezes,ท้าทายระดับ Elite 60 ครั้ง,,,,,,200,20000
+7210,通行证第一周任务,1006,2,10,,85,30,,派遣任务完成30次,派遣任務完成30次,Complete Dispatch Quest 30 times,Complete Dispatch Quest 30 times,파견 퀘스트 30회 완료,Complete a missão Dispatch 30 vezes,ทำภารกิจจัดส่งให้สำเร็จ 30 ครั้ง,,,,,,100,
+7211,通行证第一周任务,1006,2,10,,21,3000,,消耗3000钻石,消耗3000鑽石,Spend 3000 diamonds,Spend 3000 diamonds,3000다이아 소모,Gaste 3000 diamantes,ใช้เงิน 3，000 เพชร,,,,,,200,
+7212,通行证第一周任务,1006,2,10,,67,7,,以太乐园通过7层,乙太樂園通過7層,Clear Aether Paradise level 7,Clear Aether Paradise level 7,에테르파라다이스 7층 클리어,Limpe o nível 7 do Aether Paradise,เคลียร์อีเธอร์พาราไดซ์ ระดับ 7,,,,,,200,
+7213,通行证第一周任务,1006,2,10,,86,6,{6=4},完成S以上派遣6次,完成S以上派遣6次,Complete S and above Dispatch Quest 6 times,Complete S and above Dispatch Quest 6 times,S급 이상 파견 6회 완료,Complete a missão S e acima Dispatch 6 vezes,ทำภารกิจส่งของ S ขึ้นไปให้สำเร็จ 6 ครั้ง,,,,,,200,
+,,,,,,,,,,,,,,,,,,,,,,
+7221,通行证第一周任务,1006,2,11,,17,3,,累计登录3天,累計登錄3天,Login 3 days in total,Tích luỹ đăng nhập 3 ngày,누적 3일 로그인,Login 3 dias no total,เข้าสู่ระบบรวม 3 วัน,,,,,,100,
+7222,通行证第一周任务,1006,2,11,,36,50,,精灵升级50次,精靈升級50次,Upgrade Pokémon 50 times.,Upgrade Pokémon 50 times.,포켓몬 50회 레벨업,Melhore os Pokémon 50 vezes.,อัพเกรดโปเกมอน 50 ครั้ง,,,,,,100,strengthen-1
+7223,通行证第一周任务,1006,2,11,,21,1000,,消耗1000钻石,消耗1000鑽石,Spend 1000 diamonds,Spend 1000 diamonds,1000다이아 소모,Gaste 1000 diamantes,ใช้เงิน 1，000 เพชร,,,,,,200,
+7224,通行证第一周任务,1006,2,11,,43,50,,竞技场积分50分,競技場積分50分,Arena Points:50pts,Arena Points:50pts,아레나 포인트 50점,Pontos de Arena:50pts,คะแนนอารีน่า: 50 คะแนน,,,,,,100,
+7225,通行证第一周任务,1006,2,11,,63,50000,,以太积分累计50000分,乙太積分累計50000分,Accumulate a total of 50000 Aether Points,Accumulate a total of 50000 Aether Points,에테르 포인트 누적 50000점,Acumule um total de 50000 pontos de éter,สะสมแต้ม Aether ทั้งหมด 50，000 แต้ม,,,,,,100,
+7226,通行证第一周任务,1006,2,11,,55,20,,公会捐献20次,公會捐獻20次,Donate 20 times,Donate 20 times,길드 기부 20회,Doe 20 vezes,บริจาค 20 ครั้ง,,,,,,100,
+7227,通行证第一周任务,1006,2,11,,50,20,,在钻石抽卡中抽卡20次,在鑽石抽卡中抽卡20次,Draw 20 times in Diamond Draw,Draw 20 times in Diamond Draw,다이아 뽑기 20회 진행,Desenhe 20 vezes no Diamond Draw,จับฉลาก 20 ครั้ง ใน Diamond Draw,,,,,,200,
+7228,通行证第一周任务,1006,2,11,,29,300,,挑战普通关卡300次,挑戰普通關卡300次,Fight in Normal level 300 times,Fight in Normal level 300 times,일반 스테이지 300회 도전,Lute no nível Normal 300 vezes,ต่อสู้ในระดับปกติ 300 ครั้ง,,,,,,200,10000
+7229,通行证第一周任务,1006,2,11,,30,60,,挑战困难关卡60次,挑戰困難關卡60次,Challenge Elite level 60 times,Challenge Elite level 60 times,하드 스테이지 도전 60회,Desafie o nível Elite 60 vezes,ท้าทายระดับ Elite 60 ครั้ง,,,,,,200,20000
+7230,通行证第一周任务,1006,2,11,,85,30,,派遣任务完成30次,派遣任務完成30次,Complete Dispatch Quest 30 times,Complete Dispatch Quest 30 times,파견 퀘스트 30회 완료,Complete a missão Dispatch 30 vezes,ทำภารกิจจัดส่งให้สำเร็จ 30 ครั้ง,,,,,,100,
+7231,通行证第一周任务,1006,2,11,,21,3000,,消耗3000钻石,消耗3000鑽石,Spend 3000 diamonds,Spend 3000 diamonds,3000다이아 소모,Gaste 3000 diamantes,ใช้เงิน 3，000 เพชร,,,,,,200,
+7232,通行证第一周任务,1006,2,11,,67,7,,以太乐园通过7层,乙太樂園通過7層,Clear Aether Paradise level 7,Clear Aether Paradise level 7,에테르파라다이스 7층 클리어,Limpe o nível 7 do Aether Paradise,เคลียร์อีเธอร์พาราไดซ์ ระดับ 7,,,,,,200,
+7233,通行证第一周任务,1006,2,11,,86,6,{6=4},完成S以上派遣6次,完成S以上派遣6次,Complete S and above Dispatch Quest 6 times,Complete S and above Dispatch Quest 6 times,S급 이상 파견 6회 완료,Complete a missão S e acima Dispatch 6 vezes,ทำภารกิจส่งของ S ขึ้นไปให้สำเร็จ 6 ครั้ง,,,,,,200,
+,,,,,,,,,,,,,,,,,,,,,,
+7501,通行证日任务,1007,1,,,15,1,,每日登陆,每日登陸,Daily login,Daily login,일일 로그인,Login diário,เข้าสู่ระบบรายวัน,,,,,,30,
+7502,通行证日任务,1007,1,,,29,30,,挑战普通关卡30次,挑戰普通關卡30次,Fight in Normal level 30 times,Fight in Normal level 30 times,일반 스테이지 30회 도전,Lute no nível Normal 30 vezes,ต่อสู้ในระดับปกติ 30 ครั้ง,,,,,,30,10000
+7503,通行证日任务,1007,1,,,39,1,,饰品突破1次,飾品進階1次,Breakthrough trinket 1 time,Breakthrough trinket 1 time,액세서리 1회 돌파,Bugiganga inovadora 1 vez,เครื่องประดับล้ำยุค 1 ครั้ง,,,,,,30,
+7504,通行证日任务,1007,1,,,41,5,,竞技场战斗5次,競技場戰鬥5次,Engage in arena battle for 5 times,Engage in arena battle for 5 times,아레나 전투 5회 진행,Participe de uma batalha de arena 5 vezes,เข้าร่วมการต่อสู้ในสนามประลอง 5 ครั้ง,,,,,,30,
+7505,通行证日任务,1007,1,,,66,2,,元素挑战战斗2次,元素挑戰戰鬥2次,Enter Element Challenge 2 times,Enter Element Challenge 2 times,엘리멘탈 챌린지 2회 전투,Entre no Element Challenge 2 vezes,เข้าร่วม Element Challenge 2 ครั้ง,,,,,,30,
+7506,通行证日任务,1007,1,,,20,1000000,,消耗1000000金币,消耗1000000金幣,Spend 1000000 coins,Spend 1000000 coins,1000000코인 소모,Gaste 1.000.000 de moedas,ใช้เงิน 1000000 เหรียญ,,,,,,30,
+7507,通行证日任务,1007,1,,,21,300,,消耗300钻石,消耗300鑽石,Spend 300 diamonds,Spend 300 diamonds,300다이아 소모,Gaste 300 diamantes,ใช้เงิน 300 เพชร,,,,,,30,
+7508,通行证日任务,1007,1,,4,15,1,,大师每日登陆,大師每日登陸,Marster daily login.,Marster daily login.,마스터 일일 로그인,Login diário do Marster.,การเข้าสู่ระบบ Marster รายวัน,,,,,,30,
+,,,,,,,,,,,,,,,,,,,,,,
+7521,通行证第一周任务,1007,2,1,,17,2,,累计登录2天,累計登錄2天,Login 2 days in total,Tích luỹ đăng nhập 2 ngày,누적 2일 로그인,Login 2 dias no total,เข้าสู่ระบบรวม 2 วัน,,,,,,100,
+7522,通行证第一周任务,1007,2,1,,36,30,,精灵升级30次,精靈升級30次,Upgrade Pokémons 30 times,Upgrade Pokémons 30 times,포켓몬 30회 레벨업,Melhore os Pokémons 30 vezes,อัพเกรดโปเกมอน 30 ครั้ง,,,,,,100,strengthen-1
+7523,通行证第一周任务,1007,2,1,,21,1000,,消耗1000钻石,消耗1000鑽石,Spend 1000 diamonds,Spend 1000 diamonds,1000다이아 소모,Gaste 1000 diamantes,ใช้เงิน 1，000 เพชร,,,,,,100,
+7524,通行证第一周任务,1007,2,1,,43,25,,竞技场积分25分,競技場積分25分,Arena Points:25pts,Arena Points:25pts,아레나 포인트 25점,Pontos de Arena:25pts,คะแนนอารีน่า: 25 คะแนน,,,,,,100,
+7525,通行证第一周任务,1007,2,1,,63,25000,,以太积分累计25000分,乙太積分累計25000分,Accumulate a total of 25000 Aether Points,Accumulate a total of 25000 Aether Points,에테르 포인트 누적 25000점,Acumule um total de 25.000 pontos de éter,สะสมแต้ม Aether ทั้งหมด 25，000 แต้ม,,,,,,100,
+7526,通行证第一周任务,1007,2,1,,55,10,,公会捐献10次,公會捐獻10次,Donate 10 times,Donate 10 times,길드 기부 10회,Doe 10 vezes,บริจาค 10 ครั้ง,,,,,,100,
+7527,通行证第一周任务,1007,2,1,,50,10,,在钻石抽卡中抽卡10次,在鑽石抽卡中抽卡10次,Draw 10 times in Diamond Draw,Draw 10 times in Diamond Draw,다이아 뽑기 10회 진행,Desenhe 10 vezes no Diamond Draw,จับฉลาก 10 ครั้ง ใน Diamond Draw,,,,,,100,
+7528,通行证第一周任务,1007,2,1,,29,150,,挑战普通关卡150次,挑戰普通關卡150次,Fight in Normal level 150 times,Fight in Normal level 150 times,일반 스테이지 150회 도전,Lute no nível Normal 150 vezes,ต่อสู้ในระดับปกติ 150 ครั้ง,,,,,,100,10000
+7529,通行证第一周任务,1007,2,1,,30,30,,挑战困难关卡30次,挑戰困難關卡30次,Challenge Elite levels 30 times,Challenge Elite levels 30 times,하드 스테이지 도전 30회,Desafie os níveis Elite 30 vezes,ท้าทายระดับ Elite 30 ครั้ง,,,,,,100,20000
+7530,通行证第一周任务,1007,2,1,,85,15,,派遣任务完成15次,派遣任務完成15次,Complete Dispatch Quest 15 times,Complete Dispatch Quest 15 times,파견 퀘스트 15회 완료,Complete a missão Dispatch 15 vezes,เสร็จสิ้นภารกิจจัดส่ง 15 ครั้ง,,,,,,100,
+7531,通行证第一周任务,1007,2,1,,21,3000,,消耗3000钻石,消耗3000鑽石,Spend 3000 diamonds,Spend 3000 diamonds,3000다이아 소모,Gaste 3000 diamantes,ใช้เงิน 3，000 เพชร,,,,,,100,
+7532,通行证第一周任务,1007,2,1,,67,7,,以太乐园通过7层,乙太樂園通過7層,Clear Aether Paradise level 7,Clear Aether Paradise level 7,에테르파라다이스 7층 클리어,Limpe o nível 7 do Aether Paradise,เคลียร์อีเธอร์พาราไดซ์ ระดับ 7,,,,,,100,
+7533,通行证第一周任务,1007,2,1,,86,3,{3=4},完成S以上派遣3次,完成S以上派遣3次,Complete S and above Dispatch Quest 3 times,Complete S and above Dispatch Quest 3 times,S급 이상 파견 3회 완료,Complete a missão S e acima Dispatch 3 vezes,ทำภารกิจส่งของ S ขึ้นไปให้สำเร็จ 3 ครั้ง,,,,,,100,
+,,,,,,,,,,,,,,,,,,,,,,
+7541,通行证第一周任务,1007,2,2,,17,3,,累计登录3天,累計登錄3天,Login 3 days in total,Tích luỹ đăng nhập 3 ngày,누적 3일 로그인,Login 3 dias no total,เข้าสู่ระบบรวม 3 วัน,,,,,,100,
+7542,通行证第一周任务,1007,2,2,,36,50,,精灵升级50次,精靈升級50次,Upgrade Pokémon 50 times.,Upgrade Pokémon 50 times.,포켓몬 50회 레벨업,Melhore os Pokémon 50 vezes.,อัพเกรดโปเกมอน 50 ครั้ง,,,,,,100,strengthen-1
+7543,通行证第一周任务,1007,2,2,,21,1000,,消耗1000钻石,消耗1000鑽石,Spend 1000 diamonds,Spend 1000 diamonds,1000다이아 소모,Gaste 1000 diamantes,ใช้เงิน 1，000 เพชร,,,,,,200,
+7544,通行证第一周任务,1007,2,2,,43,50,,竞技场积分50分,競技場積分50分,Arena Points:50pts,Arena Points:50pts,아레나 포인트 50점,Pontos de Arena:50pts,คะแนนอารีน่า: 50 คะแนน,,,,,,100,
+7545,通行证第一周任务,1007,2,2,,63,50000,,以太积分累计50000分,乙太積分累計50000分,Accumulate a total of 50000 Aether Points,Accumulate a total of 50000 Aether Points,에테르 포인트 누적 50000점,Acumule um total de 50000 pontos de éter,สะสมแต้ม Aether ทั้งหมด 50，000 แต้ม,,,,,,100,
+7546,通行证第一周任务,1007,2,2,,55,20,,公会捐献20次,公會捐獻20次,Donate 20 times,Donate 20 times,길드 기부 20회,Doe 20 vezes,บริจาค 20 ครั้ง,,,,,,100,
+7547,通行证第一周任务,1007,2,2,,50,20,,在钻石抽卡中抽卡20次,在鑽石抽卡中抽卡20次,Draw 20 times in Diamond Draw,Draw 20 times in Diamond Draw,다이아 뽑기 20회 진행,Desenhe 20 vezes no Diamond Draw,จับฉลาก 20 ครั้ง ใน Diamond Draw,,,,,,200,
+7548,通行证第一周任务,1007,2,2,,29,300,,挑战普通关卡300次,挑戰普通關卡300次,Fight in Normal level 300 times,Fight in Normal level 300 times,일반 스테이지 300회 도전,Lute no nível Normal 300 vezes,ต่อสู้ในระดับปกติ 300 ครั้ง,,,,,,200,10000
+7549,通行证第一周任务,1007,2,2,,30,60,,挑战困难关卡60次,挑戰困難關卡60次,Challenge Elite level 60 times,Challenge Elite level 60 times,하드 스테이지 도전 60회,Desafie o nível Elite 60 vezes,ท้าทายระดับ Elite 60 ครั้ง,,,,,,200,20000
+7550,通行证第一周任务,1007,2,2,,85,30,,派遣任务完成30次,派遣任務完成30次,Complete Dispatch Quest 30 times,Complete Dispatch Quest 30 times,파견 퀘스트 30회 완료,Complete a missão Dispatch 30 vezes,ทำภารกิจจัดส่งให้สำเร็จ 30 ครั้ง,,,,,,100,
+7551,通行证第一周任务,1007,2,2,,21,3000,,消耗3000钻石,消耗3000鑽石,Spend 3000 diamonds,Spend 3000 diamonds,3000다이아 소모,Gaste 3000 diamantes,ใช้เงิน 3，000 เพชร,,,,,,200,
+7552,通行证第一周任务,1007,2,2,,67,7,,以太乐园通过7层,乙太樂園通過7層,Clear Aether Paradise level 7,Clear Aether Paradise level 7,에테르파라다이스 7층 클리어,Limpe o nível 7 do Aether Paradise,เคลียร์อีเธอร์พาราไดซ์ ระดับ 7,,,,,,200,
+7553,通行证第一周任务,1007,2,2,,86,6,{6=4},完成S以上派遣6次,完成S以上派遣6次,Complete S and above Dispatch Quest 6 times,Complete S and above Dispatch Quest 6 times,S급 이상 파견 6회 완료,Complete a missão S e acima Dispatch 6 vezes,ทำภารกิจส่งของ S ขึ้นไปให้สำเร็จ 6 ครั้ง,,,,,,200,
+,,,,,,,,,,,,,,,,,,,,,,
+7561,通行证第一周任务,1007,2,3,,17,3,,累计登录3天,累計登錄3天,Login 3 days in total,Tích luỹ đăng nhập 3 ngày,누적 3일 로그인,Login 3 dias no total,เข้าสู่ระบบรวม 3 วัน,,,,,,100,
+7562,通行证第一周任务,1007,2,3,,36,50,,精灵升级50次,精靈升級50次,Upgrade Pokémon 50 times.,Upgrade Pokémon 50 times.,포켓몬 50회 레벨업,Melhore os Pokémon 50 vezes.,อัพเกรดโปเกมอน 50 ครั้ง,,,,,,100,strengthen-1
+7563,通行证第一周任务,1007,2,3,,21,1000,,消耗1000钻石,消耗1000鑽石,Spend 1000 diamonds,Spend 1000 diamonds,1000다이아 소모,Gaste 1000 diamantes,ใช้เงิน 1，000 เพชร,,,,,,200,
+7564,通行证第一周任务,1007,2,3,,43,50,,竞技场积分50分,競技場積分50分,Arena Points:50pts,Arena Points:50pts,아레나 포인트 50점,Pontos de Arena:50pts,คะแนนอารีน่า: 50 คะแนน,,,,,,100,
+7565,通行证第一周任务,1007,2,3,,63,50000,,以太积分累计50000分,乙太積分累計50000分,Accumulate a total of 50000 Aether Points,Accumulate a total of 50000 Aether Points,에테르 포인트 누적 50000점,Acumule um total de 50000 pontos de éter,สะสมแต้ม Aether ทั้งหมด 50，000 แต้ม,,,,,,100,
+7566,通行证第一周任务,1007,2,3,,55,20,,公会捐献20次,公會捐獻20次,Donate 20 times,Donate 20 times,길드 기부 20회,Doe 20 vezes,บริจาค 20 ครั้ง,,,,,,100,
+7567,通行证第一周任务,1007,2,3,,50,20,,在钻石抽卡中抽卡20次,在鑽石抽卡中抽卡20次,Draw 20 times in Diamond Draw,Draw 20 times in Diamond Draw,다이아 뽑기 20회 진행,Desenhe 20 vezes no Diamond Draw,จับฉลาก 20 ครั้ง ใน Diamond Draw,,,,,,200,
+7568,通行证第一周任务,1007,2,3,,29,300,,挑战普通关卡300次,挑戰普通關卡300次,Fight in Normal level 300 times,Fight in Normal level 300 times,일반 스테이지 300회 도전,Lute no nível Normal 300 vezes,ต่อสู้ในระดับปกติ 300 ครั้ง,,,,,,200,10000
+7569,通行证第一周任务,1007,2,3,,30,60,,挑战困难关卡60次,挑戰困難關卡60次,Challenge Elite level 60 times,Challenge Elite level 60 times,하드 스테이지 도전 60회,Desafie o nível Elite 60 vezes,ท้าทายระดับ Elite 60 ครั้ง,,,,,,200,20000
+7570,通行证第一周任务,1007,2,3,,85,30,,派遣任务完成30次,派遣任務完成30次,Complete Dispatch Quest 30 times,Complete Dispatch Quest 30 times,파견 퀘스트 30회 완료,Complete a missão Dispatch 30 vezes,ทำภารกิจจัดส่งให้สำเร็จ 30 ครั้ง,,,,,,100,
+7571,通行证第一周任务,1007,2,3,,21,3000,,消耗3000钻石,消耗3000鑽石,Spend 3000 diamonds,Spend 3000 diamonds,3000다이아 소모,Gaste 3000 diamantes,ใช้เงิน 3，000 เพชร,,,,,,200,
+7572,通行证第一周任务,1007,2,3,,67,7,,以太乐园通过7层,乙太樂園通過7層,Clear Aether Paradise level 7,Clear Aether Paradise level 7,에테르파라다이스 7층 클리어,Limpe o nível 7 do Aether Paradise,เคลียร์อีเธอร์พาราไดซ์ ระดับ 7,,,,,,200,
+7573,通行证第一周任务,1007,2,3,,86,6,{6=4},完成S以上派遣6次,完成S以上派遣6次,Complete S and above Dispatch Quest 6 times,Complete S and above Dispatch Quest 6 times,S급 이상 파견 6회 완료,Complete a missão S e acima Dispatch 6 vezes,ทำภารกิจส่งของ S ขึ้นไปให้สำเร็จ 6 ครั้ง,,,,,,200,
+,,,,,,,,,,,,,,,,,,,,,,
+7581,通行证第一周任务,1007,2,4,,17,3,,累计登录3天,累計登錄3天,Login 3 days in total,Tích luỹ đăng nhập 3 ngày,누적 3일 로그인,Login 3 dias no total,เข้าสู่ระบบรวม 3 วัน,,,,,,100,
+7582,通行证第一周任务,1007,2,4,,36,50,,精灵升级50次,精靈升級50次,Upgrade Pokémon 50 times.,Upgrade Pokémon 50 times.,포켓몬 50회 레벨업,Melhore os Pokémon 50 vezes.,อัพเกรดโปเกมอน 50 ครั้ง,,,,,,100,strengthen-1
+7583,通行证第一周任务,1007,2,4,,21,1000,,消耗1000钻石,消耗1000鑽石,Spend 1000 diamonds,Spend 1000 diamonds,1000다이아 소모,Gaste 1000 diamantes,ใช้เงิน 1，000 เพชร,,,,,,200,
+7584,通行证第一周任务,1007,2,4,,43,50,,竞技场积分50分,競技場積分50分,Arena Points:50pts,Arena Points:50pts,아레나 포인트 50점,Pontos de Arena:50pts,คะแนนอารีน่า: 50 คะแนน,,,,,,100,
+7585,通行证第一周任务,1007,2,4,,63,50000,,以太积分累计50000分,乙太積分累計50000分,Accumulate a total of 50000 Aether Points,Accumulate a total of 50000 Aether Points,에테르 포인트 누적 50000점,Acumule um total de 50000 pontos de éter,สะสมแต้ม Aether ทั้งหมด 50，000 แต้ม,,,,,,100,
+7586,通行证第一周任务,1007,2,4,,55,20,,公会捐献20次,公會捐獻20次,Donate 20 times,Donate 20 times,길드 기부 20회,Doe 20 vezes,บริจาค 20 ครั้ง,,,,,,100,
+7587,通行证第一周任务,1007,2,4,,50,20,,在钻石抽卡中抽卡20次,在鑽石抽卡中抽卡20次,Draw 20 times in Diamond Draw,Draw 20 times in Diamond Draw,다이아 뽑기 20회 진행,Desenhe 20 vezes no Diamond Draw,จับฉลาก 20 ครั้ง ใน Diamond Draw,,,,,,200,
+7588,通行证第一周任务,1007,2,4,,29,300,,挑战普通关卡300次,挑戰普通關卡300次,Fight in Normal level 300 times,Fight in Normal level 300 times,일반 스테이지 300회 도전,Lute no nível Normal 300 vezes,ต่อสู้ในระดับปกติ 300 ครั้ง,,,,,,200,10000
+7589,通行证第一周任务,1007,2,4,,30,60,,挑战困难关卡60次,挑戰困難關卡60次,Challenge Elite level 60 times,Challenge Elite level 60 times,하드 스테이지 도전 60회,Desafie o nível Elite 60 vezes,ท้าทายระดับ Elite 60 ครั้ง,,,,,,200,20000
+7590,通行证第一周任务,1007,2,4,,85,30,,派遣任务完成30次,派遣任務完成30次,Complete Dispatch Quest 30 times,Complete Dispatch Quest 30 times,파견 퀘스트 30회 완료,Complete a missão Dispatch 30 vezes,ทำภารกิจจัดส่งให้สำเร็จ 30 ครั้ง,,,,,,100,
+7591,通行证第一周任务,1007,2,4,,21,3000,,消耗3000钻石,消耗3000鑽石,Spend 3000 diamonds,Spend 3000 diamonds,3000다이아 소모,Gaste 3000 diamantes,ใช้เงิน 3，000 เพชร,,,,,,200,
+7592,通行证第一周任务,1007,2,4,,67,7,,以太乐园通过7层,乙太樂園通過7層,Clear Aether Paradise level 7,Clear Aether Paradise level 7,에테르파라다이스 7층 클리어,Limpe o nível 7 do Aether Paradise,เคลียร์อีเธอร์พาราไดซ์ ระดับ 7,,,,,,200,
+7593,通行证第一周任务,1007,2,4,,86,6,{6=4},完成S以上派遣6次,完成S以上派遣6次,Complete S and above Dispatch Quest 6 times,Complete S and above Dispatch Quest 6 times,S급 이상 파견 6회 완료,Complete a missão S e acima Dispatch 6 vezes,ทำภารกิจส่งของ S ขึ้นไปให้สำเร็จ 6 ครั้ง,,,,,,200,
+,,,,,,,,,,,,,,,,,,,,,,
+7601,通行证第一周任务,1007,2,5,,17,3,,累计登录3天,累計登錄3天,Login 3 days in total,Tích luỹ đăng nhập 3 ngày,누적 3일 로그인,Login 3 dias no total,เข้าสู่ระบบรวม 3 วัน,,,,,,100,
+7602,通行证第一周任务,1007,2,5,,36,50,,精灵升级50次,精靈升級50次,Upgrade Pokémon 50 times.,Upgrade Pokémon 50 times.,포켓몬 50회 레벨업,Melhore os Pokémon 50 vezes.,อัพเกรดโปเกมอน 50 ครั้ง,,,,,,100,strengthen-1
+7603,通行证第一周任务,1007,2,5,,21,1000,,消耗1000钻石,消耗1000鑽石,Spend 1000 diamonds,Spend 1000 diamonds,1000다이아 소모,Gaste 1000 diamantes,ใช้เงิน 1，000 เพชร,,,,,,200,
+7604,通行证第一周任务,1007,2,5,,43,50,,竞技场积分50分,競技場積分50分,Arena Points:50pts,Arena Points:50pts,아레나 포인트 50점,Pontos de Arena:50pts,คะแนนอารีน่า: 50 คะแนน,,,,,,100,
+7605,通行证第一周任务,1007,2,5,,63,50000,,以太积分累计50000分,乙太積分累計50000分,Accumulate a total of 50000 Aether Points,Accumulate a total of 50000 Aether Points,에테르 포인트 누적 50000점,Acumule um total de 50000 pontos de éter,สะสมแต้ม Aether ทั้งหมด 50，000 แต้ม,,,,,,100,
+7606,通行证第一周任务,1007,2,5,,55,20,,公会捐献20次,公會捐獻20次,Donate 20 times,Donate 20 times,길드 기부 20회,Doe 20 vezes,บริจาค 20 ครั้ง,,,,,,100,
+7607,通行证第一周任务,1007,2,5,,50,20,,在钻石抽卡中抽卡20次,在鑽石抽卡中抽卡20次,Draw 20 times in Diamond Draw,Draw 20 times in Diamond Draw,다이아 뽑기 20회 진행,Desenhe 20 vezes no Diamond Draw,จับฉลาก 20 ครั้ง ใน Diamond Draw,,,,,,200,
+7608,通行证第一周任务,1007,2,5,,29,300,,挑战普通关卡300次,挑戰普通關卡300次,Fight in Normal level 300 times,Fight in Normal level 300 times,일반 스테이지 300회 도전,Lute no nível Normal 300 vezes,ต่อสู้ในระดับปกติ 300 ครั้ง,,,,,,200,10000
+7609,通行证第一周任务,1007,2,5,,30,60,,挑战困难关卡60次,挑戰困難關卡60次,Challenge Elite level 60 times,Challenge Elite level 60 times,하드 스테이지 도전 60회,Desafie o nível Elite 60 vezes,ท้าทายระดับ Elite 60 ครั้ง,,,,,,200,20000
+7610,通行证第一周任务,1007,2,5,,85,30,,派遣任务完成30次,派遣任務完成30次,Complete Dispatch Quest 30 times,Complete Dispatch Quest 30 times,파견 퀘스트 30회 완료,Complete a missão Dispatch 30 vezes,ทำภารกิจจัดส่งให้สำเร็จ 30 ครั้ง,,,,,,100,
+7611,通行证第一周任务,1007,2,5,,21,3000,,消耗3000钻石,消耗3000鑽石,Spend 3000 diamonds,Spend 3000 diamonds,3000다이아 소모,Gaste 3000 diamantes,ใช้เงิน 3，000 เพชร,,,,,,200,
+7612,通行证第一周任务,1007,2,5,,67,7,,以太乐园通过7层,乙太樂園通過7層,Clear Aether Paradise level 7,Clear Aether Paradise level 7,에테르파라다이스 7층 클리어,Limpe o nível 7 do Aether Paradise,เคลียร์อีเธอร์พาราไดซ์ ระดับ 7,,,,,,200,
+7613,通行证第一周任务,1007,2,5,,86,6,{6=4},完成S以上派遣6次,完成S以上派遣6次,Complete S and above Dispatch Quest 6 times,Complete S and above Dispatch Quest 6 times,S급 이상 파견 6회 완료,Complete a missão S e acima Dispatch 6 vezes,ทำภารกิจส่งของ S ขึ้นไปให้สำเร็จ 6 ครั้ง,,,,,,200,
+,,,,,,,,,,,,,,,,,,,,,,
+7621,通行证第一周任务,1007,2,6,,17,3,,累计登录3天,累計登錄3天,Login 3 days in total,Tích luỹ đăng nhập 3 ngày,누적 3일 로그인,Login 3 dias no total,เข้าสู่ระบบรวม 3 วัน,,,,,,100,
+7622,通行证第一周任务,1007,2,6,,36,50,,精灵升级50次,精靈升級50次,Upgrade Pokémon 50 times.,Upgrade Pokémon 50 times.,포켓몬 50회 레벨업,Melhore os Pokémon 50 vezes.,อัพเกรดโปเกมอน 50 ครั้ง,,,,,,100,strengthen-1
+7623,通行证第一周任务,1007,2,6,,21,1000,,消耗1000钻石,消耗1000鑽石,Spend 1000 diamonds,Spend 1000 diamonds,1000다이아 소모,Gaste 1000 diamantes,ใช้เงิน 1，000 เพชร,,,,,,200,
+7624,通行证第一周任务,1007,2,6,,43,50,,竞技场积分50分,競技場積分50分,Arena Points:50pts,Arena Points:50pts,아레나 포인트 50점,Pontos de Arena:50pts,คะแนนอารีน่า: 50 คะแนน,,,,,,100,
+7625,通行证第一周任务,1007,2,6,,63,50000,,以太积分累计50000分,乙太積分累計50000分,Accumulate a total of 50000 Aether Points,Accumulate a total of 50000 Aether Points,에테르 포인트 누적 50000점,Acumule um total de 50000 pontos de éter,สะสมแต้ม Aether ทั้งหมด 50，000 แต้ม,,,,,,100,
+7626,通行证第一周任务,1007,2,6,,55,20,,公会捐献20次,公會捐獻20次,Donate 20 times,Donate 20 times,길드 기부 20회,Doe 20 vezes,บริจาค 20 ครั้ง,,,,,,100,
+7627,通行证第一周任务,1007,2,6,,50,20,,在钻石抽卡中抽卡20次,在鑽石抽卡中抽卡20次,Draw 20 times in Diamond Draw,Draw 20 times in Diamond Draw,다이아 뽑기 20회 진행,Desenhe 20 vezes no Diamond Draw,จับฉลาก 20 ครั้ง ใน Diamond Draw,,,,,,200,
+7628,通行证第一周任务,1007,2,6,,29,300,,挑战普通关卡300次,挑戰普通關卡300次,Fight in Normal level 300 times,Fight in Normal level 300 times,일반 스테이지 300회 도전,Lute no nível Normal 300 vezes,ต่อสู้ในระดับปกติ 300 ครั้ง,,,,,,200,10000
+7629,通行证第一周任务,1007,2,6,,30,60,,挑战困难关卡60次,挑戰困難關卡60次,Challenge Elite level 60 times,Challenge Elite level 60 times,하드 스테이지 도전 60회,Desafie o nível Elite 60 vezes,ท้าทายระดับ Elite 60 ครั้ง,,,,,,200,20000
+7630,通行证第一周任务,1007,2,6,,85,30,,派遣任务完成30次,派遣任務完成30次,Complete Dispatch Quest 30 times,Complete Dispatch Quest 30 times,파견 퀘스트 30회 완료,Complete a missão Dispatch 30 vezes,ทำภารกิจจัดส่งให้สำเร็จ 30 ครั้ง,,,,,,100,
+7631,通行证第一周任务,1007,2,6,,21,3000,,消耗3000钻石,消耗3000鑽石,Spend 3000 diamonds,Spend 3000 diamonds,3000다이아 소모,Gaste 3000 diamantes,ใช้เงิน 3，000 เพชร,,,,,,200,
+7632,通行证第一周任务,1007,2,6,,67,7,,以太乐园通过7层,乙太樂園通過7層,Clear Aether Paradise level 7,Clear Aether Paradise level 7,에테르파라다이스 7층 클리어,Limpe o nível 7 do Aether Paradise,เคลียร์อีเธอร์พาราไดซ์ ระดับ 7,,,,,,200,
+7633,通行证第一周任务,1007,2,6,,86,6,{6=4},完成S以上派遣6次,完成S以上派遣6次,Complete S and above Dispatch Quest 6 times,Complete S and above Dispatch Quest 6 times,S급 이상 파견 6회 완료,Complete a missão S e acima Dispatch 6 vezes,ทำภารกิจส่งของ S ขึ้นไปให้สำเร็จ 6 ครั้ง,,,,,,200,
+,,,,,,,,,,,,,,,,,,,,,,
+7641,通行证第一周任务,1007,2,7,,17,3,,累计登录3天,累計登錄3天,Login 3 days in total,Tích luỹ đăng nhập 3 ngày,누적 3일 로그인,Login 3 dias no total,เข้าสู่ระบบรวม 3 วัน,,,,,,100,
+7642,通行证第一周任务,1007,2,7,,36,50,,精灵升级50次,精靈升級50次,Upgrade Pokémon 50 times.,Upgrade Pokémon 50 times.,포켓몬 50회 레벨업,Melhore os Pokémon 50 vezes.,อัพเกรดโปเกมอน 50 ครั้ง,,,,,,100,strengthen-1
+7643,通行证第一周任务,1007,2,7,,21,1000,,消耗1000钻石,消耗1000鑽石,Spend 1000 diamonds,Spend 1000 diamonds,1000다이아 소모,Gaste 1000 diamantes,ใช้เงิน 1，000 เพชร,,,,,,200,
+7644,通行证第一周任务,1007,2,7,,43,50,,竞技场积分50分,競技場積分50分,Arena Points:50pts,Arena Points:50pts,아레나 포인트 50점,Pontos de Arena:50pts,คะแนนอารีน่า: 50 คะแนน,,,,,,100,
+7645,通行证第一周任务,1007,2,7,,63,50000,,以太积分累计50000分,乙太積分累計50000分,Accumulate a total of 50000 Aether Points,Accumulate a total of 50000 Aether Points,에테르 포인트 누적 50000점,Acumule um total de 50000 pontos de éter,สะสมแต้ม Aether ทั้งหมด 50，000 แต้ม,,,,,,100,
+7646,通行证第一周任务,1007,2,7,,55,20,,公会捐献20次,公會捐獻20次,Donate 20 times,Donate 20 times,길드 기부 20회,Doe 20 vezes,บริจาค 20 ครั้ง,,,,,,100,
+7647,通行证第一周任务,1007,2,7,,50,20,,在钻石抽卡中抽卡20次,在鑽石抽卡中抽卡20次,Draw 20 times in Diamond Draw,Draw 20 times in Diamond Draw,다이아 뽑기 20회 진행,Desenhe 20 vezes no Diamond Draw,จับฉลาก 20 ครั้ง ใน Diamond Draw,,,,,,200,
+7648,通行证第一周任务,1007,2,7,,29,300,,挑战普通关卡300次,挑戰普通關卡300次,Fight in Normal level 300 times,Fight in Normal level 300 times,일반 스테이지 300회 도전,Lute no nível Normal 300 vezes,ต่อสู้ในระดับปกติ 300 ครั้ง,,,,,,200,10000
+7649,通行证第一周任务,1007,2,7,,30,60,,挑战困难关卡60次,挑戰困難關卡60次,Challenge Elite level 60 times,Challenge Elite level 60 times,하드 스테이지 도전 60회,Desafie o nível Elite 60 vezes,ท้าทายระดับ Elite 60 ครั้ง,,,,,,200,20000
+7650,通行证第一周任务,1007,2,7,,85,30,,派遣任务完成30次,派遣任務完成30次,Complete Dispatch Quest 30 times,Complete Dispatch Quest 30 times,파견 퀘스트 30회 완료,Complete a missão Dispatch 30 vezes,ทำภารกิจจัดส่งให้สำเร็จ 30 ครั้ง,,,,,,100,
+7651,通行证第一周任务,1007,2,7,,21,3000,,消耗3000钻石,消耗3000鑽石,Spend 3000 diamonds,Spend 3000 diamonds,3000다이아 소모,Gaste 3000 diamantes,ใช้เงิน 3，000 เพชร,,,,,,200,
+7652,通行证第一周任务,1007,2,7,,67,7,,以太乐园通过7层,乙太樂園通過7層,Clear Aether Paradise level 7,Clear Aether Paradise level 7,에테르파라다이스 7층 클리어,Limpe o nível 7 do Aether Paradise,เคลียร์อีเธอร์พาราไดซ์ ระดับ 7,,,,,,200,
+7653,通行证第一周任务,1007,2,7,,86,6,{6=4},完成S以上派遣6次,完成S以上派遣6次,Complete S and above Dispatch Quest 6 times,Complete S and above Dispatch Quest 6 times,S급 이상 파견 6회 완료,Complete a missão S e acima Dispatch 6 vezes,ทำภารกิจส่งของ S ขึ้นไปให้สำเร็จ 6 ครั้ง,,,,,,200,
+,,,,,,,,,,,,,,,,,,,,,,
+7661,通行证第一周任务,1007,2,8,,17,3,,累计登录3天,累計登錄3天,Login 3 days in total,Tích luỹ đăng nhập 3 ngày,누적 3일 로그인,Login 3 dias no total,เข้าสู่ระบบรวม 3 วัน,,,,,,100,
+7662,通行证第一周任务,1007,2,8,,36,50,,精灵升级50次,精靈升級50次,Upgrade Pokémon 50 times.,Upgrade Pokémon 50 times.,포켓몬 50회 레벨업,Melhore os Pokémon 50 vezes.,อัพเกรดโปเกมอน 50 ครั้ง,,,,,,100,strengthen-1
+7663,通行证第一周任务,1007,2,8,,21,1000,,消耗1000钻石,消耗1000鑽石,Spend 1000 diamonds,Spend 1000 diamonds,1000다이아 소모,Gaste 1000 diamantes,ใช้เงิน 1，000 เพชร,,,,,,200,
+7664,通行证第一周任务,1007,2,8,,43,50,,竞技场积分50分,競技場積分50分,Arena Points:50pts,Arena Points:50pts,아레나 포인트 50점,Pontos de Arena:50pts,คะแนนอารีน่า: 50 คะแนน,,,,,,100,
+7665,通行证第一周任务,1007,2,8,,63,50000,,以太积分累计50000分,乙太積分累計50000分,Accumulate a total of 50000 Aether Points,Accumulate a total of 50000 Aether Points,에테르 포인트 누적 50000점,Acumule um total de 50000 pontos de éter,สะสมแต้ม Aether ทั้งหมด 50，000 แต้ม,,,,,,100,
+7666,通行证第一周任务,1007,2,8,,55,20,,公会捐献20次,公會捐獻20次,Donate 20 times,Donate 20 times,길드 기부 20회,Doe 20 vezes,บริจาค 20 ครั้ง,,,,,,100,
+7667,通行证第一周任务,1007,2,8,,50,20,,在钻石抽卡中抽卡20次,在鑽石抽卡中抽卡20次,Draw 20 times in Diamond Draw,Draw 20 times in Diamond Draw,다이아 뽑기 20회 진행,Desenhe 20 vezes no Diamond Draw,จับฉลาก 20 ครั้ง ใน Diamond Draw,,,,,,200,
+7668,通行证第一周任务,1007,2,8,,29,300,,挑战普通关卡300次,挑戰普通關卡300次,Fight in Normal level 300 times,Fight in Normal level 300 times,일반 스테이지 300회 도전,Lute no nível Normal 300 vezes,ต่อสู้ในระดับปกติ 300 ครั้ง,,,,,,200,10000
+7669,通行证第一周任务,1007,2,8,,30,60,,挑战困难关卡60次,挑戰困難關卡60次,Challenge Elite level 60 times,Challenge Elite level 60 times,하드 스테이지 도전 60회,Desafie o nível Elite 60 vezes,ท้าทายระดับ Elite 60 ครั้ง,,,,,,200,20000
+7670,通行证第一周任务,1007,2,8,,85,30,,派遣任务完成30次,派遣任務完成30次,Complete Dispatch Quest 30 times,Complete Dispatch Quest 30 times,파견 퀘스트 30회 완료,Complete a missão Dispatch 30 vezes,ทำภารกิจจัดส่งให้สำเร็จ 30 ครั้ง,,,,,,100,
+7671,通行证第一周任务,1007,2,8,,21,3000,,消耗3000钻石,消耗3000鑽石,Spend 3000 diamonds,Spend 3000 diamonds,3000다이아 소모,Gaste 3000 diamantes,ใช้เงิน 3，000 เพชร,,,,,,200,
+7672,通行证第一周任务,1007,2,8,,67,7,,以太乐园通过7层,乙太樂園通過7層,Clear Aether Paradise level 7,Clear Aether Paradise level 7,에테르파라다이스 7층 클리어,Limpe o nível 7 do Aether Paradise,เคลียร์อีเธอร์พาราไดซ์ ระดับ 7,,,,,,200,
+7673,通行证第一周任务,1007,2,8,,86,6,{6=4},完成S以上派遣6次,完成S以上派遣6次,Complete S and above Dispatch Quest 6 times,Complete S and above Dispatch Quest 6 times,S급 이상 파견 6회 완료,Complete a missão S e acima Dispatch 6 vezes,ทำภารกิจส่งของ S ขึ้นไปให้สำเร็จ 6 ครั้ง,,,,,,200,
+,,,,,,,,,,,,,,,,,,,,,,
+7681,通行证第一周任务,1007,2,9,,17,3,,累计登录3天,累計登錄3天,Login 3 days in total,Tích luỹ đăng nhập 3 ngày,누적 3일 로그인,Login 3 dias no total,เข้าสู่ระบบรวม 3 วัน,,,,,,100,
+7682,通行证第一周任务,1007,2,9,,36,50,,精灵升级50次,精靈升級50次,Upgrade Pokémon 50 times.,Upgrade Pokémon 50 times.,포켓몬 50회 레벨업,Melhore os Pokémon 50 vezes.,อัพเกรดโปเกมอน 50 ครั้ง,,,,,,100,strengthen-1
+7683,通行证第一周任务,1007,2,9,,21,1000,,消耗1000钻石,消耗1000鑽石,Spend 1000 diamonds,Spend 1000 diamonds,1000다이아 소모,Gaste 1000 diamantes,ใช้เงิน 1，000 เพชร,,,,,,200,
+7684,通行证第一周任务,1007,2,9,,43,50,,竞技场积分50分,競技場積分50分,Arena Points:50pts,Arena Points:50pts,아레나 포인트 50점,Pontos de Arena:50pts,คะแนนอารีน่า: 50 คะแนน,,,,,,100,
+7685,通行证第一周任务,1007,2,9,,63,50000,,以太积分累计50000分,乙太積分累計50000分,Accumulate a total of 50000 Aether Points,Accumulate a total of 50000 Aether Points,에테르 포인트 누적 50000점,Acumule um total de 50000 pontos de éter,สะสมแต้ม Aether ทั้งหมด 50，000 แต้ม,,,,,,100,
+7686,通行证第一周任务,1007,2,9,,55,20,,公会捐献20次,公會捐獻20次,Donate 20 times,Donate 20 times,길드 기부 20회,Doe 20 vezes,บริจาค 20 ครั้ง,,,,,,100,
+7687,通行证第一周任务,1007,2,9,,50,20,,在钻石抽卡中抽卡20次,在鑽石抽卡中抽卡20次,Draw 20 times in Diamond Draw,Draw 20 times in Diamond Draw,다이아 뽑기 20회 진행,Desenhe 20 vezes no Diamond Draw,จับฉลาก 20 ครั้ง ใน Diamond Draw,,,,,,200,
+7688,通行证第一周任务,1007,2,9,,29,300,,挑战普通关卡300次,挑戰普通關卡300次,Fight in Normal level 300 times,Fight in Normal level 300 times,일반 스테이지 300회 도전,Lute no nível Normal 300 vezes,ต่อสู้ในระดับปกติ 300 ครั้ง,,,,,,200,10000
+7689,通行证第一周任务,1007,2,9,,30,60,,挑战困难关卡60次,挑戰困難關卡60次,Challenge Elite level 60 times,Challenge Elite level 60 times,하드 스테이지 도전 60회,Desafie o nível Elite 60 vezes,ท้าทายระดับ Elite 60 ครั้ง,,,,,,200,20000
+7690,通行证第一周任务,1007,2,9,,85,30,,派遣任务完成30次,派遣任務完成30次,Complete Dispatch Quest 30 times,Complete Dispatch Quest 30 times,파견 퀘스트 30회 완료,Complete a missão Dispatch 30 vezes,ทำภารกิจจัดส่งให้สำเร็จ 30 ครั้ง,,,,,,100,
+7691,通行证第一周任务,1007,2,9,,21,3000,,消耗3000钻石,消耗3000鑽石,Spend 3000 diamonds,Spend 3000 diamonds,3000다이아 소모,Gaste 3000 diamantes,ใช้เงิน 3，000 เพชร,,,,,,200,
+7692,通行证第一周任务,1007,2,9,,67,7,,以太乐园通过7层,乙太樂園通過7層,Clear Aether Paradise level 7,Clear Aether Paradise level 7,에테르파라다이스 7층 클리어,Limpe o nível 7 do Aether Paradise,เคลียร์อีเธอร์พาราไดซ์ ระดับ 7,,,,,,200,
+7693,通行证第一周任务,1007,2,9,,86,6,{6=4},完成S以上派遣6次,完成S以上派遣6次,Complete S and above Dispatch Quest 6 times,Complete S and above Dispatch Quest 6 times,S급 이상 파견 6회 완료,Complete a missão S e acima Dispatch 6 vezes,ทำภารกิจส่งของ S ขึ้นไปให้สำเร็จ 6 ครั้ง,,,,,,200,
+,,,,,,,,,,,,,,,,,,,,,,
+7701,通行证第一周任务,1007,2,10,,17,3,,累计登录3天,累計登錄3天,Login 3 days in total,Tích luỹ đăng nhập 3 ngày,누적 3일 로그인,Login 3 dias no total,เข้าสู่ระบบรวม 3 วัน,,,,,,100,
+7702,通行证第一周任务,1007,2,10,,36,50,,精灵升级50次,精靈升級50次,Upgrade Pokémon 50 times.,Upgrade Pokémon 50 times.,포켓몬 50회 레벨업,Melhore os Pokémon 50 vezes.,อัพเกรดโปเกมอน 50 ครั้ง,,,,,,100,strengthen-1
+7703,通行证第一周任务,1007,2,10,,21,1000,,消耗1000钻石,消耗1000鑽石,Spend 1000 diamonds,Spend 1000 diamonds,1000다이아 소모,Gaste 1000 diamantes,ใช้เงิน 1，000 เพชร,,,,,,200,
+7704,通行证第一周任务,1007,2,10,,43,50,,竞技场积分50分,競技場積分50分,Arena Points:50pts,Arena Points:50pts,아레나 포인트 50점,Pontos de Arena:50pts,คะแนนอารีน่า: 50 คะแนน,,,,,,100,
+7705,通行证第一周任务,1007,2,10,,63,50000,,以太积分累计50000分,乙太積分累計50000分,Accumulate a total of 50000 Aether Points,Accumulate a total of 50000 Aether Points,에테르 포인트 누적 50000점,Acumule um total de 50000 pontos de éter,สะสมแต้ม Aether ทั้งหมด 50，000 แต้ม,,,,,,100,
+7706,通行证第一周任务,1007,2,10,,55,20,,公会捐献20次,公會捐獻20次,Donate 20 times,Donate 20 times,길드 기부 20회,Doe 20 vezes,บริจาค 20 ครั้ง,,,,,,100,
+7707,通行证第一周任务,1007,2,10,,50,20,,在钻石抽卡中抽卡20次,在鑽石抽卡中抽卡20次,Draw 20 times in Diamond Draw,Draw 20 times in Diamond Draw,다이아 뽑기 20회 진행,Desenhe 20 vezes no Diamond Draw,จับฉลาก 20 ครั้ง ใน Diamond Draw,,,,,,200,
+7708,通行证第一周任务,1007,2,10,,29,300,,挑战普通关卡300次,挑戰普通關卡300次,Fight in Normal level 300 times,Fight in Normal level 300 times,일반 스테이지 300회 도전,Lute no nível Normal 300 vezes,ต่อสู้ในระดับปกติ 300 ครั้ง,,,,,,200,10000
+7709,通行证第一周任务,1007,2,10,,30,60,,挑战困难关卡60次,挑戰困難關卡60次,Challenge Elite level 60 times,Challenge Elite level 60 times,하드 스테이지 도전 60회,Desafie o nível Elite 60 vezes,ท้าทายระดับ Elite 60 ครั้ง,,,,,,200,20000
+7710,通行证第一周任务,1007,2,10,,85,30,,派遣任务完成30次,派遣任務完成30次,Complete Dispatch Quest 30 times,Complete Dispatch Quest 30 times,파견 퀘스트 30회 완료,Complete a missão Dispatch 30 vezes,ทำภารกิจจัดส่งให้สำเร็จ 30 ครั้ง,,,,,,100,
+7711,通行证第一周任务,1007,2,10,,21,3000,,消耗3000钻石,消耗3000鑽石,Spend 3000 diamonds,Spend 3000 diamonds,3000다이아 소모,Gaste 3000 diamantes,ใช้เงิน 3，000 เพชร,,,,,,200,
+7712,通行证第一周任务,1007,2,10,,67,7,,以太乐园通过7层,乙太樂園通過7層,Clear Aether Paradise level 7,Clear Aether Paradise level 7,에테르파라다이스 7층 클리어,Limpe o nível 7 do Aether Paradise,เคลียร์อีเธอร์พาราไดซ์ ระดับ 7,,,,,,200,
+7713,通行证第一周任务,1007,2,10,,86,6,{6=4},完成S以上派遣6次,完成S以上派遣6次,Complete S and above Dispatch Quest 6 times,Complete S and above Dispatch Quest 6 times,S급 이상 파견 6회 완료,Complete a missão S e acima Dispatch 6 vezes,ทำภารกิจส่งของ S ขึ้นไปให้สำเร็จ 6 ครั้ง,,,,,,200,
+,,,,,,,,,,,,,,,,,,,,,,
+7721,通行证第一周任务,1007,2,11,,17,3,,累计登录3天,累計登錄3天,Login 3 days in total,Tích luỹ đăng nhập 3 ngày,누적 3일 로그인,Login 3 dias no total,เข้าสู่ระบบรวม 3 วัน,,,,,,100,
+7722,通行证第一周任务,1007,2,11,,36,50,,精灵升级50次,精靈升級50次,Upgrade Pokémon 50 times.,Upgrade Pokémon 50 times.,포켓몬 50회 레벨업,Melhore os Pokémon 50 vezes.,อัพเกรดโปเกมอน 50 ครั้ง,,,,,,100,strengthen-1
+7723,通行证第一周任务,1007,2,11,,21,1000,,消耗1000钻石,消耗1000鑽石,Spend 1000 diamonds,Spend 1000 diamonds,1000다이아 소모,Gaste 1000 diamantes,ใช้เงิน 1，000 เพชร,,,,,,200,
+7724,通行证第一周任务,1007,2,11,,43,50,,竞技场积分50分,競技場積分50分,Arena Points:50pts,Arena Points:50pts,아레나 포인트 50점,Pontos de Arena:50pts,คะแนนอารีน่า: 50 คะแนน,,,,,,100,
+7725,通行证第一周任务,1007,2,11,,63,50000,,以太积分累计50000分,乙太積分累計50000分,Accumulate a total of 50000 Aether Points,Accumulate a total of 50000 Aether Points,에테르 포인트 누적 50000점,Acumule um total de 50000 pontos de éter,สะสมแต้ม Aether ทั้งหมด 50，000 แต้ม,,,,,,100,
+7726,通行证第一周任务,1007,2,11,,55,20,,公会捐献20次,公會捐獻20次,Donate 20 times,Donate 20 times,길드 기부 20회,Doe 20 vezes,บริจาค 20 ครั้ง,,,,,,100,
+7727,通行证第一周任务,1007,2,11,,50,20,,在钻石抽卡中抽卡20次,在鑽石抽卡中抽卡20次,Draw 20 times in Diamond Draw,Draw 20 times in Diamond Draw,다이아 뽑기 20회 진행,Desenhe 20 vezes no Diamond Draw,จับฉลาก 20 ครั้ง ใน Diamond Draw,,,,,,200,
+7728,通行证第一周任务,1007,2,11,,29,300,,挑战普通关卡300次,挑戰普通關卡300次,Fight in Normal level 300 times,Fight in Normal level 300 times,일반 스테이지 300회 도전,Lute no nível Normal 300 vezes,ต่อสู้ในระดับปกติ 300 ครั้ง,,,,,,200,10000
+7729,通行证第一周任务,1007,2,11,,30,60,,挑战困难关卡60次,挑戰困難關卡60次,Challenge Elite level 60 times,Challenge Elite level 60 times,하드 스테이지 도전 60회,Desafie o nível Elite 60 vezes,ท้าทายระดับ Elite 60 ครั้ง,,,,,,200,20000
+7730,通行证第一周任务,1007,2,11,,85,30,,派遣任务完成30次,派遣任務完成30次,Complete Dispatch Quest 30 times,Complete Dispatch Quest 30 times,파견 퀘스트 30회 완료,Complete a missão Dispatch 30 vezes,ทำภารกิจจัดส่งให้สำเร็จ 30 ครั้ง,,,,,,100,
+7731,通行证第一周任务,1007,2,11,,21,3000,,消耗3000钻石,消耗3000鑽石,Spend 3000 diamonds,Spend 3000 diamonds,3000다이아 소모,Gaste 3000 diamantes,ใช้เงิน 3，000 เพชร,,,,,,200,
+7732,通行证第一周任务,1007,2,11,,67,7,,以太乐园通过7层,乙太樂園通過7層,Clear Aether Paradise level 7,Clear Aether Paradise level 7,에테르파라다이스 7층 클리어,Limpe o nível 7 do Aether Paradise,เคลียร์อีเธอร์พาราไดซ์ ระดับ 7,,,,,,200,
+7733,通行证第一周任务,1007,2,11,,86,6,{6=4},完成S以上派遣6次,完成S以上派遣6次,Complete S and above Dispatch Quest 6 times,Complete S and above Dispatch Quest 6 times,S급 이상 파견 6회 완료,Complete a missão S e acima Dispatch 6 vezes,ทำภารกิจส่งของ S ขึ้นไปให้สำเร็จ 6 ครั้ง,,,,,,200,

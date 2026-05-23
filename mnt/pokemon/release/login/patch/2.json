@@ -1,0 +1,18 @@
+{
+    "files": [
+        {
+            "patch": 2, 
+            "md5": "5565c0de68f8e13e0155489cd83e5c00", 
+            "name": "res/version.plist", 
+            "size": 994
+        }, 
+        {
+            "patch": 2, 
+            "md5": "e01af4df123105062bff9423d1bc3268", 
+            "name": "src/app.views.city.card.star_changestarskill", 
+            "size": 11483
+        }
+    ], 
+    "svn_version": "54539", 
+    "git_version": "175bed51520de09c6020d19bcaecc21834fcd51b"
+}

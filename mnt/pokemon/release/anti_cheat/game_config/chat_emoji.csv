@@ -1,0 +1,67 @@
+变量名,key,text,_text,text_tw,text_en,text_vn,text_kr,text_pt,text_th,tab,resource
+默认值,"""""","""""","""""","""""","""""","""""","""""","""""","""""",<1>,""""""
+ID,关键字,绿字标记,绿字标记,绿字标记,绿字标记,绿字标记,绿字标记_韩,绿字标记_韩,绿字标记_韩,页签显示;内容读 emojiTab,表情资源
+1,sad,Upset,难过,難過,Upset,Buồn bã,화남,Chateado,เศร้าใจ,<1>,config/chatemoji/icon_bq_1@.png
+2,cool,Trying to Impress,耍帅,耍帥,Trying to Impress,Cố gắng gây ấn tượng,인상을 주려고 함,Tentando impressionar,พยายามทำให้ประทับใจ,<1>,config/chatemoji/icon_bq_2@.png
+3,lovely,Gentle,乖巧,乖巧,Gentle,Nhẹ nhàng,부드러운,Gentil,อ่อนโยน,<1>,config/chatemoji/icon_bq_3@.png
+4,no,I reject!,我拒绝！,我拒絕！,I reject!,Tôi từ chối!,거절합니다!,Eu rejeito!,ฉันไม่เอา!,<1>,config/chatemoji/icon_bq_4@.png
+5,gdnt,Goodnight,晚安,晚安,Goodnight,Chúc ngủ ngon,잘 자요,Boa noite,ราตรีสวัสดิ์,<1>,config/chatemoji/icon_bq_5@.png
+6,exme,I'm sorry,不好意思,不好意思,I'm sorry,Tôi xin lỗi,미안해요,Me desculpe,ขอโทษนะ,<1>,config/chatemoji/icon_bq_6@.png
+7,ei,Hey!!,诶！！,誒！！,Hey!!,Này!!,야!!,Ei!!,เฮ้!!,<1>,config/chatemoji/icon_bq_7@.png
+8,face1,face1,鬼脸,鬼臉,face1,mặt1,얼굴1,rosto1,ใบหน้า1,<1>,config/chatemoji/icon_bq_8@.png
+9,face2,face2,鬼脸,鬼臉,face2,mặt2,얼굴2,rosto2,ใบหน้า2,<1>,config/chatemoji/icon_bq_9@.png
+10,face3,face3,鬼脸,鬼臉,face3,mặt3,얼굴3,rosto3,ใบหน้า3,<1>,config/chatemoji/icon_bq_10@.png
+11,face4,face4,鬼脸,鬼臉,face4,mặt4,얼굴4,rosto4,ใบหน้า4,<1>,config/chatemoji/icon_bq_11@.png
+12,back,back,回头,回頭,back,lưng,등,costas,หลัง,<1>,config/chatemoji/icon_bq_12@.png
+13,weapon,weapon,全副武装,全副武裝,weapon,vũ khí,무기,arma,อาวุธ,<1>,config/chatemoji/icon_bq_13@.png
+14,drink,drink,吸,吸,drink,đồ uống,음료,bebida,เครื่องดื่ม,<1>,config/chatemoji/icon_bq_14@.png
+15,lovely,lovely,可爱,可愛,lovely,dễ thương,사랑스러움,adorável,น่ารัก,<1>,config/chatemoji/icon_bq_15@.png
+16,swim,swim,游泳,游泳,swim,bơi,수영,nadar,ว่ายน้ำ,<1>,config/chatemoji/icon_bq_16@.png
+17,fool,fool,发呆,發呆,fool,ngốc,바보,tolo,โง่,<1>,config/chatemoji/icon_bq_17@.png
+18,look,look,我看看,我看看,look,nhìn,바라보다,olhar,มอง,<1>,config/chatemoji/icon_bq_18@.png
+19,come,come,来呀,來呀,come,đến đây,와,venha,มา,<1>,config/chatemoji/icon_bq_19@.png
+20,what,what,啥？,啥？,what,cái gì,뭐야,o quê,อะไรนะ,<1>,config/chatemoji/icon_bq_20@.png
+21,yahoo,yahoo,吖吼,吖吼,yahoo,yahoo,야호,iupii,เย้,<1>,config/chatemoji/icon_bq_21@.png
+22,sat,sat,坐,坐,sat,ngồi,앉음,sentou,นั่ง,<1>,config/chatemoji/icon_bq_22@.png
+23,go,go,走,走,go,đi,가자,ir,ไป,<1>,config/chatemoji/icon_bq_23@.png
+24,handsom,handsom,帅气登场,帥氣登場,handsom,đẹp trai,잘생김,bonito,หล่อ,<1>,config/chatemoji/icon_bq_24@.png
+25,happy,happy,开心,開心,happy,vui vẻ,행복함,feliz,มีความสุข,<1>,config/chatemoji/icon_bq_25@.png
+26,morning,morning,早,早,morning,buổi sáng,아침,manhã,ตอนเช้า,<1>,config/chatemoji/icon_bq_26@.png
+27,sit,sit,坐好,坐好,sit,ngồi xuống,앉다,sentar,นั่งลง,<1>,config/chatemoji/icon_bq_27@.png
+28,hello,hello,你好啊,你好啊,hello,xin chào,안녕,olá,สวัสดี,<1>,config/chatemoji/icon_bq_28@.png
+29,eihei,eihei,诶嘿,誒嘿,eihei,eihei,에이헤이,eihei,เอย์เฮย์,<1>,config/chatemoji/icon_bq_29@.png
+30,heart,heart,比心,比心,heart,trái tim,하트,coração,หัวใจ,<1>,config/chatemoji/icon_bq_30@.png
+31,kun,kun,困,困,kun,kun,군,kun,คุง,<1>,config/chatemoji/icon_bq_mmx1.png
+32,high,high,狂喜,狂喜,high,cao,높음,alto,สูง,<1>,config/chatemoji/icon_bq_mmx2.png
+33,quiet,quiet,安详,安詳,quiet,yên lặng,조용히,silêncio,เงียบ,<1>,config/chatemoji/icon_bq_mmx3.png
+34,amazing,amazing,惊,驚,amazing,tuyệt vời,놀라워,incrível,น่าทึ่ง,<1>,config/chatemoji/icon_bq_mmx4.png
+35,pride,pride,自豪,自豪,pride,tự hào,자랑,orgulho,ภูมิใจ,<1>,config/chatemoji/icon_bq_mmx5.png
+36,away,away,哼,哼,away,đi xa,멀리 가,embora,ไปให้ไกล,<1>,config/chatemoji/icon_bq_mmx6.png
+37,increas1,increas1,发呆波加曼版,發呆波加曼版,increas1,increas1,increas1,increas1,increas1,<2>,config/chatemoji/icon_sd_bjm.png
+38,increas2,increas2,发呆耿鬼版,發呆耿鬼版,increas2,increas2,increas2,increas2,increas2,<2>,config/chatemoji/icon_sd_gs.png
+39,increas3,increas3,发呆杰尼龟版,發呆傑尼龜版,increas3,increas3,increas3,increas3,increas3,<2>,config/chatemoji/icon_sd_jng.png
+40,increas4,increas4,发呆喵喵版,發呆喵喵版,increas4,increas4,increas4,increas4,increas4,<2>,config/chatemoji/icon_sd_mm.png
+41,increas5,increas5,发呆木木枭版,發呆木木梟版,increas5,increas5,increas5,increas5,increas5,<2>,config/chatemoji/icon_sd_mmx.png
+42,increas6,increas6,发呆妙蛙种子版,發呆妙蛙種子版,increas6,increas6,increas6,increas6,increas6,<2>,config/chatemoji/icon_sd_mwzz.png
+43,increas7,increas7,发呆皮卡丘版,發呆皮卡丘版,increas7,increas7,increas7,increas7,increas7,<2>,config/chatemoji/icon_sd_pkq.png
+44,increas8,increas8,发呆小火龙版,發呆小火龍版,increas8,increas8,increas8,increas8,increas8,<2>,config/chatemoji/icon_sd_xhl.png
+45,increas9,increas9,发呆伊布版,發呆伊布版,increas9,increas9,increas9,increas9,increas9,<2>,config/chatemoji/icon_sd_yb.png
+46,increas10,increas10,发呆月精灵版,發呆月精靈版,increas10,increas10,increas10,increas10,increas10,<2>,config/chatemoji/icon_sd_yjl.png
+47,increas11,increas11,发呆沼跃鱼版,發呆沼躍魚版,increas11,increas11,increas11,increas11,increas11,<2>,config/chatemoji/icon_sd_zyy.png
+48,increas12,increas12,发呆呆呆兽版,發呆沼躍魚版,increas12,increas12,increas12,increas12,increas12,<2>,config/chatemoji/icon_sd_dds.png
+49,increas13,increas13,发呆可达鸭版,發呆沼躍魚版,increas13,increas13,increas13,increas13,increas13,<2>,config/chatemoji/icon_sd_kdy.png
+50,increas14,increas14,发呆谜你Q版,發呆沼躍魚版,increas14,increas14,increas14,increas14,increas14,<2>,config/chatemoji/icon_sd_mnq.png
+51,increas15,increas15,我服了,發呆沼躍魚版,increas15,increas15,increas15,increas15,increas15,<2>,config/chatemoji/icon_bq_sst1.png
+52,increas16,increas16,给你一个啵啵,發呆沼躍魚版,increas16,increas16,increas16,increas16,increas16,<2>,config/chatemoji/icon_bq_sst2.png
+53,increas17,increas17,八嘎呀rua,發呆沼躍魚版,increas17,increas17,increas17,increas17,increas17,<2>,config/chatemoji/icon_bq_sst3.png
+54,increas18,increas18,不服单挑啊,發呆沼躍魚版,increas18,increas18,increas18,increas18,increas18,<2>,config/chatemoji/icon_bq_sst4.png
+55,increas19,increas19,小飞棍来咯,發呆沼躍魚版,increas19,increas19,increas19,increas19,increas19,<2>,config/chatemoji/icon_bq_sst5.png
+56,increas20,increas20,我去买个橘子,發呆沼躍魚版,increas20,increas20,increas20,increas20,increas20,<2>,config/chatemoji/icon_bq_sst6.png
+57,increas21,increas21,偷鸡摸狗,發呆沼躍魚版,increas21,increas21,increas21,increas21,increas21,<2>,config/chatemoji/icon_bq_sst7.png
+58,increas22,increas22,快跑有狗追！,發呆沼躍魚版,increas22,increas22,increas22,increas22,increas22,<2>,config/chatemoji/icon_bq_sst8.png
+59,increas23,increas23,回来我再揍你,發呆沼躍魚版,increas23,increas23,increas23,increas23,increas23,<2>,config/chatemoji/icon_bq_sst9.png
+60,increas24,increas23,都给我嗨起来,發呆沼躍魚版,increas23,increas23,increas23,increas23,increas23,<2>,config/chatemoji/icon_bq_hql.png
+61,increas25,increas23,我有社交恐惧症,發呆沼躍魚版,increas23,increas23,increas23,increas23,increas23,<2>,config/chatemoji/icon_bq_sn.png
+62,increas26,increas23,跟哥哥贴贴,發呆沼躍魚版,increas23,increas23,increas23,increas23,increas23,<2>,config/chatemoji/icon_bq_tt.png
+63,increas27,increas23,给我退退退！,發呆沼躍魚版,increas23,increas23,increas23,increas23,increas23,<2>,config/chatemoji/icon_bq_ttt.png
+64,increas28,increas23,约吗？我有养老保险！,發呆沼躍魚版,increas23,increas23,increas23,increas23,increas23,<2>,config/chatemoji/icon_bq_ym.png

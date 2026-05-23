@@ -1,0 +1,9 @@
+变量名,huodongID,desc,desc_tw,desc_en,desc_vn,desc_kr,desc_pt,desc_th,type,taskType,taskParam,taskSpecialParam,goTo,award
+默认值,0,"""""","""""","""""","""""","""""","""""","""""",0,0,0,{},"""""",{}
+ID,活动ID,描述,描述,描述,描述,描述,描述,描述,任务类型(1-完成指定委托;2-消耗行动点数（条件填数量）;3-完成x次分支委托;4-达成x次加分要求；5日常任务),日常任务类型,任务参数,任务特殊参数,跳转目标,任务奖励
+1,101056,今日登陆,今日登陸,Daily login,Đăng nhập hôm nay,오늘 로그인,Login de hoje,เข้าสู่ระบบวันนี้,5,17,1,,,{gold=50000;8118=3}
+2,101056,升级任意精灵10次,升級任意精靈10次,Upgrade any Pokémon 10 times,Nâng cấp bất kỳ Pokémon nào 10 lần,임의 포켓몬 10회 강화,Upgrada qualquer Pokémon 10 vezes,อัพเกรดเอลฟ์ 10 ครั้ง,5,36,10,,strengthen,{gold=50000;8118=3;20701=1}
+3,101056,竞技场累计战斗5次,競技場累計戰鬥5次,Accumulate 5 battles in Arena,Tích lũy chiến đấu 5 lần tại đấu trường,경기장 누적 전투 5회,Acumule 5 batalhas na Arena,ต่อสู้ในสนามประลอง 5 ครั้ง,5,41,5,,arena,{gold=50000;8118=3;20701=1}
+4,101056,挑战精英关卡次数10次,挑戰精英關卡次數10次,Challenge elite stages 10 times,Thử thách 10 lần tại các cửa ải tinh anh,엘리트 스테이지 10회 도전,Desafie estágios de elite 10 vezes,ท้าทายระดับเอลีท 10 ครั้ง,5,30,10,,20000,{gold=50000;8118=3;20701=1}
+5,101056,聚宝5次,聚寶5次,Gather treasure 5 times,Tích lũy thu thập kho báu 5 lần,보물 수집 5회,Reúna tesouros 5 vezes,รวบรวมสมบัติ 5 ครั้ง,5,18,5,,gainGold,{gold=50000;8118=3;20701=1}
+6,101056,累计消费200钻,累計消費200鉆,Spend 200 diamonds in total,Tích lũy tiêu 200 kim cương,누적 다이아 200 소비,Gaste 200 diamantes no total,ใช้เพชร 200 เม็ด,5,21,200,,,{gold=50000;8118=3;20701=1}

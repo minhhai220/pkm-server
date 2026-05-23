@@ -1,0 +1,19 @@
+变量名,name,name_tw,name_en,name_vn,name_kr,name_pt,name_th,needExp,rateUp,weight1,weight2,weight3
+默认值,"""""","""""","""""","""""","""""","""""","""""",0,1,0,0,0
+等级,捕捉等级名称,捕捉等级名称,捕捉等级名称,捕捉等级名称,捕捉等级名称_韩,捕捉等级名称_韩,捕捉等级名称_韩,升级经验,获得成功率加成（乘法）,普通球权值1,高级球权值,大师球权值
+1,见习捕捉者,見習捕捉者,Amateur Catcher,Người bắt nghiệp dư,수습 포획자,Apanhador Amador,นักจับมือใหม่,200,1,0,0.06,0.2
+2,入门捕捉者,入門捕捉者,Rookie Catcher,Rookie Catcher,루키 포획자,Apanhador Novato,นักจับมือใหม่,500,1.03,0,0.06,0.2
+3,初级捕捉者,初級捕捉者,Beginner Catcher,Người mới bắt đầu,초급 포획자,Apanhador Iniciante,นักจับมือเริ่มต้น,800,1.06,0,0.06,0.2
+4,新锐捕捉者,新銳捕捉者,Rising Catcher,Rising Catcher,신예 포획자,Apanhador Emergente,นักจับมือกำลังเติบโต,1200,1.09,0,0.06,0.2
+5,中级捕捉者,中級捕捉者,Intermediate Catcher,Người bắt trung gian,중급 포획자,Apanhador Intermediário,นักจับมือระดับกลาง,1800,1.12,0,0.06,0.2
+6,熟练捕捉者,熟練捕捉者,Skillful Catcher,Người bắt khéo léo,숙련 포획자,Apanhador Habilidoso,นักจับมือชำนาญ,2500,1.15,0,0.06,0.2
+7,高级捕捉者,高級捕捉者,Advanced Catcher,Advanced Catcher,고급 포획자,Apanhador Avançado,นักจับมือขั้นสูง,4000,1.18,0,0.06,0.2
+8,全能捕捉者,全能捕捉者,All-round Catcher,Catcher toàn diện,만능 포획자,Apanhador Versátil,นักจับมือรอบด้าน,6000,1.21,0,0.06,0.2
+9,特级捕捉者,特級捕捉者,Super Catcher,Super Catcher,특급 포획자,Super Apanhador,นักจับมือสุดยอด,8000,1.24,0,0.06,0.2
+10,捕捉达人,捕捉達人,Expert Catcher,Chuyên gia bắt,포획의 달인,Apanhador Especialista,นักจับมือผู้เชี่ยวชาญ,10000,1.27,0,0.06,0.2
+11,捕捉专家,捕捉專家,Expert Catcher,Chuyên gia bắt,포획 전문가,Apanhador Especialista,นักจับมือผู้เชี่ยวชาญ,12000,1.3,0,0.06,0.2
+12,捕捉宗师,捕捉宗師,Grandmaster Catcher,Grandmaster Catcher,포획 그랜드마스터,Apanhador Grande Mestre,นักจับมือปรมาจารย์,14000,1.33,0,0.06,0.2
+13,捕捉大师,捕捉大師,Master Catcher,Master Catcher,포획 마스터,Apanhador Mestre,นักจับมืออาจารย์,16000,1.36,0,0.06,0.2
+14,传奇捕捉者Ⅰ,傳奇捕捉者Ⅰ,Legendary Catcher Ⅰ,Catcher huyền thoại Ⅰ,전설의 포획자 Ⅰ,Apanhador Lendário I,นักจับมือตำนาน I,18000,1.39,0,0.06,0.2
+15,传奇捕捉者Ⅱ,傳奇捕捉者Ⅱ,Legendary Catcher Ⅱ,Catcher huyền thoại Ⅱ,전설의 포획자 Ⅱ,Apanhador Lendário II,นักจับมือตำนาน II,20000,1.42,0,0.06,0.2
+16,传奇捕捉者Ⅲ,傳奇捕捉者Ⅲ,Legendary Catcher Ⅲ,Catcher huyền thoại Ⅲ,전설의 포획자 Ⅲ,Apanhador Lendário III,นักจับมือตำนาน III,99999999,1.45,0,0.06,0.2

@@ -1,0 +1,14 @@
+变量名,probability,desc,desc_tw,desc_en,desc_vn,desc_kr,desc_pt,desc_th
+默认值,0,"""""","""""","""""","""""","""""","""""",""""""
+ID,最大等级,文本描述,描述,描述,描述,描述,描述,描述
+,,,,,,,,
+1,100,肯定成功,肯定成功,Guarantee success,Đảm bảo thành công,100% 성공,Garantir sucesso,รับประกันความสำเร็จ
+2,90,基本上是稳了,基本上是穩了,It's basically stable,Về cơ bản nó ổn định,매우 안정적,É basicamente estável,โดยพื้นฐานแล้วมีเสถียรภาพ
+3,80,成功率极高,成功率極高,Extremely high success rate,Tỷ lệ thành công cực cao,성공률 극도로 높음,Taxa de sucesso extremamente alta,อัตราความสำเร็จสูงมาก
+4,70,成功率很高,成功率很高,High success rate,Tỷ lệ thành công cao,성공률 무척 높음,Taxa de sucesso alta,อัตราความสำเร็จสูง
+5,50,成功率高,成功率高,Success rate,Tỉ lệ thành công,성공률 높음,Taxa de sucesso,อัตราความสำเร็จ
+6,40,成功率中上,成功率中上,Above average success rate,Tỷ lệ thành công trên trung bình,성공률 중상,Taxa de sucesso acima da média,อัตราความสำเร็จสูงกว่าค่าเฉลี่ย
+7,20,成功率中等,成功率中等,Average success rate,Tỷ lệ thành công trung bình,성공률 보통,Taxa de sucesso média,อัตราความสำเร็จเฉลี่ย
+8,10,成功率低,成功率低,Low success rate,Tỷ lệ thành công thấp,성공률 낮음,Taxa de sucesso baixa,อัตราความสำเร็จต่ำ
+9,5,成功率很低,成功率很低,Low success rate,Tỷ lệ thành công thấp,성공률 무척 낮음,Taxa de sucesso baixa,อัตราความสำเร็จต่ำ
+10,0,成功率极低,成功率極低,Extremely low success rate,Tỷ lệ thành công cực kỳ thấp,성공률 극도로 낮음,Taxa de sucesso extremamente baixa,อัตราความสำเร็จต่ำมาก

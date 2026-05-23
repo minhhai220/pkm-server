@@ -1,0 +1,9 @@
+﻿变量名,name,name_tw,name_en,name_vn,name_kr,rechargeID,type,level,exp,discountValue,logo,res,desc,desc_tw,desc_en,desc_vn,desc_kr,icon
+默认值,,,,,,,,0,0,0,,,"""""","""""","""""","""""","""""",""""""
+ID,名称,名称,名称,名称_越南,名称_韩,充值ID,1购买通行证，2购买通行证经验,等级增量,经验增量,折扣数额(具体折扣),商品角标（0:折扣 1:热 2:限 3:新）,经验值资源,富文本显示,富文本显示,富文本显示,富文本显示,富文本显示,图标资源路径
+1,冒险通行证,,,,,108,1,0,0,0,,activity/passport/tips/kaitong.png,#L00100000##LOC0xFFFCED##LOS2##C0x72c1a1##F50#激活#L00100000##LOC0xFFFCED##LOS2##C0x5b545b##F44#大师通行证 \n获取海量#L00100000##LOC0xFFFCED##LOS2##C0xf76b45##F50#经验 \n#L00100000##LOC0xFFFCED##LOS2##C0x5b545b##F44#更快提升通行证等级,,,,,activity/passport/icon_better.png
+2,大师通行证,,,,,109,1,20,0,2,1,activity/passport/tips/maoxian.png,#L00100000##LOC0xFFFCED##LOS2##C0x72c1a1##F50#开通#L00100000##LOC0xFFFCED##LOS2##C0x5b545b##F44#大师通行证 \n超值通行证#L00100000##LOC0xFFFCED##LOS2##C0xf76b45##F50#大礼包 \n#L00100000##LOC0xFFFCED##LOS2##C0x5b545b##F44#购买即获得#L00100000##LOC0xFFFCED##LOS2##C0xea5ec1##F44#20#L00100000##LOC0xFFFCED##LOS2##C0x5b545b##F44#等级,,,,,activity/passport/icon_lv.png
+3,500经验,,,,,106,2,0,500,0,,,,,,,,
+4,1000经验,,,,,107,2,0,1000,0,,,,,,,,
+5,2000经验,,,,,108,2,0,2000,0,,,,,,,,
+6,3000经验,,,,,109,2,0,3000,0,,,,,,,,

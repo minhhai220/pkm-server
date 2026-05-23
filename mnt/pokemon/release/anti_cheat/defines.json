@@ -1,0 +1,15 @@
+{
+  "agent.cn.1": {
+    "debug": false,
+    "nsqd_tcp_addresses": [
+      "127.0.0.1:4150"
+    ],
+    "nsqlookupd": "http://127.0.0.1:4161/",
+    "services": [
+      {
+        "name": "anticheat.cn.1",
+        "error_not_force_result": true
+      }
+    ]
+  }
+}

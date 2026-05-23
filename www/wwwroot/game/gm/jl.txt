@@ -1,0 +1,584 @@
+1|Hạt Giống Kỳ Lạ
+2|Cỏ Hai Lá
+3|Cỏ Ba Lá
+4|Siêu Cỏ Ba Lá
+11|Rồng Lửa Nhỏ
+12|Rồng Lửa
+13|Rồng Lửa Phun
+14|Siêu Rồng Lửa Phun X
+15|Siêu Rồng Lửa Phun Y
+21|Rùa Nước Nhỏ
+22|Rùa Nước
+23|Rùa Tên Lửa
+24|Siêu Rùa Tên Lửa
+31|Sâu Xanh
+33|Bướm Đỏ
+41|Ong Độc
+44|Siêu Ong Độc
+51|Chim Bồ Câu Nhỏ
+52|Chim Bồ Câu
+53|Chim Bồ Câu Lớn
+54|Siêu Chim Bồ Câu Lớn
+61|Chuột Nhỏ
+62|Chuột Lớn
+71|Chim Sẻ
+72|Chim Mỏ Nhọn
+81|Rắn Đất
+82|Rắn Độc Lớn
+91|Pichu
+92|Pikachu
+93|Raichu
+101|Chuột Đất
+102|Vua Chuột Đất
+111|Nidoran♀
+112|Nidorina
+113|Nidoqueen
+121|Nidoran♂
+122|Nidorino
+123|Nidoking
+131|Cleffa
+132|Clefairy
+133|Clefable
+143|Vulpix Alola
+144|Ninetales Alola
+151|Igglybuff
+152|Jigglypuff
+153|Wigglytuff
+161|Zubat
+162|Golbat
+163|Crobat
+171|Oddish
+172|Gloom
+173|Vileplume
+191|Venonat
+192|Venomoth
+211|Meowth
+212|Persian
+221|Psyduck
+222|Golduck
+231|Mankey
+232|Primeape
+241|Growlithe
+242|Arcanine
+251|Poliwag
+252|Poliwhirl
+253|Poliwrath
+254|Politoed
+261|Abra
+262|Kadabra
+263|Alakazam
+264|Siêu Alakazam
+271|Machop
+272|Machoke
+273|Machamp
+281|Bellsprout
+282|Weepinbell
+283|Victreebel
+301|Geodude
+302|Graveler
+303|Golem
+321|Slowpoke
+322|Slowbro
+323|Slowking
+331|Magnemite
+332|Magneton
+333|Magnezone
+341|Farfetch'd
+351|Doduo
+352|Dodrio
+371|Grimer
+372|Muk
+381|Shellder
+382|Cloyster
+391|Gastly
+392|Haunter
+393|Gengar
+394|Siêu Gengar
+401|Onix
+402|Steelix
+403|Siêu Steelix
+411|Drowzee
+412|Hypno
+431|Voltorb
+432|Electrode
+441|Exeggcute
+442|Exeggutor
+451|Cubone
+452|Marowak
+461|Tyrogue
+462|Hitmonlee
+463|Hitmonchan
+464|Hitmontop
+471|Lickitung
+472|Lickilicky
+481|Koffing
+482|Weezing
+491|Rhyhorn
+492|Rhydon
+493|Rhyperior
+501|Happiny
+502|Chansey
+503|Blissey
+541|Goldeen
+542|Seaking
+551|Staryu
+552|Starmie
+561|Mime Jr.
+562|Mr. Mime
+571|Scyther
+572|Scizor
+574|Siêu Scizor
+591|Elekid
+592|Electabuzz
+593|Electivire
+601|Magby
+602|Magmar
+603|Magmortar
+611|Pinsir
+631|Gyarados
+632|Siêu Gyarados
+641|Lapras
+691|Kabuto
+692|Kabutops
+701|Aerodactyl
+702|Siêu Aerodactyl
+711|Munchlax
+712|Snorlax
+721|Articuno
+731|Zapdos
+741|Moltres
+751|Dratini
+752|Dragonair
+753|Dragonite
+761|Mewtwo
+762|Siêu Mewtwo X
+763|Siêu Mewtwo Y
+771|Mew
+781|Chikorita
+782|Bayleef
+783|Meganium
+791|Cyndaquil
+792|Quilava
+793|Typhlosion
+801|Totodile
+802|Croconaw
+803|Feraligatr
+861|Togepi
+862|Togetic
+863|Togekiss
+881|Mareep
+882|Flaaffy
+883|Ampharos
+884|Siêu Ampharos
+891|Azurill
+892|Marill
+893|Azumarill
+901|Bonsly
+902|Sudowoodo
+971|Misdreavus
+972|Mismagius
+991|Wynaut
+992|Wobbuffet
+1031|Gligar
+1032|Gliscor
+1071|Heracross
+1072|Siêu Heracross
+1081|Sneasel
+1082|Weavile
+1111|Swinub
+1112|Piloswine
+1113|Mamoswine
+1141|Delibird
+1171|Houndour
+1172|Houndoom
+1173|Siêu Houndoom
+1221|Raikou
+1231|Entei
+1241|Suicune
+1251|Larvitar
+1252|Pupitar
+1253|Tyranitar
+1254|Siêu Tyranitar
+1261|Lugia
+1271|Ho-Oh
+1281|Celebi
+1291|Treecko
+1292|Grovyle
+1293|Sceptile
+1294|Siêu Sceptile
+1301|Torchic
+1302|Combusken
+1303|Blaziken
+1304|Siêu Blaziken
+1311|Mudkip
+1312|Marshtomp
+1313|Swampert
+1314|Siêu Swampert
+1351|Lotad
+1352|Lombre
+1353|Ludicolo
+1391|Ralts
+1392|Kirlia
+1393|Gardevoir
+1394|Gallade
+1396|Siêu Gardevoir
+1397|Siêu Gallade
+1411|Shroomish
+1412|Breloom
+1421|Slakoth
+1422|Vigoroth
+1423|Slaking
+1441|Whismur
+1442|Loudred
+1443|Exploud
+1481|Sableye
+1501|Aron
+1502|Lairon
+1503|Aggron
+1504|Siêu Aggron
+1511|Meditite
+1512|Medicham
+1611|Numel
+1612|Camerupt
+1641|Spinda
+1651|Trapinch
+1652|Vibrava
+1653|Flygon
+1671|Swablu
+1672|Altaria
+1771|Feebas
+1772|Milotic
+1801|Shuppet
+1802|Banette
+1803|Siêu Banette
+1811|Duskull
+1812|Dusclops
+1813|Dusknoir
+1841|Absol
+1851|Snorunt
+1852|Glalie
+1853|Froslass
+1861|Spheal
+1862|Sealeo
+1863|Walrein
+1891|Bagon
+1892|Shelgon
+1893|Salamence
+1901|Beldum
+1902|Metang
+1903|Metagross
+1911|Regirock
+1921|Regice
+1931|Registeel
+1941|Latias
+1951|Latios
+1961|Kyogre
+1962|Kyogre Nguyên Thủy
+1971|Groudon
+1972|Groudon Nguyên Thủy
+1981|Rayquaza
+1982|Siêu Rayquaza
+1991|Jirachi
+2011|Turtwig
+2012|Grotle
+2013|Torterra
+2021|Chimchar
+2022|Monferno
+2023|Infernape
+2031|Piplup
+2032|Prinplup
+2033|Empoleon
+2041|Starly
+2042|Staravia
+2043|Staraptor
+2071|Shinx
+2072|Luxio
+2073|Luxray
+2121|Pachirisu
+2131|Buizel
+2132|Floatzel
+2231|Gible
+2232|Gabite
+2233|Garchomp
+2241|Riolu
+2242|Lucario
+2243|Siêu Lucario
+2271|Croagunk
+2272|Toxicroak
+2301|Snover
+2302|Abomasnow
+2303|Siêu Abomasnow
+2321|Uxie
+2331|Mesprit
+2341|Azelf
+2351|Dialga
+2352|Dialga·Nguyên Thủy
+2361|Palkia
+2362|Palkia·Nguyên Thủy
+2371|Heatran
+2381|Regigigas
+2382|Regigigas·Đá
+2383|Regigigas·Băng
+2384|Regigigas·Thép
+2385|Regigigas·Rồng
+2386|Regigigas·Điện
+2391|Giratina
+2401|Cresselia
+2411|Phione
+2421|Manaphy
+2431|Darkrai
+2441|Shaymin
+2442|Shaymin·Bầu Trời
+2461|Victini
+2471|Snivy
+2472|Servine
+2473|Serperior
+2481|Tepig
+2482|Pignite
+2483|Emboar
+2491|Oshawott
+2492|Dewott
+2493|Samurott
+2591|Roggenrola
+2592|Boldore
+2593|Gigalith
+2611|Drilbur
+2612|Excadrill
+2631|Timburr
+2632|Gurdurr
+2633|Conkeldurr
+2681|Venipede
+2682|Whirlipede
+2683|Scolipede
+2721|Sandile
+2722|Krokorok
+2723|Krookodile
+2801|Archen
+2802|Archeops
+2821|Zorua
+2822|Zoroark
+2831|Minccino
+2832|Cinccino
+2841|Gothita
+2842|Gothorita
+2843|Gothitelle
+2871|Vanillite
+2872|Vanillish
+2873|Vanilluxe
+2891|Emolga
+2921|Frillish·Nữ
+2922|Frillish·Nam
+2923|Jellicent·Nữ
+2924|Jellicent·Nam
+2961|Klink
+2962|Klang
+2963|Klinklang
+2991|Litwick
+2992|Lampent
+2993|Chandelure
+3001|Axew
+3002|Fraxure
+3003|Haxorus
+3011|Cubchoo
+3012|Beartic
+3021|Cryogonal
+3051|Mienfoo
+3052|Mienshao
+3141|Deino
+3142|Zweilous
+3143|Hydreigon
+3151|Larvesta
+3152|Volcarona
+3161|Cobalion
+3171|Terrakion
+3181|Virizion
+3191|Tornadus
+3201|Thundurus
+3211|Reshiram
+3221|Zekrom
+3231|Landorus
+3241|Kyurem
+3242|Kyurem Trắng
+3243|Kyurem Đen
+3251|Keldeo
+3261|Meloetta·Ca Hát
+3262|Meloetta·Múa
+3271|Genesect
+3281|Chespin
+3282|Quilladin
+3283|Chesnaught
+3291|Fennekin
+3292|Braixen
+3293|Delphox
+3301|Froakie
+3302|Frogadier
+3303|Greninja
+3341|Litleo
+3342|Pyroar
+3351|Flabébé
+3352|Floette
+3353|Florges
+3411|Honedge
+3412|Doublade
+3413|Aegislash·Khiên
+3431|Swirlix
+3432|Slurpuff
+3471|Clauncher
+3472|Clawitzer
+3501|Tyrunt
+3502|Tyrantrum
+3511|Hawlucha
+3541|Goomy
+3542|Sliggoo
+3543|Goodra
+3561|Phantump
+3562|Trevenant
+3571|Pumpkaboo
+3572|Gourgeist
+3591|Noibat
+3592|Noivern
+3601|Xerneas
+3611|Yveltal
+3621|Zygarde·10%
+3622|Zygarde·50%
+3623|Zygarde·100%
+3631|Diancie
+3632|Siêu Diancie
+3641|Hoopa Bị Trói
+3642|Hoopa Giải Phóng
+3651|Volcanion
+3661|Rowlet
+3662|Dartrix
+3663|Decidueye
+3671|Litten
+3672|Torracat
+3673|Incineroar
+3681|Popplio
+3682|Brionne
+3683|Primarina
+3771|Mareanie
+3772|Toxapex
+3831|Stufful
+3832|Bewear
+3841|Bounsweet
+3842|Steenee
+3843|Tsareena
+3881|Wimpod
+3882|Golisopod
+3941|Turtonator
+3961|Mimikyu
+3981|Drampa
+4001|Jangmo-o
+4002|Hakamo-o
+4003|Kommo-o
+4011|Tapu Koko
+4012|Tapu Lele
+4013|Tapu Bulu
+4014|Tapu Fini
+4023|Solgaleo
+4024|Lunala
+4031|Nihilego
+4041|Buzzwole
+4051|Pheromosa
+4061|Xurkitree
+4071|Celesteela
+4081|Kartana
+4091|Guzzlord
+4101|Necrozma
+4103|Necrozma Bờm Hoàng Hôn
+4104|Necrozma Cánh Bình Minh
+4111|Magearna
+4121|Marshadow
+4131|Poipole
+4132|Naganadel
+4141|Stakataka
+4151|Blacephalon
+4161|Zeraora
+4171|Meltan
+4172|Melmetal
+4181|Grookey
+4182|Thwackey
+4183|Rillaboom
+4191|Scorbunny
+4192|Raboot
+4193|Cinderace
+4201|Sobble
+4202|Drizzile
+4203|Inteleon
+4301|Applin
+4391|Impidimp
+4392|Morgrem
+4393|Grimmsnarl
+4431|Sirfetch'd
+4521|Indeedee
+4561|Dracovish
+4571|Arctozolt
+4572|Arctovish
+4581|Dreepy
+4582|Drakloak
+4583|Dragapult
+4591|Zacian
+4601|Zamazenta
+4611|Eternatus
+4621|Kubfu
+4622|Urshifu·Nhất Kích
+4623|Urshifu·Liên Kích
+4631|Zarude
+4641|Regieleki
+4651|Regidrago
+4661|Glastrier
+4671|Spectrier
+4682|Calyrex·Kỵ Sĩ Bóng Đêm
+4683|Calyrex·Kỵ Sĩ Băng Giá
+4701|Kleavor
+4761|Sprigatito
+4762|Floragato
+4763|Meowscarada
+4771|Fuecoco
+4772|Crocalor
+4773|Skeledirge
+4851|Fidough
+4852|Dachsbun
+4853|Arboliva
+4991|Tinkatink
+4992|Tinkatuff
+4993|Tinkaton
+5211|Flutter Mane
+5221|Slither Wing
+5241|Iron Treads
+5361|Roaring Moon
+5381|Koraidon
+5391|Miraidon
+5401|Walking Wake
+5481|Ogerpon·Mặt Nạ Cỏ
+5482|Ogerpon·Mặt Nạ Nước
+5483|Ogerpon·Mặt Nạ Lửa
+5484|Ogerpon·Mặt Nạ Đá
+5561|Pecharunt
+7001|Pikachu Phiên Bản Satoshi
+7011|Greninja Phiên Bản Satoshi
+7021|Siêu Gengar Ánh Kim
+7031|Siêu Tyranitar Ánh Kim
+7041|Mew Nguyên Thủy
+7051|Siêu Gardevoir Ánh Kim
+7061|Siêu Gallade Ánh Kim
+7071|Keldeo·Giác Ngộ
+7081|Siêu Metagross Của Steven
+7091|Siêu Garchomp Của Cynthia
+7101|Siêu Blaziken Mặt Nạ
+7111|Siêu Lucario Ánh Kim
+7121|Siêu Charizard X Của Alain
+7131|Siêu Abomasnow Ánh Kim
+7141|Siêu Sceptile Ánh Kim
+7151|Siêu Venusaur Ánh Kim
+7161|Pikachu Quán Quân
+7171|Siêu Steelix Của Brock
+7181|Siêu Salamence Của Zinnia
+7191|Siêu Scizor Sấm Đỏ
+7201|Vua Côn Trùng Heracross
+7211|Siêu Pinsir Đại Giáp
+7221|Siêu Aerodactyl Ánh Kim
+7231|Siêu Excadrill Ánh Kim
+9001|Ditto·Tím
+9002|Ditto·Cam
+9003|Ditto·Đỏ

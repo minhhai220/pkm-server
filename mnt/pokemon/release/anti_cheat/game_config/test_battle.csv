@@ -1,0 +1,5 @@
+﻿变量名,roleId,level,_beizhu,skills,fight_soul,roleForce,star,activeSkill,classify,hp,mp1,mp2,hpRecover,mp1Recover,mp2Recover,damage,specialDamage,defence,specialDefence,defenceIgnore,specialDefenceIgnore,speed,strike,strikeDamage,strikeResistance,block,breakBlock,blockPower,dodge,hit,damageAdd,damageSub,ultimateAdd,ultimateSub,damageDeepen,damageReduce,suckBlood,rebound,cure,natureRestraint,controlPer,immuneControl
+默认值,,90,,{},{},,5,0,0,1400000,1000,1,1,1,1,1,1,1,1,1,1,1,1,15000,1,1,1,1,1,10000,1,1,0,0,1,1,0,0,1,1,1,1
+ID,角色id,等级,备注信息,技能(技能id=等级;技能id=等级...),斗魂,势力,星级,主动技能激活,标识,HP,MP1,MP2,HP回复,MP1回复,MP2回复,物理攻击,特殊攻击,物理防御力,特殊防御力,物理防御忽视,特殊防御忽视,先手值,会心一击,会心一击伤害,会心一击抗性,格挡等级10000,破格挡等级10000,格挡强度10000,闪避,命中,伤害加成10000,伤害减免10000,必杀加成,必杀抗性,伤害加深,伤害降低,吸血,反弹,治疗效果,属性克制,控制率,免控率
+1,1841,100,,{18416=100;18412=100;18413=100;18411=100},{},1,5,0,3,1400000,1000,1,1,1,1,10000,10000,3000,3000,1,1,20,1,15000,1,1,1,1,1,10000,1,1,0,0,1,1,0,0,1,1,1,1
+7,1293,100,,{12931=100;12933=100;12932=100;12936=100},{},2,5,0,3,1400000,1000,1,1,1,1,10000,10000,3000,3000,1,1,14,1,15000,1,1,1,1,1,10000,1,1,0,0,1,1,0,0,1,1,1,1

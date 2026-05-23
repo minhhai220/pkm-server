@@ -1,0 +1,12 @@
+变量名,duration,moveIntervalX,moveIntervalY,moveSpeed,dialogLib,res,_beizhu
+默认值,0,<900;1200>,<40;200>,<200;200>,0,"""""",""""""
+ID,持续时间（分钟）,移动间隔,移动间隔,移动速度,对白库,显示资源,备注
+1,1440,<1600;2450>,<35;95>,<200;200>,0,crossmine/q_bailu.skel,
+2,1440,<620;1460>,<110;180>,<200;200>,0,crossmine/q_buermeili.skel,
+3,1440,<2160;3090>,<155;200>,<200;200>,0,crossmine/q_douzi.skel,
+4,1440,<730;1760>,<40;90>,<200;200>,0,crossmine/q_dujuan.skel,
+5,1440,<1080;2120>,<140;180>,<200;200>,0,crossmine/q_huomijia.skel,
+6,1440,<480;1350>,<60;100>,<200;200>,0,crossmine/q_lapu.skel,
+7,1440,<2340;3040>,<120;200>,<200;200>,0,crossmine/q_sansejin.skel,
+8,1440,<1980;2970>,<160;190>,<200;200>,0,crossmine/q_xiaoxia.skel,
+9,1440,<1350;2600>,<70;130>,<200;200>,0,crossmine/q_xiu.skel,

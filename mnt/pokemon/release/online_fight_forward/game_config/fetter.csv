@@ -1,0 +1,788 @@
+变量名,name,name_tw,name_en,name_vn,name_kr,name_pt,name_th,desc,desc_tw,desc_en,desc_vn,desc_th,cards,equipID,skinID,attrMap
+默认值,,"""""","""""","""""","""""","""""","""""",,"""""","""""","""""","""""",<>,,,{}
+签到id,名称,名稱,名称,名称,名称_韩,名称_韩,名称_韩,描述,描述,描述,描述,描述,关联卡牌id修正(这里程序用的是卡牌id，如果初始形态被删除，需要修改这里的id，需要程序优化),关联装备,关联皮肤,属性提升修正
+11,草之誓约,草之誓約,Grass Pledge,Lời thề của cỏ,풀의 맹세,Juramento da Grama,คำสาบานแห่งหญ้า,,,,,,<281;2301;371>,,,{7=10%;8=10%}
+12,森林意志,森林意志,Forest Will,Ý chí của Rừng,숲의 의지,Vontade da Floresta,ฟอเรสต์วิลล์,,,,,,<781;1291;2011>,,,{1=10%}
+13,冒险同伴,冒險同伴,Adventure Partner,Những người bạn đồng hành phiêu lưu,모험 동반자,Companheiro de aventura,เพื่อนร่วมผจญภัย,,,,,,<11;21>,,,{7=10%;8=10%}
+111,火焰掌控,火焰掌控,Flame Control,Khống chế ngọn lửa,화염 제어,Maestria do Fogo,ความเชี่ยวชาญด้านไฟ,,,,,,<1231;2481;1611>,,,{7=10%;8=10%}
+112,炎焰之力,炎焰之力,Power of Fire,Sức mạnh của ngọn lửa,화염의 힘,Poder da Chama,พลังแห่งเปลวไฟ,,,,,,<791;3291;3341>,,,{1=10%}
+113,太阳意志,太陽意志,Sun will,Ý chí của mặt trời,태양의 의지,Sol vai,ซันวิลล์,,,,,,<1;21>,,,{7=10%;8=10%}
+211,水流力量,水流力量,Force of Current,Sức mạnh của dòng chảy,현재 힘,Força da Água,พลังน้ำ,,,,,,<3471;91;3281>,,,{7=10%;8=10%}
+212,水之波动,水之波動,Water Pulse,Gợn sóng nước,물의파동,Ondas de água,คลื่นน้ำ,,,,,,<801;551;631>,,,{1=10%}
+213,覆舟之势,覆舟之勢,Overturn,Thế sắp bị lật thuyền; tình huống nguy hiểm,전복,A tendência de virar,แนวโน้มที่จะพลิกคว่ำ,,,,,,<1;11>,,,{7=10%;8=10%}
+311,虫虫崛起,蟲蟲崛起,Bug Rising,Sự Trỗi Dậy Của Côn Trùng,버그의 상승,Insetos sobem,แมลงเพิ่มขึ้น,,,,,,<351;71;81>,,,{7=8%;8=8%}
+312,森林力量,森林力量,Forest Power,Sức mạnh của rừng,숲의 힘,Poder da Floresta,พลังป่าไม้,,,,,,<41;191;2681>,,,{1=10%}
+313,群体情谊,群體情誼,Team Friendship,Tinh thần đoàn kết,그룹 우정,Amizade em grupo,มิตรภาพกลุ่ม,,,,,,<2891;551>,,,{7=8%;8=8%}
+411,虫虫崛起,蟲蟲崛起,Bug Rising,Sự trỗi dậy của côn trùng,버그의 상승,Insetos sobem,แมลงเพิ่มขึ้น,,,,,,<31;111;51>,,,{7=8%;8=8%}
+412,森林力量,森林力量,Forest Power,Sức mạnh của rừng,숲의 힘,Poder da Floresta,พลังป่าไม้,,,,,,<71;121;351>,,,{1=10%}
+413,群体情谊,群體情誼,Team Friendship,Tinh thần đoàn kết,그룹 우정,Amizade em grupo,มิตรภาพกลุ่ม,,,,,,<2891;2681>,,,{7=8%;8=8%}
+511,原始组合,原始組合,Original Formation,Kết hợp ban đầu,원래 조합,Combinação original,การผสมผสานดั้งเดิม,,,,,,<281;91;271>,,,{7=10%;8=10%}
+512,守护情谊,守護情誼,Protect the relationship,Bảo vệ tình bạn,후견,Protegendo a amizade,การปกป้องมิตรภาพ,,,,,,<471;1441;191>,,,{1=10%}
+513,觉醒力量,覺醒力量,Awakening power,Sức mạnh thức tỉnh,각성 력,Despertar o Poder,พลังแห่งการตื่นรู้,,,,,,<131;301;891>,,,{7=10%;8=10%}
+611,原始组合,原始組合,Original Formation,Kết hợp ban đầu,원래 조합,Combinação original,การผสมผสานดั้งเดิม,,,,,,<231;461;691>,,,{7=8%;8=8%}
+612,守护情谊,守護情誼,Protect the relationship,Bảo vệ tình bạn,후견,Protegendo a amizade,การปกป้องมิตรภาพ,,,,,,<351;1441;271>,,,{1=10%}
+613,觉醒力量,覺醒力量,Awakening power,Sức mạnh thức tỉnh,각성 력,Despertar o Poder,พลังแห่งการตื่นรู้,,,,,,<371;2891>,,,{7=8%;8=8%}
+711,原始组合,原始組合,Original Formation,Sự kết hợp ban đầu,원래 조합,Combinação original,การผสมผสานดั้งเดิม,,,,,,<41;31;2011>,,,{7=8%;8=8%}
+712,守护情谊,守護情誼,Protect the relationship,Bảo vệ tình bạn,후견,Protegendo a amizade,การปกป้องมิตรภาพ,,,,,,<351;451;3511>,,,{1=10%}
+713,觉醒力量,覺醒力量,Awakening power,Sức mạnh thức tỉnh,각성 력,Despertar o Poder,พลังแห่งการตื่นรู้,,,,,,<2271;271>,,,{7=8%;8=8%}
+811,毒系同伴,毒系同伴,Poison-type companions,Bạn đồng hành hệ Độc,독의 동반자,Companheiro Venenoso,เพื่อนคู่ใจพิษ,,,,,,<101;371;451>,,,{7=8%;8=8%}
+812,毒之身躯,毒之身軀,Poisonous Body,Thân xác đầy độc,유독 한 몸,Corpo Venenoso,ร่างกายมีพิษ,,,,,,<121;111;2271>,,,{1=10%}
+813,神秘力量,神秘力量,Mysterious power,Sức mạnh huyền bí,신비한 힘,Poder misterioso,พลังลึกลับ,,,,,,<781;51>,,,{7=8%;8=8%}
+911,雷电家族,雷電家族,Electric family,Gia đình Raiden,라이덴 가족,Família Raiden,ครอบครัวไรเดน,,,,,,<51;551;731>,,,{7=10%;8=10%}
+912,自然之力,自然之力,Power of Nature,Sức mạnh của thiên nhiên,자연의 힘,Força da Natureza,พลังแห่งธรรมชาติ,,,,,,<471;2071;591>,,,{1=10%}
+913,电光意识,電光意識,Electric awareness,Ý thức điện quang,전기 광학 인식,Consciência Elétrica,การรับรู้เกี่ยวกับไฟฟ้า,,,,,,<1;11;21>,,,{7=10%;8=10%}
+1011,森林同伴,森林同伴,Forest companions,Những người bạn của rừng,숲의 동반자,Companheiros da Floresta,เพื่อนร่วมป่า,,,,,,<351;691;301>,,,{7=8%;8=8%}
+1012,大地掌控,大地掌控,Geomancy,Kiểm soát Trái đất,지구 통제,Controle da Terra,การควบคุมโลก,,,,,,<451;61;2611>,,,{1=10%}
+1013,觉醒感应,覺醒感應,Awakening detection,Cảm giác thức tỉnh,각성 유도,Indução do Despertar,การปลุกจิตสำนึก,,,,,,<2071;481>,,,{7=8%;8=8%}
+1111,毒系同伴,毒系同伴,Poison-type companions,Bạn đồng hành hệ Độc,독의 동반자,Companheiro Venenoso,เพื่อนคู่ใจพิษ,,,,,,<171;281;371>,,,{7=8%;8=8%}
+1112,毒之身躯,毒之身軀,Poisonous Body,Thân xác đầy độc,유독 한 몸,Corpo Venenoso,ร่างกายมีพิษ,,,,,,<121;81;481>,,,{1=10%}
+1113,神秘力量,神秘力量,Mysterious power,Sức mạnh huyền bí,신비한 힘,Poder misterioso,พลังลึกลับ,,,,,,<1441;481>,,,{7=8%;8=8%}
+1211,毒系同伴,毒系同伴,Poison-type companions,Đồng minh hệ Độc,독의 동반자,Companheiro Venenoso,เพื่อนคู่ใจพิษ,,,,,,<1;481;2681>,,,{7=8%;8=8%}
+1212,毒之身躯,毒之身軀,Poisonous Body,Thân xác đầy độc,유독 한 몸,Corpo Venenoso,ร่างกายมีพิษ,,,,,,<111;2271;81>,,,{1=10%}
+1213,神秘力量,神秘力量,Mysterious power,Sức mạnh bí ẩn,신비한 힘,Poder misterioso,พลังลึกลับ,,,,,,<2922;2071>,,,{7=8%;8=8%}
+1311,龙族克星,龍族剋星,Dragon Buster,Sát thủ rồng,드래곤 네메시스,Dragão Nêmesis,มังกรเนเมซิส,,,,,,<1441;1841;1081>,,,{7=10%;8=10%}
+1312,广域伙伴,廣域夥伴,Wide Companion,Đối tác rộng khắp,광역 파트너,Parceiros de área ampla,พันธมิตรพื้นที่กว้าง,,,,,,<3431;891;451>,,,{1=10%}
+1313,月亮之力,月亮之力,Moonblast,Sức mạnh của mặt trăng,달의 힘,Poder da Lua,พลังแห่งดวงจันทร์,,,,,,<3281;1861;2921>,,,{7=10%;8=10%}
+1511,妖精同盟,妖精同盟,Pokémon Alliance,Liên minh Tiên,페어리 리그,Aliança das Fadas,พันธมิตรแฟรี่,,,,,,<3351;3431>,,,{7=10%;8=10%}
+1512,普通家庭,普通家庭,Normal Family,Gia đình bình thường,정상적인 가족,Família comum,ครอบครัวธรรมดา,,,,,,<1441;471>,,,{1=10%}
+1513,歌唱偶像,歌唱偶像,Singing Idol,Thần tượng ca hát,노래하는 아이돌,Ídolo cantor,ไอดอลร้องเพลง,,,,,,<1391;131>,,,{7=10%;8=10%}
+1611,毒虫出没,毒蟲出沒,Poison Bug,Côn trùng độc,독충 출몰,Insetos venenosos estão infestados,แมลงมีพิษเข้ามารบกวน,,,,,,<3771;281;2271>,,,{7=10%;8=10%}
+1612,飞行家族,飛行家族,Flying Family,Gia đình bay,비행 가족,Família voadora,ครอบครัวบินได้,,,,,,<3591;3661;2891>,,,{1=12%}
+1613,小刚伙伴,小剛夥伴,Brock’s Partner,Đối tác của Tiểu Giang,웅의 파트너,Parceiro de Xiao Gang,คู่หูของเสี่ยวกัง,,,,,,<401;1311;1351>,,,{7=10%;8=10%}
+1614,森林对抗,森林對抗,Forest Counter,Đối đầu với rừng,산림 대항,Confronto florestal,การเผชิญหน้าในป่า,,,,,,<1241;111;191>,,,{23=500}
+1711,草之誓约,草之誓約,Grass Pledge,Hiệp ước Cỏ,풀의 맹세,Juramento da Grama,คำสาบานแห่งหญ้า,,,,,,<81;2271;3281>,,,{7=8%;8=8%}
+1712,森林意志,森林意志,Forest Will,Ý chí của Rừng,숲의 의지,Vontade da Floresta,ฟอเรสต์วิลล์,,,,,,<1351;1;2011>,,,{1=10%}
+1713,冒险同伴,冒險同伴,Adventure Partner,Những người bạn đồng hành phiêu lưu,모험 동반자,Companheiro de aventura,เพื่อนร่วมผจญภัย,,,,,,<371;2681;131>,,,{7=8%;8=8%}
+1911,虫虫崛起,蟲蟲崛起,Bug Rising,Sự trỗi dậy của côn trùng,버그의 상승,Insetos sobem,แมลงเพิ่มขึ้น,,,,,,<61;371;1441>,,,{7=8%;8=8%}
+1912,森林力量,森林力量,Forest Power,Sức mạnh của rừng,숲의 힘,Poder da Floresta,พลังป่าไม้,,,,,,<41;2681;481>,,,{1=10%}
+1913,群体情谊,群體情誼,Team Friendship,Tinh thần đoàn kết,그룹 우정,Amizade em grupo,มิตรภาพกลุ่ม,,,,,,<301;3281>,,,{7=8%;8=8%}
+2211,水流力量,水流力量,Force of Current,Sức mạnh của dòng chảy,현재 힘,Força da Água,พลังน้ำ,,,,,,<631;1351>,,,{7=10%;8=10%}
+2212,冲鸭冲鸭,沖鴨沖鴨,Let's go,Tấn công! Tấn công!,종덕 종덕,Vai! Vai!,ไป! ไป!,,,,,,<341;601>,,,{1=10%}
+2213,凝水成冰,凝水成冰,Turning water into ice,Nước đông thành đá.,얼음으로 응축,Condensação de água em gelo,การควบแน่นของน้ำกลายเป็นน้ำแข็ง,,,,,,<1861;3011>,,,{7=10%;8=10%}
+2311,格斗势力,格鬥勢力,Fighting Forces,Lực lượng chiến đấu,싸우는 힘,Força de combate,กำลังรบ,,,,,,<451;2271;3511>,,,{7=8%;8=8%}
+2312,拳之力量,拳之力量,Fist Power,Sức mạnh của nắm đấm,주먹의 힘,O poder do punho,พลังแห่งกำปั้น,,,,,,<461;271;2631>,,,{1=10%}
+2313,技巧掌控,技巧掌控,Technique control,Thủ thuật thành thạo,스킬 컨트롤,Controle de habilidades,การควบคุมทักษะ,,,,,,<3011;371>,,,{7=8%;8=8%}
+2411,怒火冲天,怒火沖天,Towering Rage,Sôi máu,너무 화났어,Raiva,ความโกรธ,,,,,,<1231;3341;1611>,,,{7=10%;8=10%}
+2412,狗狗出击,狗狗出擊,Dog Pound,Chó tấn công!,개 공격,Ataque de cachorro,สุนัขโจมตี,,,,,,<1171;1841>,,,{1=12%}
+2413,速度七十迈,速度七十邁,70mph,Bảy mươi dặm một giờ,70 걸음,Velocidade 70 mph,ความเร็ว 70 ไมล์ต่อชั่วโมง,,,,,,<261;351>,,,{7=10%;8=10%}
+2414,水火相融,水火相融,Fusion of Water and Fire,Nước và lửa hòa quyện,물과 불,Fogo e água se misturam,การผสมผสานไฟและน้ำ,,,,,,<3301;791;551>,,,{14=500}
+2611,特异功能,特異功能,Special Power,Khả năng đặc biệt,특정 기능,Habilidades especiais,ความสามารถพิเศษ,,,,,,<1391;1901>,,,{7=10%;8=10%}
+2612,恶灵退散,惡靈退散,Dispel Evil Spirits,Quỷ dữ biến mất!,악령 퇴각,Os espíritos malignos vão embora,วิญญาณร้ายจงออกไป,,,,,,<391;2921;3561>,,,{1=12%}
+2613,心电感应,心電感應,Telepathy,Thần giao cách cảm,텔레파시,Telepatia,โทรจิต,,,,,,<881;91;2891>,,,{7=10%;8=10%}
+2614,半梦半醒,半夢半醒,Half asleep,Nửa tỉnh nửa mơ,반쯤 깨어,Meio adormecido,ครึ่งหลับครึ่งตื่น,,,,,,<1421;1441>,,,{22=500}
+2711,格斗势力,格鬥勢力,Fighting Forces,Lực lượng chiến đấu,싸우는 힘,Força de combate,กำลังรบ,,,,,,<1071;471;3281>,,,{7=10%;8=10%}
+2712,拳之力量,拳之力量,Fist Power,Sức mạnh của nắm đấm,주먹의 힘,O poder do punho,พลังแห่งกำปั้น,,,,,,<2631;3511;2271>,,,{1=10%}
+2713,技巧掌控,技巧掌控,Technique control,Thủ thuật bậc thầy,스킬 컨트롤,Controle de habilidades,การควบคุมทักษะ,,,,,,<2611;301;2821>,,,{7=10%;8=10%}
+2811,草之誓约,草之誓約,Grass Pledge,Lời thề của cỏ,풀의 맹세,Juramento da Grama,คำสาบานแห่งหญ้า,,,,,,<2301;3281;1351>,,,{7=10%;8=10%}
+2812,森林意志,森林意志,Forest Will,Ý chí của Rừng,숲의 의지,Vontade da Floresta,ฟอเรสต์วิลล์,,,,,,<1;781;2011>,,,{1=10%}
+2813,冒险同伴,冒險同伴,Adventure Partner,Những người bạn đồng hành phiêu lưu,모험 동반자,Companheiro de aventura,เพื่อนร่วมผจญภัย,,,,,,<781;2681;2271>,,,{7=10%;8=10%}
+3011,岩石壁垒,岩石壁壘,Rock Barrier,Rào chắn đá,바위 장벽,Parede de pedra,กำแพงหิน,,,,,,<3501;491;801>,,,{7=10%;8=10%}
+3012,沙暴之势,沙暴之勢,Sandstorm,Sức mạnh của bão cát,모래 폭풍,Tempestade de areia,พายุทราย,,,,,,<691;2591;101>,,,{1=10%}
+3013,自然组合,自然組合,Natural combination,Sự kết hợp tự nhiên,자연스러운 조합,Combinação natural,การผสมผสานที่เป็นธรรมชาติ,,,,,,<2481;2011;2611>,,,{7=10%;8=10%}
+3311,雷电家族,雷電家族,Electric family,Gia đình Sấm sét,라이덴 가족,Família Raiden,ครอบครัวไรเดน,,,,,,<591;731;2071>,,,{7=10%;8=10%}
+3312,钢筋铁骨,鋼筋鐵骨,Steel Frame,Xương sắt da thép,강화 된 철 뼈,Aço,เหล็ก,,,,,,<1901;2961>,,,{1=12%}
+3313,横冲直撞,橫衝直撞,Charging and Shoving Around,liều lĩnh; lao xao; xô đẩy,날 뛰기,Rampage,อาละวาด,,,,,,<1501;2611>,,,{7=10%;8=10%}
+3314,悬浮操控,懸浮操控,Levitation Control,Điều khiển bay lơ lửng,플로팅 컨트롤,Controle de suspensão,การควบคุมช่วงล่าง,,,,,,<3021;2871;3561>,,,{23=500}
+3411,一般关系,一般關係,General relationship,Mối quan hệ chung,일반적인 관계,Relacionamento Geral,ความสัมพันธ์โดยทั่วไป,,,,,,<51;3511>,,,{7=10%;8=10%}
+3412,鸭鸭军团,鴨鴨軍團,Duck Legion,Đội quân vịt,오리 군대,Exército de patos,กองทัพเป็ดเป็ด,,,,,,<601;221>,,,{1=10%}
+3413,同行伙伴,同行夥伴,Companions,Những người bạn đồng hành,동료 파트너,Parceiros,พันธมิตร,,,,,,<2241;391;91>,,,{7=10%;8=10%}
+3511,原始组合,原始組合,Original Formation,Sự kết hợp ban đầu,원래 조합,Combinação original,การผสมผสานดั้งเดิม,,,,,,<61;471;51>,,,{7=8%;8=8%}
+3512,守护情谊,守護情誼,Protect the relationship,Bảo vệ tình bạn,후견,Protegendo a amizade,การปกป้องมิตรภาพ,,,,,,<71;891;3511>,,,{1=10%}
+3513,觉醒力量,覺醒力量,Awakening power,Sức mạnh thức tỉnh,각성 력,Despertar o Poder,พลังแห่งการตื่นรู้,,,,,,<2891;371;1611>,,,{7=8%;8=8%}
+3711,毒系同伴,毒系同伴,Poison-type companions,Bạn đồng hành hệ độc,독의 동반자,Companheiro Venenoso,เพื่อนคู่ใจพิษ,,,,,,<81;471;2611>,,,{7=10%;8=10%}
+3712,毒之身躯,毒之身軀,Poisonous Body,Thân thể đầy độc,유독 한 몸,Corpo Venenoso,ร่างกายมีพิษ,,,,,,<481;2271;281>,,,{1=10%}
+3713,神秘力量,神秘力量,Mysterious power,Sức mạnh bí ẩn,신비한 힘,Poder misterioso,พลังลึกลับ,,,,,,<2721;551;2591>,,,{7=10%;8=10%}
+3811,水栖息地,水棲息地,Water Habitat,Môi trường sống dưới nước,물 서식지,Habitat aquático,แหล่งที่อยู่อาศัยในน้ำ,,,,,,<1241;2031;801>,,,{7=10%;8=10%}
+3812,坚硬外壳,堅硬外殼,Stalwart Shell,Vỏ cứng,딱딱한 껍데기,Casca dura,เปลือกแข็ง,,,,,,<3021;1901;3411>,,,{1=12%}
+3813,海滩奇遇,海灘奇遇,Beach Adventure,Cuộc gặp gỡ trên bãi biển,해변 기우,Aventura na Praia,การผจญภัยบนชายหาด,,,,,,<641;631;551>,,,{7=10%;8=10%}
+3814,冰冻纪元,冰凍紀元,Frozen Age,Kỷ Băng Hà,얼음 기원,Era Congelada,ยุคน้ำแข็ง,,,,,,<1081;2301;3501>,,,{23=500}
+3911,幽灵感应,幽靈感應,Ghost Detection,Cảm giác ma quái,영감은,Sentido Fantasma,สัมผัสผี,,,,,,<1811;3411;2921>,,,{7=10%;8=10%}
+3912,胆战心寒,膽戰心寒,Tremble with fear,Rùng mình vì sợ hãi,냉각,Aterrorizado,หวาดกลัว,,,,,,<3021>,,,{1=12%}
+3913,怨毒邪力,怨毒邪力,Poisonous evil,Sức mạnh tà ác độc địa,끔찍한 힘,Malícia,ความอาฆาตพยาบาท,,,,,,<481;2271;2681>,,,{7=10%;8=10%}
+3914,调皮捣蛋,調皮搗蛋,Mischievous,Naughty,못된,Safado,ซน,,,,,,<2821;2721;1081>,,,{22=500}
+4011,岩石皮肤,岩石皮膚,Rock Skin,Làn da như đá,바위 피부,Pele de pedra,ผิวหิน,,,,,,<1251;301>,,,{7=10%;8=10%}
+4012,大地掌控,大地掌控,Geomancy,Kiểm soát Trái đất,지구 통제,Controle da Terra,การควบคุมโลก,,,,,,<491;2611>,,,{1=12%}
+4013,钢铁家族,鋼鐵家族,Steel Family,Gia đình Thép,강철 가족,Família de Aço,ครอบครัวสตีล,,,,,,<3411;1501;2961>,,,{7=10%;8=10%}
+4014,誓约伙伴,誓約夥伴,Pledge Partner,Những người bạn thề nguyện,맹세 파트너,Parceiro de compromisso,พันธมิตรผู้ให้คำมั่นสัญญา,,,,,,<2241;271;461>,,,{23=500}
+4511,森林同伴,森林同伴,Forest companions,Những người bạn của rừng,숲의 동반자,Companheiros da Floresta,เพื่อนร่วมป่า,,,,,,<61;301;2591>,,,{7=8%;8=8%}
+4512,大地掌控,大地掌控,Geomancy,Kiểm soát Trái đất,지구 통제,Controle da Terra,การควบคุมโลก,,,,,,<101;1611;2611>,,,{1=10%}
+4513,觉醒感应,覺醒感應,Awakening detection,Khả năng thức tỉnh,각성 유도,Indução do Despertar,การปลุกจิตสำนึก,,,,,,<2891;51>,,,{7=8%;8=8%}
+4611,格斗势力,格鬥勢力,Fighting Forces,Lực lượng chiến đấu,싸우는 힘,Força de combate,กำลังรบ,,,,,,<191;3511;2631>,,,{7=10%;8=10%}
+4612,拳之力量,拳之力量,Fist Power,Sức mạnh của nắm đấm,주먹의 힘,O poder do punho,พลังแห่งกำปั้น,,,,,,<231;271;2271>,,,{1=10%}
+4613,技巧掌控,技巧掌控,Technique control,Thủ thuật thành thạo,스킬 컨트롤,Controle de habilidades,การควบคุมทักษะ,,,,,,<2891;1071>,,,{7=10%;8=10%}
+4711,原始组合,原始組合,Original Formation,Sự kết hợp ban đầu,원래 조합,Combinação original,การผสมผสานดั้งเดิม,,,,,,<3341;2591;2631>,,,{7=10%;8=10%}
+4712,守护情谊,守護情誼,Protect the relationship,Bảo vệ tình bạn,후견,Protegendo a amizade,การปกป้องมิตรภาพ,,,,,,<51;1441;301>,,,{1=10%}
+4713,觉醒力量,覺醒力量,Awakening power,Sức mạnh thức tỉnh,각성 력,Despertar o Poder,พลังแห่งการตื่นรู้,,,,,,<131;271;71>,,,{7=10%;8=10%}
+4811,毒系同伴,毒系同伴,Poison-type companions,Đồng hành hệ Độc,독의 동반자,Companheiro Venenoso,เพื่อนคู่ใจพิษ,,,,,,<791;2871;3431>,,,{7=10%;8=10%}
+4812,毒之身躯,毒之身軀,Poisonous Body,Thân xác đầy độc,유독 한 몸,Corpo Venenoso,ร่างกายมีพิษ,,,,,,<371;2271;2961>,,,{1=10%}
+4813,神秘力量,神秘力量,Mysterious power,Sức mạnh huyền bí,신비한 힘,Poder misterioso,พลังลึกลับ,,,,,,<2721;331;1861>,,,{7=10%;8=10%}
+4911,森林同伴,森林同伴,Forest companions,Những người bạn rừng,숲의 동반자,Companheiros da Floresta,เพื่อนร่วมป่า,,,,,,<1251;2231;1611>,,,{7=10%;8=10%}
+4912,坚若磐石,堅若磐石,Rock solid,Vững như đá,바위처럼 단단함,Sólido como uma rocha,แข็งแกร่งดั่งหิน,,,,,,<1501;301;2591>,,,{1=12%}
+4913,地火蔓延,地火蔓延,Spreading of Ground Fire,Lửa ngầm lan rộng,지상 화재 확산,O fogo se espalha,ไฟลุกลาม,,,,,,<1231;2481>,,,{7=10%;8=10%}
+4914,吨位碾压,噸位碾壓,Tonnage Crush,Tonnage nghiền,톤수 롤링,Tonelagem rolante,การกลิ้งเป็นตัน,,,,,,<3501;1861>,,,{23=500}
+5011,医者仁心,醫者仁心,Benevolence,Lương y như từ mẫu,의자인심,O coração de um médico,หัวใจของหมอ,,,,,,<3351;781;1351>,,,{7=10%;8=10%}
+5012,萌宠联盟,萌寵聯盟,Cutie Alliance,Liên Minh Thú Cưng Dễ Thương,펫의 연맹,Aliança de animais fofos,พันธมิตรสัตว์เลี้ยงแสนน่ารัก,,,,,,<3541;221;2841>,,,{1=12%}
+5013,强大信念,強大信念,Strong Belief,Niềm tin mạnh mẽ,강한 신념,Crença Forte,ความเชื่อมั่นอันแรงกล้า,,,,,,<7001;2891;3281>,,,{7=10%;8=10%}
+5014,幸福之力,幸福之力,Power of Happiness,Sức mạnh của hạnh phúc,행복의 힘,O poder da felicidade,พลังแห่งความสุข,,,,,,<1771;1891;861>,,,{23=500}
+5411,水流力量,水流力量,Force of Current,Sức mạnh của dòng chảy,현재 힘,Força da Água,พลังน้ำ,,,,,,<3471;891;81>,,,{7=8%;8=8%}
+5412,水之波动,水之波動,Water Pulse,Gợn sóng nước,물의파동,Ondas de água,คลื่นน้ำ,,,,,,<1351;21;551>,,,{1=10%}
+5413,覆舟之势,覆舟之勢,Overturn,Thế giặc sắp lật thuyền; tình thế nguy hiểm,전복,A tendência de virar,แนวโน้มที่จะพลิกคว่ำ,,,,,,<2271;1861>,,,{7=8%;8=8%}
+5511,水流力量,水流力量,Force of Current,Sức mạnh của dòng chảy,현재 힘,Força da Água,พลังน้ำ,,,,,,<781;1861;2301>,,,{7=10%;8=10%}
+5512,水之波动,水之波動,Water Pulse,Gợn sóng nước,물의파동,Ondas de água,คลื่นน้ำ,,,,,,<21;801;3471>,,,{1=10%}
+5513,覆舟之势,覆舟之勢,Overturn,Xu hướng lật thuyền,전복,A tendência de virar,แนวโน้มที่จะพลิกคว่ำ,,,,,,<2871;2921;3501>,,,{7=10%;8=10%}
+5711,虫虫崛起,蟲蟲崛起,Bug Rising,Sự trỗi dậy của côn trùng,버그의 상승,Insetos sobem,แมลงเพิ่มขึ้น,,,,,,<1071;2681;31>,,,{7=10%;8=10%}
+5712,体质硬化,體質硬化,Hardened Body,Cơ thể cứng lại,물리적 경화,Endurecimento da constituição,การเสริมสร้างรัฐธรรมนูญ,,,,,,<3411;2961>,,,{1=12%}
+5713,刺客联盟,刺客聯盟,Assassins Alliance,Liên Minh Sát Thủ,리그 오브 어쌔신,Liga dos Assassinos,ลีกนักฆ่า,,,,,,<1291;3301>,,,{7=10%;8=10%}
+5714,刀锋战士,刀鋒戰士,Blade,Blade Runner,블레이드 워리어,Lâmina,ใบมีด,,,,,,<691;3001>,,,{14=500}
+5911,雷电家族,雷電家族,Electric family,Gia đình Raiden,라이덴 가족,Família Raiden,ครอบครัวไรเดน,,,,,,<1221;881;2891>,,,{7=10%;8=10%}
+5912,十万伏特,十萬伏特,Thunderbolt,100.000 vôn,10만볼트,100.000 volts,"100,000 โวลต์",,,,,,<731;91;2071>,,,{1=12%}
+5913,绝缘体质,絕緣體質,Insulator,Thể chất cách điện,절연체,Isolamento,ฉนวนกันความร้อน,,,,,,<2231;2611>,,,{7=10%;8=10%}
+5914,导电体质,導電體質,Conductive body,Thể chất dẫn điện,지휘자,Constituição condutiva,โครงสร้างตัวนำไฟฟ้า,,,,,,<3301;21>,,,{14=500}
+6011,火焰掌控,火焰掌控,Flame Control,Kiểm soát ngọn lửa,화염 제어,Maestria do Fogo,ความเชี่ยวชาญด้านไฟ,,,,,,<3291;741;1301>,,,{7=10%;8=10%}
+6012,生命之焰,生命之焰,Flame of life,Ngọn lửa của sự sống,생명의 불꽃,Chama da Vida,เปลวไฟแห่งชีวิต,,,,,,<1231>,,,{1=12%}
+6013,冲鸭冲鸭,沖鴨沖鴨,Let's go,Tấn công! Tấn công!,종덕 종덕,Vai! Vai!,ไป! ไป!,,,,,,<221;341>,,,{7=10%;8=10%}
+6014,水火相融,水火相融,Fusion of Water and Fire,Nước và lửa hòa quyện,물과 불,Fogo e água se misturam,การผสมผสานไฟและน้ำ,,,,,,<1311;631>,,,{14=500}
+6111,虫虫军团,蟲蟲軍團,Insect Army,Quân đoàn côn trùng,곤충 군단,Exército de insetos,กองทัพแมลง,,,,,,<571;1071;2681>,,,{7=10%;8=10%}
+6112,恢复克星,恢復剋星,Restore Nemesis,Khôi phục Nemesis,네메시스 복원,Destruidor de Restauração,บัสเตอร์ฟื้นฟู,,,,,,<1031;161;2271>,,,{1=12%}
+6113,物理铁墙,物理鐵牆,Physical wall,Bức tường vật lý,물리적 벽,Muro de Ferro Físico,กำแพงเหล็กกายภาพ,,,,,,<491;301;3281>,,,{7=10%;8=10%}
+6114,超级巨钳,超級巨鉗,Super Clamp,Siêu Kìm,슈퍼 집게,Garra Super Gigante,กรงเล็บยักษ์สุดยักษ์,,,,,,<801;3471>,,,{14=500}
+6311,怒涛之力,怒濤之力,Tide Power,Sức mạnh của những con sóng dữ,분노의 힘,Poder das Ondas Furiosas,พลังแห่งคลื่นยักษ์,,,,,,<1241;1311;801>,,,{7=10%;8=10%}
+6312,水神祝福,水神祝福,Blessings of the Water God,Phước lành của thần nước,물신의 축복,Bênção de Deus da Água,เทพเจ้าแห่งน้ำขอพร,,,,,,<551;21;3301>,,,{1=12%}
+6313,覆舟之势,覆舟之勢,Overturn,Thế mạnh của một chiếc thuyền bị lật,전복,A tendência de virar,แนวโน้มที่จะพลิกคว่ำ,,,,,,<1611;2721>,,,{7=10%;8=10%}
+6314,飞翔渴望,飛翔渴望,Flying Desire,Khát vọng bay,비행 욕망,Desejo de voar,ความปรารถนาที่จะบิน,,,,,,<1891;3511;2891;351>,,,{14=500}
+6411,水流力量,水流力量,Force of Water,Sức mạnh của dòng chảy,현재 힘,Força da Água,พลังน้ำ,,,,,,<1311;381;801>,,,{7=10%;8=10%}
+6412,冰系一脉,冰系一脈,Ice Bloodline,Dòng họ băng,아이스 라인,Elemento Gelo,ธาตุน้ำแข็ง,,,,,,<1921;3501;2301>,,,{1=12%}
+6413,温柔之心,溫柔之心,Gentle Heart,Trái tim dịu dàng,부드러운 마음,Coração terno,หัวใจที่อ่อนโยน,,,,,,<1501;471>,,,{7=10%;8=10%}
+6414,智囊担当,智囊擔當,Think Tank,Nhóm cố vấn,싱크 탱크,Grupo de reflexão,กลุ่มวิจัย,,,,,,<261;1901;221>,,,{23=500}
+6911,岩石壁垒,岩石壁壘,Rock Barrier,Hàng rào đá,바위 장벽,Parede de pedra,กำแพงหิน,,,,,,<3471;2011;2631>,,,{7=10%;8=10%}
+6912,沙暴之势,沙暴之勢,Sandstorm,Sức mạnh của bão cát,모래 폭풍,Tempestade de areia,พายุทราย,,,,,,<301;101;801>,,,{1=10%}
+6913,自然组合,自然組合,Natural combination,Sự kết hợp tự nhiên,자연스러운 조합,Combinação natural,การผสมผสานที่เป็นธรรมชาติ,,,,,,<451;2611;2591>,,,{7=10%;8=10%}
+7011,岩石突击,岩石突擊,Rock Assault,Tấn công bằng đá,암석 돌격,Assalto de pedra,ร็อคแอสซัลท์,,,,,,<3171;3501;691>,,,{7=10%;8=10%}
+7012,低空领域,低空領域,Low-altitude Field,Không phận tầm thấp,저공 영역,Área de baixa altitude,พื้นที่ต่ำ,,,,,,<3661;161;51>,,,{1=12%}
+7013,森林之约,森林之約,Contract of Forest,Hiệp ước Rừng,숲의 약속,Nomeação Florestal,การแต่งตั้งเจ้าหน้าที่ป่าไม้,,,,,,<381;1311;2841>,,,{7=10%;8=10%}
+7014,奇迹复原,奇跡復原,Miracle Recovery,Phục hồi kỳ diệu,기적의 복원,Recuperação Milagrosa,การฟื้นตัวอย่างอัศจรรย์,,,,,,<711;1851;81>,,,{14=500}
+7111,游泳健将,游泳健將,Swimmer,Vận động viên bơi lội xuất sắc,수영,Atleta de natação,นักกีฬาว่ายน้ำ,,,,,,<1311;3471;541>,,,{7=10%;8=10%}
+7112,贪吃嗜睡,貪吃嗜睡,Glutton who sleeps a lot,Ăn tham ngủ nhiều,폭식과 졸음,Gula e sonolência,ความตะกละและความง่วงนอน,,,,,,<1421>,,,{1=12%}
+7113,誓约伙伴,誓約夥伴,Pledge Partner,Những người bạn thề nguyện,맹세 파트너,Parceiro de compromisso,พันธมิตรผู้ให้คำมั่นสัญญา,,,,,,<1251;3501;471>,,,{7=10%;8=10%}
+7114,强力组合,強力組合,Powerful combination,Sự kết hợp mạnh mẽ,강력한 조합,Uma combinação poderosa,การผสมผสานอันทรงพลัง,,,,,,<401;631>,,,{23=500}
+7211,圣鸟传说,聖鳥傳說,The Legend of the Legendary Birds,Truyền thuyết về loài chim linh thiêng,신성한 새의 전설,Lenda do Pássaro Sagrado,ตำนานนกศักดิ์สิทธิ์,,,,,,<731;741>,,,{7=10%;8=10%}
+7212,冰封千里,冰封千里,Glaciate,Ngàn dặm băng giá,수천 마일의 얼어 붙은,Milhares de milhas de gelo,น้ำแข็งนับพันไมล์,,,,,,<3501;3021;3011>,,,{1=12%}
+7213,凝水成冰,凝水成冰,Turning water into ice,Nước đông thành đá.,얼음으로 응축,Condensação de água em gelo,การควบแน่นของน้ำกลายเป็นน้ำแข็ง,,,,,,<1241;2922;3471>,,,{7=10%;8=10%}
+7214,冰火两重,冰火兩重,Ice and Fire,Băng và lửa,더블 아이스,Fogo e gelo,ไฟและน้ำแข็ง,,,,,,<1231;3291;11>,,,{22=500}
+7311,圣鸟传说,聖鳥傳說,The Legend of the Legendary Birds,Truyền thuyết về loài chim linh thiêng,신성한 새의 전설,Lenda do Pássaro Sagrado,ตำนานนกศักดิ์สิทธิ์,,,,,,<741;721>,,,{7=10%;8=10%}
+7312,驱雷擎电,驅雷擎電,Thunderstorm,Điều khiển sấm sét,드라이브 썬더,Trovão e relâmpago,ฟ้าร้องฟ้าผ่า,,,,,,<331;1221;91>,,,{1=12%}
+7313,风驰电掣,風馳電掣,Fast As Lightning,Nhanh như chớp,빠른 스위치,Veloz e furioso,เร็วและแรง,,,,,,<51;3511;71>,,,{7=10%;8=10%}
+7314,过载虚弱,超載虛弱,Overload weakening,Sự suy yếu quá tải,과부하 및 약점,Fraqueza de sobrecarga,จุดอ่อนจากการโอเวอร์โหลด,,,,,,<1811;471;1441>,,,{23=500}
+7411,圣鸟传说,聖鳥傳說,The Legend of the Legendary Birds,Truyền thuyết về loài chim linh thiêng,신성한 새의 전설,Lenda do Pássaro Sagrado,ตำนานนกศักดิ์สิทธิ์,,,,,,<731;721>,,,{7=10%;8=10%}
+7412,炎焰之力,炎焰之力,Power of Fire,Sức mạnh của ngọn lửa cháy,화염의 힘,Poder da Chama,พลังแห่งเปลวไฟ,,,,,,<1231;1171;3291>,,,{1=12%}
+7413,燎原之火,燎原之火,Burning Flames,Đám lửa lan rộng,프레리 프레리의 불,Um incêndio na pradaria,ไฟไหม้ทุ่งหญ้า,,,,,,<1291;781;281>,,,{7=10%;8=10%}
+7414,全体打击,全體打擊,Attack all,Cuộc tấn công toàn diện,모든 타격,Ataque geral,โจมตีรอบด้าน,,,,,,<131;301;481>,,,{14=500}
+7511,龙系家族,龍系家族,Dragon-type family,Gia tộc Rồng,드래곤 패밀리,Família Dragão,ครอบครัวมังกร,,,,,,<3141;1891>,,,{7=10%;8=10%}
+7512,肥大体型,肥大體型,Extra-large size,Thể trạng béo phì,비대,Corpo obeso,ร่างกายอ้วน,,,,,,<3541;2481;3281>,,,{1=12%}
+7513,逆鳞之怒,逆鱗之怒,Outrage,Sự giận dữ của vảy ngược,규모의 분노,Fúria da Escala Reversa,ความโกรธแค้นของมาตราส่วนย้อนกลับ,,,,,,<3001;2231>,,,{7=10%;8=10%}
+7514,愤怒一击,憤怒一擊,Fury Strike,Đòn Trừng Phạt,화난 타격,Golpe Furioso,เป่าโกรธ,,,,,,<1301;3341;791>,,,{14=500}
+7611,王者桂冠,王者桂冠,King's Laurel,Vòng nguyệt quế của nhà vô địch,월계관,Coroa do Rei,มงกุฎของราชา,,,,,,<1271;2231;1251>,,,{7=15%;8=15%}
+7612,超凡念力,超凡念力,Extraordinary Psychic Powers,Sức mạnh tâm linh phi thường,놀라운 힘,Telecinese extraordinária,พลังจิตเคลื่อนย้ายวัตถุที่เหนือธรรมดา,,,,,,<771;1901;261>,,,{1=20%}
+7613,力量同源,力量同源,Same Energy Source,Sức mạnh cùng nguồn gốc,같은 힘,A mesma fonte de força,แหล่งพลังเดียวกัน,,,,,,<771;1391>,,,{7=15%;8=15%}
+7614,绝对压制,絕對壓制,Absolute suppression,Áp chế tuyệt đối,절대 억제,Supressão absoluta,การระงับโดยสมบูรณ์,,,,,,<1981;2301;271>,,,{14=750}
+7711,波导勇者,波導勇者,Aura Hero,Anh hùng dẫn sóng,파동의 용사,Herói Pássaro,นกฮีโร่,,,,,,<2241;711>,,,{7=10%;8=10%}
+7712,精神同步,精神同步,Psycho Synchronize,Đồng bộ tinh thần,정신 동기화,Sincronicidade Mental,ความสอดคล้องทางจิตใจ,,,,,,<261;3291>,,,{1=12%}
+7713,危机觉察,危機覺察,Danger Detection,Nhận thức khủng hoảng,위기 인식,Conscientização sobre crise,การตระหนักรู้ถึงวิกฤต,,,,,,<1171;1081>,,,{7=10%;8=10%}
+7714,超级仿制,超級仿製,Super Imitation,Siêu nhái,슈퍼 모방,Super imitação,การเลียนแบบสุดยอด,,,,,,<761>,,,{22=500}
+7811,草之誓约,草之誓約,Grass Pledge,Lời thề của cỏ,풀의 맹세,Juramento da Grama,คำสาบานแห่งหญ้า,,,,,,<281;2301;2011>,,,{7=10%;8=10%}
+7812,森林意志,森林意志,Forest Will,Ý chí của Rừng,숲의 의지,Vontade da Floresta,ฟอเรสต์วิลล์,,,,,,<1;3281;1291>,,,{1=10%}
+7813,冒险同伴,冒險同伴,Adventure Partner,Những người bạn đồng hành phiêu lưu,모험 동반자,Companheiro de aventura,เพื่อนร่วมผจญภัย,,,,,,<271;2591;131>,,,{7=10%;8=10%}
+7911,火焰掌控,火焰掌控,Flame Control,Kiểm soát ngọn lửa,화염 제어,Maestria do Fogo,ความเชี่ยวชาญด้านไฟ,,,,,,<1611;2481;3291>,,,{7=10%;8=10%}
+7912,炎焰之力,炎焰之力,Power of Fire,Sức mạnh của ngọn lửa,화염의 힘,Poder da Chama,พลังแห่งเปลวไฟ,,,,,,<2611;691;3281>,,,{1=10%}
+7913,太阳意志,太陽意志,Sun will,Ý chí của mặt trời,태양의 의지,Sol vai,ซันวิลล์,,,,,,<601;2631;3341>,,,{7=10%;8=10%}
+8011,水流力量,水流力量,Force of Current,Sức mạnh của dòng chảy,현재 힘,Força da Água,พลังน้ำ,,,,,,<551;3471;21;2922>,,,{7=10%;8=10%}
+8012,水之波动,水之波動,Water Pulse,Gợn sóng nước,물의파동,Ondas de água,คลื่นน้ำ,,,,,,<471;1861;3011>,,,{1=10%}
+8013,覆舟之势,覆舟之勢,Overturn,Xu hướng lật thuyền,전복,A tendência de virar,แนวโน้มที่จะพลิกคว่ำ,,,,,,<1311;2271;371>,,,{7=10%;8=10%}
+8611,妖精血脉,妖精血脈,Fairy Blood,Huyết mạch yêu tinh,포켓몬 혈통,Sangue de fada,เลือดนางฟ้า,,,,,,<1391;131;151>,,,{7=10%;8=10%}
+8612,飞行家族,飛行家族,Flying Family,Gia đình bay,비행 가족,Família voadora,ครอบครัวบินได้,,,,,,<161;571;701;2891>,,,{1=12%}
+8613,逃离陷阱,逃離陷阱,Trap Escape,Thoát khỏi cái bẫy,함정 탈출,Escapando da Armadilha,การหลบหนีจากกับดัก,,,,,,<491;2231;121>,,,{7=10%;8=10%}
+8614,劲敌对决,勁敵對決,Rival Showdown,Trận chiến của các Titan,강적 대결,Confronto de rivais,การเผชิญหน้าระหว่างคู่แข่ง,,,,,,<2031;2471;791;61>,,,{14=500}
+8811,雷电家族,雷電家族,Electric family,Gia đình Sấm sét,라이덴 가족,Família Raiden,ครอบครัวไรเดน,,,,,,<591;731>,,,{7=10%;8=10%}
+8812,毛皮静电,毛皮靜電,Coat Static,Tĩnh điện từ lông thú,모피 정적,Eletricidade estática de pele,ไฟฟ้าสถิตย์จากขนสัตว์,,,,,,<1221;2071;91>,,,{1=12%}
+8813,似龙非龙,似龍非龍,Dragon-like,Giống rồng mà không phải rồng,용처럼,"Como um dragão, mas não um dragão",เหมือนมังกรแต่ไม่ใช่มังกร,,,,,,<631;601;11>,,,{7=10%;8=10%}
+8814,毛茸茸们,毛茸茸們,Furries,Những người/vật mềm mại,모피,Peludo,เฟอร์รี่,,,,,,<2891;3431>,,,{23=500}
+8911,原始组合,原始組合,Original Formation,Sự kết hợp ban đầu,원래 조합,Combinação original,การผสมผสานดั้งเดิม,,,,,,<51;71;61;471>,,,{7=8%;8=8%}
+8912,守护情谊,守護情誼,Protect the relationship,Bảo vệ tình bạn,후견,Protegendo a amizade,การปกป้องมิตรภาพ,,,,,,<551;3431;131>,,,{1=10%}
+8913,觉醒力量,覺醒力量,Awakening power,Sức mạnh thức tỉnh,각성 력,Despertar o Poder,พลังแห่งการตื่นรู้,,,,,,<551;801;1861>,,,{7=8%;8=8%}
+9711,趣味魔法,趣味魔法,Hobby Magic,Ma thuật sở thích,취미 마법,Mágica divertida,ความสนุกมายากล,,,,,,<131;3431;3291>,,,{7=10%;8=10%}
+9712,鬼屋集合,鬼屋集合,Haunted House Gathering,Hội tụ tại nhà ma,귀신의 집 모임,Coleção Casa Mal-Assombrada,คอลเลคชั่นบ้านผีสิง,,,,,,<391;1811;2991>,,,{1=12%}
+9713,梦境掌控,夢境掌控,Dream Control,Kiểm soát giấc mơ,꿈 제어,Controle dos sonhos,การควบคุมความฝัน,,,,,,<1801;2841;3561>,,,{7=10%;8=10%}
+9714,幽灵出没,幽靈出沒,Ghosts appear,Ma quỉ xuất hiện,유령이 나타나다,Assombração Fantasma,ผีหลอกหลอน,,,,,,<771;1851>,,,{22=500}
+10311,地面打击,地面打擊,Ground Strike,Đánh bom mặt đất,지상 타격,Ataque terrestre,การโจมตีภาคพื้นดิน,,,,,,<401;1311;2611>,,,{7=10%;8=10%}
+10312,低空飞行,低空飛行,Low-altitude Fly,Chuyến bay ở độ cao thấp,저공 비행,Voando em baixa altitude,การบินที่ระดับความสูงต่ำ,,,,,,<161;701;341>,,,{1=12%}
+10313,丰缘对抗,豐緣對抗,Hoen Counter,Đối đầu Hoenn,호연 대결,Confronto de Hoenn,การเผชิญหน้าของโฮเอ็น,,,,,,<241;1291;271;451>,,,{7=10%;8=10%}
+10314,冲出迷宫,沖出迷宮,Maze Blitz,Vượt thoát khỏi mê cung,미궁 돌파,Sair do labirinto,หลุดออกจากเขาวงกต,,,,,,<2031;2011;2271>,,,{23=500}
+10711,虫虫崛起,蟲蟲崛起,Bug Rising,Sự Trỗi Dậy Của Côn Trùng,버그의 상승,Insetos sobem,แมลงเพิ่มขึ้น,,,,,,<571;2681;191;41>,,,{7=10%;8=10%}
+10712,好斗之心,好鬥之心,Heart of a Fighter,Tinh thần chiến đấu,투쟁의 심장,Coração Lutador,การต่อสู้ของหัวใจ,,,,,,<1301;271;461>,,,{1=12%}
+10713,毒素注入,毒素注入,Poison injection,Tiêm chất độc,독소 주입,Injeção de Toxina,การฉีดสารพิษ,,,,,,<391;2271>,,,{7=10%;8=10%}
+10714,除恶务尽,除惡務盡,Eradicate evil,Diệt trừ tận gốc,악을 멀리하십시오,Elimine todo o mal,กำจัดความชั่วร้ายทั้งหมด,,,,,,<3141;1841>,,,{14=500}
+10811,冰系家族,冰系家族,Ice-type family,Gia đình hệ Băng,얼음 가족,Família de gelo,ครอบครัวไอซ์,,,,,,<721;2301;3501>,,,{7=10%;8=10%}
+10812,世代最恶,世代最惡,The most evil of the generation,Thế hệ tồi tệ nhất,세대에서 최악,A pior geração,รุ่นที่แย่ที่สุด,,,,,,<2721;1841>,,,{1=12%}
+10813,恶鬼上门,惡鬼上門,Evil Spirit Appears,Ác quỷ gõ cửa,악령이 온다,Diabo Vem,ปีศาจมาแล้ว,,,,,,<391;1171;2921>,,,{7=10%;8=10%}
+10814,不良组合,不良組合,Poor combination,Sự kết hợp tồi,잘못된 조합,Má combinação,การผสมผสานที่ไม่ดี,,,,,,<2821;2271;2631>,,,{14=500}
+11711,地狱恶犬,地獄惡犬,Cerberus,Quỷ săn,헬 하운드,Cão do Inferno,สุนัขนรก,,,,,,<1081;3141>,,,{7=10%;8=10%}
+11712,狗狗出击,狗狗出擊,Dog Pound,Chó tấn công,개 공격,Ataque de cachorro,สุนัขโจมตี,,,,,,<241;1841>,,,{1=12%}
+11713,地狱烈焰,地獄烈焰,Inferno,Lửa địa ngục,지옥 불,Fogo do inferno,ไฟนรก,,,,,,<601;3341;1611>,,,{7=10%;8=10%}
+11714,生人勿近,生人勿近,No strangers allowed,Tránh xa,가까이 오지 마,Mantenha-se afastado,เก็บไว้ให้ห่าง,,,,,,<391;1851;3561>,,,{23=500}
+12211,圣兽传说,聖獸傳說,Legend of the Legendary Beasts,Huyền Thoại Thánh Thú,성수 전설,Lenda da Besta Sagrada,ตำนานสัตว์ศักดิ์สิทธิ์,,,,,,<1241;1231>,,,{7=10%;8=10%}
+12212,雷电降临,雷電降臨,Thunder arrives,Sấm sét giáng xuống,천둥이오고있다,Trovões e relâmpagos,เสียงฟ้าร้องฟ้าผ่า,,,,,,<591;731;2071>,,,{1=12%}
+12213,电光火石,電光火石,Quick Attack,Nhanh như chớp,전광석화,Raio,ฟ้าผ่า,,,,,,<1251;2591>,,,{7=10%;8=10%}
+12214,控场大师,控場大師,Master of Control,Bậc thầy điều khiển,현장 제어 석사,Mestre do Controle,ผู้เชี่ยวชาญด้านการควบคุม,,,,,,<261;2301>,,,{23=500}
+12311,圣兽传说,聖獸傳說,Legend of the Legendary Beasts,Huyền thoại Thánh Thú,성수 전설,Lenda da Besta Sagrada,ตำนานสัตว์ศักดิ์สิทธิ์,,,,,,<1221;1241>,,,{7=10%;8=10%}
+12312,怒火冲天,怒火沖天,Towering Rage,Nổi giận dữ dội,너무 화났어,Raiva,ความโกรธ,,,,,,<241;741;11>,,,{1=12%}
+12313,结晶帝王,結晶帝王,King of Crystals,Đế Vương Pha Lê,크리스탈 황제,Imperador de Cristal,จักรพรรดิคริสตัล,,,,,,<551;801;401>,,,{7=10%;8=10%}
+12314,百炼成钢,百煉成鋼,Turning ore into steel,Thép được tôi luyện từ nhiều lần rèn giũa.,강철로 단련하다,temperado em aço,อบให้แข็งเป็นเหล็ก,,,,,,<1901;1501>,,,{23=500}
+12411,圣兽传说,聖獸傳說,Legend of the Legendary Beasts,Truyền thuyết Thánh Thú,성수 전설,Lenda da Besta Sagrada,ตำนานสัตว์ศักดิ์สิทธิ์,,,,,,<1221;1231>,,,{7=10%;8=10%}
+12412,水之波动,水之波動,Water Pulse,Gợn sóng nước,물의파동,Ondas de água,คลื่นน้ำ,,,,,,<1311;3301;21>,,,{1=12%}
+12413,迅捷灵动,迅捷靈動,Swift and agile,Nhanh nhẹn và linh hoạt,신속하고 유연함,Rápido e ágil,รวดเร็วและคล่องตัว,,,,,,<1291;51>,,,{7=10%;8=10%}
+12414,镜花水月,鏡花水月,A Mirage,"Hoa trong gương, trăng trong nước",거울 꽃 물 달,Imagem espelhada,ภาพสะท้อน,,,,,,<2821;131>,,,{23=500}
+12511,岩石壁垒,岩石壁壘,Rock Barrier,Rào chắn đá,바위 장벽,Parede de pedra,กำแพงหิน,,,,,,<491;1501;401>,,,{7=10%;8=10%}
+12512,沙暴之势,沙暴之勢,Sandstorm,Sức mạnh của bão cát,모래 폭풍,Tempestade de areia,พายุทราย,,,,,,<2231;2611;101>,,,{1=12%}
+12513,极恶世代,極惡世代,Worst Generation,Thế hệ tồi tệ nhất,이블 세대,A Pior Geração,รุ่นที่แย่ที่สุด,,,,,,<2721;1081>,,,{7=10%;8=10%}
+12514,轰岩大炮,轟岩大炮,Rock Cannon,Pháo Đá Bùng Nổ,록 캐넌,Canhão de Explosão de Rochas,ปืนใหญ่ระเบิดหิน,,,,,,<751;2591>,,,{23=500}
+12541,岩枯驻防,岩枯駐防,Yanghu Garrison,Đồn Yanghu,옌후 주둔지,Guarnição de Yanghu,การ์ดนิรภัยหยานหู,,,,,,<1911;3171;4031;4141>,,,{7=15%;8=15%}
+12542,卷土重来,捲土重來,To make a comeback; to return with renewed strength,Sự trở lại mạnh mẽ; quay trở lại với sức mạnh mới,다시 일어서다; 세력을 회복하여 돌아오다,Retornar com força renovada; fazer uma reaparição triunfal,การกลับมาอย่างยิ่งใหญ่; กลับมาด้วยพลังที่เพิ่มขึ้น,,,,,,<1901;771;393>,,,{1=20%}
+12543,山崩地裂,山崩地裂,Landslide,Sạt lở đất,산사태,Deslizamento de terra,แผ่นดินถล่ม,,,,,,<1971;2381>,,,{7=15%;8=15%}
+12544,邪恶波动,邪惡波動,Evil fluctuation,Sự dao động tà ác,악의적 파동,Fluxo maligno,คลื่นพลังชั่วร้าย,,,,,,<3642;2431;3611>,,,{23=750}
+12611,霸主传说,霸主傳說,Heroic Legends,Huyền Thoại Bá Chủ,대 군주 전설,Lenda do Overlord,ตำนานแห่งโอเวอร์ลอร์ด,,,,,,<1271>,,,{7=15%;8=15%}
+12612,圣鸟统领,聖鳥統領,Leader of the Legendary Birds,Thủ lĩnh Chim Thánh,홀리 버드 사령관,Comandante do Pássaro Sagrado,ผู้บัญชาการนกศักดิ์สิทธิ์,,,,,,<721;731;741>,,,{1=20%}
+12613,水之波动,水之波動,Water Pulse,Gợn sóng nước,물의파동,Ondas de água,คลื่นน้ำ,,,,,,<1961;1241;3301>,,,{7=15%;8=15%}
+12614,超能之躯,超能之軀,Psychic Body,Siêu năng lực,슈퍼 바디,Super Poder,พลังพิเศษ,,,,,,<771;1901;551>,,,{23=750}
+12711,天空主宰,天空主宰,Master of the Sky,Chúa Tể Bầu Trời,하늘을 지배하세요,Governante do Céu,ผู้ปกครองท้องฟ้า,,,,,,<761;741>,,,{7=15%;8=15%}
+12712,浴火重生,浴火重生,Rise from the Ashes,Phượng hoàng lửa,잿더미에서 일어나,Ressurgir das Cinzas,ลุกขึ้นจากเถ้าถ่าน,,,,,,<1221;1231;1241>,,,{1=20%}
+12713,火焰掌控,火焰掌控,Flame Control,Kiểm soát ngọn lửa,화염 제어,Maestria do Fogo,ความเชี่ยวชาญด้านไฟ,,,,,,<1231;741;1301>,,,{7=15%;8=15%}
+12714,彩虹羽翼,彩虹羽翼,Rainbow Wing,Cánh cung vồng,무지개 날개,Asas de arco-íris,ปีกสายรุ้ง,,,,,,<1261;721;3511;51>,,,{23=750}
+12811,超能军团,超能軍團,Psuchic Legion,Đội quân siêu năng lực,초능력 군단,Legião Super Poderosa,กองทัพพลังพิเศษ,,,,,,<1991;261;771;1391>,,,{7=15%;8=15%}
+12812,救死扶伤,救死扶傷,Rescuing Hand,"Cứu người, cứu thương",인술,Resgatar os moribundos e os feridos,ช่วยเหลือผู้ที่กำลังจะตายและได้รับบาดเจ็บ,,,,,,<2441;501;861>,,,{1=20%}
+12813,时间缝隙,時間縫隙,Time Gap,Khe hở thời gian,시간의 틈,Intervalo de tempo,ช่องว่างเวลา,,,,,,<2841;1941;1951;2401>,,,{7=15%;8=15%}
+12814,守护伙伴,守護夥伴,Guardian Partner,Người bạn đồng hành,파트너 수호,Parceiro Guardião,พันธมิตรผู้พิทักษ์,,,,,,<4171;3251;3541>,,,{23=750}
+12911,宝石三家,寶石三家,Three Gems,Ba ngôi nhà đá quý,젬 산지 아,Três Jóias,ไตรรัตน์,,,,,,<1301;1311>,,,{7=10%;8=10%}
+12912,盘根错节,盤根錯節,Complicated and Tricky,Rắc rối và phức tạp,얽혀,Complexo,ซับซ้อน,,,,,,<2011;3281;1>,,,{1=12%}
+12913,不服单挑,不服單挑,Sparring,Đừng có mà!,확신 할 수 없음,Desafio único não convencido,ความท้าทายเดียวที่ไม่มั่นใจ,,,,,,<571;1421;1301>,,,{7=10%;8=10%}
+12914,滋润万物,滋潤萬物,Nourish All Things on Earth,Dưỡng nuôi muôn loài,모든 것을 보습,Nutrindo todas as coisas,บำรุงทุกสิ่งทุกอย่าง,,,,,,<1241;2922;781;1351>,,,{14=500}
+13011,宝石三家,寶石三家,Three Gems,Ba gia tộc đá quý,젬 산지 아,Três Jóias,ไตรรัตน์,,,,,,<1291;1311>,,,{7=10%;8=10%}
+13012,炎焰之力,炎焰之力,Power of Fire,Sức mạnh của ngọn lửa,화염의 힘,Poder da Chama,พลังแห่งเปลวไฟ,,,,,,<741;1231;11>,,,{1=12%}
+13013,不服单挑,不服單挑,Sparring,Không chấp nhận đấu tay đôi,확신 할 수 없음,Desafio único não convencido,ความท้าทายเดียวที่ไม่มั่นใจ,,,,,,<571;1291;51>,,,{7=10%;8=10%}
+13014,格斗专家,格鬥專家,Fighting Expert,Chuyên gia võ thuật,격투 전문가,Especialista em Luta,ผู้เชี่ยวชาญการต่อสู้,,,,,,<1391;271;1251>,,,{14=500}
+13111,宝石三家,寶石三家,Three Gems,Ba ngôi nhà đá quý,젬 산지 아,Três Jóias,ไตรรัตน์,,,,,,<1301;1291>,,,{7=10%;8=10%}
+13112,怒涛之力,怒濤之力,Tide Power,Sức mạnh của những con sóng dữ,분노의 힘,Poder das Ondas Furiosas,พลังแห่งคลื่นยักษ์,,,,,,<1241;631;801>,,,{1=12%}
+13113,污力滔滔,汙力滔滔,Smutty,Dơ bẩn tràn lan,난류 오염,O poder da sujeira,อำนาจแห่งความสกปรก,,,,,,<371;2922>,,,{7=10%;8=10%}
+13114,天生呆萌,天生呆萌,Born to be cute,Dáng vẻ ngây thơ dễ thương,귀엽게 태어나,Nascido para ser fofo,เกิดมาเพื่อน่ารัก,,,,,,<771;221;2871>,,,{23=500}
+13511,水流力量,水流力量,Force of Current,Sức mạnh của dòng chảy,현재 힘,Força da Água,พลังน้ำ,,,,,,<281;2301;171>,,,{7=8%;8=8%}
+13512,水之波动,水之波動,Water Pulse,Gợn sóng nước,물의파동,Ondas de água,คลื่นน้ำ,,,,,,<541;551;801>,,,{1=10%}
+13513,覆舟之势,覆舟之勢,Overturn,Thế mạnh của một chiếc thuyền bị lật,전복,A tendência de virar,แนวโน้มที่จะพลิกคว่ำ,,,,,,<131;461;2631>,,,{7=8%;8=8%}
+13911,超凡意志,超凡意志,Extraordinary will,Ý chí phi thường,특별한 의지,Vontade extraordinária,ความปรารถนาอันพิเศษ,,,,,,<261;771>,,,{7=10%;8=10%}
+13912,妖精同盟,妖精同盟,Pokémon Alliance,Liên minh Tiên,페어리 리그,Aliança das Fadas,พันธมิตรแฟรี่,,,,,,<3351;131;151>,,,{1=12%}
+13913,华丽大赛,華麗大賽,Pokémon Contests,Cuộc thi lộng lẫy,화려한 콘테스트,Concurso lindo,ประกวดสุดสวย,,,,,,<1891>,,,{7=10%;8=10%}
+13914,魔法闪耀,魔法閃耀,Dazzling Gleam,Phép thuật lấp lánh,매직 샤인,Brilho Mágico,ประกายวิเศษ,,,,,,<391;3291>,,,{22=500}
+14211,一拳超人,一拳超人,One Punch Man,One Punch Man,원 펀맨,Um Homem-Punho Único,วันพันช์แมน,,,,,,<1251;1071>,,,{7=10%;8=10%}
+14212,普通家庭,普通家庭,Normal Family,Gia đình bình thường,정상적인 가족,Família comum,ครอบครัวธรรมดา,,,,,,<51;1441;471>,,,{1=12%}
+14213,身强体壮,身強體壯,Strong and Healthy Physique,Mạnh mẽ và khỏe mạnh,강한 몸매,Forte e saudável,แข็งแรงและมีสุขภาพแข็งแรง,,,,,,<3541;2631;271>,,,{7=10%;8=10%}
+14214,懒人根骨,懶人根骨,Lazybones,Cơ địa của người lười biếng,게으른 뿌리,Ossos preguiçosos,กระดูกขี้เกียจ,,,,,,<261;711>,,,{14=500}
+14411,原始组合,原始組合,Original Formation,Sự kết hợp ban đầu,원래 조합,Combinação original,การผสมผสานดั้งเดิม,,,,,,<471;51;1421>,,,{7=10%;8=10%}
+14412,守护情谊,守護情誼,Protect the relationship,Bảo vệ tình bạn,후견,Protegendo a amizade,การปกป้องมิตรภาพ,,,,,,<1611;801;2631>,,,{1=10%}
+14413,觉醒力量,覺醒力量,Awakening power,Sức mạnh thức tỉnh,각성 력,Despertar o Poder,พลังแห่งการตื่นรู้,,,,,,<471;2611;61>,,,{7=10%;8=10%}
+15011,钢铁意志,鋼鐵意志,Steel Will,Ý chí sắt thép,강철 같은 의지,Vontade de Ferro,ความตั้งใจอันแรงกล้า,,,,,,<1901;331>,,,{7=10%;8=10%}
+15012,坚甲附体,堅甲附體,Rock armor addition,Giáp trụ vững chắc,강력한 갑옷,Posse de armadura,การครอบครองเกราะ,,,,,,<1071;2011;3281>,,,{1=12%}
+15013,横行霸道,橫行霸道,Oppressive,Ngạo mạn và chuyên quyền,맹렬한,Desenfreado,อาละวาด,,,,,,<491;2721>,,,{7=10%;8=10%}
+15014,岩石脑袋,岩石腦袋,Rock Head,Đầu đá,바위 머리,Cabeça de pedra,ร็อคเฮด,,,,,,<2591;401;301>,,,{23=500}
+16111,火焰掌控,火焰掌控,Flame Control,Khống chế ngọn lửa,화염 제어,Maestria do Fogo,ความเชี่ยวชาญด้านไฟ,,,,,,<2481;3341;3291>,,,{7=10%;8=10%}
+16112,炎焰之力,炎焰之力,Power of Fire,Sức mạnh của ngọn lửa cháy,화염의 힘,Poder da Chama,พลังแห่งเปลวไฟ,,,,,,<11;601;791;2611>,,,{1=10%}
+16113,太阳意志,太陽意志,Sun will,Ý chí của mặt trời,태양의 의지,Sol vai,ซันวิลล์,,,,,,<1441;2301;3511>,,,{7=10%;8=10%}
+17711,夏日好友,夏日好友,Summer Friend,Bạn bè mùa hè,여름 친구,Amigos de verão,เพื่อนฤดูร้อน,,,,,,<381;1241;221>,,,{7=10%;8=10%}
+17712,冲浪伙伴,衝浪夥伴,Surfing Buddy,Bạn đồng hành lướt sóng,서핑 파트너,Companheiro de surf,เพื่อนเล่นเซิร์ฟ,,,,,,<2031;1351;21>,,,{1=12%}
+17713,终极冲击,終極衝擊,Giga Impact,Tác động cuối cùng,최종 충격,Impacto final,ผลกระทบขั้นสุดท้าย,,,,,,<3301;631;551>,,,{7=10%;8=10%}
+17714,生命水滴,生命水滴,Life Dew,Giọt nước của sự sống,생명 물방울,\t Gota de Vida,_t ชีวิตหยด,,,,,,<3771;641;2401>,,,{23=500}
+18011,魅影重重,魅影重重,Multi Phantom,Bóng ma dày đặc,환상,O Fantasma,ผี,,,,,,<1811;3561>,,,{7=10%;8=10%}
+18012,漂浮打击,漂浮打擊,Floating Charge,Đòn đánh lơ lửng,플로팅 스트라이크,Golpe Flutuante,การโจมตีแบบลอยตัว,,,,,,<2871;481;2961>,,,{1=10%}
+18013,幽灵支脉,幽靈支脈,Branch of Ghost,Chi nhánh ma,유령 가지,Galho Fantasma,สาขาผี,,,,,,<2991;2921;2922>,,,{7=10%;8=10%}
+18111,幽灵感应,幽靈感應,Ghost Detection,Cảm nhận ma quái,영감은,Sentido Fantasma,สัมผัสผี,,,,,,<391;3411;3561>,,,{7=10%;8=10%}
+18112,异度空间,異度空間,Different Dimension,Không gian song song,외계인 공간,Espaço Alienígena,อวกาศของมนุษย์ต่างดาว,,,,,,<1391;771>,,,{1=12%}
+18113,巨人之力,巨人之力,Gigantic Power,Sức mạnh của người khổng lồ,거인의 힘,Poder Gigante,พลังยักษ์,,,,,,<1421;2631>,,,{7=10%;8=10%}
+18114,恶搞戏法,惡搞戲法,Trick,Mánh khóe và trò hề,속이기,Peça,แกล้งคน,,,,,,<2271;131;481>,,,{22=500}
+18411,灾祸预警,災禍預警,Catastrophe Alert,Cảnh báo thảm họa,재해 경고,Alerta de desastre,การเตือนภัยพิบัติ,,,,,,<2821;3141>,,,{7=10%;8=10%}
+18412,协力救灾,協力救災,Giving Relief to Disaster Together,Cứu trợ thiên tai chung,재난 구호를 위해 협력,Ajudando com o socorro em desastres,ช่วยเหลือบรรเทาทุกข์ภัยพิบัติ,,,,,,<1291;1311;1351>,,,{1=12%}
+18413,惩恶扬善,懲惡揚善,Punish the evil and praise the good,Trừng ác扬善,악을 벌하고 선을 장려하십시오,Punir o mal e promover o bem,ลงโทษความชั่วและส่งเสริมความดี,,,,,,<3301;241>,,,{7=10%;8=10%}
+18414,超级进化,超級進化,Mega Evolution,Siêu Tiến Hóa,슈퍼 진화,Mega Evolução,วิวัฒนาการเมก้า,,,,,,<2301;21;41>,,,{23=500}
+18511,胆战心寒,膽戰心寒,Tremble with fear,Rùng mình vì sợ hãi,냉각,Aterrorizado,หวาดกลัว,,,,,,<3021;2871;3011>,,,{7=10%;8=10%}
+18512,冰雪交加,冰雪交加,Snowstorm,Mưa đá và tuyết,눈과 얼음,Gelo e neve,น้ำแข็งและหิมะ,,,,,,<3301;3501>,,,{1=10%}
+18513,生人勿近,生人勿近,No strangers allowed,Tránh xa,가까이 오지 마,Mantenha-se afastado,เก็บไว้ให้ห่าง,,,,,,<391;2301>,,,{7=10%;8=10%}
+18611,冰系家族,冰系家族,Ice-type family,Gia đình Băng,얼음 가족,Família de gelo,ครอบครัวไอซ์,,,,,,<2871;3011;551>,,,{7=10%;8=10%}
+18612,暴雪感应,暴雪感應,Blizzard Detection,Phát hiện bão tuyết,블리자드 유도,Detecção de nevasca,การตรวจจับพายุหิมะ,,,,,,<801;3471;1311>,,,{1=10%}
+18613,冰封力量,冰封力量,Freezing Power,Sức mạnh băng giá,얼어 붙은 힘,Poder Congelado,พลังแห่งการแช่แข็ง,,,,,,<471;2301;371>,,,{7=10%;8=10%}
+18911,龙族崛起,龍族崛起,Dragon Rising,Sự Trỗi Dậy của Gia Tộc Rồng,드래곤 라이즈,Ascensão do Dragão,มังกรขึ้น,,,,,,<3141;3001>,,,{7=10%;8=10%}
+18912,头铁刚毅,頭鐵剛毅,Strong Iron Head,Cứng đầu và kiên quyết,머리 철제 인내,Determinado,จิตใจเข้มแข็ง,,,,,,<2961;331;2611>,,,{1=12%}
+18913,准神之力,准神之力,Power of the Pseudo-legendary,Sức mạnh của bán thần,준신의 힘,Poder Quase-Deus,พลังที่เสมือนพระเจ้า,,,,,,<2231;3541>,,,{7=10%;8=10%}
+18914,飞翔渴望,飛翔渴望,Flying Desire,Khát vọng bay,비행 욕망,Desejo de voar,ความปรารถนาที่จะบิน,,,,,,<3511;2891;351>,,,{14=500}
+19011,钢筋铁骨,鋼筋鐵骨,Steel Frame,Xương sắt da thép,강화 된 철 뼈,Aço,เหล็ก,,,,,,<331;1501>,,,{7=10%;8=10%}
+19012,某某科学,某某科學,Certain science,Khoa học nhất định,그래서 과학,Ciência,ศาสตร์,,,,,,<261;3021>,,,{1=12%}
+19013,强身健体,強身健體,Getting into Shape,Tăng cường sức khỏe,체력,Fortaleça seu corpo,เสริมสร้างร่างกายให้แข็งแรง,,,,,,<1071;271;2631>,,,{7=10%;8=10%}
+19014,神经网络,神經網路,Neural Network,Mạng lưới thần kinh,신경망,Redes Neurais,เครือข่ายประสาท,,,,,,<331;2591;2961>,,,{23=500}
+19111,原始之力,原始之力,Ancient Power,Sức mạnh nguyên thủy,원시의 힘,Poder Primordial,พลังดั้งเดิม,,,,,,<1251;401;3501>,,,{7=10%;8=10%}
+19112,岩石护身,岩石護身,Rock Guard,Bảo vệ bằng đá,락 가드,Armadura de pedra,เกราะหิน,,,,,,<491;1501;691>,,,{1=12%}
+19113,永恒守护,永恆守護,Eternal guardian,Vệ hộ vĩnh hằng,영원한 수호자,Guardião Eterno,ผู้พิทักษ์นิรันดร์,,,,,,<1921;1931>,,,{7=10%;8=10%}
+19114,溯源而战,溯源而戰,Fight back,Chiến đấu đến nguồn gốc,근원에 반격,Lutando até a fonte,การต่อสู้เพื่อแหล่งที่มา,,,,,,<2381;2241>,,,{23=500}
+19211,冰冷一脉,冰冷一脈,Icy veins,Dòng dõi băng giá,얼음 정맥,Veia gelada,เส้นเลือดที่เย็นเยือก,,,,,,<721;3021;1851>,,,{7=10%;8=10%}
+19212,隐秘冰族,隱秘冰族,Hidden Ice Clan,Bộ tộc băng giá bí ẩn,숨겨진 아이스 레이스,Tribo Secreta do Gelo,เผ่าน้ำแข็งลับ,,,,,,<1081;381;1861>,,,{1=12%}
+19213,永恒守护,永恆守護,Eternal guardian,Vệ hộ vĩnh hằng,영원한 수호자,Guardião Eterno,ผู้พิทักษ์นิรันดร์,,,,,,<1911;1931>,,,{7=10%;8=10%}
+19214,溯源而战,溯源而戰,Fight back,Chiến đấu đến nguồn gốc,근원에 반격,Lutando até a fonte,การต่อสู้เพื่อแหล่งที่มา,,,,,,<2381;2241>,,,{23=500}
+19311,钢筋铁骨,鋼筋鐵骨,Steel Frame,Xương sắt da thép,강화 된 철 뼈,Aço,เหล็ก,,,,,,<1501;1901;2961>,,,{7=10%;8=10%}
+19312,抱团头铁,抱團頭鐵,Hold the iron,"Gắn bó, cứng đầu",바 오투 안투 아이언,Mantenha-se unido,ยึดไว้ด้วยกัน,,,,,,<331;571;2611>,,,{1=12%}
+19313,永恒守护,永恆守護,Eternal guardian,Vệ thần vĩnh cửu,영원한 수호자,Guardião Eterno,ผู้พิทักษ์นิรันดร์,,,,,,<1911;1921>,,,{7=10%;8=10%}
+19314,溯源而战,超能軍團,Psuchic Legion,Chiến đấu đến nguồn gốc,슈퍼 군단,Legião Super Poderosa,กองทัพพลังพิเศษ,,,,,,<2381;2241>,,,{23=500}
+19411,超能军团,龍系家族,Dragon Family,Đội quân siêu năng lực,드래곤 패밀리,Família Dragão,ครอบครัวมังกร,,,,,,<1391;2401;2841>,,,{7=10%;8=10%}
+19412,龙系家族,誓約夥伴,Vow Partner,Gia tộc Rồng,맹세 파트너,Parceiro de compromisso,พันธมิตรผู้ให้คำมั่นสัญญา,,,,,,<751;1891;3591;4131>,,,{1=12%}
+19413,誓约伙伴,無限精靈,Eon Pokémon,Đối tác thề ước,무한 마법사,Elfos ilimitados,เอลฟ์ไม่จำกัด,,,,,,<721;701;341;2891>,,,{7=10%;8=10%}
+19414,无限精灵,超能軍團,Psuchic Legion,Elf Vô Cực,슈퍼 군단,Legião Super Poderosa,กองทัพพลังพิเศษ,,,,,,<1951;1031;801;691>,,,{23=500}
+19511,超能军团,龍系家族,Dragon Family,Đội quân siêu năng lực,드래곤 패밀리,Família Dragão,ครอบครัวมังกร,,,,,,<261;1901;551>,,,{7=10%;8=10%}
+19512,龙系家族,誓約夥伴,Vow Partner,Gia tộc Rồng,맹세 파트너,Parceiro de compromisso,พันธมิตรผู้ให้คำมั่นสัญญา,,,,,,<751;1891;3591;4131>,,,{1=12%}
+19513,誓约伙伴,無限精靈,Eon Pokémon,Những người bạn thề ước,무한 마법사,Elfos ilimitados,เอลฟ์ไม่จำกัด,,,,,,<741;701;3511;51>,,,{7=10%;8=10%}
+19514,无限精灵,溯源而戰,Fight back,Yêu tinh vô hạn,근원에 반격,Lutando até a fonte,การต่อสู้เพื่อแหล่งที่มา,,,,,,<1941;1031;801;691>,,,{14=500}
+19611,命运对决,命運對決,Duel of Fate,Sự va chạm của số phận,운명의 대결,Duelo fatídico,การดวลแห่งโชคชะตา,,,,,,<1971;91>,,,{7=15%;8=15%}
+19612,海洋扩张,海洋擴張,Ocean Expansion,Sự tách giãn đáy biển,해양 확장,Expansão oceânica,การขยายตัวของมหาสมุทร,,,,,,<1241;1311;3301>,,,{1=20%}
+19613,三界霸主,三界霸主,Overlord of the Three Realms,Đế chủ Tam giới,세 왕국의 대 군주,Senhor Supremo dos Três Reinos,เจ้าแห่งสามอาณาจักร,,,,,,<1981;2231>,,,{7=15%;8=15%}
+19614,呼风唤雨,呼風喚雨,Power of Nature,điều khiển thời tiết; quyền năng to lớn,바람을 불러 비를 불러,Dê as ordens,เรียกการยิง,,,,,,<751;631>,,,{23=750}
+19711,霸主之力,霸主之力,Power of the Overlord,Sức mạnh của bá chủ,대군주의 힘,Poder do Overlord,โอเวอร์ลอร์ดพาวเวอร์,,,,,,<1981;1891>,,,{7=15%;8=15%}
+19712,水来土掩,水來土掩,Adapt to different situations,"Nước đến, đất ngăn.",은폐,A água vem e o solo cobre,น้ำมาและดินก็ปกคลุม,,,,,,<1961;1241;631>,,,{1=20%}
+19713,火山之怒,火山之怒,Rage of Volcano,Sự Phẫn Nộ Của Núi Lửa,화산 분노,Fúria do Vulcão,ความโกรธของภูเขาไฟ,,,,,,<1251;1231;1611>,,,{7=15%;8=15%}
+19714,大陆创世,大陸創世,Creation of Continent,Sự sáng thế lục địa,대륙 창조,Criação Continental,การสร้างสรรค์ระดับทวีป,,,,,,<1251;1501;2591>,,,{23=750}
+19811,霸主争夺,霸主爭奪,Fight of the Overlords,Cuộc chiến giành bá quyền,지배,Lute pela supremacia,ต่อสู้เพื่อความเป็นใหญ่,,,,,,<1961;1251>,,,{7=15%;8=15%}
+19812,龙系崛起,龍系崛起,The Rise of the Dragon-type,Sự trỗi dậy của dòng dõi rồng,드래곤 라이즈,Ascensão do Dragão,มังกรขึ้น,,,,,,<1891;3141;3541>,,,{1=20%}
+19813,领空制衡,領空制衡,Check and balance of airspace,Kiểm soát không phận,공역 점검 및 균형,Equilíbrio do espaço aéreo,การปรับสมดุลน่านฟ้า,,,,,,<1261;751;31>,,,{7=15%;8=15%}
+19814,毁灭打击,毀滅打擊,Destructive Strike,Đòn đánh tàn phá,엄청난 타격,Destruição,การทำลาย,,,,,,<1971;3001;1301>,,,{14=750}
+19911,钢之意志,鋼之意志,Will of Steel,Ý chí bằng thép,강철의 의지,Vontade de Aço,ความตั้งใจแห่งเหล็ก,,,,,,<2351;3161;1501>,,,{7=15%;8=15%}
+19912,超凡身躯,超凡身軀,Extraordinary Body,Thân thể phi thường,비범한 몸,Corpo extraordinário,ร่างกายที่น่าทึ่ง,,,,,,<3641;1901;2401>,,,{1=20%}
+19913,许愿同伴,許願同伴,Wishing Companion,Người bạn đồng hành ước nguyện,소원 친구,Companheiro de desejos,ขออวยพรให้เพื่อนคู่ใจ,,,,,,<1391;3351;861>,,,{7=15%;8=15%}
+19914,千年彗星,千年彗星,Millennium Comet,Sao chổi thiên niên kỷ,천년 혜성,Cometa do Milênio,ดาวหางพันปี,,,,,,<1971;1841;1891;3171>,,,{23=750}
+20111,草之誓约,草之誓約,Oath of the Grass,Lời thề của cỏ,풀의 맹세,Juramento da Erva,คำสาบานแห่งหญ้า,,,,,,<281;781;2301>,,,{7=10%;8=10%}
+20112,森林意志,森林意志,Forest Will,Ý chí của rừng,숲의 의지,Vontade da Floresta,เจตนารมณ์แห่งป่า,,,,,,<1441;3281;1291>,,,{1=10%}
+20113,冒险同伴,冒險夥伴,Adventure companions,Những người bạn đồng hành phiêu lưu,모험 동료,Companheiros de aventura,เพื่อนร่วมผจญภัย,,,,,,<471;2611;3431>,,,{7=10%;8=10%}
+20211,烈焰战场,烈焰戰場,Burning Battlefield,Chiến trường lửa,불타는 전장,Campo de batalha de chamas,สนามรบแห่งเปลวเพลิง,,,,,,<1231;601;241;11>,,,{7=10%;8=10%}
+20212,格斗高手,格鬥高手,Martial arts master,Cao thủ võ thuật,격투 전문가,Mestre da Luta,ปรมาจารย์การต่อสู้,,,,,,<2241;2631;2481;3511>,,,{1=12%}
+20213,神奥御三家,神奧禦三家,Sinnoh starters,Bộ ba khởi đầu Sinnoh,신오 스타팅 포켓몬,As Três Grandes Famílias de Sinnoh,สามตระกูลใหญ่แห่งซินโอห์,,,,,,<2031;2011>,,,{7=10%;8=10%}
+20214,高深拳法,高深拳法,Profound Boxing Technique,Tuyệt kỹ quyền pháp,심오한 권법,Boxe avançado,มวยขั้นสูง,,,,,,<1301;271;461;231>,,,{14=500}
+20311,水系新秀,水系新秀,Water Rookie,Lính mới hệ Nước,워터 루키,Novato na Água,มือใหม่เล่นน้ำ,,,,,,<641;3771;221>,,,{7=10%;8=10%}
+20312,钢铁身躯,鋼鐵身軀,Steel body,Thân thể bằng thép,스틸 바디,Corpo de aço,ตัวเรือนเหล็ก,,,,,,<2241;2611>,,,{1=12%}
+20313,收服之战,收服之戰,Battle of Capture,Cuộc chiến chinh phục,정복하다,Lute para conquistar,การต่อสู้ที่ต้องพิชิต,,,,,,<401;1231;91>,,,{7=10%;8=10%}
+20314,三角情谊,三角情誼,Triangle Friendship,Tình tay ba,삼각형 우정,Triângulo,สามเหลี่ยม,,,,,,<591;891>,,,{14=500}
+20711,雷电家族,雷電家族,Electric family,Gia đình Sấm sét,라이덴 가족,Família Raiden,ครอบครัวไรเดน,,,,,,<51;3291;2301>,,,{7=10%;8=10%}
+20712,自然之力,自然之力,Power of Nature,Sức mạnh của thiên nhiên,자연의 힘,Força da Natureza,พลังแห่งธรรมชาติ,,,,,,<91;1081;3511>,,,{1=10%}
+20713,电光意识,電光意識,Electric awareness,Ý thức điện quang,전기 광학 인식,Consciência Elétrica,การรับรู้เกี่ยวกับไฟฟ้า,,,,,,<131;3281;2961>,,,{7=10%;8=10%}
+22311,地表强者,地表強者,Strongest on Earth,Mạnh nhất trên Trái đất,표면에 강함,Forte na Terra,แข็งแกร่งบนโลก,,,,,,<491;2721>,,,{7=10%;8=10%}
+22312,潜藏杀机,潛藏殺機,Hidden Killing Intentions,Sát khí ẩn giấu,숨겨진 살인,Perigo oculto,อันตรายที่ซ่อนเร้น,,,,,,<571;801;101>,,,{1=12%}
+22313,回归理智,回歸理智,Return to Reason,Trở lại lý trí,이유로 돌아 가기,Retorno à razão,กลับไปสู่เหตุผล,,,,,,<3301;1301>,,,{7=10%;8=10%}
+22314,刀锋战士,刀鋒戰士,Blade,Blade Runner,블레이드 워리어,Lâmina,ใบมีด,,,,,,<3001;691>,,,{14=500}
+22411,格斗势力,格鬥勢力,Fighting Forces,Lực lượng chiến đấu,싸우는 힘,Força de combate,กำลังรบ,,,,,,<1301;3511;2631>,,,{7=10%;8=10%}
+22412,誓约伙伴,誓約夥伴,Pledge Partner,Những người bạn đồng맹,맹세 파트너,Parceiro de compromisso,พันธมิตรผู้ให้คำมั่นสัญญา,,,,,,<771;1081;91>,,,{1=12%}
+22413,不屈意志,不屈意志,Unyielding,Ý chí bất khuất,불굴의 의지,Vontade Inflexível,ความมุ่งมั่นที่ไม่ยอมแพ้,,,,,,<1391;271;341>,,,{7=10%;8=10%}
+22414,隐秘钢族,隱秘鋼族,Hidden Steel Race,Bộ tộc thép bí mật,숨겨진 강철 제품군,Tribo Secreta do Aço,เผ่าเหล็กลับ,,,,,,<571;331>,,,{14=500}
+22711,毒系同伴,毒系同伴,Poison-type companions,Đồng minh hệ Độc,독의 동반자,Companheiro Venenoso,เพื่อนคู่ใจพิษ,,,,,,<131;471;3011>,,,{7=10%;8=10%}
+22712,毒之身躯,毒之身軀,Poisonous Body,Thân thể độc,유독 한 몸,Corpo Venenoso,ร่างกายมีพิษ,,,,,,<481;271;2631>,,,{1=10%}
+22713,神秘力量,神秘力量,Mysterious power,Sức mạnh bí ẩn,신비한 힘,Poder misterioso,พลังลึกลับ,,,,,,<281;371;1081>,,,{7=10%;8=10%}
+23011,草之誓约,草之誓約,Grass Pledge,Lời thề của cỏ,풀의 맹세,Juramento da Grama,คำสาบานแห่งหญ้า,,,,,,<281;781;2011>,,,{7=10%;8=10%}
+23012,森林意志,森林意志,Forest Will,Ý chí của rừng,숲의 의지,Vontade da Floresta,ฟอเรสต์วิลล์,,,,,,<1081;3281;1861>,,,{1=10%}
+23013,冒险同伴,冒險同伴,Adventure Partner,Những người bạn đồng hành phiêu lưu,모험 동반자,Companheiro de aventura,เพื่อนร่วมผจญภัย,,,,,,<2871;3011;3431>,,,{7=10%;8=10%}
+23511,超凡意志,超凡意志,Extraordinary Will,Ý chí phi thường,특별한 의지,Vontade extraordinária,ความปรารถนาอันพิเศษ,,,,,,<1261;1931;1901>,,,{7=15%;8=15%}
+23512,龙龙军团,龍龍軍團,Dragon Army,Đội quân Longlong,드래곤 아미,Legião do Dragão,กองทัพมังกร,,,,,,<751;3141;3001>,,,{1=20%}
+23513,神话精灵,神話精靈,Mythical Pokémon,Linh hồn thần thoại,신화 엘프,Mitologia Elfo,เทพนิยายเอลฟ์,,,,,,<2391;1941>,,,{7=15%;8=15%}
+23514,时空传说,時空傳說,Time and Space,Biên niên sử Thời gian và Không gian,시간과 공간의 전설,Lendas do Tempo e do Espaço,ตำนานแห่งกาลเวลาและอวกาศ,,,,,,<2361;1891;2231>,,,{14=750}
+23611,水流力量,水流力量,Force of Water,Sức mạnh của dòng chảy,현재 힘,Força da Água,พลังน้ำ,,,,,,<631;1241;3301>,,,{7=15%;8=15%}
+23612,龙族出击,龍族出擊,Dragon Attack,Bộ tộc rồng tấn công,드래곤 공격,Ataque do Dragão,การโจมตีของมังกร,,,,,,<2391;1951;751>,,,{1=20%}
+23613,誓约朋友,誓約朋友,Vow Friends,Bạn bè thề nguyện,서약 친구,Amigos do Juramento,คำมั่นสัญญาเพื่อน,,,,,,<2431;1841;1071>,,,{7=15%;8=15%}
+23614,时空对决,時空對決,Time and Space Duel,Đấu Tranh Thời Không,시간과 공간 대결,Confronto de Tempo e Espaço,การเผชิญหน้าระหว่างเวลาและอวกาศ,,,,,,<2351;3591>,,,{14=750}
+23811,苏醒之力,蘇醒之力,Power of Awaken,,각성의 힘,Despertar o Poder,พลังแห่งการตื่นรู้,,,,,,<2361;1421;711>,,,{7=15%;8=15%}
+23812,崛陆而起,崛陸而起,Rise from the land,Trỗi dậy từ mặt đất,땅에서 일어나,Erguendo-se da Terra,ขึ้นจากแผ่นดิน,,,,,,<1971;401;2231>,,,{1=20%}
+23813,永恒传说,永恆傳說,Eternal Legend,Huyền Thoại Vĩnh Hằng,영원한 전설,Lenda Eterna,ตำนานอันเป็นนิรันดร์,,,,,,<1911;1921;1931>,,,{7=15%;8=15%}
+23814,亦正亦邪,亦正亦邪,Right and Evil,Vừa chính nghĩa vừa tà ác,옳고 그름 모두,Bem e Mal,ความดีและความชั่ว,,,,,,<2431;2821;1081>,,,{14=750}
+23911,幽灵新影,幽靈新影,Ghost Rookie,Bóng ma mới,유령 그림자,Fantasma Nova Sombra,ผีเงาใหม่,,,,,,<2991;1811;3661>,,,{7=15%;8=15%}
+23912,飞龙在天,飛龍在天,Sky Lord,Rồng bay trên trời,비룡재천,Dragão Voador no Céu,มังกรบินบนท้องฟ้า,,,,,,<3591;3141;1891>,,,{1=20%}
+23913,异界对抗,異界對抗,Exodus Encounter,Đối đầu thế giới khác,이계대항,Confronto de mundos diferentes,การเผชิญหน้าระหว่างต่างโลก,,,,,,<2441;2031;1861>,,,{7=15%;8=15%}
+23914,神话精灵,神話精靈,Mythical Pokémon,Tinh linh thần thoại,신화요정,Mitologia Elfo,เทพนิยายเอลฟ์,,,,,,<2351;2361>,,,{23=750}
+24011,超凡能力,超凡能力,Extraordinary ability,Siêu năng lực,비범 한 능력,Habilidade extraordinária,ความสามารถอันพิเศษ,,,,,,<1901;261;551>,,,{7=10%;8=10%}
+24012,誓约伙伴,誓約夥伴,Pledge Partner,Đối tác thề ước,맹세 파트너,Parceiro de compromisso,พันธมิตรผู้ให้คำมั่นสัญญา,,,,,,<751;491;2961>,,,{1=12%}
+24013,新月起舞,新月起舞,Dance from the new moon,Trăng non múa,뉴 문 댄스,Dança da Lua Crescente,รำจันทร์เสี้ยว,,,,,,<2431>,,,{7=10%;8=10%}
+24014,优雅化身,優雅化身,Elegant Incarnation,Hiện thân của sự thanh lịch,우아한 화신,Encarnação elegante,การจุติแห่งความสง่างาม,,,,,,<1391;2471;2841>,,,{23=500}
+24211,心灵感应,心靈感應,Telepathy,Thần giao cách cảm,텔레파시,Telepatia,โทรพาธี,,,,,,<501;1391;3591>,,,{7=15%;8=15%}
+24212,海之神殿,海之神殿,Temple of the Sea,Đền thờ biển cả,바다의 신전,Templo do Mar,วิหารแห่งท้องทะเล,,,,,,<1961;381;2031;3681>,,,{1=20%}
+24213,湿润之躯,濕潤之軀,Moist body,Cơ thể ẩm ướt,축축한 몸,Corpo úmido,ร่างกายชุ่มชื้น,,,,,,<641;3541;2411>,,,{7=15%;8=15%}
+24214,萌样神兽Ⅱ,優雅化身,Elegant incarnation,Thú Cưng Dễ Thương II,우아한 화신,Elegância encarnada,ความสง่างามที่ปรากฎกาย,,,,,,<2461;4121;1991;1281>,,,{23=750}
+24311,邪恶势力,邪惡勢力,Evil forces,Lực lượng tà ác,악의 세력,Forças do Mal,กองกำลังชั่วร้าย,,,,,,<2821;2721;3301>,,,{7=15%;8=15%}
+24312,神奥对决,神奧對決,Mystery,Trận đấu Sinnoh,신오 대결,Duelo de Sinnoh,ซินโอดูเอล,,,,,,<1981;1071;1291>,,,{1=20%}
+24313,无月之夜,無月之夜,Moonless night,Đêm không trăng,달이없는 밤,Noite sem lua,คืนไร้จันทร์,,,,,,<2381;2401>,,,{7=15%;8=15%}
+24314,时空保护,時空保護,Space-time protection,Bảo vệ không-thời gian,시간과 공간 보호,Proteção do tempo e do espaço,การปกป้องเวลาและสถานที่,,,,,,<2351;1391;471>,,,{22=750}
+24411,草系新贵,草系新貴,Grass Rookie,Quý tộc hệ cỏ,풀 타입 새 포켓몬,Novato do tipo grama,ผู้มาใหม่ประเภทหญ้า,,,,,,<2471;1291;3661>,,,{7=15%;8=15%}
+24412,隐秘飞行,隱秘飛行,Stealth Fly,Chuyến bay bí mật,은밀 비행,Voo furtivo,การบินแบบสเตลท์,,,,,,<1271;701;3591>,,,{1=20%}
+24413,探险同伴,探險同伴,Adventure Parter,Những người bạn đồng hành phiêu lưu,탐험 파트너,Companheiro de expedição,เพื่อนร่วมเดินทาง,,,,,,<3631;3771;3841>,,,{7=15%;8=15%}
+24414,异界纷争,異界紛爭,Exodus Dispute,Xung đột thế giới khác,이계 분쟁,Conflito Alienígena,ความขัดแย้งระหว่างมนุษย์ต่างดาว,,,,,,<2391;4131;2031>,,,{23=750}
+24611,神之火焰,神之火焰,God's Flame,Ngọn lửa của thần,신의 불꽃,A chama de Deus,เปลวไฟของพระเจ้า,,,,,,<3211;1231;741>,,,{7=15%;8=15%}
+24612,吃货大胃王,吃貨大胃王,Big eater,Người ăn nhiều,대식가,Comilão,กินจุ,,,,,,<711;1421;3281>,,,{1=20%}
+24613,团队激励,團隊激勵,Team Motivation,Động viên nhóm,팀 동기 부여,Motivação da equipe,แรงจูงใจของทีม,,,,,,<1991;2441;501>,,,{7=15%;8=15%}
+24614,可爱象征,可愛象徵,Cute symbol,Biểu tượng dễ thương,귀여운 상징,Símbolo fofo,สัญลักษณ์น่ารัก,,,,,,<771;1851>,,,{23=750}
+24711,草系力量,草系力量,Grass Power,Sức mạnh hệ Cỏ,잔디 힘,Poder da grama,พลังหญ้า,,,,,,<1291;3661;781>,,,{7=10%;8=10%}
+24712,相生相克,相生相剋,Allelopathy,Sinh khắc tương sinh,타감,Promoção mútua e contenção mútua,การส่งเสริมซึ่งกันและกันและการยับยั้งชั่งใจร่วมกัน,,,,,,<1301;2301;2481>,,,{1=12%}
+24713,誓约伙伴,誓約夥伴,Vow Partner,Những người bạn thề,맹세 파트너,Parceiro de compromisso,พันธมิตรผู้ให้คำมั่นสัญญา,,,,,,<2991;2922;2871>,,,{7=10%;8=10%}
+24714,优雅化身,優雅化身,Graceful Incarnation,Hiện thân của sự thanh lịch,우아한 화신,Elegância encarnada,ความสง่างามที่ปรากฎกาย,,,,,,<2401;2841>,,,{22=500}
+24811,火焰掌控,火焰掌控,Flame Control,Kiểm soát ngọn lửa,화염 제어,Maestria do Fogo,ความเชี่ยวชาญด้านไฟ,,,,,,<3341;791;1611>,,,{7=10%;8=10%}
+24812,炎焰之力,炎焰之力,Power of Fire,Sức mạnh của ngọn lửa cháy,화염의 힘,Poder da Chama,พลังแห่งเปลวไฟ,,,,,,<11;3291;3341>,,,{1=10%}
+24813,太阳意志,太陽意志,Sun will,Ý chí của mặt trời,태양의 의지,Sol vai,ซันวิลล์,,,,,,<2631;2271;131>,,,{7=10%;8=10%}
+25911,岩石壁垒,岩石壁壘,Rock Barrier,Rào chắn đá,바위 장벽,Parede de pedra,กำแพงหิน,,,,,,<491;301;691>,,,{7=10%;8=10%}
+25912,沙暴之势,沙暴之勢,Sandstorm,Sức mạnh của bão cát,모래 폭풍,Tempestade de areia,พายุทราย,,,,,,<2071;2961;1501>,,,{1=10%}
+25913,自然组合,自然組合,Natural combination,Kết hợp tự nhiên,자연스러운 조합,Combinação natural,การผสมผสานที่เป็นธรรมชาติ,,,,,,<2611;3011;1291>,,,{7=10%;8=10%}
+26111,森林同伴,森林同伴,Forest companions,Những người bạn rừng,숲의 동반자,Companheiros da Floresta,เพื่อนร่วมป่า,,,,,,<1611;691;2591>,,,{7=10%;8=10%}
+26112,大地掌控,大地掌控,Geomancy,Kiểm soát Trái đất,지구 통제,Controle da Terra,การควบคุมโลก,,,,,,<51;2631;3511>,,,{1=10%}
+26113,觉醒感应,覺醒感應,Awakening detection,Khả năng thức tỉnh,각성 유도,Indução do Despertar,การปลุกจิตสำนึก,,,,,,<2681;781;1081>,,,{7=10%;8=10%}
+26311,格斗势力,格鬥勢力,Fighting Forces,Lực lượng chiến đấu,싸우는 힘,Força de combate,กำลังรบ,,,,,,<271;3511;2271>,,,{7=10%;8=10%}
+26312,拳之力量,拳之力量,Fist Power,Sức mạnh của nắm đấm,주먹의 힘,O poder do punho,พลังแห่งกำปั้น,,,,,,<471;1441;231;461>,,,{1=10%}
+26313,技巧掌控,技巧掌控,Technique control,Thủ thuật thành thạo,스킬 컨트롤,Controle de habilidades,การควบคุมทักษะ,,,,,,<301;2481;3011>,,,{7=10%;8=10%}
+26811,虫虫崛起,蟲蟲崛起,Bug Rising,Sự Trỗi Dậy Của Côn Trùng,버그의 상승,Insetos sobem,แมลงเพิ่มขึ้น,,,,,,<371;481;2271>,,,{7=10%;8=10%}
+26812,森林力量,森林力量,Forest Power,Sức mạnh của rừng,숲의 힘,Poder da Floresta,พลังป่าไม้,,,,,,<2591;281;2301>,,,{1=10%}
+26813,群体情谊,群體情誼,Team Friendship,Tinh thần đoàn kết,그룹 우정,Amizade em grupo,มิตรภาพกลุ่ม,,,,,,<3471;2961;2611>,,,{7=10%;8=10%}
+27211,地表强者,地表強者,Strongest on Earth,Mạnh nhất thế giới,표면에 강함,Forte na Terra,แข็งแกร่งบนโลก,,,,,,<2231;491>,,,{7=10%;8=10%}
+27212,品行不端,品行不端,Bad Conduct,Hành vi không đúng mực,버릇 없음,Conduta imprópria,การประพฤติตนไม่เหมาะสม,,,,,,<2271;21>,,,{1=12%}
+27213,电影对决,電影對決,Movie Showdown,Cuộc chiến điện ảnh,영화 대결,Confronto de Filmes,ศึกภาพยนตร์,,,,,,<1251;2821;2591>,,,{7=10%;8=10%}
+27214,恶意满满,惡意滿滿,Full of malice,Đầy rẫy ác ý,악의로 가득 찬,Cheio de malícia,เต็มไปด้วยความอาฆาตพยาบาท,,,,,,<3141;1081;481>,,,{14=500}
+28211,幻影霸者,幻影霸者,Master of Illusions,Bá chủ ảo ảnh,팬텀 오버로드,Senhor Fantasma,จอมมารเหนือฟ้า,,,,,,<1221;1231;1241>,,,{7=10%;8=10%}
+28212,恶作剧者,惡作劇者,Prankster,Kẻ nghịch ngợm,장난 꾸러기,Brincalhão,นักเล่นตลก,,,,,,<2721;2271;1081>,,,{1=12%}
+28213,身手矫健,身手矯健,Agile Actions,Nhanh nhẹn và khéo léo,원기 왕성한,Ágil,คล่องตัว,,,,,,<271;2631;461>,,,{7=10%;8=10%}
+28214,基情四射,基情四射,Best Friend Forever,Tràn đầy sự căng thẳng đồng tính luyến ái,열렬한,Gay,เกย์,,,,,,<2241>,,,{14=500}
+28411,隐秘超能,隱秘超能,Hidden Psychic Powers,Siêu năng lực bí mật,시크릿 슈퍼,Superpoder secreto,พลังพิเศษสุดลับ,,,,,,<3291;551>,,,{7=10%;8=10%}
+28412,梦境大师,夢境大師,Dream Master,Đại sư giấc mơ,드림 마스터,Mestre dos Sonhos,ปรมาจารย์แห่งความฝัน,,,,,,<771>,,,{1=10%}
+28413,公主链接,公主連結,Princess Link,Princess Connect!,프린세스 링크,Princesa Link,ลิงค์เจ้าหญิง,,,,,,<3351;1391>,,,{7=10%;8=10%}
+28711,冰系家族,冰系家族,Ice-type family,Gia đình hệ Băng,얼음 가족,Família de gelo,ครอบครัวไอซ์,,,,,,<2301;1861;3011>,,,{7=10%;8=10%}
+28712,暴雪感应,暴雪感應,Blizzard Detection,Phát hiện bão tuyết,블리자드 유도,Detecção de nevasca,การตรวจจับพายุหิมะ,,,,,,<3501;1081;2921>,,,{1=10%}
+28713,冰封力量,冰封力量,Freezing Power,Sức mạnh băng giá,얼어 붙은 힘,Poder Congelado,พลังแห่งการแช่แข็ง,,,,,,<1351;801;371>,,,{7=10%;8=10%}
+28911,雷电家族,雷電家族,Electric family,Gia đình Raijin,라이덴 가족,Família Raiden,ครอบครัวไรเดน,,,,,,<351;71;1441>,,,{7=10%;8=10%}
+28912,自然之力,自然之力,Power of Nature,Sức mạnh của thiên nhiên,자연의 힘,Força da Natureza,พลังแห่งธรรมชาติ,,,,,,<3511;51;2071>,,,{1=10%}
+28913,电光意识,電光意識,Electric awareness,Ý thức điện quang,전기 광학 인식,Consciência Elétrica,การรับรู้เกี่ยวกับไฟฟ้า,,,,,,<91;11;3511>,,,{7=10%;8=10%}
+29211,水流力量,水流力量,Force of Current,Sức mạnh của dòng chảy,현재 힘,Força da Água,พลังน้ำ,,,,,,<2922;551;801>,,,{7=10%;8=10%}
+29212,水之波动,水之波動,Water Pulse,Gợn sóng nước,물의파동,Ondas de água,คลื่นน้ำ,,,,,,<3501;3011;3471>,,,{1=10%}
+29213,覆舟之势,覆舟之勢,Overturn,Xu hướng lật thuyền,전복,A tendência de virar,แนวโน้มที่จะพลิกคว่ำ,,,,,,<371;541;21>,,,{7=10%;8=10%}
+29221,水流力量,水流力量,The power of water flow,Sức mạnh của dòng chảy,물의 힘,O poder do fluxo da água,พลังของกระแสน้ำ,,,,,,<2921;801;891>,,,{7=10%;8=10%}
+29222,水之波动,水之波動,Water's Ripple,Gợn sóng nước,물결,Ondulação da água,ระลอกน้ำ,,,,,,<3471;541;691>,,,{1=10%}
+29223,覆舟之势,覆舟之勢,The momentum of an overturned boat,Thế mạnh của một chiếc thuyền bị lật,배가 뒤집히는 추세,O ímpeto de um barco capotado,แรงผลักดันของเรือที่คว่ำ,,,,,,<2011;121;3011>,,,{7=10%;8=10%}
+29611,钢铁意志,鋼鐵意志,Steel Will,Ý chí sắt thép,강철 같은 의지,Vontade de Ferro,ความตั้งใจอันแรงกล้า,,,,,,<801;3281;2071>,,,{7=10%;8=10%}
+29612,刚毅之躯,剛毅之軀,Resilient Body,Thân thể mạnh mẽ,꿋꿋함,Um corpo forte,ร่างกายที่แข็งแรง,,,,,,<1081;2631;3511>,,,{1=10%}
+29613,危机感应,危機感應,Danger Detection,Cảm biến khủng hoảng,위기 감지,Detecção de crise,การตรวจจับวิกฤต,,,,,,<131;3431;1081>,,,{7=10%;8=10%}
+29911,灵界力量,靈界力量,Spiritual Power,Sức mạnh tâm linh,영적인 힘,Poder espiritual,พลังแห่งจิตวิญญาณ,,,,,,<391;1811;3561>,,,{7=10%;8=10%}
+29912,火焰之躯,火焰之軀,Flame Body,Thân thể lửa,화염의 몸,Corpo de Chama,ร่างกายเปลวไฟ,,,,,,<601;741>,,,{1=12%}
+29913,誓约伙伴,誓約夥伴,Pledge Partner,Những người bạn thề,맹세 파트너,Parceiro de compromisso,พันธมิตรผู้ให้คำมั่นสัญญา,,,,,,<2922;2871;2471>,,,{7=10%;8=10%}
+29914,祸不单行,禍不單行,Hex,Họa vô đơn chí,병상첨병,Os infortúnios nunca vêm sozinhos,เคราะห์ร้ายไม่เคยมาเพียงลำพัง,,,,,,<3411;2821;2921>,,,{14=500}
+30011,龙系家族,龍系家族,Dragon-type family,Gia tộc Rồng,드래곤 패밀리,Família Dragão,ครอบครัวมังกร,,,,,,<3141;751>,,,{7=10%;8=10%}
+30012,双龙道馆,雙龍道館,Opelucid Gym,Đạo quán Song Long,더블 드래곤로드 파빌리온,Ginásio Dragão Duplo,ดับเบิ้ลดราก้อนยิม,,,,,,<1891>,,,{1=12%}
+30013,同行伙伴,同行夥伴,Companions,Những người bạn đồng hành,동료 파트너,Parceiros,พันธมิตร,,,,,,<2891;2611>,,,{7=10%;8=10%}
+30014,刀锋战士,刀鋒戰士,Blade,Blade Runner,블레이드 워리어,Lâmina,ใบมีด,,,,,,<2231;571;691>,,,{14=500}
+30111,冰系家族,冰系家族,Ice-type family,Gia đình hệ Băng,얼음 가족,Família de gelo,ครอบครัวไอซ์,,,,,,<1861;2871;3501>,,,{7=10%;8=10%}
+30112,暴雪感应,暴雪感應,Blizzard Detection,Phát hiện bão tuyết,블리자드 유도,Detecção de nevasca,การตรวจจับพายุหิมะ,,,,,,<171;1081;2011>,,,{1=10%}
+30113,冰封力量,冰封力量,Freezing Power,Sức mạnh băng giá,얼어 붙은 힘,Poder Congelado,พลังแห่งการแช่แข็ง,,,,,,<2271;3431;551>,,,{7=10%;8=10%}
+30211,寒冰意志,寒冰意志,Frozen Will,Ý chí băng giá,얼음 의지,Vontade de Gelo,ไอซ์วิลล์,,,,,,<721;3011;3501>,,,{7=10%;8=10%}
+30212,盾之勇者,盾之勇者,Shield of the Brave,Vị Anh Hùng Khiên,방패 영웅,O Herói do Escudo,ฮีโร่โล่,,,,,,<3541;3411>,,,{1=12%}
+30213,雨雪交加,雨雪交加,Rainstorm,Mưa và tuyết,비와 눈,Chuva e neve,ฝนและหิมะ,,,,,,<3301;2301;1851>,,,{7=10%;8=10%}
+30214,天气管制,天氣管制,Weather Control,Kiểm soát thời tiết,날씨 제어,Controle do clima,การควบคุมสภาพอากาศ,,,,,,<731;51;71>,,,{23=500}
+31411,龙之波动,龍之波動,Dragon Pulse,Sóng của Rồng,용의 파동,Onda do Dragão,มังกรคลื่น,,,,,,<751;1891>,,,{7=10%;8=10%}
+31412,恶魔盛焰,惡魔盛焰,Demon Flame,Ngọn lửa của ác quỷ,악마의 불꽃,Chama do diabo,เปลวไฟแห่งปีศาจ,,,,,,<1171;2481;791>,,,{1=12%}
+31413,恶贯满盈,惡貫滿盈,Full of evil,Ác đầy mình,악으로 가득,Cheio de maldade,เต็มไปด้วยความชั่วร้าย,,,,,,<2821;1841>,,,{7=10%;8=10%}
+31414,多头会议,多頭會議,Big Meeting,Cuộc họp đa đầu,다자간 회의,Reunião multi-chefe,การประชุมหลายหัว,,,,,,<1901;2871;351>,,,{14=500}
+31511,虫虫崛起,蟲蟲崛起,Rise of Bug,Sự Trỗi Dậy Của Côn Trùng,버그의 상승,Insetos sobem,แมลงเพิ่มขึ้น,,,,,,<571;1071;41>,,,{7=10%;8=10%}
+31512,隐秘火系,隱秘火系,Hidden Fire,Hỏa hệ bí ẩn,숨겨진 불,Fogo Oculto,ไฟที่ซ่อนอยู่,,,,,,<1171;2991;1611>,,,{1=12%}
+31513,誓约伙伴,誓約夥伴,Vow Partner,Đối tác thề ước,맹세 파트너,Parceiro de compromisso,พันธมิตรผู้ให้คำมั่นสัญญา,,,,,,<2821;1811;3281>,,,{7=10%;8=10%}
+31514,水火无情,水火無情,Water & Fire,Nước và lửa không khoan nhượng.,무자비한,Fogo e água são implacáveis,ไฟและน้ำไม่มีความเมตตา,,,,,,<381;2481;221>,,,{14=500}
+31611,钢铁世家,鋼鐵世家,Steel Family,Triều đại Thép,강철 세가,Família de Aço,ครอบครัวสตีล,,,,,,<1931;2031;571>,,,{7=10%;8=10%}
+31612,格斗勇士,格鬥勇士,Fighting Warrior,Chiến binh chiến đấu,격투 용사,Guerreiros Lutadores,นักรบผู้ต่อสู้,,,,,,<3251;1301;2631>,,,{1=12%}
+31613,圣剑士,聖劍士,Swords of Justice,Hiệp sĩ thánh kiếm,성검사,Espadachim Sagrado,นักดาบศักดิ์สิทธิ์,,,,,,<3171;3181>,,,{7=10%;8=10%}
+31614,探险同伴,探險同伴,Adventure Parter,Những người bạn đồng hành phiêu lưu,탐험 파트너,Companheiro de expedição,เพื่อนร่วมเดินทาง,,,,,,<3021;1911;2481>,,,{14=500}
+31711,岩崩,岩崩,Rock Slide,Sạt lở đá,무너진 바위,Queda de rochas,หินถล่ม,,,,,,<701;401;2591>,,,{7=10%;8=10%}
+31712,格斗家,格鬥家,Fighter,Đấu sĩ,격투가,Lutador,นักสู้,,,,,,<3251;2241;461>,,,{1=12%}
+31713,圣剑士,聖劍士,Swords of Justice,Hiệp sĩ thánh kiếm,성검사,Espadachim Sagrado,นักดาบศักดิ์สิทธิ์,,,,,,<3161;3181>,,,{7=10%;8=10%}
+31714,剑舞,劍舞,Sword Dance,Múa kiếm,칼춤,Dança da Espada,รำดาบ,,,,,,<1071;3001;341>,,,{14=500}
+31811,草叶风暴,草葉風暴,Leaf Storm,Bão Lá Cỏ,풀잎 폭풍,Tempestade de grama,พายุหญ้า,,,,,,<3661;3841;2301>,,,{7=10%;8=10%}
+31812,搏命者,搏命者,Fighter,Kẻ liều lĩnh,목숨을 버린 자,Assumidor de riscos,ผู้ที่รับความเสี่ยง,,,,,,<3251;1071;3511>,,,{1=12%}
+31813,圣剑士,聖劍士,Swords of Justice,Hiệp sĩ thánh kiếm,성검사,Espadachim Sagrado,นักดาบศักดิ์สิทธิ์,,,,,,<3161;3171>,,,{7=10%;8=10%}
+31814,神秘登场,神秘登場,Mystery Debut,Sự xuất hiện bí ẩn,신비 등장,Aparição misteriosa,รูปลักษณ์อันลึกลับ,,,,,,<2401;3351;2841;2891>,,,{23=500}
+32011,雷电打击,雷電打擊,Lightning strike,Tia sét đánh,낙뢰,Queda de raio,ฟ้าผ่า,,,,,,<591;731;1221>,,,{7=10%;8=10%}
+32012,飞来飞去,飛來飛去,Flying around,Bay lượn,날아다니다,Voando por aí,บินไปรอบๆ,,,,,,<51;2891;3511>,,,{1=12%}
+32013,形体变化,形體變化,Morphological changes,Những thay đổi hình thái,형태 변화,Mudanças na forma do corpo,การเปลี่ยนแปลงรูปร่างของร่างกาย,,,,,,<3411;461;1851>,,,{7=10%;8=10%}
+32014,传说三云神,傳說三雲神,Legend of the Three Cloud Gods,Truyền thuyết về ba vị thần mây,삼운신의 전설,Lenda do Deus Mikumo,ตำนานเทพเจ้ามิคุโมะ,,,,,,<3191;3231>,,,{14=500}
+32111,龙之波动,龍之波動,Dragon Pulse,Sóng thần rồng,용의 파동,Onda do Dragão,มังกรคลื่น,,,,,,<2351;3141;4131>,,,{7=15%;8=15%}
+32112,火之势力,火之勢力,Force of Fire,Sức mạnh của lửa,불꽃의 세력,Força de fogo,กองกำลังดับเพลิง,,,,,,<1271;3151;1171;1301>,,,{1=20%}
+32113,誓约同伴,誓約同伴,Vow Companion,Những người bạn đồng hành bằng lời thề,서약 파트너,Companheiro de Juramento,สหายผู้สาบาน,,,,,,<2721;3001;2471;2841>,,,{7=15%;8=15%}
+32114,合众传说,合眾傳說,Unova Legend,Huyền thoại Liên minh,하나의 전설,Lendas de Unova,ตำนานแห่งยูโนวา,,,,,,<3221;601;881>,,,{23=750}
+32211,龙系出击,龍系出擊,Dragon Series,Cuộc tấn công của Rồng,드래곤계 출격,Ataque do Dragão,การโจมตีของมังกร,,,,,,<2361;3001;2231>,,,{7=15%;8=15%}
+32212,雷电操控,雷電操控,Thunder Control,Điều khiển sấm sét,번개 조종,Controle de Raios,การควบคุมสายฟ้า,,,,,,<731;1221;881>,,,{1=20%}
+32213,召唤之力,召喚之力,Summon Power,Sức mạnh triệu hồi,소환의 힘,Poder de invocação,การเรียกพลัง,,,,,,<3641;1941;1951>,,,{7=15%;8=15%}
+32214,黑白英雄,黑白英雄,Black & White Hero,Anh hùng đen trắng,흑백 영웅,Herói Preto e Branco,ฮีโร่ขาวดำ,,,,,,<3211;861;2471>,,,{14=750}
+32411,暴雪降临,暴雪降臨,Blizzard Incoming,Bão tuyết,폭설 강림,A nevasca está chegando,พายุหิมะกำลังมา,,,,,,<721;641;1921>,,,{7=15%;8=15%}
+32412,道之三龙,道之三龍,Tao Trio,Ba con Rồng của Đạo,음양 트리오,Os Três Dragões do Tao,มังกรสามตัวแห่งเต๋า,,,,,,<3211;3221>,,,{1=20%}
+32413,圣剑决斗,聖劍決鬥,Sacred Sword Duel,Cuộc đấu kiếm thánh,성검의 결투,Duelo de Espadas Sagradas,ดวลดาบศักดิ์สิทธิ์,,,,,,<3251;2471;3001;3021>,,,{7=15%;8=15%}
+32414,胡帕的召唤,胡帕的召喚,Hoopa's Call,Lời gọi của Hoopa,후파의 부름,Chamado de Hoopa,เสียงเรียกของฮูปา,,,,,,<2391;3301;751>,,,{23=750}
+32441,暴雪降临,暴雪來襲,Blizzard,Bão tuyết,눈폭풍,Nevasca,พายุหิมะ,,,,,,<721;641;1921>,,,{7=15%;8=15%}
+32442,道之三龙,道之三龍,Three Dragons of the Dao,Ba con Rồng của Đạo,도의 세 용,Três Dragões do Dao,สามมังกรแห่งเต๋า,,,,,,<3211;3221>,,,{1=20%}
+32443,圣剑决斗,聖劍決鬥,Holy Sword Duel,Cuộc đấu kiếm thánh,성검 결투,Duelo da Espada Sagrada,การดวลดาบศักดิ์สิทธิ์,,,,,,<3251;2471;3001;3021>,,,{7=15%;8=15%}
+32444,胡帕的召唤,胡帕的召喚,Hoopa's Call,Lời gọi của Hoopa,후파의 부름,O Chamado de Hoopa,การเรียกของฮูพา,,,,,,<2391;3301;751>,,,{23=750}
+32511,覆舟之势,覆舟之勢,Overturning,Xu hướng của một chiếc thuyền bị lật,난파한 형세,A tendência de virar,แนวโน้มที่จะพลิกคว่ำ,,,,,,<1241;3771;801>,,,{7=10%;8=10%}
+32512,格斗家,格鬥家,Fighter,Chiến binh,격투가,Lutador,นักสู้,,,,,,<2241;1301;461>,,,{1=12%}
+32513,誓约同伴,誓約同伴,Vow Companion,Những người bạn thề nguyện,서약 파트너,Companheiro de Juramento,สหายผู้สาบาน,,,,,,<3151;3511;551>,,,{7=10%;8=10%}
+32514,心灵感应,心靈感應,Telepathy,Thần giao cách cảm,텔레파시,Telepatia,โทรจิต,,,,,,<1951;771>,,,{14=500}
+32521,斗士精神,鬥士精神,Fighter spirit,Tinh thần chiến binh,투사 정신,Espírito de lutador,จิตวิญญาณนักสู้,,,,,,<3261;4121;7071>,,,{7=15%;8=15%}
+32522,决战圣剑士,決戰聖劍士,Decisive Battle: Holy Swordsman,Trận chiến quyết định: Hiệp sĩ thánh kiếm,결전: 성검사,Batalha Decisiva: Espadachim Sagrado,ศึกชี้ชะตา: นักดาบศักดิ์สิทธิ์,,,,,,<3241>,,,{1=20%}
+32523,觉悟宣誓,覺悟宣誓,Awakening Oath,Lời thề giác ngộ,각성 선서,Juramento de Despertar,คำปฏิญาณแห่งการตรัสรู้,,,,,,<3251;3161;3171;3181>,,,{7=15%;8=15%}
+32524,水势攻击,水勢攻擊,Water attack,Tấn công bằng nước,물 공격,Ataque de água,การโจมตีด้วยน้ำ,,,,,,<1961;3304;2033>,,,{14=750}
+32611,一般关系,一般關係,General Relationship,Mối quan hệ chung,보통 관계,Relacionamento Geral,ความสัมพันธ์โดยทั่วไป,,,,,,<2381;711;341>,,,{7=15%;8=15%}
+32612,精神同步,精神同步,Mental Synchronize,Đồng bộ tinh thần,정신 동기화,Sincronicidade Mental,ความสอดคล้องทางจิตใจ,,,,,,<3641;1391;1901>,,,{1=20%}
+32613,圣剑同行,聖劍同行,Sacred Sword Companion,Thánh Kiếm Đồng Hành,성검 동행,Espada Sagrada,ดาบศักดิ์สิทธิ์,,,,,,<3161;2821;2721>,,,{7=15%;8=15%}
+32614,危机感应,危機感應,Crisis Sensing,Cảm biến khủng hoảng,위기 감응,Detecção de crise,การตรวจจับวิกฤต,,,,,,<2441;1251;701>,,,{22=750}
+32711,虫系军团,蟲系軍團,Insect Legion,Đội quân côn trùng,곤충 군단,Legião de insetos,กองทัพแมลง,,,,,,<571;1071;3151;611>,,,{7=15%;8=15%}
+32712,钢铁守护,鋼鐵守護,Steel Guardian,Vệ binh thép,강철 수호자,Guarda de Aço,การ์ดเหล็ก,,,,,,<4171;1501;1901>,,,{1=20%}
+32713,远古生物,遠古生物,Ancient creatures,Sinh vật cổ đại,고대 생물,Criaturas Antigas,สิ่งมีชีวิตโบราณ,,,,,,<1991;701;3501;691>,,,{7=15%;8=15%}
+32714,钢铁炮台,鋼鐵炮臺,Steel Fortress,Pháo đài thép,강철 요새,Forte de Aço,ป้อมเหล็ก,,,,,,<2351;1931;3161>,,,{14=750}
+32811,草之誓约,草之誓約,Grass Pledge,Hiệp ước Cỏ,풀의 맹세,Juramento da Grama,คำสาบานแห่งหญ้า,,,,,,<281;781;2301>,,,{7=10%;8=10%}
+32812,森林意志,森林意志,Forest Will,Ý chí của Rừng,숲의 의지,Vontade da Floresta,ฟอเรสต์วิลล์,,,,,,<1351;2011;3511>,,,{1=10%}
+32813,冒险同伴,冒險同伴,Adventure Partner,Những người bạn đồng hành phiêu lưu,모험 동반자,Companheiro de aventura,เพื่อนร่วมผจญภัย,,,,,,<3431;1071;1611>,,,{7=10%;8=10%}
+32911,火焰掌控,火焰掌控,Flame Control,Khống chế ngọn lửa,화염 제어,Maestria do Fogo,ความเชี่ยวชาญด้านไฟ,,,,,,<2481;11;1611>,,,{7=10%;8=10%}
+32912,炎焰之力,炎焰之力,Power of Fire,Sức mạnh của ngọn lửa bùng cháy,화염의 힘,Poder da Chama,พลังแห่งเปลวไฟ,,,,,,<3341;3281;791>,,,{1=10%}
+32913,太阳意志,太陽意志,Sun will,Ý chí của mặt trời,태양의 의지,Sol vai,ซันวิลล์,,,,,,<121;2271;2611>,,,{7=10%;8=10%}
+33011,出类拔萃,出類拔萃,Rising Above All,Xuất sắc,훌륭해,Fora do comum,โดดเด่น,,,,,,<3291;3281>,,,{7=10%;8=10%}
+33012,水之波动,水之波動,Water Pulse,Gợn sóng nước,물의파동,Ondas de água,คลื่นน้ำ,,,,,,<1241;631;1311;21>,,,{1=12%}
+33013,劲敌对决,勁敵對決,Showdown,Trận chiến giữa các Titan,라이벌 대결,Confronto de rivais,การเผชิญหน้าระหว่างคู่แข่ง,,,,,,<1291;11>,,,{7=10%;8=10%}
+33014,除恶务尽,除惡務盡,Eradicate evil,Diệt trừ tận gốc,악을 멀리하십시오,Elimine todo o mal,กำจัดความชั่วร้ายทั้งหมด,,,,,,<2821;1841>,,,{14=500}
+33041,主角传承,主角傳承,Protagonist Legacy,Di sản nhân vật chính,주인공 계승,Legado do Protagonista,มรดกของตัวเอก,,,,,,<7001>,,,{7=15%;8=15%}
+33042,水之波动,水之波動,Water's Ripple,Gợn sóng nước,물결,Ondulação da água,ระลอกน้ำ,,,,,,<1241;631;1311;21>,,,{1=20%}
+33043,水之使者,水之使者,Water Messenger,Sứ giả của nước,물의 전령,Mensageiro da Água,ผู้ส่งสารแห่งน้ำ,,,,,,<2411;3681;641>,,,{7=15%;8=15%}
+33044,海洋统治,海洋統治,Ocean Rule,Thống trị đại dương,해양 지배,Domínio do Oceano,การปกครองมหาสมุทร,,,,,,<1961;2421;2361>,,,{14=750}
+33411,火焰掌控,火焰掌控,Flame Control,Kiểm soát ngọn lửa,화염 제어,Maestria do Fogo,ความเชี่ยวชาญด้านไฟ,,,,,,<471;1611;101>,,,{7=10%;8=10%}
+33412,炎焰之力,炎焰之力,Power of Fire,Sức mạnh của ngọn lửa bùng cháy,화염의 힘,Poder da Chama,พลังแห่งเปลวไฟ,,,,,,<1441;2481;271>,,,{1=10%}
+33413,太阳意志,太陽意志,Sun will,Ý chí của mặt trời,태양의 의지,Sol vai,ซันวิลล์,,,,,,<471;3511;2071>,,,{7=10%;8=10%}
+33511,妖精联盟,妖精聯盟,Pokémon Alliance,Liên minh Tiên nữ,페어리 리그,Aliança das Fadas,พันธมิตรแฟรี่,,,,,,<131;3431;1391>,,,{7=10%;8=10%}
+33512,湿地之战,濕地之戰,Battle on the Wetlands,Cuộc chiến vùng đất ngập nước,습지 전투,Guerra das Zonas Húmidas,สงครามพื้นที่ชุ่มน้ำ,,,,,,<3541;3511;2071>,,,{1=12%}
+33513,花草共生,花草共生,Symbiosis,Hoa và cỏ cùng sinh sống,꽃과 식물의 공생,Simbiose de flores e plantas,การอยู่ร่วมกันของดอกไม้และพืช,,,,,,<1291;281;781>,,,{7=10%;8=10%}
+33514,公主链接,公主連結,Princess Link,Princess Connect!,프린세스 링크,Princesa Link,ลิงค์เจ้าหญิง,,,,,,<3631;2841>,,,{23=500}
+34111,幽灵出没,幽靈出沒,Appearance of Ghosts,Ma xuất hiện,유령 유령,Assombração Fantasma,ผีหลอกหลอน,,,,,,<391;1811>,,,{7=10%;8=10%}
+34112,钢铁意志,鋼鐵意志,Steel Will,Ý chí sắt thép,강철 같은 의지,Vontade de Ferro,ความตั้งใจอันแรงกล้า,,,,,,<1901;331;2961>,,,{1=12%}
+34113,利刃出鞘,利刃出鞘,Knives Out,Đao cạo,칼집에서 칼,Facas e Segredos,มีดออกไป,,,,,,<571;691>,,,{7=10%;8=10%}
+34114,盾之勇者,盾之勇者,Shield of the Brave,Anh Hùng Rìu,방패 영웅,O Herói do Escudo,ฮีโร่โล่,,,,,,<3021;3501;2011>,,,{23=500}
+34311,龙族克星,龍族剋星,Dragon Buster,Sát Long,드래곤 네메시스,Dragão Nêmesis,มังกรเนเมซิส,,,,,,<171;281;2631>,,,{7=10%;8=10%}
+34312,广域伙伴,廣域夥伴,Wide Companion,Đối tác diện rộng,광역 파트너,Parceiros de área ampla,พันธมิตรพื้นที่กว้าง,,,,,,<471;691;2961>,,,{1=10%}
+34313,月亮之力,月亮之力,Moonblast,Sức mạnh của mặt trăng,달의 힘,Poder da Lua,พลังแห่งดวงจันทร์,,,,,,<131;2301;2011>,,,{7=10%;8=10%}
+34711,水流力量,水流力量,Force of Current,Sức mạnh của dòng nước,현재 힘,Força da Água,พลังน้ำ,,,,,,<551;21;801>,,,{7=10%;8=10%}
+34712,水之波动,水之波動,Water Pulse,Gợn sóng nước,물의파동,Ondas de água,คลื่นน้ำ,,,,,,<1441;1861;2871>,,,{1=10%}
+34713,覆舟之势,覆舟之勢,Overturn,Xu hướng lật thuyền,전복,A tendência de virar,แนวโน้มที่จะพลิกคว่ำ,,,,,,<2922;2011;3011>,,,{7=10%;8=10%}
+35011,岩石壁垒,岩石壁壘,Rock Barrier,Hàng rào đá,바위 장벽,Parede de pedra,กำแพงหิน,,,,,,<301;691;2591>,,,{7=10%;8=10%}
+35012,沙暴之势,沙暴之勢,Sandstorm,Sức mạnh của bão cát,모래 폭풍,Tempestade de areia,พายุทราย,,,,,,<1081;2871;3011>,,,{1=10%}
+35013,自然组合,自然組合,Natural combination,Kết hợp tự nhiên,자연스러운 조합,Combinação natural,การผสมผสานที่เป็นธรรมชาติ,,,,,,<541;2301;1861>,,,{7=10%;8=10%}
+35111,格斗势力,格鬥勢力,Fighting Forces,Lực lượng chiến đấu,싸우는 힘,Força de combate,กำลังรบ,,,,,,<271;2631;2271>,,,{7=10%;8=10%}
+35112,拳之力量,拳之力量,Fist Power,Sức mạnh của nắm đấm,주먹의 힘,O poder do punho,พลังแห่งกำปั้น,,,,,,<231;461;1441;51>,,,{1=10%}
+35113,技巧掌控,技巧掌控,Technique control,Thủ thuật thành thạo,스킬 컨트롤,Controle de habilidades,การควบคุมทักษะ,,,,,,<2961;791;3431>,,,{7=10%;8=10%}
+35411,龙之波动,龍之波動,Dragon Pulse,Sóng thần Rồng,용의 파동,Onda do Dragão,มังกรคลื่น,,,,,,<3141;1891>,,,{7=10%;8=10%}
+35412,肥大体型,肥大體型,Extra-large size,Thể trạng béo phì,비대,Corpo obeso,ร่างกายอ้วน,,,,,,<751;711;2481>,,,{1=12%}
+35413,盾之勇者,盾之勇者,Shield of the Brave,Anh Hùng Rìu,방패 영웅,O Herói do Escudo,ฮีโร่โล่,,,,,,<3021;3501;2011>,,,{7=10%;8=10%}
+35414,同行伙伴,同行夥伴,Companions,Bạn đồng hành,동료 파트너,Parceiros,พันธมิตร,,,,,,<3301;3511;91>,,,{23=500}
+35611,幽灵感应,幽靈感應,Ghost Detection,Cảm giác ma,영감은,Sentido Fantasma,สัมผัสผี,,,,,,<1351;801;781>,,,{7=8%;8=8%}
+35612,魅影同伴,魅影同伴,Phantom Companion,Bạn đồng hành ma quái,팬텀 컴패니언,Companheiro Fantasma,สหายผี,,,,,,<171;2011;3281>,,,{1=10%}
+35613,魂魄之力,魂魄之力,Soul Power,Sức mạnh linh hồn,아스트랄 파워,Poder da alma,พลังแห่งวิญญาณ,,,,,,<2961;111;301>,,,{7=8%;8=8%}
+35911,低空势力,低空勢力,Low-altitude forces,Lực lượng tầm thấp,낮은 고도의 힘,Forças de baixa altitude,กองกำลังระดับความสูงต่ำ,,,,,,<571;51>,,,{7=10%;8=10%}
+35912,输出全靠吼,輸出全靠吼,Dealing damage with a roar,Đầu ra phụ thuộc hoàn toàn vào việc hét lên,출력은 모두 포효에 달려 있습니다.,A saída depende inteiramente do rugido,เอาท์พุตขึ้นอยู่กับเสียงคำรามล้วนๆ,,,,,,<1391;1441;61>,,,{1=12%}
+35913,龙龙军团,龍龍軍團,Dragon Team,Đội quân Longlong,드래곤 아미,Legião do Dragão,กองทัพมังกร,,,,,,<2231;3541>,,,{7=10%;8=10%}
+35914,洞穴索居,洞穴索居,Cave Living,Sống ẩn dật trong hang động,동굴 체류,Habitação em caverna,การอยู่อาศัยในถ้ำ,,,,,,<401;301>,,,{23=500}
+36011,美丽动人,美麗動人,Beautiful and moving,Đẹp và cảm động,아름답고 감동적이다,Lindo,สวย,,,,,,<3261;1771;2401>,,,{7=15%;8=15%}
+36012,妖精同盟,妖精同盟,Fairy Alliance,Liên minh Tiên nữ,요정 동맹,Aliança das Fadas,พันธมิตรแฟรี่,,,,,,<3351;1391;861;3681>,,,{1=20%}
+36013,大地复苏,大地復蘇,The earth awakens,Trái đất hồi sinh,대지의 각성,Ressurreição da Terra,การฟื้นคืนชีพของโลก,,,,,,<1971;2441;3631>,,,{7=15%;8=15%}
+36014,X/Y,X/Y,X/Y,X/Y,X/Y,X/Y,เอ็กซ์/วาย,,,,,,<3611>,,,{23=750}
+36111,破坏之王,破壞之王,King of Destruction,Vua Hủy Diệt,파괴의 왕,O Rei da Destruição,ราชาแห่งการทำลายล้าง,,,,,,<2431;3171;1031>,,,{7=15%;8=15%}
+36112,恶魔祷告,惡魔禱告,Demon Prayer,Lời nguyện của ác quỷ,악마 기도,Oração do Diabo,คำอธิษฐานของซาตาน,,,,,,<3641;4131;381>,,,{1=20%}
+36113,恶系军团,惡系軍團,Dark Legion,Đội quân Ác,악계 군단,Exército do Mal,กองทัพปีศาจ,,,,,,<1171;1841;2821;1801>,,,{7=15%;8=15%}
+36114,以牙还牙,以牙還牙,Tooth for tooth,Ăn miếng trả miếng,첨예한 대립,Dente por dente,ฟันต่อฟัน,,,,,,<3241;1911;1811>,,,{14=750}
+36211,一方霸主,一方霸主,Unilateral Hegemon,Kẻ thống trị đơn phương,일방적 패권,Hegemonia unilateral,ผู้ครอบงำฝ่ายเดียว,,,,,,<1971;2391>,,,{7=15%;8=15%}
+36212,地面行者,地面行者,Ground Walker,Người đi trên mặt đất,지면 보행자,Andarilho Terrestre,ผู้เดินบนพื้นดิน,,,,,,<491;401;3231>,,,{1=20%}
+36213,龙族核心,龍族核心,Dragon Clan Core,Lõi của bộ tộc Rồng,용족 핵심,Núcleo do Clã do Dragão,แก่นแท้เผ่ามังกร,,,,,,<2231;751;1891>,,,{7=15%;8=15%}
+36214,X/Y/Z,X／Y／Z,X/Y/Z,X/Y/Z,X/Y/Z,X/Y/Z,X/Y/Z,,,,,,<3611;3601>,,,{23=750}
+36311,天赋异禀,天賦異稟,Gifted,Có tài năng thiên bẩm,하늘이 내린 재능,Dotado,มีพรสวรรค์,,,,,,<761;771;3541>,,,{7=15%;8=15%}
+36312,钻石辉光,鑽石輝光,The Diamond Glow,Ánh sáng kim cương,다이아몬드 글로우,Brilho de diamante,ไดมอนด์โกลว์,,,,,,<1251;1501;491>,,,{1=20%}
+36313,公主链接,公主連結,Princess Link,Princess Connect!,프린세스 링크,Princesa Link,ลิงค์เจ้าหญิง,,,,,,<1271;1391;2841>,,,{7=15%;8=15%}
+36314,相生相克,相生相剋,Enhance and counteract,Sinh khắc tương sinh,타감,Promoção mútua e contenção mútua,การส่งเสริมซึ่งกันและกันและการยับยั้งชั่งใจร่วมกัน,,,,,,<3431;1981;131;3541>,,,{23=750}
+36411,超凡意志,超凡意志,Extraordinary Will,Ý chí phi thường,비범한 의지,Vontade extraordinária,ความปรารถนาอันพิเศษ,,,,,,<261;1941;1951;1901>,,,{7=15%;8=15%}
+36412,惩戒光环,懲戒光環,Retribution Aura,Ánh hào quang trừng phạt,징계 후광,Aura de punição,ออร่าแห่งการลงโทษ,,,,,,<2391;2991;3661>,,,{1=20%}
+36413,原始力量,原始力量,Raw Power,Sức mạnh nguyên thủy,원초의 힘,Poder bruto,พลังดิบ,,,,,,<1971;751;401;301>,,,{7=15%;8=15%}
+36414,毁灭对抗,毀滅對抗,Counter Destroy,Sự hủy diệt chống lại sự đối đầu,파멸 대항,Confronto de destruição,การเผชิญหน้าการทำลายล้าง,,,,,,<3211;3301;1031>,,,{14=750}
+36511,蓄能岩浆,蓄能岩漿,Magma Reservoir,Hồ Magma tích trữ,마그마 저장소,Reservatório de Magma,แหล่งแมกมา,,,,,,<1971;1231;3671;2371>,,,{7=15%;8=15%}
+36512,水压蓄能,水壓蓄能,Hydro-pneumatic energy storage,Lưu trữ năng lượng thủy khí nén,수압 축적 에너지,Armazenamento de energia hidropneumática,การกักเก็บพลังงานไฮโดรนิวเมติก,,,,,,<1961;321;641;2411>,,,{1=20%}
+36513,大地轰动,大地轟動,The earth trembled,Đất rung chuyển,땅이 흔들렸다,A terra tremeu,แผ่นดินสั่นสะเทือน,,,,,,<4023;2481>,,,{7=15%;8=15%}
+36514,要塞机关,要塞機關,Fortress Agency,Cơ quan Pháo đài,요새 기관,Agência da Fortaleza,หน่วยงานป้อมปราการ,,,,,,<4111>,,,{23=750}
+36611,草系力量,草系力量,Grass Power,Sức mạnh hệ Cỏ,잔디 힘,Poder da grama,พลังหญ้า,,,,,,<1291;2471;281>,,,{7=10%;8=10%}
+36612,鬼影出没,鬼影出沒,Ghost Around,Hình bóng ma xuất hiện,유령 감염,Fantasma,ผี,,,,,,<3411;1851;2922>,,,{1=12%}
+36613,誓约伙伴,誓約夥伴,Vow Partner,Đối tác thề ước,맹세 파트너,Parceiro de compromisso,พันธมิตรผู้ให้คำมั่นสัญญา,,,,,,<591;271;91>,,,{7=10%;8=10%}
+36614,精准狩猎,精准狩獵,Precision Hunting,Săn bắn chính xác,정밀 사냥,Caça de precisão,การล่าสัตว์อย่างแม่นยำ,,,,,,<3001;571;3511>,,,{14=500}
+36811,妖精同盟,妖精同盟,Fairy Alliance,Liên minh Tiên,요정 연맹,Aliança das Fadas,พันธมิตรแฟรี่,,,,,,<3351;1391;3431>,,,{7=10%;8=10%}
+36812,水样年华,水樣年華,Watery Years,Những năm tháng tươi trẻ như nước,물같은 세월,Anos como água,ปีที่คล้ายน้ำ,,,,,,<1241;641;1311>,,,{1=12%}
+36813,海洋生物,海洋生物,Marine life,Sinh vật biển,해양 생물,Vida marinha,ชีวิตใต้ท้องทะเล,,,,,,<3771;381;3471;1861>,,,{7=10%;8=10%}
+36814,美丽动人,美麗動人,Beautiful and moving,Đẹp và cảm động,아름답고 감동적이다,Lindo,สวย,,,,,,<1771;2401>,,,{23=500}
+37711,毒击学习,毒擊學習,Poison Strike,Học hỏi về Độc Kích,악랄학습,Aprendizagem de ataque de veneno,การเรียนรู้การโจมตีด้วยพิษ,,,,,,<161;371;81>,,,{7=10%;8=10%}
+37712,水流冲击,水流衝擊,Aqua Smash,Tác động của dòng nước,물살충격,Impacto da água,ผลกระทบจากน้ำ,,,,,,<641;631>,,,{1=12%}
+37713,小次郎!,小次郎!,James!,Kojiro!,코지로！,Kojiro!,โคจิโร่!,,,,,,<3661;391;3011>,,,{7=10%;8=10%}
+37714,冒险同伴,冒險同伴,Adventure Companion,Những người bạn đồng hành phiêu lưu,모험 짝꿍,Companheiro de aventura,เพื่อนร่วมผจญภัย,,,,,,<241;301;481>,,,{23=500}
+38411,草系力量,草系力量,Grass Power,Sức mạnh hệ Cỏ,잔디 힘,Poder da grama,พลังหญ้า,,,,,,<3661;2011;781>,,,{7=10%;8=10%}
+38412,超级对抗,超級對抗,Super Encounter,Siêu đối đầu,슈퍼 대결,Super confronto,การเผชิญหน้าครั้งยิ่งใหญ่,,,,,,<381;3771;221;1861>,,,{1=12%}
+38413,香气弥漫,香氣彌漫,Aroma Pervade,Mùi thơm lan tỏa,향기 자욱,O aroma está em todo lugar,กลิ่นหอมฟุ้งไปทั่ว,,,,,,<711;3281;281>,,,{7=10%;8=10%}
+38414,竟跑同伴,竟跑同伴,Run Companion,"Đột nhiên bỏ chạy, bạn đồng hành",달리기 파트너,Companheiro de corrida,เพื่อนคู่ใจในการวิ่ง,,,,,,<241;2241;271>,,,{14=500}
+40231,形态转化,形態轉化,Morphological Transformation,Biến đổi hình thái,형태 변환,Transformação morfológica,การเปลี่ยนแปลงรูปทรง,,,,,,<3261;3191;3413>,,,{7=15%;8=15%}
+40232,闪耀光芒,閃耀光芒,Shining brightly,Tỏa sáng rực rỡ,빛나게 빛나다,Brilhando intensamente,เปล่งประกาย,,,,,,<2351;1231;3161;1901>,,,{1=20%}
+40233,超能异士,超能異士,Supernaturalist,Siêu năng lực giả,초능력자,Super-humano,ผู้มีพลังเหนือธรรมชาติ,,,,,,<2401;771;1393;4081>,,,{7=15%;8=15%}
+40234,钢铁战士,鋼鐵戰士,Iron Warrior,Chiến binh thép,강철 전사,Guerreiro de Aço,นักรบเหล็ก,,,,,,<3271;4171;3161>,,,{23=750}
+40241,灵魂纠缠,靈魂糾纏,Soul entanglement,Sự ràng buộc linh hồn,영혼의 얽힘,Emaranhamento de almas,การพันกันของวิญญาณ,,,,,,<4121;3961;971;4151>,,,{7=15%;8=15%}
+40242,掌控心灵,掌控心靈,Mastering the Mind,Thần giao cách cảm,마음을 다스리다,Dominando a Mente,การควบคุมจิตใจ,,,,,,<1261;1281;262>,,,{1=20%}
+40243,月之祝福,月之祝福,Moon's Blessing,Lộc trời ban,달의 축복,Bênção da Lua,พรจากดวงจันทร์,,,,,,<861;2401>,,,{7=15%;8=15%}
+40244,日月同辉,日月同輝,Sun and moon shining together,Mặt trời và mặt trăng cùng tỏa sáng,해와 달이 함께 빛나다,Sol e lua brilhando juntos,ดวงอาทิตย์และดวงจันทร์ส่องแสงพร้อมกัน,,,,,,<4023>,,,{23=750}
+41011,漆黑身姿,漆黑的身姿,A pitch-black figure,Một thân hình đen như mực,칠흑 같은 자태,Uma figura de negro profundo,ร่างกายสีดำสนิท,,,,,,<4121;3221;2821>,,,{7=15%;8=15%}
+41012,棱镜反射,稜鏡反射,Prism reflection,Phản xạ lăng kính,프리즘 반사,Reflexão do prisma,การสะท้อนของปริซึม,,,,,,<1921;3021>,,,{1=20%}
+41013,精神之力,精神之力,Power of the Spirit,Sức mạnh tinh thần,정신의 힘,Poder do Espírito,พลังแห่งจิตวิญญาณ,,,,,,<1991;321;1901;261>,,,{7=15%;8=15%}
+41014,日月同辉,日月同輝,The sun and moon shine together,Mặt trời và mặt trăng cùng tỏa sáng,해와 달이 함께 빛나다,O sol e a lua brilham juntos,ดวงอาทิตย์และดวงจันทร์ส่องแสงพร้อมกัน,,,,,,<4023;4024>,,,{14=750}
+41111,机巧魄心,機巧魄心,Ingenious Mind,Trí tuệ tinh xảo,독창적인 마음,Mente engenhosa,ความคิดที่ชาญฉลาด,,,,,,<4171;1901;4081;4071>,,,{7=15%;8=15%}
+41112,绚烂装饰,絢爛裝飾,Splendid decoration,Trang trí lộng lẫy,화려한 장식,Decoração esplêndida,การตกแต่งที่งดงาม,,,,,,<3841;1393;3353>,,,{1=20%}
+41113,妖精机关,妖精機關,Fairy Gear,Cơ quan yêu tinh,요정 기관,Engrenagem de Fada,กลไกของนางฟ้า,,,,,,<561;3961;3681;861>,,,{7=15%;8=15%}
+41114,意识同步,意識同步,Consciousness synchronization,Đồng bộ ý thức,의식 동기화,Sincronização da consciência,การประสานจิตสำนึก,,,,,,<1991;3631;2421>,,,{23=750}
+41211,幽灵行者,幽靈行者,Ghost Walker,Người Đi Bộ Ma,유령 워커,Andarilho Fantasma,ผีเดิน,,,,,,<2391;2991;391;3961>,,,{7=15%;8=15%}
+41212,格斗大师,格鬥大師,Martial Arts Master,Đại sư võ thuật,격투 마스터,Mestre de Artes Marciais,ปรมาจารย์ศิลปะการต่อสู้,,,,,,<3261;2021;1301;2241>,,,{1=20%}
+41213,精神操控,精神控制,Mind control,Kiểm soát tâm trí,마음 조종,Controle mental,การควบคุมจิตใจ,,,,,,<601;591;331>,,,{7=15%;8=15%}
+41214,萌样神兽,萌樣神獸,Cute Mythical Beast,Thú thần dễ thương,귀여운 신수,Besta mítica fofa,สัตว์เทพน่ารัก,,,,,,<2441;1281;1991>,,,{14=750}
+41311,毒气攻击,毒氣攻擊,Gas Attack,Vụ tấn công khí độc,독가스 공격,Ataque de gás,การโจมตีด้วยแก๊ส,,,,,,<161;3771;2681>,,,{7=10%;8=10%}
+41312,似龙非龙,似龍非龍,Dragon Like,Giống rồng mà không phải rồng,용과 닮음,"Como um dragão, mas não um dragão",เหมือนมังกรแต่ไม่ใช่มังกร,,,,,,<3591;1891;701>,,,{1=12%}
+41313,誓约之力,誓約之力,Power of Oath,Sức mạnh của lời thề,서약의 힘,Poder do Juramento,อำนาจแห่งคำสาบาน,,,,,,<3661;3841;221>,,,{7=10%;8=10%}
+41314,同行伙伴,同行夥伴,Peer Partner,Bạn đồng hành,동행 파트너,Parceiros,พันธมิตร,,,,,,<751;91;341>,,,{14=500}
+41611,大型幻兽,大型幻獸,Large Phantasmal Beast,Thú ảo khổng lồ,거대 환수,Grande Besta de Fantasia,สัตว์แฟนตาซีขนาดใหญ่,,,,,,<2431;4171;3251>,,,{7=15%;8=15%}
+41612,无影无踪,無影無蹤,Vanished without a trace,Biến mất không dấu vết,흔적도 없이 사라짐,Nenhum traço,ไม่มีร่องรอย,,,,,,<3201;701;731;3661>,,,{1=20%}
+41613,高速储能,高速儲能,High-speed energy storage,Lưu trữ năng lượng tốc độ cao,고속 에너지 저장,Armazenamento de energia de alta velocidade,ระบบกักเก็บพลังงานความเร็วสูง,,,,,,<3271;591;881>,,,{7=15%;8=15%}
+41614,雷电身法,雷電身法,Thunderclap Body Technique,Thân pháp sấm sét,뇌전신법,Habilidades do corpo relâmpago,ทักษะร่างกายสายฟ้า,,,,,,<3221;7001;1221>,,,{14=750}
+41711,极限钢铁,極限鋼鐵,Extreme Steel,Thép Siêu Cường,극한 강철,Aço Extremo,เหล็กเอ็กซ์ตรีม,,,,,,<1991;3161;3411>,,,{7=15%;8=15%}
+41712,加农光炮,加農光炮,Laser Cannon,Pháo laser,캐논 빔,Canhão Canhão de Luz,ปืนใหญ่ ปืนใหญ่เบา,,,,,,<1901;331;1931;21>,,,{1=20%}
+41713,金属大骚动,金屬大騷動,Metal Uproar,Sự hỗn loạn của kim loại,금속 대소동,Motim de Metal,เมทัล ไรออท,,,,,,<2441;3661;3771>,,,{7=15%;8=15%}
+41714,联盟对战,聯盟對戰,Alliance Battle,Trận chiến liên minh,연맹 대전,Batalha da Aliança,การต่อสู้ของพันธมิตร,,,,,,<3221;3841;571;1301>,,,{23=750}
+70011,电光一闪,電光一閃,Quick Attack,Một tia chớp,전광 번쩍,Um relâmpago,สายฟ้าแลบ,,,,,,<331;731;2071;91>,,,{7=10%;8=10%}
+70012,神圣之火,神聖之火,Sacred Fire,Ngọn lửa thiêng liêng,성스러운 불꽃,Fogo Sagrado,ไฟศักดิ์สิทธิ์,,,,,,<1301;2991;2481;11>,,,{1=12%}
+70013,水之誓约,水之誓約,Oath of Water,Hiệp ước nước,물의 서약,Compromisso com a água,คำมั่นสัญญาเรื่องน้ำ,,,,,,<3301;3771;221;21>,,,{7=10%;8=10%}
+70014,万有引力,萬有引力,Gravity,Lực hấp dẫn vạn vật,만유인력,gravidade,แรงโน้มถ่วง,,,,,,<2471;3841;781;1>,,,{22=500}
+70211,毒素蔓延,毒素蔓延,Toxic spread,Sự lây lan chất độc,독소 확산,Proliferação de toxinas,การแพร่กระจายของสารพิษ,,,,,,<393;3771;161;4031>,,,{7=15%;8=15%}
+70212,卷土重来,捲土重來,To make a comeback; to stage a comeback,Sự trở lại mạnh mẽ; quay trở lại,재기하다; 다시 일어서다,Retornar com força; fazer uma reaparição,กลับมาอย่างแข็งแกร่ง; การกลับมาอีกครั้ง,,,,,,<1251;1901;771>,,,{1=20%}
+70213,闪亮登场,閃亮登場,Grand entrance,Sự xuất hiện rực rỡ,화려한 등장,Entrada triunfal,การปรากฏตัวอย่างตระการตา,,,,,,<4024;4023>,,,{7=15%;8=15%}
+70214,幽冥魂殿,幽冥魂殿,幽冥魂殿 (Yōuméi Húndiàn),幽冥魂殿 (Âu Minh Hồn Điện),幽冥魂殿 (Umyeong Honjeon),幽冥魂殿 (Yōuméi Húndiàn),幽冥魂殿 (Yūmíng Húndiàn),,,,,,<2391;4121;4024>,,,{23=750}
+70311,远古之力,遠古之力,Ancient power,Sức mạnh cổ đại,고대의 힘,Poder antigo,พลังโบราณ,,,,,,<7041;7051>,,,{7=50%;8=50%}
+70411,远古之力,遠古之力,Ancient power,Sức mạnh cổ đại,고대의 힘,Poder ancestral,พลังโบราณ,,,,,,<7031;7051>,,,{7=50%;8=50%}
+70511,远古之力,遠古之力,Ancient Power,Sức mạnh cổ xưa,고대의 힘,Poder Antigo,พลังแห่งยุคโบราณ,,,,,,<7031;7041>,,,{7=50%;8=50%}
+70711,群居而生,群居而生,Living in groups,Sống theo đàn,무리 지어 사는,Vivendo em grupo,อยู่รวมกันเป็นกลุ่ม,,,,,,<571;1071;611;3151>,,,{7=10%;8=10%}
+70712,格斗达人,格鬥達人,Fighting Master,Đại sư võ thuật,격투의 달인,Mestre de luta,จ้าวแห่งการต่อสู้,,,,,,<3251>,,,{1=12%}
+70713,单挑出站,單挑出站,One-on-one showdown,Đấu một chọi một,일대일 대결,Duelo um contra um,การต่อสู้แบบตัวต่อตัว,,,,,,<251>,,,{7=10%;8=10%}
+70714,究极异兽,究級異獸,Ultimate Beast,Thú Hoang Cực Đỉnh,궁극의 괴수,Besta Final,อสูรขั้นสูงสุด,,,,,,<4141;4151>,,,{14=500}
+70811,超能精神,超能精神,Supernatural Spirit,Linh hồn siêu nhiên,초능력 정신,Espírito sobrenatural,จิตวิญญาณเหนือธรรมชาติ,,,,,,<2401;261>,,,{7=15%;8=15%}
+70812,可可爱爱,可可愛愛,Cute,Dễ thương,귀여워,Fofo,น่ารัก,,,,,,<861;3961;501;2411>,,,{1=20%}
+70813,超级仿制,超級仿製,Super imitation,Siêu nhái,초고퀄리티 모조품,Super imitação,เลียนแบบระดับสูง,,,,,,<761>,,,{7=15%;8=15%}
+70814,起源幻兽,起源幻獸,Origin Phantasma,Thú Huyền Thoại Nguồn Gốc,기원 환수,Fantasma de Origem,สัตว์อสูรแห่งจุดกำเนิด,,,,,,<1281;1991;3261>,,,{14=750}
+70911,魅力四射,魅力四射,Alluring,Quyến rũ,매력적이다,Encantador,มีเสน่ห์,,,,,,<3601;3631;1771;4051>,,,{7=15%;8=15%}
+70912,卷土重来,捲土重來,To make a comeback; to stage a comeback,Sự trở lại mạnh mẽ; quay trở lại,다시 일어서다; 재기하다,Retornar com força; voltar com tudo,กลับมาอย่างยิ่งใหญ่; กลับมาอีกครั้ง,,,,,,<1253;771;393;1901>,,,{1=20%}
+70913,魅惑众生,魅惑眾生,Charming everyone,Hớp hồn mọi người,모두를 매혹시키다,Encantador de todos,มีเสน่ห์ดึงดูดทุกคน,,,,,,<4111;3261;1391>,,,{7=15%;8=15%}
+70914,超能咒语,超能咒語,Super Spell,Phép thuật siêu năng,초능력 주문,Feitiço Superpoderoso,คาถาเหนือธรรมชาติ,,,,,,<1261;561;2401;321>,,,{14=750}
+71011,格斗世家,格斗世家,Fighting Family,Gia đình võ thuật,격투 가족,Família de Luta,ตระกูลนักสู้,,,,,,<3261;4121;7071>,,,{7=15%;8=15%}
+71012,近身肉搏,近身肉搏,Close-quarters combat,Chiến đấu tầm gần,근접전,Combate corpo a corpo,การต่อสู้ระยะประชิด,,,,,,<3303;3161;1304>,,,{1=20%}
+71013,忠诚象征,忠誠象徵,Symbol of Loyalty,Biểu tượng của lòng trung thành,충성의 상징,Símbolo de Lealdade,สัญลักษณ์แห่งความจงรักภักดี,,,,,,<242;1172;2242>,,,{7=15%;8=15%}
+71014,坚硬强盾,堅硬強盾,"Strong, hard shield","Khiên chắn cứng, mạnh",강하고 단단한 방패,Escudo forte e resistente,โล่แข็งแกร่งทนทาน,,,,,,<1254;4023;4171>,,,{23=750}
+71021,妖精之谜,妖精之謎,The Fairy's Mystery,Bí ẩn của tiên nữ,요정의 미스터리,O Mistério da Fada,ปริศนาแห่งนางฟ้า,,,,,,<3601;4111;3961>,,,{7=15%;8=15%}
+71022,亚瑟王传奇,亞瑟王傳奇,The Legend of King Arthur,Truyền thuyết về Vua Arthur,아더왕 전설,A Lenda do Rei Arthur,ตำนานกษัตริย์อาร์เธอร์,,,,,,<3631>,,,{1=20%}
+71023,破坏斩击,破壞斬擊,Destructive Slash,Đòn chém hủy diệt,파괴참격,Golpe Destrutivo,การโจมตีทำลายล้าง,,,,,,<3251;3252>,,,{7=15%;8=15%}
+71024,传说英雄,傳說英雄,Legendary Hero,Anh hùng huyền thoại,전설의 영웅,Herói Lendário,วีรบุรุษในตำนาน,,,,,,<7101>,,,{14=750}
+71111,武士精神,武士道精神,Bushido,Chí sĩ đạo,무사도,Bushido,วิถีของซามูไร,,,,,,<7071;7101>,,,{7=15%;8=15%}
+71112,纸艺娃娃,紙藝娃娃,Paper doll,Búp bê giấy,종이 인형,Boneca de papel,ตุ๊กตาทำจากกระดาษ,,,,,,<7091>,,,{1=20%}
+71113,圣剑,聖劍,Holy Sword,Thanh kiếm thánh,성검,Espada Sagrada,ดาบศักดิ์สิทธิ์,,,,,,<3181;4081;3413>,,,{7=15%;8=15%}
+71114,精神利刃,精神利刃,Mental Blade,Lưỡi kiếm tinh thần,정신의 칼날,Lâmina Mental,คมแห่งจิตใจ,,,,,,<7081;4101;1281>,,,{14=750}
+90011,最佳拍档,最佳拍檔,Best Partner,Đối tác tốt nhất,최고의 파트너,Melhor Parceiro,คู่หูที่ดีที่สุด,,,,,,<9002;9003>,,,{7=10%;8=10%}
+90021,最佳拍档,最佳拍檔,Best Partner,Đối tác tốt nhất,최고의 파트너,Melhor Parceiro,หุ้นส่วนที่ดีที่สุด,,,,,,<9001;9003>,,,{7=10%;8=10%}
+90031,最佳拍档,最佳拍檔,Best Partner,Đối tác tốt nhất,최고의 파트너,Melhor Parceiro,หุ้นส่วนที่ดีที่สุด,,,,,,<9001;9002>,,,{7=15%;8=15%}
+,七龙珠联动,七龍珠聯動,Dragon Ball Collaboration,Sự kiện hợp tác Dragon Ball,드래곤볼 콜라보레이션,Colaboração Dragon Ball,การร่วมมือกับดรากอนบอล,,,,,,<9021>,,,{7=50%;8=50%}
+,七龙珠联动,七龍珠聯動,Dragon Ball Collaboration,Sự kiện hợp tác Dragon Ball,드래곤볼 콜라보레이션,Colaboração Dragon Ball,การร่วมมือกับดรากอนบอล,,,,,,<9011>,,,{7=50%;8=50%}
+90411,恶霸来临,惡霸來臨,The bully has arrived.,Kẻ bắt nạt đã đến.,폭력배가 왔다.,O valentão chegou.,อันธพาลมาแล้ว,,,,,,<1254;2822>,,,{7=15%;8=15%}
+90412,藤蔓丛林,藤蔓叢林,Liana Jungle,Rừng dây leo,덩굴 숲,Floresta de cipós,ป่าเถาวัลย์,,,,,,<2473;3843;3181>,,,{1=20%}
+90413,自然恩泽,自然恩澤,Nature's Grace,恩 huệ của thiên nhiên,자연의 은총,Graça da Natureza,พระคุณของธรรมชาติ,,,,,,<2442;3601>,,,{7=15%;8=15%}
+90414,特殊形态,特殊形態,Special Form,Dạng đặc biệt,특수 형태,Forma Especial,รูปแบบพิเศษ,,,,,,<3252;7101>,,,{14=750}
+90511,超能环视,超能環視,Super Vision Ring,Vòng Siêu Thị Giác,초능력 시야,Anel de Visão Super,แหวนวิสัยทัศน์เหนือธรรมชาติ,,,,,,<>,,,{7=15%;8=15%}
+90512,钢铁意志,鋼鐵意志,Iron Will,Ý chí sắt thép,강철 의지,Vontade de Aço,ความแข็งแกร่งดั่งเหล็กกล้า,,,,,,<>,,,{1=20%}
+90513,超重压力,超重壓力,Overwhelming pressure,Áp lực quá lớn,압도적인 압력,Pressão esmagadora,ความกดดันอย่างหนัก,,,,,,<>,,,{7=15%;8=15%}
+90514,卷土重来,捲土重來,To make a comeback; to stage a comeback,Sự trở lại mạnh mẽ; quay trở lại,재기하다; 다시 일어서다,Retornar com força; fazer uma reaparição,การกลับมาอย่างยิ่งใหญ่; การกลับมาอีกครั้ง,,,,,,<>,,,{14=750}
+90611,无畏精神,無畏精神,Fearless spirit,Tinh thần không sợ hãi,두려움 없는 정신,Espírito destemido,จิตวิญญาณที่ไม่หวั่นกลัว,,,,,,<1396;753;2242>,,,{7=15%;8=15%}
+90612,波导之力,波導之力,Waveguide Power,Sức mạnh dẫn sóng,도파관의 힘,Poder da onda guia,พลังคลื่นนำ,,,,,,<771;863;1941;1951>,,,{1=20%}
+90613,迅雷攻势,迅雷攻勢,Lightning Offensive,Cuộc tấn công như chớp,번개 공격,Ofensiva Relâmpago,การโจมตีสายฟ้าแลบ,,,,,,<4161>,,,{7=15%;8=15%}
+90614,至高格斗,至高格鬥,Supreme Fighting,Đấu Sĩ Tối Cao,최고의 격투,Luta Suprema,การต่อสู้สูงสุด,,,,,,<3252;7111;4121>,,,{14=750}
+90711,地面飞行,地面飛行,Ground flight,Chuyến bay mặt đất,지상 비행,Voo de solo,การบินภาคพื้นดิน,,,,,,<2233;1032;3231>,,,{7=15%;8=15%}
+90712,凶爆准神,兇爆準神,Brutal Pseudo-God,Ác thần giả,흉폭한 준신,Pseudo-deus brutal,เทพเทียมดุร้าย,,,,,,<1893;3003;3143;1253>,,,{1=20%}
+90713,狂暴失控,狂暴失控,Rampage,Cuồng loạn,광란,Descontrole,คลั่ง,,,,,,<631;232;4101>,,,{7=15%;8=15%}
+90714,沙暴龙卷,沙暴龍捲,Sandstorm Tornado,Cơn lốc xoáy cát,모래폭풍 토네이도,Tornado de tempestade de areia,พายุทอร์นาโดฝุ่น,,,,,,<1254;3631;3621>,,,{14=750}
+90811,超进化试炼,超進化試煉,Super Evolution Trial,Thử thách Siêu Tiến hóa,초진화 시련,Teste de Super Evolução,การทดสอบวิวัฒนาการสูง,,,,,,<263;1172;3;883>,,,{7=15%;8=15%}
+90812,巅峰对决,巔峰對決,Peak Duel,Trận chiến đỉnh cao,정상결전,Duelo de Pico,การดวลยอดเขา,,,,,,<3304>,,,{1=20%}
+90813,爆炸烈焰,爆炸烈焰,Exploding flames,Ngọn lửa bùng nổ,폭발하는 불꽃,Chamas explosivas,เปลวเพลิงที่ระเบิด,,,,,,<3651;3342>,,,{7=15%;8=15%}
+90814,与神争锋,與神爭鋒,Contending with God,Tranh đấu với thần,신과의 싸움,Lutando contra Deus,ต่อสู้กับพระเจ้า,,,,,,<1982;1972>,,,{14=750}
+90911,降雪之力,降雪之力,Power of Falling Snow,Sức mạnh của tuyết rơi,눈 내리는 힘,Poder da neve que cai,พลังแห่งหิมะที่ตกลงมา,,,,,,<2873;3502>,,,{7=15%;8=15%}
+90912,雪王驾到,雪王駕到,The Snow King has arrived,Vua Tuyết đã đến,눈의 왕이 왔다,O Rei da Neve chegou,กษัตริย์หิมะเสด็จมาแล้ว,,,,,,<2302;9111>,,,{1=20%}
+90913,冰雪世界,冰雪世界,Ice and snow world,Thế giới băng tuyết,빙설 세계,Mundo de gelo e neve,โลกน้ำแข็งและหิมะ,,,,,,<3241;1921;721>,,,{7=15%;8=15%}
+90914,唯一属性,唯一屬性,Unique attribute,Thuộc tính duy nhất,고유 속성,Atributo único,แอตทริบิวต์เฉพาะ,,,,,,<3651;4121;2371;3171>,,,{14=750}
+91011,幽冥场地,幽冥場地,幽冥场地 / Nether Field,Vùng đất âm phủ / Địa ngục,지옥 경기장 / 염마의 땅,Campo dos Infernos / Campo do Submundo,สนามยมโลก / ดินแดนยม,,,,,,<971;2991;3961>,,,{7=15%;8=15%}
+91012,超能家园,超能家園,Superpowered Hometown,Ngôi nhà siêu năng lực,초능력 마을,Lar Superpoderoso,บ้านพลังเหนือมนุษย์,,,,,,<1941;1951>,,,{1=20%}
+91013,遨游骑士,遨遊騎士,Roaming Knight,Hiệp sĩ lang thang,방랑 기사,Cavaleiro Errante,อัศวินเร่ร่อน,,,,,,<7111;641;2231>,,,{7=15%;8=15%}
+91014,黑屋笼罩,黑屋籠罩,Enveloped in darkness,Bao trùm trong bóng tối,어둠에 휩싸이다,Envolvido em escuridão,ปกคลุมด้วยความมืด,,,,,,<4024;4101;7021>,,,{14=750}
+91111,王者座驾,王者座駕,King's Ride,Xe của nhà vua,왕의 마차,Montaria do Rei,พาหนะของกษัตริย์,,,,,,<8102>,,,{7=15%;8=15%}
+91112,黑白分明,黑白分明,Black and white,Đen trắng,흑백,Preto e branco,ขาวดำ,,,,,,<9101>,,,{1=20%}
+91113,王者君临,王者君臨,The King Reigns,Vua trị vì,왕이 다스린다,O Rei Reina,กษัตริย์ทรงครองราชย์,,,,,,<2381;1421;121;2031>,,,{7=15%;8=15%}
+91114,大地回春,大地回春,Spring is in the air,Mùa xuân về,봄이 왔다,A primavera chegou,ฤดูใบไม้ผลิมาถึงแล้ว,,,,,,<3601;2441;1281>,,,{14=750}
+91211,火斗王者,火斗王者,Fire Duel King,Vua Đấu Lửa,화염 결투왕,Rei do Duelo de Fogo,ราชาแห่งการต่อสู้ด้วยไฟ,,,,,,<1301;2021;2481>,,,{7=15%;8=15%}
+91212,火焰之踢,火焰之踢,Flame Kick,Đòn Chân Lửa,화염 킥,Chute de Fogo,เตะไฟ,,,,,,<461;3671>,,,{1=20%}
+91213,特殊羁绊,特殊羈絆,Special Bond,Liên kết đặc biệt,특별한 유대감,Laço Especial,พันธะพิเศษ,,,,,,<3304;7001;9071>,,,{7=15%;8=15%}
+91214,非凡外观,非凡外觀,Exceptional Appearance,Ngoại hình khác biệt,탁월한 외관,Aparência excepcional,รูปลักษณ์ที่โดดเด่น,,,,,,<9041;7081;1254>,,,{14=750}
+91215,异龙聚形,異龍聚形,Gathering of Strange Dragons,Sự tụ hội của những con rồng kỳ lạ,이상한 용들의 집합,Reunião de Dragões Estranhos,การรวมตัวของมังกรแปลกประหลาด,,,,,,<3211;3221;9081>,,,{7=15%;8=15%}
+91216,无极之道,無極之道,The Way of Limitlessness,Con đường vô cực,무극의 도,O Caminho do Infinito,หนทางแห่งอนันต์,,,,,,<3241>,,,{1=20%}
+91217,极巨变化,極巨變化,Gigantamax,Siêu cực khổng lồ,거대화,Gigantamax,ไจแอนท์แม็กซ์,,,,,,<4171;92;391>,,,{7=15%;8=15%}
+91218,剑盾屠龙,劍盾屠龍,Sword and Shield: Dragon Slayer,Kiếm và Khiên: Sát Long,검과 방패: 용사냥꾼,Espada e Escudo: Matador de Dragões,ดาบและโล่: ฆ่ามังกร,,,,,,<7101;7102>,,,{14=750}
+91219,丰缘御三家,豐緣御三家,Hoenn starters,Bộ ba khởi đầu Hoenn,호연 지방 시작 포켓몬,Iniciadores de Hoenn,โปเกมอนเริ่มต้นของโฮเอ็น,,,,,,<1301;1311>,,,{7=15%;8=15%}
+91220,草木操纵,草木操縱,Plant Manipulation,Điều khiển thực vật,식물 조종,Manipulação de Plantas,การควบคุมพืช,,,,,,<9041>,,,{1=20%}
+91221,升而为龙,升而為龍,Rise and become a dragon,Vươn lên thành rồng,용이 되다,Elevar-se e tornar-se um dragão,ขึ้นไปเป็นมังกร,,,,,,<9081;881>,,,{7=15%;8=15%}
+91222,唯快不破,唯快不破,Only speed is invincible,Chỉ có tốc độ mới bất khả chiến bại,속도만이 무적이다,Somente a velocidade é invencível,มีเพียงความเร็วเท่านั้นที่เอาชนะไม่ได้,,,,,,<9101;4161;4051;261;701>,,,{14=750}
+91223,种子种子,種子種子,Seeds seeds,Hạt giống hạt giống,씨앗 씨앗,Sementes sementes,เมล็ด เมล็ด,,,,,,<1>,,,{7=15%;8=15%}
+91224,蛙蛙联盟,蛙蛙聯盟,Frog Frog Alliance,Liên minh Ếch Ếch,개구리 개구리 연맹,Aliança Sapo Sapo,กบกบสมาพันธ์,,,,,,<251;2271;3301>,,,{1=20%}
+91225,闪光草系,閃光草系,Shiny Grass-type,Loại Cỏ óng ánh,빛나는 풀 타입,Tipo Grama Brilhante,พืชประเภทประกาย,,,,,,<9091;9141>,,,{7=15%;8=15%}
+91226,有毒危险,有毒危險,Poisonous danger,Nguy hiểm độc hại,독극물 위험,Perigo de veneno,อันตรายจากพิษ,,,,,,<9131;7021;161;3771>,,,{14=750}
+91227,电系场地,電系場地,Electric-type Field,Sân điện,전기 타입 필드,Campo do tipo Elétrico,สนามประเภทไฟฟ้า,,,,,,<4161>,,,{7=15%;8=15%}
+91228,龙之逆鳞,龍之逆鱗,Dragon's Inverse Scale,Vảy ngược của rồng,용의 역린,Escama Inversa do Dragão,เกล็ดกลับของมังกร,,,,,,<9131;753>,,,{1=20%}
+91229,雷电操纵,操控雷電,Lightning Manipulation,Điều khiển sấm sét,번개 조종,Manipulação de Raios,ควบคุมสายฟ้า,,,,,,<7001;591;3201>,,,{7=15%;8=15%}
+91230,预测未来,預測未來,Predicting the future,Dự đoán tương lai,미래 예측,Prever o futuro,การทำนายอนาคต,,,,,,<1281;2351;321>,,,{14=750}
+91231,钢铁身躯,鋼鐵之軀,Steel Body,Thân thể bằng thép,강철의 몸,Corpo de aço,ร่างกายเหล็กกล้า,,,,,,<9061;9051>,,,{7=15%;8=15%}
+91232,钢铁蜕变,鋼鐵蛻變,Steel Transformation,Biến đổi thép,강철 변화,Transformação de Aço,การเปลี่ยนแปลงของเหล็กกล้า,,,,,,<1503;2031>,,,{14=750}
+91233,大地掌控,大地掌控,Earth Control,Kiểm soát Trái đất,지구 통제,Controle da Terra,การควบคุมโลก,,,,,,<3623;1971;9071>,,,{7=15%;8=15%}
+91234,小刚得羁绊,小剛的羈絆,Xiao Gang's Bond,Sự ràng buộc của Tiêu Cương,샤오강의 유대,O Laço de Xiao Gang,พันธะแห่งเสี่ยว กัง,,,,,,<163;1313;503>,,,{1=20%}
+91235,皮卡皮卡,皮卡皮卡,Pika Pika,Pika Pika,피카 피카,Pika Pika,ปิกา ปิกา,,,,,,<91;7001>,,,{7=15%;8=15%}
+91236,最初得伙伴,最初的夥伴,First Partner,Đối tác đầu tiên,첫 파트너,Primeiro Parceiro,หุ้นส่วนคนแรก,,,,,,<9151;9061>,,,{1=20%}
+91237,我们是冠军,我們是冠軍,We are the champions.,Chúng ta là nhà vô địch.,우리는 챔피언입니다.,Nós somos os campeões.,พวกเราคือแชมป์,,,,,,<2303;341;753>,,,{7=15%;8=15%}
+91238,十万伏特,十萬伏特,"100,000 volts",100.000 vôn,10만 볼트,100.000 volts,หนึ่งแสนโวลต์,,,,,,<1221;593;731;3201>,,,{14=750}
+91239,悖谬传说,悖謬傳說,Paradoxical Legend,Truyền thuyết nghịch lý,역설적인 전설,Lenda Paradoxal,ตำนานอุปมา,,,,,,<9161>,,,{7=15%;8=15%}
+91240,绯红脉动,緋紅脈動,Crimson Pulse,Nhịp đập đỏ thẫm,진홍색 맥박,Pulso Carmesim,ชีพจรสีแดงเลือด,,,,,,<1971;2023;9121>,,,{14=750}
+91241,龙之逆鳞,龍之逆鱗,Dragon's Inverse Scale,Vảy ngược của rồng,용의 역린,Escama Inversa do Dragão,เกล็ดกลับของมังกร,,,,,,<3211;3221>,,,{7=15%;8=15%}
+91242,斗技掌控,鬥技掌控,Arena Mastery,Thống trị đấu trường,투기장 지배,Domínio da Arena,การควบคุมเวทีประลอง,,,,,,<7101;7111;4121>,,,{1=20%}
+91243,血翼飞龙,血翼飛龍,Bloodwing Dragon,Rồng cánh máu,혈익룡,Dragão de Asa Sangrenta,มังกรปีกเลือด,,,,,,<1893>,,,{7=15%;8=15%}
+91244,希嘉娜伙伴,希嘉娜夥伴,Xigana Partners,Đối tác Xigana,시가나 파트너스,Parceiros Xigana,พันธมิตร Xigana,,,,,,<3592;3543>,,,{1=20%}
+91245,暴龙出击,暴龍出擊,Tyrannosaurus Rex Attack,T-Rex tấn công,티라노사우루스 공격,Ataque do Tiranossauro Rex,ไทแรนโนซอรัสโจมตี,,,,,,<9071;3221;631>,,,{7=15%;8=15%}
+91246,宝可梦大师,寶可夢大師,Pokémon Master,Pokémon Master,포켓몬 마스터,Mestre Pokémon,โปเกมอนมาสเตอร์,,,,,,<9081;9051;7001>,,,{14=750}
+91247,狐里狐气,狐里狐氣,foxy; sly; cunning,xảo quyệt; mưu mô; ranh ma,여우같은; 교활한; 간사한,raposa; esperto; astuto,เจ้าเล่ห์; ร้ายกาจ; หลอกลวง,,,,,,<3291;2822>,,,{7=10%;8=10%}
+91248,优雅气质,優雅氣質,Elegant temperament,Khi chất thanh lịch,우아한 기품,Temperamento elegante,บุคลิกสง่างาม,,,,,,<1393;1771;3683>,,,{1=12%}
+91249,多多益善,多多益善,"The more, the merrier",Càng nhiều càng vui,많으면 많을수록 좋다,"Quanto mais, melhor",ยิ่งมากยิ่งดี,,,,,,<3143;2871;1903;351>,,,{7=10%;8=10%}
+91250,引火之躯,引火之軀,A Body of Fire,Thân xác dễ cháy,불붙는 몸,Um Corpo de Fogo,ร่างกายแห่งไฟ,,,,,,<242;791;1172;2371>,,,{22=500}
+91251,鼠头鼠脑,鼠頭鼠腦,Shifty-eyed; sneaky; having a sneaky look,Mắt như chuột; lén lút; có vẻ lén lút,쥐 같은 눈초리; 엉큼한; 엉큼한 모습을 하고 있는,Olhares furtivos; sorrateiro; com uma aparência sorrateira,มีตาเหมือนหนู; ลับๆล่อๆ; มีลักษณะลับๆล่อๆ,,,,,,<791;2611;2891>,,,{7=10%;8=10%}
+91252,可爱萌宠,可愛萌寵,Cute pet,Thú cưng dễ thương,귀여운 애완동물,Mascote fofa,สัตว์เลี้ยงน่ารัก,,,,,,<151;1641>,,,{1=10%}
+91253,摇尾巴,搖尾巴,Wagging tail,Vẫy đuôi,꼬리치기,Abanar o rabo,กระดิกหาง,,,,,,<493;221;91>,,,{7=10%;8=10%}
+91254,漆黑身姿,漆黑的身姿,A pitch-black figure,Một thân hình đen như mực,칠흑 같은 자태,Uma figura de negro absoluto,ร่างกายสีดำสนิท,,,,,,<4121;3221;2822;4201>,,,{7=15%;8=15%}
+91255,棱镜反射,稜鏡反射,Prism reflection,Phản xạ lăng kính,프리즘 반사,Reflexão do prisma,การสะท้อนของปริซึม,,,,,,<561;1921;3021>,,,{1=20%}
+91256,精神之力,精神之力,Power of the spirit,Sức mạnh tinh thần,정신의 힘,Poder do espírito,พลังแห่งจิตวิญญาณ,,,,,,<1991;321;1903;263>,,,{7=15%;8=15%}
+91257,日月同辉,日月同輝,Sun and moon shining together,Mặt trời và mặt trăng cùng tỏa sáng,해와 달이 함께 빛나다,Sol e lua brilhando juntos,ดวงอาทิตย์และดวงจันทร์ส่องแสงพร้อมกัน,,,,,,<4023;4024>,,,{14=750}
+91258,螳螂在后,螳螂在後,The mantis is behind.,Con bọ ngựa ở phía sau.,사마귀가 뒤에 있다.,O louva-a-deus está atrás.,ตั๊กแตนตำข้าวอยู่ด้านหลัง,,,,,,<574;4481>,,,{7=15%;8=15%}
+91259,虫系联盟,蟲系聯盟,Insect Alliance,Liên minh Côn trùng,곤충 연맹,Aliança de Insetos,สมาพันธ์แมลง,,,,,,<3271;611;1071;4051>,,,{1=20%}
+91260,红色预警,紅色警報,Red alert,Cảnh báo đỏ,적색 경보,Alerta vermelha,การแจ้งเตือนสีแดง,,,,,,<3651;7071;1303>,,,{7=15%;8=15%}
+91261,钢铁追击,鋼鐵追擊,Steel Pursuit,Cuộc Đuổi Bắt Thép,강철 추격,Perseguição de Aço,การไล่ล่าเหล็กกล้า,,,,,,<9171;9051;1991>,,,{14=750}
+91262,钢龙军团,鋼龍軍團,Steel Dragon Legion,Đội quân Rồng Thép,강철 용 군단,Legião do Dragão de Aço,กองทัพมังกรเหล็ก,,,,,,<3543>,,,{7=15%;8=15%}
+91263,时间之力,時間之力,The Power of Time,Sức mạnh của thời gian,시간의 힘,O Poder do Tempo,พลังแห่งเวลา,,,,,,<1281>,,,{1=20%}
+91264,时间之力,時間之力,The Power of Time,Sức mạnh của thời gian,시간의 힘,O Poder do Tempo,พลังแห่งเวลา,,,,,,<2391;2401;4221>,,,{7=15%;8=15%}
+91265,神奥神话,神奧神話,Sinnoh Myth,Thần thoại Sinnoh,신오 신화,Mito de Sinnoh,ตำนานซินโนห์,,,,,,<2351;2361>,,,{14=750}

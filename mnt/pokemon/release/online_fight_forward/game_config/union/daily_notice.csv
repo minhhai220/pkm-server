@@ -1,0 +1,11 @@
+变量名,_beizhu,targetType,tarhetArg,desc,desc_tw,desc_en,desc_vn,desc_kr,desc_pt,desc_th,goto
+默认值,,,,"""""","""""","""""","""""","""""","""""","""""",
+提醒项目ID,名称备注,目标类型参数,目标值参数,文本描述,描述,描述,描述,描述,描述,描述,功能建筑
+1,每日捐赠,contribute,,为公会添砖加瓦,為公會添磚加瓦,Upgrade the building of your union,Nâng cấp công trình công hội của bạn,길드를 위해 기여하세요.,Melhore o edifício da sua união,อัพเกรดอาคารสหภาพของคุณ,contribute
+2,每日任务,uniontask,,有每日任务未完成,有每日任務未完成,You have uncompleted daily quests,Bạn có các nhiệm vụ hàng ngày chưa hoàn thành,완료하지 않은 일일 퀘스트가 있습니다.,Você tem missões diárias não concluídas,คุณมีภารกิจประจำวันที่ยังไม่เสร็จสิ้น,contribute
+3,每日礼包,dailygift,,可领取每日礼包,可領取每日禮包,You can claim daily pack,Bạn có thể nhận gói quà hàng ngày,일일 선물을 수령할 수 있습니다.,Você pode reivindicar o pacote diário,คุณสามารถรับแพ็คประจำวันได้,dailygift
+4,训练中心加速,speedup,6,为战友加速,為戰友加速,Speed up for your comrade,Tăng tốc cho đồng đội của bạn,동료를 위해 가속해 주세요.,Acelere para seu camarada,เร่งความเร็วให้สหายของคุณ,training
+5,可领红包,dailypacket,,有红包可领取,有紅包可領取,There's Red Packet to be claimed,Có phong bao lì xì để nhận,수령 가능한 보너스가 있습니다.,Há um Pacote Vermelho para ser reivindicado,มี Red Packet ให้รับ,redpacket
+6,公会副本,fuben,3,挑战公会副本,挑戰公會副本,Challenge union Dungeon,Thử thách ngục tối công hội,길드 던전 도전,Desafie a Masmorra da União,ดันเจี้ยนท้าทายสหภาพ,fuben
+7,公会战,fightsign,,公会战可报名,公會戰可報名,Registration for union War is open,Đăng ký tham gia chiến tranh công hội đã mở,길드전 참가 신청 가능,A inscrição para a Guerra da União está aberta,การลงทะเบียนสำหรับสงครามสหภาพเปิดแล้ว,unionfight
+8,许愿中心,fragdonate,,可以进行许愿,可以進行許願,You can make a wish,Bạn có thể gửi lời ước nguyện,소원 진행 가능,Você pode fazer um pedido,คุณสามารถขอพรได้,fragdonate

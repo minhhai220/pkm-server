@@ -1,0 +1,122 @@
+#!/bin/bash
+
+echo -e "\033[0;32m正在安装运行环境，请耐心等待...\033[0m"
+sleep 2
+yum install -y epel-release
+yum install -y supervisor
+systemctl enable supervisord
+yum install expect -y
+yum install subversion -y
+yum install glibc-devel.i686 -y
+yum install libstdc++-devel.i686 -y
+yum install gcc gcc-c++ -y
+yum install python-devel -y
+yum install pypy-devel  -y
+sleep 2
+yum install -y expect subversion build-essential  lib32stdc++6 gcc-multilib  g++-multilib python-dev pypy-dev gdb python2.7-dbg libcurl4-openssl-dev graphviz openssl libssl-dev swig gawk iotop lsof iftop ifstat iptraf htop dstat iotop  ltrace strace sysstat bmon nethogs silversearcher-ag libsasl2-2 sasl2-bin libsasl2-modules python-setuptools luajit curl wget unzip
+sleep 2
+cd /mnt/pokemon_server_tool/
+python get-pip.py
+sleep 2
+rm -rf /usr/lib/python2.7/dist-packages/OpenSSL
+rm -rf /usr/lib/python2.7/dist-packages/pyOpenSSL-0.15.1.egg-info
+sleep 2
+pip install cython==0.29.32 six==1.9.0 lz4==0.8.2 numpy==1.16.0 xlrd==2.0.1 xdot==1.2.0 rpdb==0.1.6 psutil==5.9.1 fabric==2.7.1 pycurl==7.19.0 pycrypto==2.6.1 M2Crypto==0.36.0 objgraph==3.5.0 msgpack-python==0.5.6 backports.ssl-match-hostname==3.5.0.1 Markdown==2.4.1 toro==1.0.1 pymongo==3.12.3 pyrasite==2.0.0 pyopenssl==21.0.0 ThinkingDataSdk==1.4.0 -i https://mirrors.cloud.tencent.com/pypi/simple
+sleep 2
+pip install tornado==4.4.2 -i https://mirrors.cloud.tencent.com/pypi/simple
+sleep 2
+pip install Supervisor==3.3.0 -i https://mirrors.cloud.tencent.com/pypi/simple
+sleep 2
+pip install pyOpenSSL==19.0 -i https://mirrors.cloud.tencent.com/pypi/simple
+sleep 2
+pip install cryptography==2.6 -i https://mirrors.cloud.tencent.com/pypi/simple
+sleep 2
+#验证安装结果：
+pip install msgpack-python
+sleep 2
+mongo <<EOF
+use admin
+db.createUser({
+  user: "root",
+  pwd: "GpFkU9O24cjhnWco",
+  roles: [ { role: "root", db: "admin" } ]
+})
+exit
+EOF
+sleep 2
+echo -e "\033[0;32m运行环境安装成功...\033[0m"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#阿 泽 源 码 网 w w w . l y z w l k j . v i p

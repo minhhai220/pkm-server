@@ -1,0 +1,18 @@
+{
+    "files": [
+        {
+            "patch": 3, 
+            "md5": "fb1c03c7d3cb4a1b91544bc4b66932ec", 
+            "name": "res/version.plist", 
+            "size": 994
+        }, 
+        {
+            "patch": 3, 
+            "md5": "8dde5207f62d97b50df0414eee23f066", 
+            "name": "src/app.views.city.card.bag", 
+            "size": 17699
+        }
+    ], 
+    "svn_version": "54539", 
+    "git_version": "175bed51520de09c6020d19bcaecc21834fcd51b"
+}

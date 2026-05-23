@@ -1,0 +1,4 @@
+变量名,refreshInterval,refreshNum
+默认值,0,{}
+ID,刷新间隔,刷新个数
+1,5,{1=10;2=40;3=50}

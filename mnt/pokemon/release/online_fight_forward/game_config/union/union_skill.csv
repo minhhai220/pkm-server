@@ -1,0 +1,20 @@
+变量名,name,name_tw,name_en,name_vn,name_kr,name_pt,name_th,icon,sort,preSkill,needGuildLv,attrNatureType,attrType
+默认值,"""""","""""","""""","""""","""""","""""","""""",config/item/icon_bsdmz.png,1,<>,0,0,1
+修炼组ID,修炼名称,修炼名称,修炼名称,修炼名称,修炼名称_韩,修炼名称_韩,修炼名称_韩,修炼的图标显示,排序,前置修炼,需要公会等级,自然卡牌加成目标,加成项目
+1,生命源泉,生命源泉,Source of life,Nguồn sống,생명의 원천,Fonte da vida,แหล่งชีวิต,common/icon/union_skill/icon_sm.png,1,<>,0,0,1
+2,物攻学习,物攻學習,P. ATK Learning,Học P. Tấn Công,공격 배우기,Aprendizado de Ataque Físico,เรียนรู้การโจมตีทางกายภาพ,common/icon/union_skill/icon_bs.png,2,<>,0,0,7
+3,特攻学习,特攻學習,SP. ATK Learning,Học SP. Tấn Công,특수 공격 배우기,Aprendizado de Ataque Especial,เรียนรู้การโจมตีพิเศษ,common/icon/union_skill/icon_bj.png,3,<>,0,0,8
+4,物防增强,物防增強,P.DEF Boost,Tăng P. Phòng Thủ,방어 증가,Aumento da Defesa Física,เพิ่มการป้องกันกายภาพ,common/icon/union_skill/icon_wf.png,4,<>,0,0,9
+5,特防增强,特防增強,SP.DEF Boost,Tăng SP. Phòng Thủ,특수 방어 증가,Aumento da Defesa Especial,เพิ่มการป้องกันพิเศษ,common/icon/union_skill/icon_tf.png,5,<>,0,0,10
+6,体能训练,體能訓練,Physical Training,Rèn luyện Thể chất,체력 훈련,Treinamento Físico,ฝึกฝนร่างกาย,common/icon/union_skill/icon_sm.png,6,<1;10>,6,0,1
+7,力量锤炼,力量錘煉,Strength Training,Rèn luyện Sức mạnh,힘 단련,Treinamento de Força,ฝึกฝนความแข็งแกร่ง,common/icon/union_skill/icon_bs.png,7,<2;10>,6,0,7
+8,意志磨练,意志磨練,Strengthening Willpower,Củng cố Ý chí,의지 수련,Fortalecendo a Vontade,เสริมสร้างพลังใจ,common/icon/union_skill/icon_bj.png,8,<3;10>,6,0,8
+9,健身强体,健身強體,Strong and Healthy Physique,Thể chất Khỏe mạnh và Mạnh mẽ,신체 강화,Físico Forte e Saudável,ร่างกายแข็งแรงและสมบูรณ์,common/icon/union_skill/icon_wf.png,9,<4;10>,6,0,9
+10,精神修炼,精神修煉,Spirit Training,Rèn luyện Tinh thần,정신 수련,Treinamento Espiritual,ฝึกฝนจิตใจ,common/icon/union_skill/icon_tf.png,10,<5;10>,6,0,10
+11,抵御训练,抵禦訓練,Defense Training,Rèn luyện Phòng thủ,저항 훈련,Treinamento de Defesa,ฝึกฝนการป้องกัน,common/icon/union_skill/icon_tg.png,11,<>,8,0,17
+12,强化抵御,強化抵禦,Enhance resistance,Tăng Kháng cự,저항력 강화,Aumentar resistência,เพิ่มการต้านทาน,common/icon/union_skill/icon_tg.png,12,<>,8,0,19
+13,精进治疗效果,精進治療效果,Improve healing effect,Cải thiện hiệu quả hồi máu,치료 효과 개량,Melhorar efeito de cura,ปรับปรุงผลการรักษา,common/icon/union_skill/icon_sm.png,14,<>,8,0,28
+14,暴击增强,暴擊增強,Enhance critical hit damage,Tăng sát thương chí mạng,치명타 강화,Aumentar dano crítico,เพิ่มความเสียหายคริติคอล,common/icon/union_skill/icon_wg.png,15,<>,8,0,14
+15,强化暴击伤害,強化暴擊傷害,Enhance critical hit damage,Tăng sát thương chí mạng,치명타 피해 강화,Aumentar dano crítico,เพิ่มความเสียหายคริติคอล,common/icon/union_skill/icon_wg.png,16,<>,8,0,15
+16,强化暴击抗性,強化暴擊抗性,Crit Resistance ↓,Giảm Kháng chí mạng,치명타 내성 강화,Resistência a crítico ↓,ลดการต้านทานคริติคอล ↓,common/icon/union_skill/icon_tf.png,17,<>,8,0,16
+17,破除抵御,破除抵禦,Resistance rate ↓,Giảm tỉ lệ kháng,저항 파괴,Taxa de resistência ↓,ลดอัตราการต้านทาน ↓,common/icon/union_skill/icon_bs.png,13,<>,8,0,18
