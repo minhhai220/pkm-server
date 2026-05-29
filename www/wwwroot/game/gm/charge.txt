@@ -1,3 +1,0 @@
-recharge_rmb;Kim Cương
-gold;Vàng
-role_exp;Kinh Nghiệm
