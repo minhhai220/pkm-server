@@ -1,0 +1,19 @@
+变量名,huodongID,boardID,taskType,taskParam,taskSpecialParam,desc,desc_tw,desc_en,desc_vn,desc_kr,desc_pt,desc_th,award,goTo
+默认值,0,0,0,9999,{},"""""","""""","""""","""""","""""","""""","""""",{},""""""
+ID,活动版本ID,号码牌ID,任务类型,任务参数,任务特殊参数,描述,描述,描述,描述_越南,描述_韩,描述_韩,描述_韩,奖励,跳转目标
+101,10011,1,29,10000,{},挑战普通关卡10000次,挑戰普通關卡10000次,"Challenge normal stages 10,000 times",Thách đấu ải thường 10.000 lần,일반 스테이지 10000회 도전,Desafiar fases normais 10.000 vezes,"ท้าทายด่านปกติ 10,000 ครั้ง",{stamina=3000;rmb=38888},10000
+102,10011,2,35,200,{},精灵突破200次,精靈突破200次,Breakthrough Pokémon 200 times,Đột phá tinh linh 200 lần,포켓몬 돌파 200회,Avançar Pokémon 200 vezes,ฝ่าโปเกมอน 200 ครั้ง,{rmb=38888;870=5000},strengthen-advance
+103,10011,3,112,5,{5=7},以太乐园累计通过7层5次,以太樂園累計通過7層5次,Pass 7 floors in Ether Paradise 5 times in total,Vượt 7 tầng ở Vườn Ether tổng cộng 5 lần,에테르 파라다이스 7층 총 5회 클리어,Concluir 7 andares no Ether Paradise 5 vezes no total,ผ่าน 7 ชั้นในสวรรค์อีเธอร์รวม 5 ครั้ง,{4000=8888;rmb=38888},randomTower
+104,10011,4,17,5,{},累计登录5天,累計登錄5天,Log in for 5 days in total,Đăng nhập tích lũy 5 ngày,총 5일 로그인,Fazer login por 5 dias,เข้าสู่ระบบสะสม 5 วัน,{rmb=38888;gold=88888888},
+105,10011,5,20,500000000,{},累计消耗500000000金币,累計消耗500000000金幣,"Spend a total of 500,000,000 coins",Tiêu hao tổng cộng 500.000.000 vàng,골드 누적 5억 소비,Gastar um total de 500.000.000 de moedas,"ใช้เหรียญสะสม 500,000,000 เหรียญ",{rmb=38888;9016=10},
+106,10011,6,50,1000,{},钻石抽卡次数达1000次,鑽石抽卡次數達1000次,"Draw 1,000 times with diamonds",Rút thẻ bằng kim cương đạt 1000 lần,다이아 뽑기 1000회 달성,Realizar 1000 sorteios com diamantes,"สุ่มการ์ดด้วยเพชรครบ 1,000 ครั้ง",{rmb=38888;9016=10},drawCard-diamond
+107,10011,7,30,3000,{},挑战精英关卡次数3000次,挑戰精英關卡次數3000次,"Challenge elite stages 3,000 times",Thách đấu ải tinh anh 3000 lần,엘리트 스테이지 3000회 도전,Desafiar fases elite 3000 vezes,"ท้าทายด่านอีลิท 3,000 ครั้ง",{rmb=38888;9016=10},20000
+108,10011,8,86,50,{50=4},完成S级以上的派遣50次,完成S級以上的派遣50次,Complete 50 S-level or higher dispatch missions,Hoàn thành 50 nhiệm vụ phái cấp S trở lên,S급 이상 파견 50회 완료,Concluir 50 envios de nível S ou superior,ทำภารกิจส่งระดับ S ขึ้นไป 50 ครั้ง,{rmb=38888;9016=10},dispatchTask
+109,10011,9,36,1000,{},累计升级精灵1000次,累計升級精靈1000次,"Level up Pokémon 1,000 times in total",Nâng cấp tinh linh 1000 lần,포켓몬 누적 1000회 레벨업,Aumentar o nível dos Pokémon 1000 vezes,"อัปเลเวลโปเกมอนรวม 1,000 ครั้ง",{rmb=38888;9016=10},strengthen-1
+110,10011,10,21,300000,{},累计消费300000钻,累計消費300000鑽,"Spend a total of 300,000 diamonds",Tiêu hao tích lũy 300.000 kim cương,다이아 누적 30만 소비,Gastar um total de 300.000 diamantes,"ใช้เพชรรวม 300,000 เม็ด",{rmb=38888;9016=10},
+111,10011,11,26,500,{},购买体力500次,購買體力500次,Buy stamina 500 times,Mua thể lực 500 lần,스태미나 500회 구매,Comprar energia 500 vezes,ซื้อพลังงาน 500 ครั้ง,{rmb=38888;9016=10},gainStamina
+112,10011,12,18,2000,{},聚宝累计2000次,聚寶累計2000次,"Use Treasure Hunt 2,000 times in total",Tích lũy Chúc Bảo 2000 lần,보물찾기 누적 2000회,Usar o Tesouro 2000 vezes no total,"สะสมขุมทรัพย์ 2,000 ครั้ง",{rmb=38888;9016=10},gainGold
+113,10011,13,22,1000,{},累计充值1000钻,累計充值1000鑽,"Recharge a total of 1,000 diamonds",Nạp tích lũy 1000 kim cương,누적 충전 1000 다이아,Recarregar um total de 1000 diamantes,"เติมเพชรรวม 1,000 เม็ด",{2103=1000;2153=10},
+114,10011,14,22,8000,{},累计充值8000钻,累計充值8000鑽,"Recharge a total of 8,000 diamonds",Nạp tích lũy 8000 kim cương,누적 충전 8000 다이아,Recarregar um total de 8000 diamantes,"เติมเพชรรวม 8,000 เม็ด",{2103=2000;2154=10},
+115,10011,15,22,20000,{},累计充值20000钻,累計充值20000鑽,"Recharge a total of 20,000 diamonds",Nạp tích lũy 20000 kim cương,누적 충전 20000 다이아,Recarregar um total de 20000 diamantes,"เติมเพชรรวม 20,000 เม็ด",{9100=20;2568=1},
+116,10011,16,22,50000,{},累计充值50000钻,累計充值50000鑽,"Recharge a total of 50,000 diamonds",Nạp tích lũy 50000 kim cương,누적 충전 50000 다이아,Recarregar um total de 50000 diamantes,"เติมเพชรรวม 50,000 เม็ด",{2569=1;9100=50},

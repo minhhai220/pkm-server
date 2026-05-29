@@ -1,0 +1,21 @@
+变量名,huodongID,mainItem,minorItem,compoundItem,desc,desc_tw,desc_en,desc_vn,desc_kr,desc_pt,desc_th
+默认值,0,{},{},{},"""""","""""","""""","""""","""""","""""",""""""
+ID,活动版本ID,主料道具,配料道具,合成道具,功能描述,功能描述,功能描述,功能描述,功能描述,功能描述,功能描述
+1,1001,{6352=1},{6355=1},{6358=1},（带有桂花香气的龙舟粽）,（帶有桂花香氣的龍舟粽）,(Dragon Boat Zongzi with osmanthus fragrance),(Bánh ú thuyền rồng hương hoa mộc),(계화향이 나는 용선 쭝즈),(Zongzi de Barco-Dragão com aroma de Osmanthus),(บ๊ะจ่างเรือมังกรกลิ่นหอมดอกหอมหมื่นลี้)
+2,1001,{6352=1},{6356=1},{6358=1},（有着绵密蛋黄的龙舟粽）,（有著綿密蛋黃的龍舟粽）,(Dragon Boat Zongzi with creamy egg yolk),(Bánh ú thuyền rồng trứng muối mịn màng),(부드러운 달걀노른자가 있는 용선 쭝즈),(Zongzi de Barco-Dragão com gema salgada cremosa),(บ๊ะจ่างเรือมังกรไข่แดงเนื้อเนียน)
+3,1001,{6352=1},{6357=1},{6358=1},（附带板栗甜香的龙舟粽）,（附帶板栗甜香的龍舟粽）,(Dragon Boat Zongzi with sweet chestnut aroma),(Bánh ú thuyền rồng vị ngọt hạt dẻ),(밤의 달콤한 향이 있는 용선 쭝즈),(Zongzi de Barco-Dragão com sabor doce de castanha),(บ๊ะจ่างเรือมังกรกลิ่นหวานของเกาลัด)
+4,1001,{6353=1},{6355=1},{6359=1},（鲜肉与桂花组合的口味）,（鮮肉與桂花組合的口味）,(Savory pork and osmanthus flavor),(Hương vị thịt heo và hoa mộc),(신선한 고기와 계화 조합의 맛),(Sabor de carne suína e osmanthus),(รสหมูสดและดอกหอมหมื่นลี้)
+5,1001,{6353=1},{6356=1},{6360=1},,,,,,,
+6,1001,{6353=1},{6357=1},{6361=1},,,,,,,
+7,1001,{6354=1},{6356=1},{6359=1},（蜜枣与蛋黄组合的口味）,（蜜棗與蛋黃組合的口味）,(Sweet date and egg yolk flavor),(Hương vị táo đỏ và trứng muối),(꿀대추와 달걀노른자 조합의 맛),(Sabor de tâmara doce e gema de ovo),(รสรวมอินทผลัมหวานกับไข่แดง)
+8,1001,{6354=1},{6357=1},{6362=1},,,,,,,
+9,1001,{6354=1},{6355=1},{6363=1},,,,,,,
+10,1002,{6352=1},{6355=1},{6358=1},（带有桂花香气的龙舟粽）,（帶有桂花香氣的龍舟粽）,(Dragon Boat Zongzi with osmanthus fragrance),(Bánh ú thuyền rồng hương hoa mộc),(계화향이 나는 용선 쭝즈),(Zongzi de Barco-Dragão com aroma de Osmanthus),(บ๊ะจ่างเรือมังกรกลิ่นหอมดอกหอมหมื่นลี้)
+11,1002,{6352=1},{6356=1},{6358=1},（有着绵密蛋黄的龙舟粽）,（有著綿密蛋黃的龍舟粽）,(Dragon Boat Zongzi with creamy egg yolk),(Bánh ú thuyền rồng trứng muối mịn màng),(부드러운 달걀노른자가 있는 용선 쭝즈),(Zongzi de Barco-Dragão com gema salgada cremosa),(บ๊ะจ่างเรือมังกรไข่แดงเนื้อเนียน)
+12,1002,{6352=1},{6357=1},{6358=1},（附带板栗甜香的龙舟粽）,（附帶板栗甜香的龍舟粽）,(Dragon Boat Zongzi with sweet chestnut aroma),(Bánh ú thuyền rồng vị ngọt hạt dẻ),(밤의 달콤한 향이 있는 용선 쭝즈),(Zongzi de Barco-Dragão com sabor doce de castanha),(บ๊ะจ่างเรือมังกรกลิ่นหวานของเกาลัด)
+13,1002,{6353=1},{6355=1},{6359=1},（鲜肉与桂花组合的口味）,（鮮肉與桂花組合的口味）,(Savory pork and osmanthus flavor),(Hương vị thịt heo và hoa mộc),(신선한 고기와 계화 조합의 맛),(Sabor de carne suína e osmanthus),(รสหมูสดและดอกหอมหมื่นลี้)
+14,1002,{6353=1},{6356=1},{6360=1},,,,,,,
+15,1002,{6353=1},{6357=1},{6361=1},,,,,,,
+16,1002,{6354=1},{6356=1},{6359=1},（蜜枣与蛋黄组合的口味）,（蜜棗與蛋黃組合的口味）,(Sweet date and egg yolk flavor),(Hương vị táo đỏ và trứng muối),(꿀대추와 달걀노른자 조합의 맛),(Sabor de tâmara doce e gema de ovo),(รสรวมอินทผลัมหวานกับไข่แดง)
+17,1002,{6354=1},{6357=1},{6362=1},,,,,,,
+18,1002,{6354=1},{6355=1},{6363=1},,,,,,,

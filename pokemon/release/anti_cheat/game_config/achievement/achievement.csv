@@ -1,0 +1,10 @@
+变量名,name,name_tw,name_en,name_vn,name_kr,name_pt,name_th,icon
+默认值,"""""","""""","""""","""""","""""","""""","""""",""""""
+成就分类,描述,描述,描述,描述,描述,描述,描述,成就分类图标
+1,人物成长,人物成長,Growth,Tăng trưởng nhân vật,캐릭터 성장,Crescimento,การเติบโต,city/task/achievement/icon_rucz.png
+2,精灵收集,精靈收集,Collection,Bộ sưu tập yêu tinh,포켓몬 수집,Coleção,คอลเลกชัน,city/task/achievement/icon_jlsj.png
+3,精灵培养,精靈培養,Training,Tinh linh bồi dưỡng,포켓몬 육성,Treinamento,การฝึกฝน,city/task/achievement/icon_jlpy.png
+4,副本活动,副本活動,Dungeon,Sao chép hoạt động,던전 이벤트,Masmorra,ดันเจี้ยน,city/task/achievement/icon_fbhd.png
+5,竞技挑战,競技挑戰,Arena,Thách thức cạnh tranh,아레나 도전,Arena,สนามประลอง,city/task/achievement/icon_jjtz.png
+6,社交,社交,Social,Xã hội,소셜,Social,สังคม,city/task/achievement/icon_sj.png
+7,隐藏成就,隱藏成就,Hidden,Ẩn thành tích,히든 업적,Oculto,ซ่อนเร้น,

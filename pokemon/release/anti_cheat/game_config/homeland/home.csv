@@ -1,0 +1,7 @@
+变量名,name,unLockLv,roleNum,defaultIDs
+默认值,,<>,1,{floor=50001;wall=51001}
+ID,名字,解锁等级,数码兽数量,默认初始化ID
+1,room1,<1;5>,2,{wall=51001;floor=50001}
+2,room2,<2;6>,3,{wall=51001;floor=50001}
+3,room3,<3;7>,4,{wall=51001;floor=50001}
+4,room4,<4;8>,5,{wall=51001;floor=50001}

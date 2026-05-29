@@ -1,0 +1,14 @@
+{
+  "crosslobby.cn.1": {
+    "nsqd_tcp_addresses": [
+      "127.0.0.1:4150"
+    ],
+    "nsqlookupd": "http://127.0.0.1:4161/",
+    "services": [
+      {
+        "dependent": [],
+        "name": "crosslobby.cn.1"
+      }
+    ]
+  }
+}

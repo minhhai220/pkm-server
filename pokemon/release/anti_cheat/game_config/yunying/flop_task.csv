@@ -1,0 +1,39 @@
+变量名,huodongID,times,taskType,taskParam,taskSpecialParam,desc,desc_tw,desc_en,desc_vn,desc_kr,desc_pt,desc_th,award,jumpTo
+默认值,0,1,0,9999,{},"""""","""""","""""","""""","""""","""""","""""",0,""""""
+ID,活动版本ID,可完成次数,任务类型,任务参数,任务特殊参数,任务描述,任务描述,任务描述,任务描述,任务描述,任务描述,任务描述,任务次数奖励,跳转目标
+101,1001,2,30,3,{},困难副本挑战3次,困難副本挑戰3次,Challenge difficult dungeon 3 times,Thử thách phụ bản khó 3 lần,어려운 던전 도전 3회,Desafio de masmorra difícil 3 vezes,ท้าทายดันเจี้ยนระดับยาก 3 ครั้ง,1,20000
+102,1001,2,18,3,{},聚宝3次,聚寶3次,Snatch treasure 3 times,Tập bảo 3 lần,보물 획득 3회,Reunir tesouro 3 vezes,สะสมสมบัติ 3 ครั้ง,1,gainGold
+103,1001,2,32,4,{},日常副本通关4次,日常副本通關4次,Complete daily dungeon 4 times,Hoàn thành phụ bản hàng ngày 4 lần,일일 던전 클리어 4회,Completar masmorra diária 4 vezes,ผ่านดันเจี้ยนประจำวัน 4 ครั้ง,1,activityGate
+104,1001,2,41,5,{},进行5次竞技场挑战,進行5次競技場挑戰,Participate in arena challenge 5 times,Tham gia 5 trận đấu trường,아레나 도전 5회,Participar em 5 desafios de arena,เข้าร่วมการต่อสู้ในอารีน่า 5 ครั้ง,1,arena
+105,1001,2,26,2,{},购买2次体力,購買2次體力,Purchase stamina 2 times,Mua 2 lần thể lực,체력 구매 2회,Comprar 2 vezes energia,ซื้อพลังงาน 2 ครั้ง,1,gainStamina
+106,1001,200,22,70,{},每充值70钻，可完成200次,每充值70鑽，可完成200次,Complete 200 times per 70 diamonds recharge,"Mỗi lần nạp 70 kim cương, hoàn thành 200 lần",다이아몬드 70개 충전 시 200회 완료,"A cada recarga de 70 diamantes, completar 200 vezes",ทุกการเติมเพชร 70 เม็ด ทำได้ 200 ครั้ง,1,recharge
+,,,,,,,,,,,,,,
+111,1002,50,22,300,{},每充值300钻，可完成50次,每充值300鑽，可完成50次,Complete 50 times per 300 diamonds recharge,"Mỗi lần nạp 300 kim cương, hoàn thành 50 lần",다이아몬드 300개 충전 시 50회 완료,"A cada recarga de 300 diamantes, completar 50 vezes",ทุกการเติมเพชร 300 เม็ด ทำได้ 50 ครั้ง,1,recharge
+112,1002,5,21,50000,{},每消耗50000钻，可完成5次,每消耗50000鑽，可完成5次,Complete 5 times per 50000 diamonds spent,"Mỗi lần tiêu 50000 kim cương, hoàn thành 5 lần",다이아몬드 50000개 사용 시 5회 완료,"A cada gasto de 50000 diamantes, completar 5 vezes",ทุกการใช้เพชร 50000 เม็ด ทำได้ 5 ครั้ง,1,
+113,1002,1,18,50,{},聚宝50次,聚寶50次,Snatch treasure 50 times,Tập bảo 50 lần,보물 획득 50회,Reunir tesouro 50 vezes,สะสมสมบัติ 50 ครั้ง,1,gainGold
+114,1002,3,29,500,{},普通副本通关500次，可完成3次,普通副本通關500次，可完成3次,"Complete normal dungeon 500 times, complete 3 times","Hoàn thành phụ bản thường 500 lần, hoàn thành 3 lần","일반 던전 500회 클리어, 3회 완료","Completar masmorra normal 500 vezes, completar 3 vezes",ผ่านดันเจี้ยนปกติ 500 ครั้ง ทำได้ 3 ครั้ง,1,10000
+115,1002,3,30,100,{},困难副本挑战100次，可完成3次,困難副本挑戰100次，可完成3次,"Challenge difficult dungeon 100 times, complete 3 times","Thử thách phụ bản khó 100 lần, hoàn thành 3 lần","어려운 던전 100회 도전, 3회 완료","Desafio de masmorra difícil 100 vezes, completar 3 vezes",ท้าทายดันเจี้ยนระดับยาก 100 ครั้ง ทำได้ 3 ครั้ง,1,20000
+116,1002,2,41,10,{},进行10次竞技场挑战,進行10次競技場挑戰,Participate in arena challenge 10 times,Tham gia 10 trận đấu trường,아레나 도전 10회,Participar em 10 desafios de arena,เข้าร่วมการต่อสู้ในอารีน่า 10 ครั้ง,1,arena
+117,1002,2,26,7,{},购买7次体力,購買7次體力,Purchase stamina 7 times,Mua 7 lần thể lực,체력 구매 7회,Comprar 7 vezes energia,ซื้อพลังงาน 7 ครั้ง,1,gainStamina
+,,,,,,,,,,,,,,
+121,1003,10,22,60,{},每充值60钻，可完成10次,每充值60鑽，可完成10次,Complete 10 times per 60 diamonds recharge,"Mỗi lần nạp 60 kim cương, hoàn thành 10 lần",다이아몬드 60개 충전 시 10회 완료,"A cada recarga de 60 diamantes, completar 10 vezes",ทุกการเติมเพชร 60 เม็ด ทำได้ 10 ครั้ง,1,recharge
+122,1003,3,21,200,{},每消耗200钻，可完成3次,每消耗200鑽，可完成3次,Complete 3 times per 200 diamonds spent,"Mỗi lần tiêu 200 kim cương, hoàn thành 3 lần",다이아몬드 200개 사용 시 3회 완료,"A cada gasto de 200 diamantes, completar 3 vezes",ทุกการใช้เพชร 200 เม็ด ทำได้ 3 ครั้ง,1,
+123,1003,1,18,5,{},聚宝5次,聚寶5次,Snatch treasure 5 times,Tập bảo 5 lần,보물 획득 5회,Reunir tesouro 5 vezes,สะสมสมบัติ 5 ครั้ง,1,gainGold
+124,1003,1,29,30,{},普通副本通关30次,普通副本通關30次,Complete normal dungeon 30 times,Hoàn thành phụ bản thường 30 lần,일반 던전 30회 클리어,Completar masmorra normal 30 vezes,ผ่านดันเจี้ยนปกติ 30 ครั้ง,1,10000
+125,1003,1,41,5,{},进行5次竞技场挑战,進行5次競技場挑戰,Participate in arena challenge 5 times,Tham gia 5 trận đấu trường,아레나 도전 5회,Participar em 5 desafios de arena,เข้าร่วมการต่อสู้ในอารีน่า 5 ครั้ง,1,arena
+126,1003,1,26,2,{},购买2次体力,購買2次體力,Purchase stamina 2 times,Mua 2 lần thể lực,체력 구매 2회,Comprar 2 vezes energia,ซื้อพลังงาน 2 ครั้ง,1,gainStamina
+,,,,,,,,,,,,,,
+131,1004,2,30,3,{},困难副本挑战3次,困難副本挑戰3次,Challenge difficult dungeon 3 times,Thử thách phụ bản khó 3 lần,어려운 던전 도전 3회,Desafio de masmorra difícil 3 vezes,ท้าทายดันเจี้ยนระดับยาก 3 ครั้ง,1,20000
+132,1004,2,18,3,{},聚宝3次,聚寶3次,Snatch treasure 3 times,Tập bảo 3 lần,보물 획득 3회,Reunir tesouro 3 vezes,สะสมสมบัติ 3 ครั้ง,1,gainGold
+133,1004,2,32,4,{},日常副本通关4次,日常副本通關4次,Complete daily dungeon 4 times,Hoàn thành phụ bản hàng ngày 4 lần,일일 던전 클리어 4회,Completar masmorra diária 4 vezes,ผ่านดันเจี้ยนประจำวัน 4 ครั้ง,1,activityGate
+134,1004,2,41,5,{},进行5次竞技场挑战,進行5次競技場挑戰,Participate in arena challenge 5 times,Tham gia 5 trận đấu trường,아레나 도전 5회,Participar em 5 desafios de arena,เข้าร่วมการต่อสู้ในอารีน่า 5 ครั้ง,1,arena
+135,1004,2,26,2,{},购买2次体力,購買2次體力,Purchase stamina 2 times,Mua 2 lần thể lực,체력 구매 2회,Comprar 2 vezes energia,ซื้อพลังงาน 2 ครั้ง,1,gainStamina
+136,1004,200,22,70,{},每充值70钻，可完成200次,每充值70鑽，可完成200次,Complete 200 times per 70 diamonds recharge,"Mỗi lần nạp 70 kim cương, hoàn thành 200 lần",다이아몬드 70개 충전 시 200회 완료,"A cada recarga de 70 diamantes, completar 200 vezes",ทุกการเติมเพชร 70 เม็ด ทำได้ 200 ครั้ง,1,recharge
+,,,,,,,,,,,,,,
+141,1005,50,22,300,{},每充值300钻，可完成50次,每充值300鑽，可完成50次,Complete 50 times per 300 diamonds recharge,"Mỗi lần nạp 300 kim cương, hoàn thành 50 lần",다이아몬드 300개 충전 시 50회 완료,"A cada recarga de 300 diamantes, completar 50 vezes",ทุกการเติมเพชร 300 เม็ด ทำได้ 50 ครั้ง,1,recharge
+142,1005,5,21,50000,{},每消耗50000钻，可完成5次,每消耗50000鑽，可完成5次,Complete 5 times per 50000 diamonds spent,"Mỗi lần tiêu 50000 kim cương, hoàn thành 5 lần",다이아몬드 50000개 사용 시 5회 완료,"A cada gasto de 50000 diamantes, completar 5 vezes",ทุกการใช้เพชร 50000 เม็ด ทำได้ 5 ครั้ง,1,
+143,1005,1,18,50,{},聚宝50次,聚寶50次,Snatch treasure 50 times,Tập bảo 50 lần,보물 획득 50회,Reunir tesouro 50 vezes,สะสมสมบัติ 50 ครั้ง,1,gainGold
+144,1005,3,29,500,{},普通副本通关500次，可完成3次,普通副本通關500次，可完成3次,"Complete normal dungeon 500 times, complete 3 times","Hoàn thành phụ bản thường 500 lần, hoàn thành 3 lần","일반 던전 500회 클리어, 3회 완료","Completar masmorra normal 500 vezes, completar 3 vezes",ผ่านดันเจี้ยนปกติ 500 ครั้ง ทำได้ 3 ครั้ง,1,10000
+145,1005,3,30,100,{},困难副本挑战100次，可完成3次,困難副本挑戰100次，可完成3次,"Challenge difficult dungeon 100 times, complete 3 times","Thử thách phụ bản khó 100 lần, hoàn thành 3 lần","어려운 던전 100회 도전, 3회 완료","Desafio de masmorra difícil 100 vezes, completar 3 vezes",ท้าทายดันเจี้ยนระดับยาก 100 ครั้ง ทำได้ 3 ครั้ง,1,20000
+146,1005,2,41,10,{},进行10次竞技场挑战,進行10次競技場挑戰,Participate in arena challenge 10 times,Tham gia 10 trận đấu trường,아레나 도전 10회,Participar em 10 desafios de arena,เข้าร่วมการต่อสู้ในอารีน่า 10 ครั้ง,1,arena
+147,1005,2,26,7,{},购买7次体力,購買7次體力,Purchase stamina 7 times,Mua 7 lần thể lực,체력 구매 7회,Comprar 7 vezes energia,ซื้อพลังงาน 7 ครั้ง,1,gainStamina

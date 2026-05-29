@@ -1,0 +1,610 @@
+{% extends "dashboard.html" %}
+
+{% block css %}
+<style>
+	.merge-panel { margin-top: 20px; }
+	.merge-config { background: #f9f9f9; padding: 15px; border-radius: 5px; margin-bottom: 20px; }
+	.server-tag { display: inline-block; padding: 3px 8px; margin: 2px; background: #337ab7; color: white; border-radius: 3px; font-size: 12px; }
+	.config-item { background: #fff; border: 1px solid #ddd; border-radius: 4px; padding: 10px; margin-bottom: 10px; }
+	.config-item:hover { border-color: #337ab7; }
+	.config-item .key { font-weight: bold; color: #337ab7; }
+	.config-item .actions { float: right; }
+	.config-list { max-height: 500px; overflow-y: auto; }
+</style>
+{% end %}
+
+{% block main %}
+<div class="container-fluid main">
+	<div class="row">
+		<div class="title"><h4>{{ _(u"新区管理") }}</h4></div>
+	</div>
+
+	<!-- 标签页导航 -->
+	<ul class="nav nav-tabs" role="tablist">
+		<li role="presentation" class="active">
+			<a href="#tab-generate" data-toggle="tab">{{ _(u"配置生成") }}</a>
+		</li>
+		<li role="presentation">
+			<a href="#tab-manage" data-toggle="tab">{{ _(u"配置管理") }}</a>
+		</li>
+	</ul>
+
+	<div class="tab-content" style="margin-top: 20px;">
+		<!-- 配置生成标签页 -->
+		<div role="tabpanel" class="tab-pane active" id="tab-generate">
+			<div class="well merge-panel" style="margin-top: 0;">
+				<h5>{{ _(u"新区配置文件生成") }}</h5>
+				<p class="text-muted">{{ _(u"根据参数自动生成服务器启动所需的配置文件") }}</p>
+				
+				<div class="row">
+					<div class="col-md-6">
+						<h5>{{ _(u"基础参数") }}</h5>
+						<div class="form-group">
+							<label>{{ _(u"服务器Key") }}：</label>
+							<input type="text" id="serverKey" class="form-control" placeholder="game.cn.5">
+							<p class="help-block text-muted small">{{ _(u"格式：game.区域.编号") }}</p>
+						</div>
+						<div class="form-group">
+							<label>{{ _(u"服务器IP") }}：</label>
+							<input type="text" id="serverIP" class="form-control" value="103.19.232.40">
+						</div>
+						<div class="form-group">
+							<label>{{ _(u"Game服务端口") }}：</label>
+							<input type="number" id="gamePort" class="form-control" value="29005">
+						</div>
+						<div class="form-group">
+							<label>{{ _(u"MongoDB连接") }}：</label>
+							<input type="text" id="mongoUri" class="form-control" value="mongodb://root:oQTkIlUI5wrOUQEl@127.0.0.1:27017/{dbname}?authMechanism=SCRAM-SHA-1&authSource=admin">
+							<p class="help-block text-muted small">{{ _(u"使用 {dbname} 作为数据库名占位符") }}</p>
+						</div>
+						<div class="form-group">
+							<label>{{ _(u"NSQ地址") }}：</label>
+							<input type="text" id="nsqAddr" class="form-control" value="127.0.0.1:4150">
+						</div>
+						<div class="form-group">
+							<label>{{ _(u"NSQ Lookup地址") }}：</label>
+							<input type="text" id="nsqLookup" class="form-control" value="http://127.0.0.1:4161/">
+						</div>
+						<div class="form-group">
+							<label>{{ _(u"开服时间") }}：</label>
+							<input type="text" id="openDate" class="form-control" value="2025-12-20 10:00:00" placeholder="2025-12-20 10:00:00">
+						</div>
+						
+						<button class="btn btn-primary" onclick="generateConfigs()">
+							<span class="glyphicon glyphicon-cog"></span> {{ _(u"生成配置") }}
+						</button>
+					</div>
+					
+					<div class="col-md-6">
+						<div id="resultPanel" style="display: none;">
+							<h5>{{ _(u"生成的配置文件") }}</h5>
+							<ul class="nav nav-tabs" id="configTabs">
+								<li class="active"><a href="#cfg-game-defines" data-toggle="tab">game_defines.py</a></li>
+								<li><a href="#cfg-game-json" data-toggle="tab">game.json</a></li>
+								<li><a href="#cfg-pvp-json" data-toggle="tab">pvp/defines.json</a></li>
+								<li><a href="#cfg-storage-json" data-toggle="tab">storage/defines.json</a></li>
+								<li><a href="#cfg-supervisor-ini" data-toggle="tab">supervisor.ini</a></li>
+							</ul>
+							<div class="tab-content" style="margin-top: 10px;">
+								<div class="tab-pane active" id="cfg-game-defines">
+									<textarea id="cfgGameDefines" class="form-control" rows="15" readonly style="font-family: monospace; font-size: 12px;"></textarea>
+								</div>
+								<div class="tab-pane" id="cfg-game-json">
+									<textarea id="cfgGameJson" class="form-control" rows="15" readonly style="font-family: monospace; font-size: 12px;"></textarea>
+								</div>
+								<div class="tab-pane" id="cfg-pvp-json">
+									<textarea id="cfgPvpJson" class="form-control" rows="15" readonly style="font-family: monospace; font-size: 12px;"></textarea>
+								</div>
+								<div class="tab-pane" id="cfg-storage-json">
+									<textarea id="cfgStorageJson" class="form-control" rows="15" readonly style="font-family: monospace; font-size: 12px;"></textarea>
+								</div>
+								<div class="tab-pane" id="cfg-supervisor-ini">
+									<p class="text-muted small">{{ _(u"包含 3 个 ini 文件") }}</p>
+									<textarea id="cfgSupervisorIni" class="form-control" rows="15" readonly style="font-family: monospace; font-size: 12px;"></textarea>
+								</div>
+							</div>
+							<div class="row" style="margin-top: 10px;">
+								<div class="col-md-6">
+									<div class="form-group">
+										<label>{{ _(u"配置部署路径") }}：</label>
+										<input type="text" id="deployPath" class="form-control" value="/mnt/pokemon/release">
+									</div>
+								</div>
+								<div class="col-md-6">
+									<div class="form-group">
+										<label>{{ _(u"Supervisor INI 部署路径") }}：</label>
+										<input type="text" id="supervisorPath" class="form-control" value="/mnt/pokemon/deploy_dev/supervisord.dir">
+									</div>
+								</div>
+							</div>
+							<div style="margin-top: 10px;">
+								<button class="btn btn-danger" onclick="deployToServer()">
+									<span class="glyphicon glyphicon-upload"></span> {{ _(u"部署到服务器") }}
+								</button>
+								<button class="btn btn-success btn-sm" onclick="downloadAllConfigs()">
+									<span class="glyphicon glyphicon-download"></span> {{ _(u"下载全部配置") }}
+								</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- 配置管理标签页 -->
+		<div role="tabpanel" class="tab-pane" id="tab-manage">
+			<div class="well merge-panel" style="margin-top: 0;">
+				<h5>{{ _(u"服务器配置管理") }}</h5>
+				<p class="text-muted">{{ _(u"查看、编辑、删除服务器配置文件") }}</p>
+				
+				<div class="row" style="margin-bottom: 15px;">
+					<div class="col-md-4">
+						<label>{{ _(u"配置目录") }}：</label>
+						<input type="text" id="mgmtDeployPath" class="form-control" value="/mnt/pokemon/release">
+					</div>
+					<div class="col-md-4">
+						<label>{{ _(u"Supervisor目录") }}：</label>
+						<input type="text" id="mgmtSupervisorPath" class="form-control" value="/mnt/pokemon/deploy_dev/supervisord.dir">
+					</div>
+					<div class="col-md-4">
+						<label>&nbsp;</label>
+						<button class="btn btn-primary btn-block" onclick="loadAllConfigs()">
+							<span class="glyphicon glyphicon-refresh"></span> {{ _(u"加载配置") }}
+						</button>
+					</div>
+				</div>
+
+				<ul class="nav nav-tabs" id="mgmtTabs">
+					<li class="active"><a href="#mgmt-game-json" data-toggle="tab">game.json</a></li>
+					<li><a href="#mgmt-pvp-json" data-toggle="tab">pvp/defines.json</a></li>
+					<li><a href="#mgmt-storage-json" data-toggle="tab">storage/defines.json</a></li>
+					<li><a href="#mgmt-ini" data-toggle="tab">Supervisor INI</a></li>
+				</ul>
+				<div class="tab-content" style="margin-top: 10px;">
+					<div class="tab-pane active" id="mgmt-game-json">
+						<div class="config-list" id="gameJsonList">
+							<p class="text-muted">{{ _(u"请先加载配置") }}</p>
+						</div>
+					</div>
+					<div class="tab-pane" id="mgmt-pvp-json">
+						<div class="config-list" id="pvpJsonList">
+							<p class="text-muted">{{ _(u"请先加载配置") }}</p>
+						</div>
+					</div>
+					<div class="tab-pane" id="mgmt-storage-json">
+						<div class="config-list" id="storageJsonList">
+							<p class="text-muted">{{ _(u"请先加载配置") }}</p>
+						</div>
+					</div>
+					<div class="tab-pane" id="mgmt-ini">
+						<div class="config-list" id="iniList">
+							<p class="text-muted">{{ _(u"请先加载配置") }}</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- 编辑配置弹窗 -->
+<div class="modal fade" id="editModal" tabindex="-1">
+	<div class="modal-dialog modal-lg">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal">&times;</button>
+				<h4 class="modal-title" id="editModalTitle">{{ _(u"编辑配置") }}</h4>
+			</div>
+			<div class="modal-body">
+				<textarea id="editContent" class="form-control" rows="20" style="font-family: monospace; font-size: 12px;"></textarea>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-default" data-dismiss="modal">{{ _(u"取消") }}</button>
+				<button type="button" class="btn btn-primary" onclick="saveEditedConfig()">{{ _(u"保存") }}</button>
+			</div>
+		</div>
+	</div>
+</div>
+{% end %}
+
+{% block js %}
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.5/FileSaver.min.js"></script>
+<script>
+	var generatedParams = null;
+	var currentEditType = null;
+	var currentEditKey = null;
+
+	function formatDateForPython(dateStr) {
+		var parts = dateStr.split(/[- :]/);
+		return parts[0] + ', ' + parseInt(parts[1]) + ', ' + parseInt(parts[2]) + ', ' + parseInt(parts[3]);
+	}
+
+	function generateConfigs() {
+		var serverKey = $('#serverKey').val().trim();
+		if (!serverKey) {
+			alert('请输入服务器Key');
+			return;
+		}
+
+		var parts = serverKey.split('.');
+		if (parts.length < 3 || parts[0] !== 'game') {
+			alert('Key格式错误，应为 game.区域.编号，如 game.cn.5');
+			return;
+		}
+		var area = parts[1];
+		var num = parts[2];
+
+		var params = {
+			serverKey: serverKey,
+			area: area,
+			num: num,
+			ip: $('#serverIP').val().trim(),
+			port: parseInt($('#gamePort').val()),
+			mongoUri: $('#mongoUri').val().trim(),
+			nsqAddr: $('#nsqAddr').val().trim(),
+			nsqLookup: $('#nsqLookup').val().trim(),
+			openDate: $('#openDate').val().trim()
+		};
+
+		generatedParams = params;
+
+		$('#cfgGameDefines').val(generateGameDefines(params));
+		$('#cfgGameJson').val(generateGameJson(params));
+		$('#cfgPvpJson').val(generatePvpJson(params));
+		$('#cfgStorageJson').val(generateStorageJson(params));
+		$('#cfgSupervisorIni').val(generateSupervisorIni(params));
+
+		$('#resultPanel').show();
+	}
+
+	function generateGameDefines(p) {
+		var lines = [];
+		lines.push("\t'" + p.serverKey + "': {");
+		lines.push("\t\t'ip': '" + p.ip + "',");
+		lines.push("\t\t'port': " + p.port + ",");
+		lines.push("\t\t'nsq': CNNSQDefs,");
+		lines.push("\t\t'shushu': True,");
+		lines.push("\t\t'open_date': datetime(" + formatDateForPython(p.openDate) + "),");
+		lines.push("\t\t'dependent': [");
+		lines.push("\t\t\t'anticheat',");
+		lines.push("\t\t\t'chat_monitor',");
+		lines.push('\t\t\t"giftdb.' + p.area + '.1",');
+		lines.push('\t\t\t"card_comment.' + p.area + '.1",');
+		lines.push('\t\t\t"card_score.' + p.area + '.1",');
+		lines.push("\t\t],");
+		lines.push("\t}");
+		return lines.join('\n');
+	}
+
+	function generateGameJson(p) {
+		var server = { key: p.serverKey, addr: p.ip + ':' + p.port, open_date: p.openDate };
+		return JSON.stringify(server, null, 2);
+	}
+
+	function generatePvpJson(p) {
+		var pvpKey = 'pvp.' + p.area + '.' + p.num;
+		var storageKey = 'storage.' + p.area + '.' + p.num;
+		var config = {};
+		config[pvpKey] = {
+			services: [
+				{ name: 'pvp.' + p.area + '.' + p.num, dependent: [storageKey] },
+				{ name: 'clone.' + p.area + '.' + p.num, dependent: [storageKey] },
+				{ name: 'arena.' + p.area + '.' + p.num, dependent: [storageKey] },
+				{ name: 'union.' + p.area + '.' + p.num, dependent: [storageKey] },
+				{ name: 'union_fight.' + p.area + '.' + p.num, dependent: [storageKey, p.serverKey, 'anticheat'] },
+				{ name: 'craft.' + p.area + '.' + p.num, dependent: [storageKey, p.serverKey, 'anticheat'] },
+				{ name: 'yyhuodong.' + p.area + '.' + p.num, dependent: [storageKey] },
+				{ name: 'card_fight.' + p.area + '.' + p.num, dependent: [storageKey] },
+				{ name: 'gym.' + p.area + '.' + p.num, dependent: [storageKey, p.serverKey] },
+				{ name: 'hunting.' + p.area + '.' + p.num, dependent: [storageKey] }
+			],
+			shushu: true,
+			nsqd_tcp_addresses: [p.nsqAddr],
+			nsqlookupd: p.nsqLookup
+		};
+		return JSON.stringify(config, null, 2);
+	}
+
+	function generateStorageJson(p) {
+		var storageKey = 'storage.' + p.area + '.' + p.num;
+		var dbName = 'game_' + p.area + '_' + p.num;
+		var config = {};
+		config[storageKey] = {
+			services: [{ mongodb: p.mongoUri.replace('{dbname}', dbName), dbname: dbName, name: storageKey }],
+			nsqd_tcp_addresses: [p.nsqAddr],
+			nsqlookupd: p.nsqLookup
+		};
+		return JSON.stringify(config, null, 2);
+	}
+
+	function generateSupervisorIni(p) {
+		var lines = [];
+		lines.push('=== ' + p.num + '_game_server.ini ===');
+		lines.push('[program:' + p.num + '_game_server]');
+		lines.push('directory=../release/');
+		lines.push('command=/usr/bin/python game_server.py ' + p.serverKey);
+		lines.push('autostart=false');
+		lines.push('autorestart=false');
+		lines.push('priority=103');
+		lines.push('redirect_stderr=true');
+		lines.push('stdout_logfile_maxbytes=100MB');
+		lines.push('stdout_logfile_backups=999999');
+		lines.push('');
+		lines.push('=== ' + p.num + '_pvp_server.ini ===');
+		lines.push('[program:' + p.num + '_pvp_server]');
+		lines.push('directory=../release/pvp');
+		lines.push('command=%(here)s/../release/bin/host_server -config=pvp.' + p.area + '.' + p.num);
+		lines.push('autostart=false');
+		lines.push('autorestart=false');
+		lines.push('priority=102');
+		lines.push('redirect_stderr=true');
+		lines.push('');
+		lines.push('=== ' + p.num + '_storage_server.ini ===');
+		lines.push('[program:' + p.num + '_storage_server]');
+		lines.push('directory=../release/storage');
+		lines.push('command=%(here)s/../release/bin/host_server -config=storage.' + p.area + '.' + p.num);
+		lines.push('autostart=false');
+		lines.push('autorestart=false');
+		lines.push('priority=101');
+		lines.push('redirect_stderr=true');
+		return lines.join('\n');
+	}
+
+	function generateIniContent(type, p) {
+		var lines = [];
+		if (type === 'game') {
+			lines.push('[program:' + p.num + '_game_server]');
+			lines.push('directory=../release/');
+			lines.push('command=/usr/bin/python game_server.py ' + p.serverKey);
+			lines.push('autostart=false');
+			lines.push('autorestart=false');
+			lines.push('priority=103');
+			lines.push('redirect_stderr=true');
+			lines.push('stdout_logfile_maxbytes=100MB');
+			lines.push('stdout_logfile_backups=999999');
+		} else if (type === 'pvp') {
+			lines.push('[program:' + p.num + '_pvp_server]');
+			lines.push('directory=../release/pvp');
+			lines.push('command=%(here)s/../release/bin/host_server -config=pvp.' + p.area + '.' + p.num);
+			lines.push('autostart=false');
+			lines.push('autorestart=false');
+			lines.push('priority=102');
+			lines.push('redirect_stderr=true');
+		} else {
+			lines.push('[program:' + p.num + '_storage_server]');
+			lines.push('directory=../release/storage');
+			lines.push('command=%(here)s/../release/bin/host_server -config=storage.' + p.area + '.' + p.num);
+			lines.push('autostart=false');
+			lines.push('autorestart=false');
+			lines.push('priority=101');
+			lines.push('redirect_stderr=true');
+		}
+		return lines.join('\n');
+	}
+
+	function deployToServer() {
+		if (!generatedParams) { alert('请先生成配置'); return; }
+		if (!confirm('确认部署？\n\n将部署以下文件（已存在则替换）：\n- game_defines.py\n- game.json\n- pvp/defines.json\n- storage/defines.json\n- supervisor ini 文件')) return;
+
+		var data = {
+			deployPath: $('#deployPath').val().trim(),
+			supervisorPath: $('#supervisorPath').val().trim(),
+			serverKey: generatedParams.serverKey,
+			area: generatedParams.area,
+			num: generatedParams.num,
+			gameDefines: $('#cfgGameDefines').val(),
+			gameJson: JSON.parse($('#cfgGameJson').val()),
+			pvpConfig: JSON.parse($('#cfgPvpJson').val()),
+			storageConfig: JSON.parse($('#cfgStorageJson').val()),
+			iniGame: generateIniContent('game', generatedParams),
+			iniPvp: generateIniContent('pvp', generatedParams),
+			iniStorage: generateIniContent('storage', generatedParams)
+		};
+
+		$.ajax({
+			url: '/server_new_deploy',
+			type: 'POST',
+			contentType: 'application/json',
+			data: JSON.stringify(data),
+			success: function(r) {
+				if (r.ret) {
+					var msg = '部署成功！\n';
+					for (var k in r.details) msg += '\n' + k + ': ' + r.details[k];
+					alert(msg);
+				} else {
+					alert('部署失败: ' + (r.err || '未知错误'));
+				}
+			},
+			error: function(xhr, status, error) { alert('请求失败: ' + error); }
+		});
+	}
+
+	function downloadAllConfigs() {
+		if (!generatedParams) { alert('请先生成配置'); return; }
+		var p = generatedParams;
+		var zip = new JSZip();
+		zip.file('game_defines_' + p.serverKey.replace(/\./g, '_') + '.py', $('#cfgGameDefines').val());
+		zip.file('game.json', $('#cfgGameJson').val());
+		zip.file('pvp_defines.json', $('#cfgPvpJson').val());
+		zip.file('storage_defines.json', $('#cfgStorageJson').val());
+		zip.file(p.num + '_game_server.ini', generateIniContent('game', p));
+		zip.file(p.num + '_pvp_server.ini', generateIniContent('pvp', p));
+		zip.file(p.num + '_storage_server.ini', generateIniContent('storage', p));
+		zip.generateAsync({type: 'blob'}).then(function(content) {
+			saveAs(content, 'new_server_' + p.serverKey.replace(/\./g, '_') + '.zip');
+		});
+	}
+
+	// ========== 配置管理功能 ==========
+	function loadAllConfigs() {
+		var deployPath = $('#mgmtDeployPath').val().trim();
+		var supervisorPath = $('#mgmtSupervisorPath').val().trim();
+
+		$.ajax({
+			url: '/server_config_list',
+			type: 'POST',
+			contentType: 'application/json',
+			data: JSON.stringify({ deployPath: deployPath, supervisorPath: supervisorPath }),
+			success: function(r) {
+				if (r.ret) {
+					renderGameJsonList(r.gameJson || []);
+					renderPvpJsonList(r.pvpJson || {});
+					renderStorageJsonList(r.storageJson || {});
+					renderIniList(r.iniFiles || []);
+				} else {
+					alert('加载失败: ' + (r.err || '未知错误'));
+				}
+			},
+			error: function() { alert('请求失败'); }
+		});
+	}
+
+	function renderGameJsonList(data) {
+		var html = '';
+		data.forEach(function(item) {
+			html += '<div class="config-item">';
+			html += '<span class="actions">';
+			html += '<button class="btn btn-xs btn-info" onclick="editGameJson(\'' + item.key + '\')"><span class="glyphicon glyphicon-edit"></span></button> ';
+			html += '<button class="btn btn-xs btn-danger" onclick="deleteGameJson(\'' + item.key + '\')"><span class="glyphicon glyphicon-trash"></span></button>';
+			html += '</span>';
+			html += '<span class="key">' + item.key + '</span><br>';
+			html += '<small class="text-muted">地址: ' + item.addr + ' | 开服: ' + item.open_date + '</small>';
+			html += '</div>';
+		});
+		$('#gameJsonList').html(html || '<p class="text-muted">暂无数据</p>');
+	}
+
+	function renderPvpJsonList(data) {
+		var html = '';
+		for (var key in data) {
+			html += '<div class="config-item">';
+			html += '<span class="actions">';
+			html += '<button class="btn btn-xs btn-info" onclick="editPvpJson(\'' + key + '\')"><span class="glyphicon glyphicon-edit"></span></button> ';
+			html += '<button class="btn btn-xs btn-danger" onclick="deletePvpJson(\'' + key + '\')"><span class="glyphicon glyphicon-trash"></span></button>';
+			html += '</span>';
+			html += '<span class="key">' + key + '</span><br>';
+			html += '<small class="text-muted">服务数: ' + (data[key].services ? data[key].services.length : 0) + '</small>';
+			html += '</div>';
+		}
+		$('#pvpJsonList').html(html || '<p class="text-muted">暂无数据</p>');
+	}
+
+	function renderStorageJsonList(data) {
+		var html = '';
+		for (var key in data) {
+			html += '<div class="config-item">';
+			html += '<span class="actions">';
+			html += '<button class="btn btn-xs btn-info" onclick="editStorageJson(\'' + key + '\')"><span class="glyphicon glyphicon-edit"></span></button> ';
+			html += '<button class="btn btn-xs btn-danger" onclick="deleteStorageJson(\'' + key + '\')"><span class="glyphicon glyphicon-trash"></span></button>';
+			html += '</span>';
+			html += '<span class="key">' + key + '</span><br>';
+			var dbname = data[key].services && data[key].services[0] ? data[key].services[0].dbname : '';
+			html += '<small class="text-muted">数据库: ' + dbname + '</small>';
+			html += '</div>';
+		}
+		$('#storageJsonList').html(html || '<p class="text-muted">暂无数据</p>');
+	}
+
+	function renderIniList(files) {
+		var html = '';
+		files.forEach(function(f) {
+			html += '<div class="config-item">';
+			html += '<span class="actions">';
+			html += '<button class="btn btn-xs btn-info" onclick="editIni(\'' + f.name + '\')"><span class="glyphicon glyphicon-edit"></span></button> ';
+			html += '<button class="btn btn-xs btn-danger" onclick="deleteIni(\'' + f.name + '\')"><span class="glyphicon glyphicon-trash"></span></button>';
+			html += '</span>';
+			html += '<span class="key">' + f.name + '</span>';
+			html += '</div>';
+		});
+		$('#iniList').html(html || '<p class="text-muted">暂无数据</p>');
+	}
+
+	// 编辑/删除操作
+	function editGameJson(key) { editConfig('gameJson', key); }
+	function editPvpJson(key) { editConfig('pvpJson', key); }
+	function editStorageJson(key) { editConfig('storageJson', key); }
+	function editIni(name) { editConfig('ini', name); }
+
+	function editConfig(type, key) {
+		currentEditType = type;
+		currentEditKey = key;
+		$.ajax({
+			url: '/server_config_get',
+			type: 'POST',
+			contentType: 'application/json',
+			data: JSON.stringify({
+				deployPath: $('#mgmtDeployPath').val().trim(),
+				supervisorPath: $('#mgmtSupervisorPath').val().trim(),
+				type: type,
+				key: key
+			}),
+			success: function(r) {
+				if (r.ret) {
+					$('#editModalTitle').text('编辑: ' + key);
+					$('#editContent').val(typeof r.data === 'string' ? r.data : JSON.stringify(r.data, null, 2));
+					$('#editModal').modal('show');
+				} else {
+					alert('获取失败: ' + (r.err || '未知错误'));
+				}
+			},
+			error: function() { alert('请求失败'); }
+		});
+	}
+
+	function saveEditedConfig() {
+		var content = $('#editContent').val();
+		$.ajax({
+			url: '/server_config_save',
+			type: 'POST',
+			contentType: 'application/json',
+			data: JSON.stringify({
+				deployPath: $('#mgmtDeployPath').val().trim(),
+				supervisorPath: $('#mgmtSupervisorPath').val().trim(),
+				type: currentEditType,
+				key: currentEditKey,
+				content: content
+			}),
+			success: function(r) {
+				if (r.ret) {
+					$('#editModal').modal('hide');
+					alert('保存成功');
+					loadAllConfigs();
+				} else {
+					alert('保存失败: ' + (r.err || '未知错误'));
+				}
+			},
+			error: function() { alert('请求失败'); }
+		});
+	}
+
+	function deleteGameJson(key) { deleteConfig('gameJson', key); }
+	function deletePvpJson(key) { deleteConfig('pvpJson', key); }
+	function deleteStorageJson(key) { deleteConfig('storageJson', key); }
+	function deleteIni(name) { deleteConfig('ini', name); }
+
+	function deleteConfig(type, key) {
+		if (!confirm('确认删除 ' + key + ' ?')) return;
+		$.ajax({
+			url: '/server_config_delete',
+			type: 'POST',
+			contentType: 'application/json',
+			data: JSON.stringify({
+				deployPath: $('#mgmtDeployPath').val().trim(),
+				supervisorPath: $('#mgmtSupervisorPath').val().trim(),
+				type: type,
+				key: key
+			}),
+			success: function(r) {
+				if (r.ret) {
+					alert('删除成功');
+					loadAllConfigs();
+				} else {
+					alert('删除失败: ' + (r.err || '未知错误'));
+				}
+			},
+			error: function() { alert('请求失败'); }
+		});
+	}
+</script>
+{% end %}

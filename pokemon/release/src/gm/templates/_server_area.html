@@ -1,0 +1,572 @@
+{% extends "dashboard.html" %}
+
+{% block css %}
+<style>
+	.server-table {
+		font-size: 13px;
+	}
+	.server-table th {
+		background-color: #f5f5f5;
+		white-space: nowrap;
+	}
+	.server-table td {
+		vertical-align: middle !important;
+	}
+	.server-key {
+		font-family: monospace;
+		font-weight: bold;
+		color: #337ab7;
+	}
+	.server-key.merged {
+		color: #5cb85c;
+	}
+	.server-addr {
+		font-family: monospace;
+	}
+	.server-port {
+		color: #d9534f;
+		font-weight: bold;
+	}
+	.merged-badge {
+		font-size: 11px;
+		margin-left: 5px;
+	}
+	.config-path-input {
+		font-family: monospace;
+		font-size: 12px;
+	}
+	.btn-action {
+		padding: 2px 8px;
+		font-size: 12px;
+	}
+	.stats-panel {
+		background: #f9f9f9;
+		padding: 15px;
+		border-radius: 5px;
+		margin-bottom: 15px;
+	}
+	.stats-item {
+		display: inline-block;
+		margin-right: 30px;
+	}
+	.stats-item .value {
+		font-size: 24px;
+		font-weight: bold;
+		color: #337ab7;
+	}
+	.stats-item .label {
+		font-size: 12px;
+		color: #666;
+	}
+	.edit-input {
+		width: 100%;
+		padding: 2px 5px;
+		font-family: monospace;
+		font-size: 12px;
+	}
+	.filter-bar {
+		margin-bottom: 15px;
+	}
+</style>
+{% end %}
+
+{% block main %}
+<div class="container-fluid main">
+	<div class="row">
+		<div class="title"><h4>{{ _(u"大区管理") }}</h4></div>
+	</div>
+	<div class="row">
+		<div class="col-md-12">
+
+		<!-- 配置路径 -->
+		<div class="row">
+			<div class="col-md-8">
+				<div class="input-group">
+					<span class="input-group-addon">{{ _(u"配置文件路径") }}</span>
+					<input type="text" id="configPath" class="form-control config-path-input" 
+						   value="/mnt/pokemon/release/login/conf/game.json" 
+						   placeholder="/mnt/pokemon/release/login/conf/game.json">
+					<span class="input-group-btn">
+						<button class="btn btn-primary" onclick="loadServerConfig()">
+							<span class="glyphicon glyphicon-refresh"></span> {{ _(u"加载") }}
+						</button>
+					</span>
+				</div>
+			</div>
+			<div class="col-md-4 text-right">
+				<button class="btn btn-success" onclick="showAddServerDialog()">
+					<span class="glyphicon glyphicon-plus"></span> {{ _(u"添加服务器") }}
+				</button>
+			</div>
+		</div>
+
+		<!-- 统计信息 -->
+		<div class="stats-panel" id="statsPanel" style="display: none; margin-top: 15px;">
+			<div class="stats-item">
+				<div class="value" id="totalServers">0</div>
+				<div class="label">{{ _(u"服务器总数") }}</div>
+			</div>
+			<div class="stats-item">
+				<div class="value" id="normalServers">0</div>
+				<div class="label">{{ _(u"正常服务器") }}</div>
+			</div>
+			<div class="stats-item">
+				<div class="value" id="mergedServers">0</div>
+				<div class="label">{{ _(u"已合服") }}</div>
+			</div>
+			<div class="stats-item">
+				<div class="value" id="uniquePorts">0</div>
+				<div class="label">{{ _(u"端口数") }}</div>
+			</div>
+		</div>
+
+		<!-- 筛选栏 -->
+		<div class="filter-bar" id="filterBar" style="display: none;">
+			<div class="row">
+				<div class="col-md-3">
+					<input type="text" id="filterKey" class="form-control" placeholder="{{ _(u'搜索服务器 key...') }}" onkeyup="filterServers()">
+				</div>
+				<div class="col-md-2">
+					<select id="filterType" class="form-control" onchange="filterServers()">
+						<option value="all">{{ _(u"全部") }}</option>
+						<option value="normal">{{ _(u"正常服务器") }}</option>
+						<option value="merged">{{ _(u"已合服") }}</option>
+						<option value="gamemerge">{{ _(u"合服服务器") }}</option>
+					</select>
+				</div>
+				<div class="col-md-2">
+					<select id="filterArea" class="form-control" onchange="filterServers()">
+						<option value="all">{{ _(u"全部大区") }}</option>
+					</select>
+				</div>
+			</div>
+		</div>
+
+		<!-- 服务器列表 -->
+		<div class="table-responsive" style="margin-top: 15px;">
+			<table class="table table-bordered table-hover server-table" id="serverTable">
+				<thead>
+					<tr>
+						<th style="width: 50px;">#</th>
+						<th>{{ _(u"服务器 Key") }}</th>
+						<th>{{ _(u"IP 地址") }}</th>
+						<th style="width: 100px;">{{ _(u"端口") }}</th>
+						<th>{{ _(u"开服时间") }}</th>
+						<th style="width: 150px;">{{ _(u"状态") }}</th>
+						<th style="width: 150px;">{{ _(u"操作") }}</th>
+					</tr>
+				</thead>
+				<tbody id="serverTableBody">
+					<tr>
+						<td colspan="7" class="text-center text-muted">
+							{{ _(u"请先加载配置文件") }}
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+</div>
+
+<!-- 编辑对话框 -->
+<div class="modal fade" id="editServerModal" tabindex="-1">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal">&times;</button>
+				<h4 class="modal-title">
+					<span class="glyphicon glyphicon-edit"></span>
+					{{ _(u"编辑服务器配置") }}
+				</h4>
+			</div>
+			<div class="modal-body">
+				<form class="form-horizontal">
+					<div class="form-group">
+						<label class="col-sm-3 control-label">{{ _(u"服务器 Key") }}</label>
+						<div class="col-sm-9">
+							<input type="text" id="editKey" class="form-control" readonly>
+						</div>
+					</div>
+					<div class="form-group">
+						<label class="col-sm-3 control-label">{{ _(u"IP 地址") }}</label>
+						<div class="col-sm-9">
+							<input type="text" id="editIp" class="form-control" placeholder="127.0.0.1">
+						</div>
+					</div>
+					<div class="form-group">
+						<label class="col-sm-3 control-label">{{ _(u"端口") }}</label>
+						<div class="col-sm-9">
+							<input type="number" id="editPort" class="form-control" placeholder="28879">
+						</div>
+					</div>
+					<div class="form-group">
+						<label class="col-sm-3 control-label">{{ _(u"开服时间") }}</label>
+						<div class="col-sm-9">
+							<input type="text" id="editOpenDate" class="form-control" placeholder="2025-01-01 10:00:00">
+						</div>
+					</div>
+				</form>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-default" data-dismiss="modal">{{ _(u"取消") }}</button>
+				<button type="button" class="btn btn-primary" onclick="saveServerConfig()">
+					<span class="glyphicon glyphicon-ok"></span> {{ _(u"保存") }}
+				</button>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- 添加对话框 -->
+<div class="modal fade" id="addServerModal" tabindex="-1">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal">&times;</button>
+				<h4 class="modal-title">
+					<span class="glyphicon glyphicon-plus"></span>
+					{{ _(u"添加新服务器") }}
+				</h4>
+			</div>
+			<div class="modal-body">
+				<form class="form-horizontal">
+					<div class="form-group">
+						<label class="col-sm-3 control-label">{{ _(u"服务器 Key") }} *</label>
+						<div class="col-sm-9">
+							<input type="text" id="addKey" class="form-control" placeholder="game.cn.10">
+							<p class="help-block text-muted small">{{ _(u"格式: game.{area}.{num} 或 gamemerge.{area}.{num}") }}</p>
+						</div>
+					</div>
+					<div class="form-group">
+						<label class="col-sm-3 control-label">{{ _(u"IP 地址") }} *</label>
+						<div class="col-sm-9">
+							<input type="text" id="addIp" class="form-control" placeholder="127.0.0.1">
+						</div>
+					</div>
+					<div class="form-group">
+						<label class="col-sm-3 control-label">{{ _(u"端口") }} *</label>
+						<div class="col-sm-9">
+							<input type="number" id="addPort" class="form-control" placeholder="28879">
+						</div>
+					</div>
+					<div class="form-group">
+						<label class="col-sm-3 control-label">{{ _(u"开服时间") }} *</label>
+						<div class="col-sm-9">
+							<input type="text" id="addOpenDate" class="form-control" placeholder="2025-01-01 10:00:00">
+						</div>
+					</div>
+				</form>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-default" data-dismiss="modal">{{ _(u"取消") }}</button>
+				<button type="button" class="btn btn-success" onclick="addServer()">
+					<span class="glyphicon glyphicon-plus"></span> {{ _(u"添加") }}
+				</button>
+			</div>
+		</div>
+	</div>
+</div>
+</div>
+{% end %}
+
+{% block js %}
+<script>
+var serverData = [];
+var currentConfigPath = '';
+
+$(document).ready(function() {
+	// 页面加载时自动尝试加载配置
+	// loadServerConfig();
+});
+
+// 加载服务器配置
+function loadServerConfig() {
+	var configPath = $('#configPath').val().trim();
+	if (!configPath) {
+		alert('{{ _(u"请输入配置文件路径") }}');
+		return;
+	}
+
+	$('#serverTableBody').html('<tr><td colspan="7" class="text-center"><span class="glyphicon glyphicon-refresh glyphicon-spin"></span> {{ _(u"加载中...") }}</td></tr>');
+
+	$.ajax({
+		url: '/server_area/config',
+		type: 'GET',
+		data: { path: configPath },
+		success: function(resp) {
+			if (resp.ret) {
+				serverData = resp.servers;
+				currentConfigPath = resp.configPath;
+				renderServerTable();
+				updateStats();
+				updateAreaFilter();
+				$('#statsPanel').show();
+				$('#filterBar').show();
+			} else {
+				alert('{{ _(u"加载失败") }}: ' + resp.err);
+				$('#serverTableBody').html('<tr><td colspan="7" class="text-center text-danger">' + resp.err + '</td></tr>');
+			}
+		},
+		error: function(xhr) {
+			alert('{{ _(u"请求失败") }}: ' + xhr.statusText);
+			$('#serverTableBody').html('<tr><td colspan="7" class="text-center text-danger">{{ _(u"请求失败") }}</td></tr>');
+		}
+	});
+}
+
+// 渲染服务器表格
+function renderServerTable(filteredData) {
+	var data = filteredData || serverData;
+	var tbody = $('#serverTableBody');
+	tbody.empty();
+
+	if (data.length === 0) {
+		tbody.append('<tr><td colspan="7" class="text-center text-muted">{{ _(u"没有符合条件的服务器") }}</td></tr>');
+		return;
+	}
+
+	data.forEach(function(server, index) {
+		var tr = $('<tr>');
+		
+		// 序号
+		tr.append($('<td>').text(index + 1));
+		
+		// Key
+		var keyClass = server.key.startsWith('gamemerge') ? 'server-key merged' : 'server-key';
+		var keyHtml = '<span class="' + keyClass + '">' + server.key + '</span>';
+		if (server.merged_to) {
+			keyHtml += '<span class="label label-info merged-badge">→ ' + server.merged_to + '</span>';
+		}
+		tr.append($('<td>').html(keyHtml));
+		
+		// IP
+		tr.append($('<td class="server-addr">').text(server.ip || '-'));
+		
+		// 端口
+		tr.append($('<td class="server-port">').text(server.port || '-'));
+		
+		// 开服时间
+		tr.append($('<td>').text(server.open_date || '-'));
+		
+		// 状态
+		var statusHtml = '';
+		if (server.merged_to) {
+			statusHtml = '<span class="label label-warning">{{ _(u"已合服") }}</span>';
+		} else if (server.key.startsWith('gamemerge')) {
+			statusHtml = '<span class="label label-success">{{ _(u"合服服务器") }}</span>';
+		} else {
+			statusHtml = '<span class="label label-primary">{{ _(u"正常") }}</span>';
+		}
+		tr.append($('<td>').html(statusHtml));
+		
+		// 操作
+		var actionsHtml = 
+			'<button class="btn btn-xs btn-info btn-action" onclick="editServer(\'' + server.key + '\')" title="{{ _(u"编辑") }}">' +
+			'<span class="glyphicon glyphicon-edit"></span></button> ' +
+			'<button class="btn btn-xs btn-danger btn-action" onclick="deleteServer(\'' + server.key + '\')" title="{{ _(u"删除") }}">' +
+			'<span class="glyphicon glyphicon-trash"></span></button>';
+		tr.append($('<td>').html(actionsHtml));
+		
+		tbody.append(tr);
+	});
+}
+
+// 更新统计信息
+function updateStats() {
+	var total = serverData.length;
+	var merged = serverData.filter(function(s) { return s.merged_to; }).length;
+	var gamemerge = serverData.filter(function(s) { return s.key.startsWith('gamemerge'); }).length;
+	var normal = total - merged - gamemerge;
+	var ports = new Set(serverData.map(function(s) { return s.port; })).size;
+
+	$('#totalServers').text(total);
+	$('#normalServers').text(normal);
+	$('#mergedServers').text(merged + gamemerge);
+	$('#uniquePorts').text(ports);
+}
+
+// 更新大区筛选器
+function updateAreaFilter() {
+	var areas = new Set();
+	serverData.forEach(function(s) {
+		var parts = s.key.split('.');
+		if (parts.length >= 2) {
+			areas.add(parts[1]);
+		}
+	});
+
+	var select = $('#filterArea');
+	select.find('option:not(:first)').remove();
+	areas.forEach(function(area) {
+		select.append($('<option>').val(area).text(area));
+	});
+}
+
+// 筛选服务器
+function filterServers() {
+	var keyFilter = $('#filterKey').val().toLowerCase();
+	var typeFilter = $('#filterType').val();
+	var areaFilter = $('#filterArea').val();
+
+	var filtered = serverData.filter(function(s) {
+		// Key 筛选
+		if (keyFilter && s.key.toLowerCase().indexOf(keyFilter) === -1) {
+			return false;
+		}
+
+		// 类型筛选
+		if (typeFilter === 'normal' && (s.merged_to || s.key.startsWith('gamemerge'))) {
+			return false;
+		}
+		if (typeFilter === 'merged' && !s.merged_to) {
+			return false;
+		}
+		if (typeFilter === 'gamemerge' && !s.key.startsWith('gamemerge')) {
+			return false;
+		}
+
+		// 大区筛选
+		if (areaFilter !== 'all') {
+			var parts = s.key.split('.');
+			if (parts.length < 2 || parts[1] !== areaFilter) {
+				return false;
+			}
+		}
+
+		return true;
+	});
+
+	renderServerTable(filtered);
+}
+
+// 编辑服务器
+function editServer(key) {
+	var server = serverData.find(function(s) { return s.key === key; });
+	if (!server) {
+		alert('{{ _(u"未找到服务器") }}');
+		return;
+	}
+
+	$('#editKey').val(server.key);
+	$('#editIp').val(server.ip);
+	$('#editPort').val(server.port);
+	$('#editOpenDate').val(server.open_date);
+	$('#editServerModal').modal('show');
+}
+
+// 保存服务器配置
+function saveServerConfig() {
+	var key = $('#editKey').val();
+	var ip = $('#editIp').val().trim();
+	var port = $('#editPort').val().trim();
+	var openDate = $('#editOpenDate').val().trim();
+
+	if (!ip || !port) {
+		alert('{{ _(u"请填写完整的 IP 和端口") }}');
+		return;
+	}
+
+	var addr = ip + ':' + port;
+
+	$.ajax({
+		url: '/server_area/config',
+		type: 'POST',
+		contentType: 'application/json',
+		data: JSON.stringify({
+			configPath: currentConfigPath,
+			key: key,
+			addr: addr,
+			open_date: openDate
+		}),
+		success: function(resp) {
+			if (resp.ret) {
+				alert(resp.message);
+				$('#editServerModal').modal('hide');
+				loadServerConfig();
+			} else {
+				alert('{{ _(u"保存失败") }}: ' + resp.err);
+			}
+		},
+		error: function(xhr) {
+			alert('{{ _(u"请求失败") }}: ' + xhr.statusText);
+		}
+	});
+}
+
+// 删除服务器
+function deleteServer(key) {
+	if (!confirm('{{ _(u"确定要删除服务器") }} ' + key + ' {{ _(u"吗？此操作不可恢复。") }}')) {
+		return;
+	}
+
+	$.ajax({
+		url: '/server_area/config',
+		type: 'DELETE',
+		data: {
+			configPath: currentConfigPath,
+			key: key
+		},
+		success: function(resp) {
+			if (resp.ret) {
+				alert(resp.message);
+				loadServerConfig();
+			} else {
+				alert('{{ _(u"删除失败") }}: ' + resp.err);
+			}
+		},
+		error: function(xhr) {
+			alert('{{ _(u"请求失败") }}: ' + xhr.statusText);
+		}
+	});
+}
+
+// 显示添加对话框
+function showAddServerDialog() {
+	$('#addKey').val('');
+	$('#addIp').val('');
+	$('#addPort').val('');
+	$('#addOpenDate').val(new Date().toISOString().slice(0, 10) + ' 10:00:00');
+	$('#addServerModal').modal('show');
+}
+
+// 添加服务器
+function addServer() {
+	var key = $('#addKey').val().trim();
+	var ip = $('#addIp').val().trim();
+	var port = $('#addPort').val().trim();
+	var openDate = $('#addOpenDate').val().trim();
+
+	if (!key || !ip || !port || !openDate) {
+		alert('{{ _(u"请填写所有必填字段") }}');
+		return;
+	}
+
+	var addr = ip + ':' + port;
+
+	$.ajax({
+		url: '/server_area/add',
+		type: 'POST',
+		contentType: 'application/json',
+		data: JSON.stringify({
+			configPath: currentConfigPath || $('#configPath').val().trim(),
+			key: key,
+			addr: addr,
+			open_date: openDate
+		}),
+		success: function(resp) {
+			if (resp.ret) {
+				alert(resp.message);
+				$('#addServerModal').modal('hide');
+				loadServerConfig();
+			} else {
+				alert('{{ _(u"添加失败") }}: ' + resp.err);
+			}
+		},
+		error: function(xhr) {
+			alert('{{ _(u"请求失败") }}: ' + xhr.statusText);
+		}
+	});
+}
+</script>
+{% end %}
+

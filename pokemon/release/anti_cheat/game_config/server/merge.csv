@@ -1,0 +1,5 @@
+变量名,destServer,servers,serverID,pwAwardVer,randomTowerAwardVer,craftAwardVer,realityMerge
+默认值,,<>,,0,0,0,0
+ID,目的服务器,源服务器,目标服务器显示ID,竞技场奖励版本,无尽之塔奖励版本,王者之战奖励版本,服务器是否已经合并的标记
+1,gamemerge.dev.1,<game.dev.19;game.dev.20>,1,101,101,101,1
+2,gamemerge.dev.2,<game.dev.21;game.dev.22;game.dev.23;game.dev.24;game.dev.25;game.dev.26;game.dev.27;game.dev.28;game.dev.29;game.dev.30;game.dev.31;game.dev.32;game.dev.33;game.dev.34;game.dev.35>,2,101,101,101,1

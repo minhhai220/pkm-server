@@ -1,0 +1,22 @@
+变量名,name,name_tw,name_en,name_vn,name_kr,name_pt,name_th,icon,attrType1,attrType2,attrValue,levelMax,upCost,trainerLevel,totalAttrLevel,desc
+默认值,"""""","""""","""""","""""","""""","""""","""""","""""",,,"""""",10,{},1,0,""""""
+ID,显示名字,显示名字,显示名字,显示名字_越南,显示名字_韩,显示名字_韩,显示名字_韩,技能图标,属性类型1,属性类型2,每级属性加成（数值百分比都支持）,最大等级(-1：无上限),升级消耗,解锁条件（训练家等级）,解锁条件（技能属性累计等级）,技能描述
+1,生命,生命,HP,HP,생명력,HP,พลังชีวิต,,1,,260,1000,{453=50},12,0,
+2,物攻,物攻,P.ATK,Công vật lý,물리 공격력,Ataque Físico,พลังโจมตีกายภาพ,,7,,96,1000,{453=50},12,0,
+3,特攻,特攻,SP.ATK,Công đặc biệt,특수 공격력,Ataque Especial,พลังโจมตีพิเศษ,,8,,96,1000,{453=50},12,0,
+4,物防,物防,P.DEF,Thủ vật lý,물리 방어력,Defesa Física,พลังป้องกันกายภาพ,,9,,38,1000,{453=50},12,0,
+5,特防,特防,SP.DEF,Thủ đặc biệt,특수 방어력,Defesa Especial,พลังป้องกันพิเศษ,,10,,38,1000,{453=50},12,0,
+7,暴击,暴擊,Crit,Bạo kích,치명타,Crítico,คริติคอล,,14,,10,500,{453=120},12,150,
+8,暴击抗性,暴擊抗性,Crit RES,Kháng Bạo kích,치명타 저항,Resistência a Crítico,ต้านทานคริติคอล,,16,,10,500,{453=120},12,150,
+9,PVP伤害加成,PVP傷害加成,PVP Damage Bonus,Thưởng sát thương PVP,PVP 피해 보너스,Bônus de Dano PVP,โบนัสความเสียหาย PVP,,92,,10,500,{453=150},12,200,
+10,PVP伤害减免,PVP傷害減免,PVP Damage Reduction,Giảm sát thương PVP,PVP 피해 감소,Redução de Dano PVP,การลดความเสียหาย PVP,,93,,10,500,{453=150},12,200,
+11,暴击伤害,暴擊傷害,Crit DMG,Sát thương Bạo kích,치명타 피해,Dano Crítico,ความเสียหายคริติคอล,,15,,10,500,{453=500},12,400,
+12,伤害加成,傷害加成,Damage Bonus,Thưởng sát thương,피해 보너스,Bônus de Dano,โบนัสความเสียหาย,,22,,10,500,{453=500},12,400,
+13,伤害减免,傷害減免,Damage Reduction,Giảm sát thương,피해 감소,Redução de Dano,การลดความเสียหาย,,23,,10,500,{453=500},12,400,
+14,必杀伤害加成,必殺傷害加成,Ultimate Damage Bonus,Thưởng sát thương Kỹ năng cuối,필살기 피해 보너스,Bônus de Dano de Ultimate,โบนัสความเสียหายท่าไม้ตาย,,24,,10,500,{453=500},12,600,
+15,必杀伤害抗性,必殺傷害抗性,Ultimate Damage Resistance,Kháng sát thương Kỹ năng cuối,필살기 피해 저항,Resistência a Dano de Ultimate,ต้านทานความเสียหายท่าไม้ตาย,,25,,10,500,{453=500},12,600,
+16,格挡等级,格擋等級,Block Level,Cấp độ Chặn đòn,막기 등급,Nível de Bloqueio,ระดับการบล็อก,,17,,10,500,{453=800},12,1000,
+17,破格挡等级,破格擋等級,Block Break Level,Cấp độ Phá Chặn,막기 돌파 등급,Nível de Quebra de Bloqueio,ระดับการทะลวงบล็อก,,18,,10,500,{453=800},12,1000,
+18,格挡强度,格擋強度,Block Strength,Cường độ Chặn đòn,막기 강도,Força de Bloqueio,ความแรงในการบล็อก,,19,,10,500,{453=800},12,1000,
+19,物理防御忽视,物理防禦忽視,P.DEF Ignorance,Xuyên thủ vật lý,물리 방어 무시,Ignorar Defesa Física,ไม่สนพลังป้องกันกายภาพ,,11,,10,500,{453=1500},12,2000,
+20,特殊防御忽视,特殊防禦忽視,SP.DEF Ignorance,Xuyên thủ đặc biệt,특수 방어 무시,Ignorar Defesa Especial,ไม่สนพลังป้องกันพิเศษ,,12,,10,500,{453=1500},12,2000,

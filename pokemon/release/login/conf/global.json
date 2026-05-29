@@ -1,0 +1,21 @@
+{
+  "cn": {
+    "game_key_prefix": ["game.ru", "game.cn", "game.vn", "game.pt", "game.tw", "game.en"],
+
+    "rmb_return": false,
+    "newest": 1,
+    "maintain": false,
+    "maintain_servers": [],
+    "maintain_billboard": "服务器维护时间0:30-2:00",
+
+    "white_list_enable": false,
+    "white_list_billboard": "即将上线，请耐心等待",
+    "white_list_all": [
+      "192.168.1.90"
+    ],
+    "white_list": {
+    },
+
+    "register_disable": []
+  }
+}

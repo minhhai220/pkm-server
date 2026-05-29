@@ -1,0 +1,398 @@
+{% extends "dashboard.html" %}
+
+{% block title %}<title>转区管理</title>{% end %}
+
+{% block main %}
+<div class="container-fluid main">
+	<div class="row" style="padding-top: 18px;">
+		<div class="col-lg-12">
+			<h3>转区管理</h3>
+			<p class="text-muted">监控转区记录（仅查看，不可操作）</p>
+			
+			<!-- MongoDB 配置 -->
+			<div class="panel panel-default">
+				<div class="panel-heading">数据库配置</div>
+				<div class="panel-body">
+					<div class="form-group">
+						<label>MongoDB URI 模板：</label>
+						<input type="text" id="mongo-uri-tpl" class="form-control" style="width:100%;" 
+							value="mongodb://root:oQTkIlUI5wrOUQEl@127.0.0.1:27017/{dbname}?authMechanism=SCRAM-SHA-1&authSource=admin"
+							placeholder="mongodb://user:pass@host:port/{dbname}?authSource=admin">
+						<p class="help-block">使用 {dbname} 作为数据库名占位符，如 game.cn.1 会被替换为 game_cn_1</p>
+					</div>
+				</div>
+			</div>
+			
+			<!-- 筛选条件 -->
+			<div class="panel panel-default">
+				<div class="panel-heading">查询条件</div>
+				<div class="panel-body">
+					<form class="form-inline">
+						<div class="form-group">
+							<label>游戏数据库：</label>
+							<select class="form-control" id="game-db">
+								<option value="">请选择</option>
+								{% for db in game_dbs %}
+								<option value="{{ db }}">{{ db }}</option>
+								{% end %}
+							</select>
+						</div>
+						
+						<div class="form-group">
+							<label>状态：</label>
+							<select class="form-control" id="status-filter">
+								<option value="">全部</option>
+								<option value="pending">等待执行</option>
+								<option value="processing">执行中</option>
+								<option value="completed">已完成</option>
+								<option value="failed">失败</option>
+							</select>
+						</div>
+						
+						<div class="form-group">
+							<label>源区：</label>
+							<select class="form-control" id="source-area">
+								<option value="">全部</option>
+								{% for area in areas %}
+								<option value="{{ area }}">{{ area }}区</option>
+								{% end %}
+							</select>
+						</div>
+						
+						<div class="form-group">
+							<label>目标区：</label>
+							<select class="form-control" id="target-area">
+								<option value="">全部</option>
+								{% for area in areas %}
+								<option value="{{ area }}">{{ area }}区</option>
+								{% end %}
+							</select>
+						</div>
+						
+						<button type="button" class="btn btn-primary" id="btn-search">查询</button>
+						<button type="button" class="btn btn-default" id="btn-refresh">刷新</button>
+					</form>
+				</div>
+			</div>
+			
+			<!-- 统计信息 -->
+			<div class="panel panel-info" id="stats-panel" style="display:none;">
+				<div class="panel-heading">统计信息</div>
+				<div class="panel-body">
+					<span class="label label-warning" id="stat-pending">等待: 0</span>
+					<span class="label label-info" id="stat-processing">执行中: 0</span>
+					<span class="label label-success" id="stat-completed">完成: 0</span>
+					<span class="label label-danger" id="stat-failed">失败: 0</span>
+				</div>
+			</div>
+			
+			<!-- Tab 切换 -->
+			<ul class="nav nav-tabs" id="transfer-tabs">
+				<li class="active"><a data-toggle="tab" href="#tab-records">转区记录</a></li>
+				<li><a data-toggle="tab" href="#tab-invites">邀请记录</a></li>
+			</ul>
+			
+			<div class="tab-content" style="margin-top:15px;">
+				<!-- 转区记录 Tab -->
+				<div id="tab-records" class="tab-pane fade in active">
+					<div class="panel panel-default">
+						<div class="panel-heading">转区记录</div>
+						<table class="table table-bordered table-striped table-hover">
+							<thead>
+								<tr>
+									<th style="min-width:80px;">UID</th>
+									<th style="min-width:100px;">角色名</th>
+									<th>类型</th>
+									<th>源区</th>
+									<th>目标区</th>
+									<th>状态</th>
+									<th>进度</th>
+									<th>申请时间</th>
+									<th>完成时间</th>
+									<th>失败原因</th>
+									<th style="min-width:120px;">操作</th>
+								</tr>
+							</thead>
+							<tbody id="record-list">
+								<tr><td colspan="11" class="text-center">请选择游戏数据库</td></tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+				
+				<!-- 邀请记录 Tab -->
+				<div id="tab-invites" class="tab-pane fade">
+					<div class="panel panel-default">
+						<div class="panel-heading">邀请记录</div>
+						<table class="table table-bordered table-striped table-hover">
+							<thead>
+								<tr>
+									<th>邀请人</th>
+									<th>邀请人区服</th>
+									<th>被邀请人</th>
+									<th>被邀请人区服</th>
+									<th>状态</th>
+									<th>创建时间</th>
+									<th>过期时间</th>
+									<th>月份</th>
+								</tr>
+							</thead>
+							<tbody id="invite-list">
+								<tr><td colspan="8" class="text-center">请选择游戏数据库</td></tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+{% end %}
+
+{% block js %}
+<script>
+	console.log('转区管理页面加载');
+	
+	function formatTime(timestamp) {
+		if (!timestamp) return '-';
+		var date = new Date(timestamp * 1000);
+		return date.toLocaleString();
+	}
+	
+	function loadRecords() {
+		var gameDb = $('#game-db').val();
+		console.log('loadRecords called, gameDb:', gameDb);
+		
+		if (!gameDb) {
+			$('#record-list').html('<tr><td colspan="10" class="text-center">请选择游戏数据库</td></tr>');
+			$('#stats-panel').hide();
+			return;
+		}
+		
+		var mongoUriTpl = $('#mongo-uri-tpl').val();
+		if (!mongoUriTpl) {
+			$('#record-list').html('<tr><td colspan="10" class="text-center text-danger">请配置 MongoDB URI 模板</td></tr>');
+			return;
+		}
+		
+		var params = {
+			game_db: gameDb,
+			mongo_uri_tpl: mongoUriTpl,
+			status: $('#status-filter').val(),
+			source_area: $('#source-area').val(),
+			target_area: $('#target-area').val()
+		};
+		
+		console.log('查询参数:', params);
+		$('#record-list').html('<tr><td colspan="10" class="text-center">加载中...</td></tr>');
+		
+		$.get('/transfer/list', params, function(data) {
+			console.log('查询结果:', data);
+			
+			if (!data.success) {
+				$('#record-list').html('<tr><td colspan="10" class="text-center text-danger">' + (data.error || '查询失败') + '</td></tr>');
+				return;
+			}
+			
+			// 显示统计
+			if (data.stats) {
+				$('#stats-panel').show();
+				$('#stat-pending').text('等待: ' + (data.stats.pending || 0));
+				$('#stat-processing').text('执行中: ' + (data.stats.processing || 0));
+				$('#stat-completed').text('完成: ' + (data.stats.completed || 0));
+				$('#stat-failed').text('失败: ' + (data.stats.failed || 0));
+			}
+			
+			// 显示记录
+			var html = '';
+			if (data.records && data.records.length > 0) {
+				data.records.forEach(function(r) {
+					var statusClass = '';
+					var statusText = r.status;
+					if (r.status === 'completed') { statusClass = 'success'; statusText = '已完成'; }
+					else if (r.status === 'failed') { statusClass = 'danger'; statusText = '失败'; }
+					else if (r.status === 'processing') { statusClass = 'info'; statusText = '执行中'; }
+					else if (r.status === 'pending') { statusClass = 'warning'; statusText = '等待中'; }
+					
+					// 转区类型
+					var typeText = r.transfer_type === 'invite' ? '邀请' : '自由';
+					var typeClass = r.transfer_type === 'invite' ? 'info' : 'default';
+					
+					// 构建操作按钮
+					var actions = '';
+					if (r.status === 'failed') {
+						var refunded = r.refunded ? true : false;
+						var autoRefunded = r.auto_refunded ? true : false;
+						
+						// 显示退费状态
+						if (refunded) {
+							if (autoRefunded) {
+								actions += '<span class="label label-success">自动退费</span> ';
+							} else {
+								actions += '<span class="label label-info">已退费</span> ';
+							}
+						} else if (r.cost_info) {
+							actions += '<button class="btn btn-xs btn-warning" onclick="doRefund(\'' + r._id + '\', \'' + r.source_area + '\')">退费</button> ';
+						}
+						// 重试按钮始终显示（失败状态下）
+						actions += '<button class="btn btn-xs btn-info" onclick="doRetry(\'' + r._id + '\', \'' + r.source_area + '\')">重试</button>';
+					} else if (r.status === 'completed') {
+						actions += '<span class="text-muted">-</span>';
+					} else {
+						actions += '<span class="text-muted">等待中</span>';
+					}
+					
+					html += '<tr class="' + statusClass + '">';
+					html += '<td><strong>' + r.uid + '</strong></td>';
+					html += '<td>' + (r.role_name || '-') + '</td>';
+					html += '<td><span class="label label-' + typeClass + '">' + typeText + '</span></td>';
+					html += '<td>' + r.source_area + '区</td>';
+					html += '<td>' + r.target_area + '区</td>';
+					html += '<td><span class="label label-' + (statusClass || 'default') + '">' + statusText + '</span></td>';
+					html += '<td>' + (r.progress || 0) + '%<br><small>' + (r.progress_msg || '') + '</small></td>';
+					html += '<td>' + formatTime(r.apply_time) + '</td>';
+					html += '<td>' + formatTime(r.complete_time) + '</td>';
+					html += '<td class="text-danger" style="max-width:200px;word-wrap:break-word;">' + (r.fail_reason || '-') + '</td>';
+					html += '<td>' + actions + '</td>';
+					html += '</tr>';
+				});
+			} else {
+				html = '<tr><td colspan="10" class="text-center">暂无数据</td></tr>';
+			}
+			$('#record-list').html(html);
+		}).fail(function(xhr, status, error) {
+			console.error('查询失败:', status, error);
+			$('#record-list').html('<tr><td colspan="10" class="text-center text-danger">查询失败: ' + error + '</td></tr>');
+		});
+	}
+	
+	// 退费操作
+	function doRefund(recordId, sourceArea) {
+		if (!confirm('确认退费？\n将通过邮件发送退费物品给玩家')) {
+			return;
+		}
+		
+		var mongoUriTpl = $('#mongo-uri-tpl').val();
+		var gameDb = 'game.cn.' + sourceArea;
+		
+		$.post('/transfer/refund', {
+			record_id: recordId,
+			game_db: gameDb,
+			mongo_uri_tpl: mongoUriTpl
+		}, function(data) {
+			if (data.success) {
+				alert(data.message || '退费成功！已通过邮件发送');
+				loadRecords();
+			} else {
+				alert('退费失败: ' + (data.error || '未知错误'));
+			}
+		}).fail(function(xhr, status, error) {
+			alert('请求失败: ' + error);
+		});
+	}
+	
+	// 重试转区
+	function doRetry(recordId, sourceArea) {
+		if (!confirm('确认重试转区？\n将重置状态为等待执行')) {
+			return;
+		}
+		
+		var mongoUriTpl = $('#mongo-uri-tpl').val();
+		var gameDb = 'game.cn.' + sourceArea;
+		
+		$.post('/transfer/retry', {
+			record_id: recordId,
+			game_db: gameDb,
+			mongo_uri_tpl: mongoUriTpl
+		}, function(data) {
+			if (data.success) {
+				alert('已重置为等待执行状态');
+				loadRecords();
+			} else {
+				alert('重试失败: ' + (data.error || '未知错误'));
+			}
+		}).fail(function(xhr, status, error) {
+			alert('请求失败: ' + error);
+		});
+	}
+	
+	// 加载邀请记录
+	function loadInvites() {
+		var gameDb = $('#game-db').val();
+		if (!gameDb) {
+			$('#invite-list').html('<tr><td colspan="8" class="text-center">请选择游戏数据库</td></tr>');
+			return;
+		}
+		
+		var mongoUriTpl = $('#mongo-uri-tpl').val();
+		if (!mongoUriTpl) {
+			$('#invite-list').html('<tr><td colspan="8" class="text-center text-danger">请配置 MongoDB URI 模板</td></tr>');
+			return;
+		}
+		
+		$('#invite-list').html('<tr><td colspan="8" class="text-center">加载中...</td></tr>');
+		
+		$.get('/transfer/invite/list', {
+			game_db: gameDb,
+			mongo_uri_tpl: mongoUriTpl
+		}, function(data) {
+			if (!data.success) {
+				$('#invite-list').html('<tr><td colspan="8" class="text-center text-danger">' + (data.error || '查询失败') + '</td></tr>');
+				return;
+			}
+			
+			var html = '';
+			if (data.invites && data.invites.length > 0) {
+				data.invites.forEach(function(inv) {
+					var statusClass = '';
+					var statusText = inv.status;
+					if (inv.status === 'completed') { statusClass = 'success'; statusText = '已完成'; }
+					else if (inv.status === 'accepted') { statusClass = 'info'; statusText = '已接受'; }
+					else if (inv.status === 'rejected') { statusClass = 'warning'; statusText = '已拒绝'; }
+					else if (inv.status === 'expired') { statusClass = 'default'; statusText = '已过期'; }
+					else if (inv.status === 'cancelled') { statusClass = 'default'; statusText = '已撤销'; }
+					else if (inv.status === 'pending') { statusClass = 'primary'; statusText = '待接受'; }
+					
+					html += '<tr>';
+					html += '<td>' + (inv.inviter_name || '-') + '</td>';
+					html += '<td>' + inv.inviter_area + '区</td>';
+					html += '<td>' + (inv.invitee_name || '-') + '</td>';
+					html += '<td>' + inv.invitee_area + '区</td>';
+					html += '<td><span class="label label-' + (statusClass || 'default') + '">' + statusText + '</span></td>';
+					html += '<td>' + formatTime(inv.create_time) + '</td>';
+					html += '<td>' + formatTime(inv.expire_time) + '</td>';
+					html += '<td>' + inv.month + '</td>';
+					html += '</tr>';
+				});
+			} else {
+				html = '<tr><td colspan="8" class="text-center">暂无邀请记录</td></tr>';
+			}
+			$('#invite-list').html(html);
+		}).fail(function(xhr, status, error) {
+			$('#invite-list').html('<tr><td colspan="8" class="text-center text-danger">查询失败: ' + error + '</td></tr>');
+		});
+	}
+	
+	// Tab 切换时加载对应数据
+	function onTabChange() {
+		var activeTab = $('#transfer-tabs li.active a').attr('href');
+		if (activeTab === '#tab-records') {
+			loadRecords();
+		} else if (activeTab === '#tab-invites') {
+			loadInvites();
+		}
+	}
+	
+	$(function() {
+		console.log('页面初始化');
+		$('#game-db').on('change', function() {
+			loadRecords();
+			loadInvites();
+		});
+		$('#btn-search, #btn-refresh').on('click', onTabChange);
+		
+		// Tab 切换事件
+		$('#transfer-tabs a').on('shown.bs.tab', onTabChange);
+	});
+</script>
+{% end %}

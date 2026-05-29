@@ -1,0 +1,8 @@
+变量名,type,name,name_tw,name_en,name_vn,name_kr,name_pt,name_th
+默认值,1,"""""","""""","""""","""""","""""","""""",""""""
+ID(按照id顺序从上往下显示),称号类型,称号标题语言包,称号标题语言包,称号标题语言包,称号标题语言包_越南,称号标题语言包_韩,称号标题语言包_韩,称号标题语言包_韩
+1,1,荣 誉,榮 譽,Honor,Vinh Dự,명 예,Honra,เกียรติยศ
+2,2,冒 险,冒 險,Adventure,Bốc lên Hiểm,모 험,Aventura,การผจญภัย
+3,3,活 动,活 動,Event,Hoạt động,활 동,Atividade,กิจกรรม
+4,4,成 就,成 就,Achievement,Thành tựu,업 적,Conquista,ความสำเร็จ
+99,99,其 他,其 他,Others,Hắn,기 타,Outro,อื่นๆ

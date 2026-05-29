@@ -1,0 +1,36 @@
+{
+    "files": [
+        {
+            "size": 1054, 
+            "md5": "11d36444eabd7a4fbd89420c1fe99bac", 
+            "name": "res/version.plist", 
+            "patch": 45
+        }, 
+        {
+            "size": 38093, 
+            "md5": "3a4b7482fb015afc10896e2d85205e59", 
+            "name": "res/resources/config/csv.lua", 
+            "patch": 45
+        }, 
+        {
+            "size": 131238, 
+            "md5": "bf8d0975562c8580fb800828bc628530", 
+            "name": "res/resources/config/yunying/yyhuodong.lua", 
+            "patch": 45
+        }, 
+        {
+            "size": 131238, 
+            "md5": "bf8d0975562c8580fb800828bc628530", 
+            "name": "src/config.yunying.yyhuodong", 
+            "patch": 45
+        }, 
+        {
+            "size": 131238, 
+            "md5": "bf8d0975562c8580fb800828bc628530", 
+            "name": "x64/src/config.yunying.yyhuodong", 
+            "patch": 45
+        }
+    ], 
+    "svn_version": "54539", 
+    "git_version": "175bed51520de09c6020d19bcaecc21834fcd51b"
+}

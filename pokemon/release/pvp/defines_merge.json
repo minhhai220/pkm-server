@@ -1,0 +1,230 @@
+{
+  "pvpmerge.cn.1": {
+    "debug": true, 
+    "services": [
+      {
+        "dependent": [
+          "storagemerge.cn.1"
+        ], 
+        "alias": [
+          "pvp.cn.1", 
+          "pvp.cn.2"
+        ], 
+        "name": "pvpmerge.cn.1"
+      }, 
+      {
+        "dependent": [
+          "storagemerge.cn.1"
+        ], 
+        "alias": [
+          "clone.cn.1", 
+          "clone.cn.2"
+        ], 
+        "name": "clonemerge.cn.1"
+      }, 
+      {
+        "dependent": [
+          "storagemerge.cn.1"
+        ], 
+        "alias": [
+          "arena.cn.1", 
+          "arena.cn.2"
+        ], 
+        "name": "arenamerge.cn.1"
+      }, 
+      {
+        "dependent": [
+          "storagemerge.cn.1"
+        ], 
+        "alias": [
+          "union.cn.1", 
+          "union.cn.2"
+        ], 
+        "name": "unionmerge.cn.1"
+      }, 
+      {
+        "dependent": [
+          "storagemerge.cn.1", 
+          "gamemerge.cn.1", 
+          "anticheat"
+        ], 
+        "alias": [
+          "union_fight.cn.1", 
+          "union_fight.cn.2"
+        ], 
+        "name": "union_fightmerge.cn.1"
+      }, 
+      {
+        "dependent": [
+          "storagemerge.cn.1", 
+          "gamemerge.cn.1", 
+          "anticheat"
+        ], 
+        "alias": [
+          "craft.cn.1", 
+          "craft.cn.2"
+        ], 
+        "name": "craftmerge.cn.1"
+      }, 
+      {
+        "dependent": [
+          "storagemerge.cn.1"
+        ], 
+        "alias": [
+          "yyhuodong.cn.1", 
+          "yyhuodong.cn.2"
+        ], 
+        "name": "yyhuodongmerge.cn.1"
+      }, 
+      {
+        "dependent": [
+          "storagemerge.cn.1"
+        ], 
+        "alias": [
+          "card_fight.cn.1", 
+          "card_fight.cn.2"
+        ], 
+        "name": "card_fightmerge.cn.1"
+      }, 
+      {
+        "dependent": [
+          "storagemerge.cn.1", 
+          "gamemerge.cn.1"
+        ], 
+        "alias": [
+          "gym.cn.1", 
+          "gym.cn.2"
+        ], 
+        "name": "gymmerge.cn.1"
+      }, 
+      {
+        "dependent": [
+          "storagemerge.cn.1"
+        ], 
+        "alias": [
+          "hunting.cn.1", 
+          "hunting.cn.2"
+        ], 
+        "name": "huntingmerge.cn.1"
+      }
+    ], 
+    "nsqd_tcp_addresses": [
+      "127.0.0.1:4150"
+    ], 
+    "nsqlookupd": "http://127.0.0.1:4161/"
+  }, 
+  "pvpmerge.cn.2": {
+    "debug": true, 
+    "services": [
+      {
+        "dependent": [
+          "storagemerge.cn.2"
+        ], 
+        "alias": [
+          "pvp.cn.3", 
+          "pvp.cn.4"
+        ], 
+        "name": "pvpmerge.cn.2"
+      }, 
+      {
+        "dependent": [
+          "storagemerge.cn.2"
+        ], 
+        "alias": [
+          "clone.cn.3", 
+          "clone.cn.4"
+        ], 
+        "name": "clonemerge.cn.2"
+      }, 
+      {
+        "dependent": [
+          "storagemerge.cn.2"
+        ], 
+        "alias": [
+          "arena.cn.3", 
+          "arena.cn.4"
+        ], 
+        "name": "arenamerge.cn.2"
+      }, 
+      {
+        "dependent": [
+          "storagemerge.cn.2"
+        ], 
+        "alias": [
+          "union.cn.3", 
+          "union.cn.4"
+        ], 
+        "name": "unionmerge.cn.2"
+      }, 
+      {
+        "dependent": [
+          "storagemerge.cn.2", 
+          "gamemerge.cn.2", 
+          "anticheat"
+        ], 
+        "alias": [
+          "union_fight.cn.3", 
+          "union_fight.cn.4"
+        ], 
+        "name": "union_fightmerge.cn.2"
+      }, 
+      {
+        "dependent": [
+          "storagemerge.cn.2", 
+          "gamemerge.cn.2", 
+          "anticheat"
+        ], 
+        "alias": [
+          "craft.cn.3", 
+          "craft.cn.4"
+        ], 
+        "name": "craftmerge.cn.2"
+      }, 
+      {
+        "dependent": [
+          "storagemerge.cn.2"
+        ], 
+        "alias": [
+          "yyhuodong.cn.3", 
+          "yyhuodong.cn.4"
+        ], 
+        "name": "yyhuodongmerge.cn.2"
+      }, 
+      {
+        "dependent": [
+          "storagemerge.cn.2"
+        ], 
+        "alias": [
+          "card_fight.cn.3", 
+          "card_fight.cn.4"
+        ], 
+        "name": "card_fightmerge.cn.2"
+      }, 
+      {
+        "dependent": [
+          "storagemerge.cn.2", 
+          "gamemerge.cn.2"
+        ], 
+        "alias": [
+          "gym.cn.3", 
+          "gym.cn.4"
+        ], 
+        "name": "gymmerge.cn.2"
+      }, 
+      {
+        "dependent": [
+          "storagemerge.cn.2"
+        ], 
+        "alias": [
+          "hunting.cn.3", 
+          "hunting.cn.4"
+        ], 
+        "name": "huntingmerge.cn.2"
+      }
+    ], 
+    "nsqd_tcp_addresses": [
+      "127.0.0.1:4150"
+    ], 
+    "nsqlookupd": "http://127.0.0.1:4161/"
+  }
+}

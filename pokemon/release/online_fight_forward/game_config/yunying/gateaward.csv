@@ -1,0 +1,7 @@
+变量名,huodongID,gateID,desc,desc_tw,desc_en,desc_vn,desc_kr,desc_pt,desc_th,award
+默认值,0,1,"""""","""""","""""","""""","""""","""""","""""",{}
+ID,活动版本ID,通关关卡ID,描述,描述,描述,描述,描述_韩,描述_韩,描述_韩,奖励
+1,9001,10009,通关第一章困难关卡,通關第一章困難關卡,Clear Chapter 1 Difficult Stage,Vượt ải chương 1 khó,1장 어려운 스테이지 클리어,Concluir o Capítulo 1 no modo difícil,ผ่านด่านยากบทที่ 1,{rmb=100;gold=100000}
+2,9001,10212,通关第三章困难关卡,通關第三章困難關卡,Clear Chapter 3 Difficult Stage,Vượt ải chương 3 khó,3장 어려운 스테이지 클리어,Concluir o Capítulo 3 no modo difícil,ผ่านด่านยากบทที่ 3,{rmb=100;gold=100000}
+3,9001,10412,通关第五章困难关卡,通關第五章困難關卡,Clear Chapter 5 Difficult Stage,Vượt ải chương 5 khó,5장 어려운 스테이지 클리어,Concluir o Capítulo 5 no modo difícil,ผ่านด่านยากบทที่ 5,{rmb=100;gold=100000}
+4,9001,10612,通关第七章困难关卡,通關第七章困難關卡,Clear Chapter 7 Difficult Stage,Vượt ải chương 7 khó,7장 어려운 스테이지 클리어,Concluir o Capítulo 7 no modo difícil,ผ่านด่านยากบทที่ 7,{rmb=100;gold=100000}

@@ -1,0 +1,8 @@
+变量名,type,desc,desc_tw,desc_en,desc_vn,desc_kr,desc_pt,desc_th,score,scoreUp,award,limitTime,choiceNum
+默认值,,"""""","""""","""""","""""","""""","""""","""""",0,<>,{},15,4
+ID,问题类型(1-文本问答难度Ⅰ;2-文本问答难度Ⅱ;3-文本问答难度Ⅲ;4-看图问答;5-小游戏),描述,描述,描述,描述,描述,描述,描述,积分分值,答题时间积分衰减,奖励,限制时间,选项个数
+1,1,文本问答难度1,文本問答難度1,Text Q&A Difficulty 1,Câu hỏi và đáp án văn bản độ khó 1,텍스트 Q&A 난이도 1,Perguntas e respostas em texto dificuldade 1,คำถามและคำตอบข้อความ ระดับความยาก 1,10,<<0;2;1>;<2;5;0.9>;<5;10;0.7>;<10;15;0.5>>,{gold=10000;libs=<21001>},15,4
+2,2,文本问答难度2,文本問答難度2,Text Q&A Difficulty 2,Câu hỏi và đáp án văn bản độ khó 2,텍스트 Q&A 난이도 2,Perguntas e respostas em texto dificuldade 2,คำถามและคำตอบข้อความ ระดับความยาก 2,20,<<0;2;1>;<2;5;0.9>;<5;10;0.7>;<10;15;0.5>>,{gold=10000;libs=<21001>},15,4
+3,3,文本问答难度3,文本問答難度3,Text Q&A Difficulty 3,Câu hỏi và đáp án văn bản độ khó 3,텍스트 Q&A 난이도 3,Perguntas e respostas em texto dificuldade 3,คำถามและคำตอบข้อความ ระดับความยาก 3,30,<<0;2;1>;<2;5;0.9>;<5;10;0.7>;<10;15;0.5>>,{gold=10000;libs=<21001>},15,4
+4,4,看图问答,看圖問答,Look at the picture answer this question,Nhìn vào hình ảnh và trả lời câu hỏi này,그림을 보고 이 질문에 답하세요,Olhe para a imagem e responda esta pergunta,ดูที่ภาพแล้วตอบคำถามนี้,30,<<0;2;1>;<2;5;0.9>;<5;10;0.7>;<10;15;0.5>>,{gold=10000;libs=<21001>},15,4
+5,5,小游戏,小遊戲,Fun game,Trò chơi vui nhộn,재미있는 게임,Jogo divertido,เกมสนุก,50,<<0;2;1>;<2;5;0.9>;<5;10;0.7>;<10;15;0.5>>,{gold=10000;libs=<21001>},15,4

@@ -1,0 +1,153 @@
+{
+  "comment.cn.1": {
+    "nsqd_tcp_addresses": [
+      "127.0.0.1:4150"
+    ], 
+    "nsqlookupd": "http://127.0.0.1:4161/", 
+    "services": [
+      {
+        "dependent": [
+          "commentdb.cn.1"
+        ], 
+        "name": "card_comment.cn.1"
+      }, 
+      {
+        "dependent": [
+          "commentdb.cn.1"
+        ], 
+        "name": "card_score.cn.1"
+      }
+    ]
+  }, 
+  "cross.cn.1": {
+    "nsqd_tcp_addresses": [
+      "127.0.0.1:4150"
+    ],
+    "nsqlookupd": "http://127.0.0.1:4161/",
+    "services": [
+      {
+        "dependent": [
+          "crossdb.cn.1"
+        ],
+        "name": "crossmatch.cn.1"
+      },
+      {
+        "dependent": [
+          "anticheat", 
+          "crossdb.cn.1"
+        ], 
+        "name": "crosscraft.cn.1"
+      }, 
+      {
+        "dependent": [
+          "crossdb.cn.1"
+        ], 
+        "name": "crossfishing.cn.1"
+      }, 
+      {
+        "dependent": [
+          "crossdb.cn.1"
+        ], 
+        "name": "huodongboss.cn.1"
+      }, 
+      {
+        "dependent": [
+          "anticheat", 
+          "crossdb.cn.1"
+        ], 
+        "name": "crossarena.cn.1"
+      }, 
+      {
+        "dependent": [
+          "online_fight_forward", 
+          "crosslobby.cn.1", 
+          "crossdb.cn.1"
+        ], 
+        "name": "onlinefight.cn.1"
+      }, 
+      {
+        "dependent": [
+          "anticheat", 
+          "crossdb.cn.1"
+        ], 
+        "name": "crossgym.cn.1"
+      }, 
+      {
+        "dependent": [
+          "anticheat", 
+          "crossdb.cn.1"
+        ], 
+        "name": "crossmine.cn.1"
+      }, 
+      {
+        "dependent": [
+          "crossdb.cn.1"
+        ], 
+        "name": "crossunionqa.cn.1"
+      }, 
+      {
+        "dependent": [
+          "crossdb.cn.1"
+        ], 
+        "name": "skyscraper.cn.1"
+      }, 
+      {
+        "dependent": [
+          "crossdb.cn.1"
+        ], 
+        "name": "crossredpacket.cn.1"
+      }, 
+      {
+        "dependent": [
+          "crossdb.cn.1"
+        ], 
+        "name": "crossranking.cn.1"
+      },
+        {
+        "dependent": ["crossdb.cn.1"],
+        "name": "crosshunting.cn.1"
+      },
+      {
+        "dependent": ["crossdb.cn.1"],
+        "name": "crosschat.cn.1"
+      },
+      {
+        "dependent": ["crossdb.cn.1"],
+        "name": "crossmimicry.cn.1"
+      },
+      {
+        "dependent": [
+          "autochess_room.cn.1",
+          "crossdb.cn.1"
+        ],
+        "name": "crossautochess.cn.1"
+      },
+      {
+        "dependent": [],
+        "name": "autochess_lobby.cn.1"
+      },
+      {
+        "dependent": ["crossdb.cn.1"],
+        "name": "crosstownparty.cn.1"
+      },
+      {
+        "dependent": ["crossdb.cn.1"],
+        "name": "crosssupremacy.cn.1"
+      }
+    ], 
+    "shushu": true
+  }, 
+  "crosslobby.cn.1": {
+    "debug": true, 
+    "nsqd_tcp_addresses": [
+      "127.0.0.1:4150"
+    ], 
+    "nsqlookupd": "http://127.0.0.1:4161/", 
+    "services": [
+      {
+        "dependent": [], 
+        "name": "crosslobby.cn.1"
+      }
+    ]
+  }
+}

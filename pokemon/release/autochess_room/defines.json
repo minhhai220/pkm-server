@@ -1,0 +1,15 @@
+{
+  "autochess_room.cn.1": {
+    "nsqd_tcp_addresses": [
+      "127.0.0.1:4150"
+    ],
+    "nsqlookupd": "http://127.0.0.1:4161/",
+    "ip": "192.168.1.131",
+    "debug": true,
+    "services": [
+      {
+        "name": "autochess_room.cn.1"
+      }
+    ]
+  }
+}

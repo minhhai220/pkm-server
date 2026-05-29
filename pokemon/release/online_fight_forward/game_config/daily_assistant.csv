@@ -1,0 +1,23 @@
+变量名,type,sortID,name,name_tw,name_en,name_vn,name_kr,name_pt,name_th,features,inUnlock,languages
+默认值,1,1,,,,,,,,"""""",0,<cn;tw;en;vn;th;kr>
+ID（顺序排序）,类型(1=奖励领取 2=抽卡 3=战斗报名 4=快速冒险 5=公会事宜),排序改这列,中文简体,中文繁体,英文,中文简体_越南,中文简体_韩,中文简体_韩,中文简体_韩,功能,是否在unlock表中有配置,语言区域
+101,1,1,公会每日礼包,公會每日禮包,Guild Daily Gift,Quà hàng ngày của Bang hội,길드 일일 선물,Presente Diário da Guilda,ของขวัญรายวันกิลด์,unionDailyGift,0,<cn;tw;en;vn;th;kr>
+102,1,2,公会每日红包,公會每日紅包,Guild Daily Red Packet,Bao lì xì hàng ngày của Bang hội,길드 일일 레드 패킷,Pacote Vermelho Diário da Guilda,อั่งเปารายวันกิลด์,unionRedpacket,1,<cn;tw;en;vn;th;kr>
+103,1,3,冒险执照每日奖励,冒險執照每日獎勵,Adventure License Daily Reward,Phần thưởng hàng ngày Giấy phép Phiêu lưu,모험 허가증 일일 보상,Recompensa Diária da Licença de Aventura,รางวัลรายวันใบอนุญาตผจญภัย,trainer,1,<cn;tw;en;vn;th;kr>
+104,1,4,聚宝,聚寶,Treasure Gathering,Tập hợp kho báu,보물 모으기,Reunião de Tesouros,สะสมสมบัติ,gainGold,0,<cn;tw;en;vn;th;kr>
+201,2,1,钻石抽卡,鉆石抽卡,Diamond Draw,Rút thẻ Kim cương,다이아몬드 뽑기,Sorteio de Diamantes,การ์ดสุ่มเพชร,drawCardRmb,0,<cn;tw;en;vn;th;kr>
+202,2,2,金币抽卡,金幣抽卡,Gold Draw,Rút thẻ Vàng,골드 뽑기,Sorteio de Ouro,การ์ดสุ่มทอง,drawCardGold,0,<cn;tw;en;vn;th;kr>
+203,2,3,饰品抽卡,飾品抽卡,Accessory Draw,Rút thẻ Phụ kiện,장식품 뽑기,Sorteio de Acessórios,การ์ดสุ่มเครื่องประดับ,drawEquip,1,<cn;tw;en;vn;th;kr>
+204,2,5,探险寻宝,探險尋寶,Exploration Treasure Hunt,Khám phá săn kho báu,탐험 보물 찾기,Caça ao Tesouro de Exploração,ผจญภัยค้นหาสมบัติ,explorer,1,<cn;tw;en;vn;th;kr>
+205,2,4,符石抽取,符石抽取,Rune Stone Draw,Rút đá Rune,룬석 뽑기,Sorteio de Pedras Rúnicas,สุ่มหินรูน,gem,1,<cn;tw;en;vn;th;kr>
+206,2,6,芯片抽取,芯片抽取,Chip Draw,Rút chip,칩 뽑기,Sorteio de Chips,สุ่มชิป,chip,1,<cn;tw;en;vn;th;kr>
+301,3,1,石英大会,石英大會,Quartz Tournament,Giải đấu Thạch Anh,쿼츠 토너먼트,Torneio de Quartzo,การแข่งขันควอตซ์,craft,1,<cn;tw;en;vn;th;kr>
+302,3,2,公会战,公會戰,Guild War,Chiến tranh Bang hội,길드 전쟁,Guerra da Guilda,สงครามกิลด์,unionFight,1,<cn;tw;en;vn;th;kr>
+303,3,3,跨服石英大会,跨服石英大會,Cross-server Quartz Tournament,Giải đấu Thạch Anh liên máy chủ,서버 간 쿼츠 토너먼트,Torneio de Quartzo entre Servidores,การแข่งขันควอตซ์ข้ามเซิร์ฟเวอร์,crossCraft,1,<cn;tw;en;vn;th;kr>
+401,4,1,日常副本,日常副本,Daily Dungeon,Phó bản hàng ngày,일일 던전,Masmorra Diária,ดันเจี้ยนประจำวัน,activityGate,1,<cn;tw;en;vn;th;kr>
+402,4,2,冒险之路,冒險之路,Adventure Road,Con đường phiêu lưu,모험의 길,Caminho da Aventura,เส้นทางการผจญภัย,endlessTower,1,<cn;tw;en;vn;th;kr>
+403,4,3,钓鱼捕捞,釣魚捕撈,Fishing and Catching,Câu cá và bắt cá,낚시 및 어획,Pesca e Captura,ตกปลาและจับปลา,catch,1,<cn;tw;en;vn;th;kr>
+501,5,1,公会捐献,公會捐獻,Guild Donation,Đóng góp Bang hội,길드 기부,Doação para a Guilda,บริจาคกิลด์,unionContrib,0,<cn;tw;en;vn;th;kr>
+502,5,2,公会许愿,公會許願,Guild Wish,Ước nguyện Bang hội,길드 소원,Desejo da Guilda,อธิษฐานกิลด์,unionFragDonate,0,<cn;tw;en;vn;th;kr>
+503,5,3,为好友加速,為好友加速,Speed Up for Friend,Tăng tốc cho bạn bè,친구 가속,Acelerar para Amigos,เร่งความเร็วให้เพื่อน,unionTrainingSpeedup,0,<cn;tw;en;vn;th;kr>
+504,5,4,公会副本,公會副本,Guild Dungeon,Phó bản Bang hội,길드 던전,Masmorra da Guilda,ดันเจี้ยนกิลด์,unionFuben,0,<cn;tw;en;vn;th;kr>

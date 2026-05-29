@@ -1,0 +1,32 @@
+变量名,huodongID,type,targetType,targetArg,targetArg2,award,title,title_tw,title_en,title_vn,title_kr,title_pt,title_th
+默认值,0,1,1,0,0,{},"""""","""404""","""404""","""404""","""404""","""""",""""""
+ID,活动版本ID,任务分类 1 每日 2 累计,任务目标类型,任务目标参数(数量）,任务目标参数2（对应参数ID）,任务奖励,标题,描述,描述,描述,描述,描述,描述
+101,1000,1,101,1,,{rmb=10;6394=5;951=3},每日获胜场数,每日獲勝場數,Daily wins,Daily wins,매일 우승 횟수,Vitórias diárias,ชัยชนะรายวัน
+102,1000,1,101,3,,{rmb=10;6394=5;5000=10},每日获胜场数,每日獲勝場數,Daily wins,Daily wins,매일 우승 횟수,Vitórias diárias,ชัยชนะรายวัน
+103,1000,1,102,10,,{rmb=10;6394=5;930=10},每日获得分数,每日獲得分數,Daily score,Daily score,매일 획득한 점수,Pontuação diária,คะแนนรายวัน
+104,1000,1,103,3,,{rmb=10;6394=5;901=10},每日参与游戏场数,每日參與遊戲場數,Number of games played daily,Number of games played daily,매일 참여 횟수,Número de jogos jogados diariamente,จำนวนเกมที่เล่นในแต่ละวัน
+,,,,,,,,,,,,,
+201,1000,2,201,5,,{6394=5;gold=200000;502=2},玩家获胜场数,玩家獲勝場數,Player wins,Player wins,우승 횟수,Jogador vence,ผู้เล่นชนะ
+202,1000,2,201,10,,{6394=5;gold=200000;521=2},玩家获胜场数,玩家獲勝場數,Player wins,Player wins,우승 횟수,Jogador vence,ผู้เล่นชนะ
+203,1000,2,201,20,,{6394=10;gold=200000;rmb=50},玩家获胜场数,玩家獲勝場數,Player wins,Player wins,우승 횟수,Jogador vence,ผู้เล่นชนะ
+204,1000,2,202,1,11852,{6394=5;gold=200000;503=1},战胜冰鬼护,戰勝冰鬼護,Defeat Glalie,Defeat Glalie,얼음귀신 이기기,Derrote Glalie,เอาชนะกลาลี
+205,1000,2,202,1,92,{6394=5;gold=200000;520=1},战胜皮卡丘,戰勝皮卡丘,Defeat Pikachu,Defeat Pikachu,피카츄 이기기,Derrote Pikachu,เอาชนะปิกาจู
+206,1000,2,202,1,221,{6394=5;gold=200000;519=1},战胜可达鸭,戰勝可達鴨,Defeat Psyduck,Defeat Psyduck,고라파덕 이기기,Derrote Psyduck,เอาชนะไซดั๊ก
+207,1000,2,202,1,2242,{6394=5;gold=200000;527=1},战胜路卡利欧,戰勝路卡利歐,Defeat Lucario,Defeat Lucario,루카리오 이기기,Derrote Lucario,เอาชนะลูคาริโอ
+208,1000,2,203,3,,{6394=5;gold=200000;901=10},手误打出界外,手誤打出界外,Out of bounds by mistake,Out of bounds by mistake,실수로 경계선 밖으로 나감,Fora dos limites por engano,ออกนอกเขตด้วยความเข้าใจผิด
+209,1000,2,203,6,,{6394=5;gold=200000;902=10},手误打出界外,手誤打出界外,Out of bounds by mistake,Out of bounds by mistake,실수로 경계선 밖으로 나감,Fora dos limites por engano,ออกนอกเขตด้วยความเข้าใจผิด
+210,1000,2,203,10,,{6394=10;gold=200000;rmb=50},手误打出界外,手誤打出界外,Out of bounds by mistake,Out of bounds by mistake,실수로 경계선 밖으로 나감,Fora dos limites por engano,ออกนอกเขตด้วยความเข้าใจผิด
+211,1000,2,204,1,92,{6394=5;gold=200000;503=1},使用皮卡丘获胜,使用皮卡丘獲勝,Win by using Pikachu,Win by using Pikachu,피카츄로 승리,Ganhe usando Pikachu,ชนะโดยใช้ปิกาจู
+212,1000,2,204,1,21,{6394=5;gold=200000;520=1},使用杰尼龟获胜,使用傑尼龜獲勝,Win by using Squirtle,Win by using Squirtle,꼬부기로 승리,Ganhe usando Squirtle,ชนะโดยใช้ Squirtle
+213,1000,2,204,1,893,{6394=5;gold=200000;519=1},使用玛力露丽获胜,使用瑪力露麗獲勝,Win by using Azumarill,Win by using Azumarill,마릴리로 승리,Ganhe usando Azumarill,ชนะโดยใช้ Azumarill
+214,1000,2,204,1,502,{6394=5;gold=200000;527=1},使用吉利蛋获胜,使用吉利蛋獲勝,Win by using Chansey,Win by using Chansey,럭키로 승리,Ganhe usando Chansey,ชนะโดยใช้ชานเซย์
+215,1000,2,205,10,,{6394=5;gold=200000;5000=30},参与场数,參與場數,Participated games,Participated games,참여 횟수,Jogos participados,เกมที่เข้าร่วม
+216,1000,2,205,20,,{6394=5;gold=200000;930=30},参与场数,參與場數,Participated games,Participated games,참여 횟수,Jogos participados,เกมที่เข้าร่วม
+217,1000,2,205,40,,{6394=10;gold=200000;rmb=50},参与场数,參與場數,Participated games,Participated games,참여 횟수,Jogos participados,เกมที่เข้าร่วม
+218,1000,2,206,3,,{6394=5;gold=200000;850=200},使用技能减速敌人,使用技能減速敵人,Use skills to slow down enemies,Use skills to slow down enemies,스킬을 사용해 상대를 감속시키기,Use habilidades para desacelerar os inimigos,ใช้ทักษะเพื่อทำให้ศัตรูช้าลง
+219,1000,2,206,6,,{6394=5;gold=200000;851=100},使用技能减速敌人,使用技能減速敵人,Use skills to slow down enemies,Use skills to slow down enemies,스킬을 사용해 상대를 감속시키기,Use habilidades para desacelerar os inimigos,ใช้ทักษะเพื่อทำให้ศัตรูช้าลง
+220,1000,2,206,10,,{6394=10;gold=200000;rmb=50},使用技能减速敌人,使用技能減速敵人,Use skills to slow down enemies,Use skills to slow down enemies,스킬을 사용해 상대를 감속시키기,Use habilidades para desacelerar os inimigos,ใช้ทักษะเพื่อทำให้ศัตรูช้าลง
+221,1000,2,207,3,,{6394=5;gold=200000;451=100},使用技能战胜对手,使用技能戰勝對手,Use skills to defeat opponents,Use skills to defeat opponents,스킬을 사용해 상대를 이기기,Use habilidades para derrotar oponentes,ใช้ทักษะเพื่อเอาชนะคู่ต่อสู้
+222,1000,2,207,6,,{6394=5;gold=200000;452=50},使用技能战胜对手,使用技能戰勝對手,Use skills to defeat opponents,Use skills to defeat opponents,스킬을 사용해 상대를 이기기,Use habilidades para derrotar oponentes,ใช้ทักษะเพื่อเอาชนะคู่ต่อสู้
+223,1000,2,207,10,,{6394=10;gold=200000;rmb=50},使用技能战胜对手,使用技能戰勝對手,Use skills to defeat opponents,Use skills to defeat opponents,스킬을 사용해 상대를 이기기,Use habilidades para derrotar oponentes,ใช้ทักษะเพื่อเอาชนะคู่ต่อสู้
+224,1000,2,208,23,,{6394=15;gold=200000;rmb=100},完成所有累计任务,完成所有累計任務,Complete all cumulative tasks,Complete all cumulative tasks,모든 누적 미션 완료,Complete todas as tarefas cumulativas,ทำภารกิจสะสมให้เสร็จทั้งหมด

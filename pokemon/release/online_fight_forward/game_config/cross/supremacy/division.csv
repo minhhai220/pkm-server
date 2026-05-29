@@ -1,0 +1,5 @@
+变量名,servers,division,serviceCSVID
+默认值,<>,0,0
+ID,区服,赛区,service的CSVID
+1,<game.dev.1>,1,34
+2,<game.dev.2>,2,34
